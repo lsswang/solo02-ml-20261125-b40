@@ -1,0 +1,371 @@
+{
+  "job": "edge_image",
+  "paper": "Paper1",
+  "plan": {
+    "checks": {
+      "forward": {
+        "equal_channel_gap": 0.003361036283203278,
+        "equal_channels_ok": true,
+        "passes": false,
+        "recipe": "forward",
+        "scrap": false,
+        "worst_cell": [
+          0,
+          6
+        ],
+        "worst_channel": 0,
+        "worst_offset": {
+          "A": -1,
+          "B": -1
+        },
+        "worst_relief": 0.88
+      },
+      "reverse": {
+        "equal_channel_gap": 0.002537888610468775,
+        "equal_channels_ok": true,
+        "passes": false,
+        "recipe": "reverse",
+        "scrap": false,
+        "worst_cell": [
+          0,
+          6
+        ],
+        "worst_channel": 0,
+        "worst_offset": {
+          "A": -1,
+          "B": -1
+        },
+        "worst_relief": 0.88
+      },
+      "spot": {
+        "equal_channel_gap": 0.002023254626435156,
+        "equal_channels_ok": true,
+        "passes": false,
+        "recipe": "spot",
+        "scrap": false,
+        "worst_cell": [
+          0,
+          6
+        ],
+        "worst_channel": 0,
+        "worst_offset": {
+          "S": -1
+        },
+        "worst_relief": 0.88
+      }
+    },
+    "cost": 0.0,
+    "evidence": {
+      "considered": {
+        "forward": {
+          "equal_channel_gap": 0.003361036283203278,
+          "equal_channels_ok": true,
+          "passes": false,
+          "recipe": "forward",
+          "scrap": false,
+          "worst_cell": [
+            0,
+            6
+          ],
+          "worst_channel": 0,
+          "worst_offset": {
+            "A": -1,
+            "B": -1
+          },
+          "worst_relief": 0.88
+        },
+        "reverse": {
+          "equal_channel_gap": 0.002537888610468775,
+          "equal_channels_ok": true,
+          "passes": false,
+          "recipe": "reverse",
+          "scrap": false,
+          "worst_cell": [
+            0,
+            6
+          ],
+          "worst_channel": 0,
+          "worst_offset": {
+            "A": -1,
+            "B": -1
+          },
+          "worst_relief": 0.88
+        },
+        "spot": {
+          "equal_channel_gap": 0.002023254626435156,
+          "equal_channels_ok": true,
+          "passes": false,
+          "recipe": "spot",
+          "scrap": false,
+          "worst_cell": [
+            0,
+            6
+          ],
+          "worst_channel": 0,
+          "worst_offset": {
+            "S": -1
+          },
+          "worst_relief": 0.88
+        }
+      },
+      "failures": {
+        "forward": [
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": -1,
+              "B": -1
+            },
+            "relief": 0.88,
+            "worst_cell": [
+              0,
+              6
+            ],
+            "worst_channel": 0
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 0,
+              "B": -1
+            },
+            "relief": 0.20420413655760497,
+            "worst_cell": [
+              0,
+              6
+            ],
+            "worst_channel": 1
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 1,
+              "B": -1
+            },
+            "relief": 0.20420413655760497,
+            "worst_cell": [
+              0,
+              6
+            ],
+            "worst_channel": 1
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": -1,
+              "B": 0
+            },
+            "relief": 0.01723927805851246,
+            "worst_cell": [
+              0,
+              6
+            ],
+            "worst_channel": 2
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 1,
+              "B": 0
+            },
+            "relief": 0.01723927805851246,
+            "worst_cell": [
+              0,
+              2
+            ],
+            "worst_channel": 2
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": -1,
+              "B": 1
+            },
+            "relief": 0.20420413655760497,
+            "worst_cell": [
+              0,
+              2
+            ],
+            "worst_channel": 1
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 0,
+              "B": 1
+            },
+            "relief": 0.20420413655760497,
+            "worst_cell": [
+              0,
+              2
+            ],
+            "worst_channel": 1
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 1,
+              "B": 1
+            },
+            "relief": 0.88,
+            "worst_cell": [
+              0,
+              2
+            ],
+            "worst_channel": 0
+          }
+        ],
+        "reverse": [
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": -1,
+              "B": -1
+            },
+            "relief": 0.88,
+            "worst_cell": [
+              0,
+              6
+            ],
+            "worst_channel": 0
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": -1,
+              "B": 0
+            },
+            "relief": 0.18006762739617269,
+            "worst_cell": [
+              0,
+              2
+            ],
+            "worst_channel": 0
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": -1,
+              "B": 1
+            },
+            "relief": 0.20420413655760497,
+            "worst_cell": [
+              0,
+              2
+            ],
+            "worst_channel": 1
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 0,
+              "B": -1
+            },
+            "relief": 0.20420413655760497,
+            "worst_cell": [
+              0,
+              6
+            ],
+            "worst_channel": 1
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 0,
+              "B": 0
+            },
+            "relief": 0.18006762739617269,
+            "worst_cell": [
+              0,
+              2
+            ],
+            "worst_channel": 0
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 0,
+              "B": 1
+            },
+            "relief": 0.20420413655760497,
+            "worst_cell": [
+              0,
+              2
+            ],
+            "worst_channel": 1
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 1,
+              "B": -1
+            },
+            "relief": 0.20420413655760497,
+            "worst_cell": [
+              0,
+              6
+            ],
+            "worst_channel": 1
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 1,
+              "B": 0
+            },
+            "relief": 0.18006762739617269,
+            "worst_cell": [
+              0,
+              3
+            ],
+            "worst_channel": 0
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "A": 1,
+              "B": 1
+            },
+            "relief": 0.88,
+            "worst_cell": [
+              0,
+              2
+            ],
+            "worst_channel": 0
+          }
+        ],
+        "spot": [
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "S": -1
+            },
+            "relief": 0.88,
+            "worst_cell": [
+              0,
+              6
+            ],
+            "worst_channel": 0
+          },
+          {
+            "kind": "out_of_tol",
+            "offset": {
+              "S": 1
+            },
+            "relief": 0.88,
+            "worst_cell": [
+              0,
+              2
+            ],
+            "worst_channel": 0
+          }
+        ]
+      },
+      "reason": "no single recipe is compliant under every allowed offset"
+    },
+    "feasible": false,
+    "recipe": null,
+    "route": "direct"
+  },
+  "route": "direct"
+}

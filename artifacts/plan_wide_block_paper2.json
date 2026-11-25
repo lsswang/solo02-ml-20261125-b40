@@ -1,0 +1,118 @@
+{
+  "job": "wide_block_paper2",
+  "paper": "Paper2",
+  "plan": {
+    "checks": {
+      "forward": {
+        "equal_channel_gap": 0.002247201602966431,
+        "equal_channels_ok": true,
+        "passes": false,
+        "recipe": "forward",
+        "scrap": false,
+        "worst_cell": [
+          0,
+          2
+        ],
+        "worst_channel": 2,
+        "worst_offset": {
+          "A": 0,
+          "B": 0
+        },
+        "worst_relief": 0.1318903780502733
+      },
+      "reverse": {
+        "equal_channel_gap": 0.0003810372120029992,
+        "equal_channels_ok": true,
+        "passes": false,
+        "recipe": "reverse",
+        "scrap": false,
+        "worst_cell": [
+          0,
+          2
+        ],
+        "worst_channel": 2,
+        "worst_offset": {
+          "A": 0,
+          "B": 0
+        },
+        "worst_relief": 0.1817177568062697
+      },
+      "spot": {
+        "equal_channel_gap": 0.001359103616102253,
+        "equal_channels_ok": true,
+        "passes": true,
+        "recipe": "spot",
+        "scrap": false,
+        "worst_cell": [
+          0,
+          2
+        ],
+        "worst_channel": 2,
+        "worst_offset": {
+          "S": 0
+        },
+        "worst_relief": -0.01795684902317816
+      }
+    },
+    "cost": 350.0,
+    "evidence": {
+      "considered": {
+        "forward": {
+          "equal_channel_gap": 0.002247201602966431,
+          "equal_channels_ok": true,
+          "passes": false,
+          "recipe": "forward",
+          "scrap": false,
+          "worst_cell": [
+            0,
+            2
+          ],
+          "worst_channel": 2,
+          "worst_offset": {
+            "A": 0,
+            "B": 0
+          },
+          "worst_relief": 0.1318903780502733
+        },
+        "reverse": {
+          "equal_channel_gap": 0.0003810372120029992,
+          "equal_channels_ok": true,
+          "passes": false,
+          "recipe": "reverse",
+          "scrap": false,
+          "worst_cell": [
+            0,
+            2
+          ],
+          "worst_channel": 2,
+          "worst_offset": {
+            "A": 0,
+            "B": 0
+          },
+          "worst_relief": 0.1817177568062697
+        },
+        "spot": {
+          "equal_channel_gap": 0.001359103616102253,
+          "equal_channels_ok": true,
+          "passes": true,
+          "recipe": "spot",
+          "scrap": false,
+          "worst_cell": [
+            0,
+            2
+          ],
+          "worst_channel": 2,
+          "worst_offset": {
+            "S": 0
+          },
+          "worst_relief": -0.01795684902317816
+        }
+      },
+      "reason": "cheapest recipe passing every allowed offset"
+    },
+    "feasible": true,
+    "recipe": "spot",
+    "route": "direct"
+  },
+  "route": "direct"
+}

@@ -1,0 +1,5 @@
+{
+  "_comment": "Example alternate material spec. Feed with: proofing.cli gen-data --spec examples/alt_spec.json --outdir newdata. Same format as proofing.synthetic.PAPER_SPEC. D_forward/Reverse are full-coverage densities of the 正序/反序 recipes; k_* are ink-interaction params; gain_scale scales dot gain for the whole paper.",
+  "PaperX": {"k_forward": 0.09, "k_reverse": 0.07, "D_forward": 0.88, "D_reverse": 0.68, "gain_scale": 1.10},
+  "PaperY": {"k_forward": 0.05, "k_reverse": 0.10, "D_forward": 0.72, "D_reverse": 0.72, "gain_scale": 1.60}
+}

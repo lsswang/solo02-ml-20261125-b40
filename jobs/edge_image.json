@@ -1,0 +1,69 @@
+{
+  "costs": {
+    "plate": 100.0,
+    "spot": 250.0
+  },
+  "equal_channels": [
+    1,
+    2
+  ],
+  "height": 3,
+  "name": "edge_image",
+  "offsets": {
+    "mode": "all",
+    "range": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "paper": "Paper1",
+  "recipes_allowed": [
+    "forward",
+    "reverse",
+    "spot"
+  ],
+  "rects": {
+    "A": [
+      [
+        0,
+        2,
+        2,
+        6
+      ]
+    ],
+    "B": [
+      [
+        0,
+        2,
+        2,
+        6
+      ]
+    ],
+    "S": [
+      [
+        0,
+        2,
+        2,
+        6
+      ]
+    ]
+  },
+  "target_rects": [
+    {
+      "density": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "rect": [
+        0,
+        2,
+        2,
+        6
+      ],
+      "tol": 0.02
+    }
+  ],
+  "width": 9
+}
