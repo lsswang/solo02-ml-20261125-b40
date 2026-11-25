@@ -1,0 +1,9 @@
+{
+  "replies": [
+    {
+      "line_id": "A-line-1",
+      "seg_id": 1,
+      "answer": {"kind": "digit", "digit": "7"}
+    }
+  ]
+}

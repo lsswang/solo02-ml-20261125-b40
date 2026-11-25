@@ -1,0 +1,74 @@
+{
+  "A-line-1": [
+    {
+      "digit_index": 0,
+      "digit": "1",
+      "token_span": [
+        0,
+        0
+      ]
+    },
+    {
+      "digit_index": 1,
+      "digit": "2",
+      "token_span": [
+        2,
+        5
+      ]
+    }
+  ],
+  "A-line-2": [
+    {
+      "digit_index": 0,
+      "digit": "2",
+      "token_span": [
+        0,
+        2
+      ]
+    },
+    {
+      "digit_index": 1,
+      "digit": "3",
+      "token_span": [
+        3,
+        5
+      ]
+    }
+  ],
+  "A-line-3": [
+    {
+      "digit_index": 0,
+      "digit": "3",
+      "token_span": [
+        0,
+        2
+      ]
+    },
+    {
+      "digit_index": 1,
+      "digit": "4",
+      "token_span": [
+        4,
+        8
+      ]
+    }
+  ],
+  "A-line-4": [
+    {
+      "digit_index": 0,
+      "digit": "5",
+      "token_span": [
+        0,
+        4
+      ]
+    },
+    {
+      "digit_index": 1,
+      "digit": "2",
+      "token_span": [
+        6,
+        8
+      ]
+    }
+  ]
+}

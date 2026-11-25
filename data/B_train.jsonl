@@ -1,0 +1,36 @@
+{"line_id": "B-train-00", "amount": "0", "tokens": [3, 7]}
+{"line_id": "B-train-01", "amount": "1", "tokens": [7]}
+{"line_id": "B-train-02", "amount": "2", "tokens": [2, "U", 5, "U", 1]}
+{"line_id": "B-train-03", "amount": "3", "tokens": [2, 2, "U", 4, "U", 4]}
+{"line_id": "B-train-04", "amount": "4", "tokens": [3, "U", 3, "U", 0]}
+{"line_id": "B-train-05", "amount": "5", "tokens": [5, "U", 7, 4, "U", 3, 3]}
+{"line_id": "B-train-06", "amount": "6", "tokens": [1, 1, "U", 5, 7, "U", 5]}
+{"line_id": "B-train-07", "amount": "7", "tokens": [6, "U", 2, 7]}
+{"line_id": "B-train-08", "amount": "8", "tokens": [7, 7, 3, "U", 0, 7]}
+{"line_id": "B-train-09", "amount": "9", "tokens": [5, 7, "U", 0, 4]}
+{"line_id": "B-train-10", "amount": "10", "tokens": [0, "U", 7, 7, 7]}
+{"line_id": "B-train-11", "amount": "13", "tokens": [0, 7, "U", 3, "U", 6, 5]}
+{"line_id": "B-train-12", "amount": "17", "tokens": [0, 6, 6, "U", 1]}
+{"line_id": "B-train-13", "amount": "14", "tokens": [0, "U", 3, "U", 3, 3, "U", 0, 0]}
+{"line_id": "B-train-14", "amount": "20", "tokens": [2, 3, "U", 5, 3, "U", 1, 1, "U", 2, 0, 7]}
+{"line_id": "B-train-15", "amount": "23", "tokens": [2, 2, "U", 0, 6, "U", 1, "U", 2, 2, "U", 6, 3, "U", 6]}
+{"line_id": "B-train-16", "amount": "27", "tokens": [2, 2, "U", 5, "U", 1, 1, "U", 3, 6, "U", 3]}
+{"line_id": "B-train-17", "amount": "24", "tokens": [2, 7, "U", 5, 5, "U", 1, 1, "U", 1, "U", 3, "U", 0, 0]}
+{"line_id": "B-train-18", "amount": "40", "tokens": [1, 3, "U", 0, 0, "U", 3, 3, 5]}
+{"line_id": "B-train-19", "amount": "43", "tokens": [1, 5, "U", 3, 2, 2, "U", 2, "U", 4, 7, "U", 5]}
+{"line_id": "B-train-20", "amount": "47", "tokens": [1, "U", 6, 3, "U", 0, "U", 5, 6, "U", 1]}
+{"line_id": "B-train-21", "amount": "44", "tokens": [3, 1, "U", 3, "U", 0, "U", 1, 1, 3, 3, "U", 6, 3]}
+{"line_id": "B-train-22", "amount": "404", "tokens": [1, "U", 3, 5, "U", 0, "U", 0, 4, "U", 7, "U", 4, 1, "U", 3, "U", 0, 0]}
+{"line_id": "B-train-23", "amount": "127", "tokens": [0, "U", 2, "U", 5, "U", 4, "U", 6, 6, "U", 1]}
+{"line_id": "B-train-24", "amount": "280", "tokens": [2, "U", 5, 5, "U", 1, 6, 7, 1, "U", 7, "U", 6, 3, "U", 7]}
+{"line_id": "B-train-25", "amount": "740", "tokens": [2, 6, "U", 1, "U", 1, 6, "U", 3, "U", 0, 0, 3, "U", 7, 6]}
+{"line_id": "B-train-26", "amount": "783", "tokens": [6, "U", 1, 7, "U", 7, 7, "U", 6, 3, 6, 5, "U", 2, 3, "U", 4, 4, 6]}
+{"line_id": "B-train-27", "amount": "395", "tokens": [2, "U", 4, 5, "U", 4, "U", 0, "U", 4, "U", 5, "U", 6, 6, "U", 6]}
+{"line_id": "B-train-28", "amount": "661", "tokens": [1, 7, "U", 7, "U", 5, 5, "U", 1, "U", 7, "U", 5, 5, "U", 1]}
+{"line_id": "B-train-29", "amount": "481", "tokens": [1, "U", 3, "U", 0, 5, "U", 7, 1, "U", 6, "U", 0]}
+{"line_id": "B-train-30", "amount": "420", "tokens": [1, 1, "U", 7, 1, "U", 0, "U", 2, 0, 5, 5, "U", 1, "U", 3, 7]}
+{"line_id": "B-train-31", "amount": "895", "tokens": [7, 7, 3, 3, "U", 6, 6, "U", 5, 5, "U", 0, 4, "U", 5, "U", 4, "U", 4, 3]}
+{"line_id": "B-train-32", "amount": "203", "tokens": [2, "U", 5, 1, "U", 1, "U", 3, 3, "U", 7, "U", 2, 0, "U", 4, 5, 5]}
+{"line_id": "B-train-33", "amount": "201", "tokens": [0, "U", 5, 5, "U", 1, 5, "U", 3, "U", 7, "U", 0]}
+{"line_id": "B-train-34", "amount": "693", "tokens": [6, "U", 7, 7, "U", 5, "U", 5, 5, "U", 0, "U", 4, 4, 2, 6, 4, "U", 5, 6]}
+{"line_id": "B-train-35", "amount": "408", "tokens": [1, "U", 3, "U", 0, 0, "U", 3, "U", 4, 7, "U", 7, "U", 3, 3, "U", 6, 6]}

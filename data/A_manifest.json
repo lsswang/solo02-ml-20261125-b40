@@ -1,0 +1,940 @@
+{
+  "writer": "A",
+  "seed": 101,
+  "direction_noise": 0.12,
+  "internal_u_prob": 0.85,
+  "boundary_u_prob": 0.9,
+  "n_train": 36,
+  "note": "manifest 仅供核对；训练程序只读 jsonl 的 amount 标签，不读字界。",
+  "lines": [
+    {
+      "line_id": "A-train-00",
+      "amount": "0",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "0",
+          "token_span": [
+            0,
+            3
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-01",
+      "amount": "1",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "1",
+          "token_span": [
+            0,
+            1
+          ],
+          "strokes": 1
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-02",
+      "amount": "2",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "2",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-03",
+      "amount": "3",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "3",
+          "token_span": [
+            0,
+            8
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-04",
+      "amount": "4",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "4",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-05",
+      "amount": "5",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "5",
+          "token_span": [
+            0,
+            8
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-06",
+      "amount": "6",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "6",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-07",
+      "amount": "7",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "7",
+          "token_span": [
+            0,
+            4
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-08",
+      "amount": "8",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "8",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-09",
+      "amount": "9",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "9",
+          "token_span": [
+            0,
+            7
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-10",
+      "amount": "10",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "1",
+          "token_span": [
+            0,
+            1
+          ],
+          "strokes": 1
+        },
+        {
+          "digit_index": 1,
+          "digit": "0",
+          "token_span": [
+            2,
+            5
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-11",
+      "amount": "13",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "1",
+          "token_span": [
+            0,
+            1
+          ],
+          "strokes": 1
+        },
+        {
+          "digit_index": 1,
+          "digit": "3",
+          "token_span": [
+            2,
+            9
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-12",
+      "amount": "17",
+      "ligature_at": [
+        0
+      ],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "1",
+          "token_span": [
+            0,
+            1
+          ],
+          "strokes": 1
+        },
+        {
+          "digit_index": 1,
+          "digit": "7",
+          "token_span": [
+            1,
+            4
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-13",
+      "amount": "14",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "1",
+          "token_span": [
+            0,
+            1
+          ],
+          "strokes": 1
+        },
+        {
+          "digit_index": 1,
+          "digit": "4",
+          "token_span": [
+            2,
+            10
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-14",
+      "amount": "20",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "2",
+          "token_span": [
+            0,
+            8
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "0",
+          "token_span": [
+            9,
+            13
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-15",
+      "amount": "23",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "2",
+          "token_span": [
+            0,
+            7
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "3",
+          "token_span": [
+            8,
+            15
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-16",
+      "amount": "27",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "2",
+          "token_span": [
+            0,
+            5
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "7",
+          "token_span": [
+            5,
+            8
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-17",
+      "amount": "24",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "2",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "4",
+          "token_span": [
+            7,
+            13
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-18",
+      "amount": "40",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "4",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "0",
+          "token_span": [
+            7,
+            11
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-19",
+      "amount": "43",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "4",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "3",
+          "token_span": [
+            7,
+            14
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-20",
+      "amount": "47",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "4",
+          "token_span": [
+            0,
+            7
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "7",
+          "token_span": [
+            8,
+            13
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-21",
+      "amount": "44",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "4",
+          "token_span": [
+            0,
+            4
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "4",
+          "token_span": [
+            5,
+            12
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-22",
+      "amount": "404",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "4",
+          "token_span": [
+            0,
+            8
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "0",
+          "token_span": [
+            9,
+            12
+          ],
+          "strokes": 2
+        },
+        {
+          "digit_index": 2,
+          "digit": "4",
+          "token_span": [
+            12,
+            17
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-23",
+      "amount": "127",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "1",
+          "token_span": [
+            0,
+            1
+          ],
+          "strokes": 1
+        },
+        {
+          "digit_index": 1,
+          "digit": "2",
+          "token_span": [
+            2,
+            7
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 2,
+          "digit": "7",
+          "token_span": [
+            8,
+            10
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-24",
+      "amount": "280",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "2",
+          "token_span": [
+            0,
+            5
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "8",
+          "token_span": [
+            6,
+            13
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 2,
+          "digit": "0",
+          "token_span": [
+            14,
+            19
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-25",
+      "amount": "740",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "7",
+          "token_span": [
+            0,
+            4
+          ],
+          "strokes": 2
+        },
+        {
+          "digit_index": 1,
+          "digit": "4",
+          "token_span": [
+            5,
+            10
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 2,
+          "digit": "0",
+          "token_span": [
+            11,
+            16
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-26",
+      "amount": "596",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "5",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "9",
+          "token_span": [
+            7,
+            13
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 2,
+          "digit": "6",
+          "token_span": [
+            14,
+            19
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-27",
+      "amount": "868",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "8",
+          "token_span": [
+            0,
+            7
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "6",
+          "token_span": [
+            8,
+            14
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 2,
+          "digit": "8",
+          "token_span": [
+            15,
+            21
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-28",
+      "amount": "200",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "2",
+          "token_span": [
+            0,
+            4
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "0",
+          "token_span": [
+            5,
+            9
+          ],
+          "strokes": 2
+        },
+        {
+          "digit_index": 2,
+          "digit": "0",
+          "token_span": [
+            10,
+            15
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-29",
+      "amount": "931",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "9",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "3",
+          "token_span": [
+            7,
+            13
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 2,
+          "digit": "1",
+          "token_span": [
+            14,
+            15
+          ],
+          "strokes": 1
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-30",
+      "amount": "989",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "9",
+          "token_span": [
+            0,
+            7
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "8",
+          "token_span": [
+            7,
+            14
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 2,
+          "digit": "9",
+          "token_span": [
+            15,
+            22
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-31",
+      "amount": "553",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "5",
+          "token_span": [
+            0,
+            5
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "5",
+          "token_span": [
+            6,
+            11
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 2,
+          "digit": "3",
+          "token_span": [
+            12,
+            18
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-32",
+      "amount": "947",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "9",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "4",
+          "token_span": [
+            6,
+            12
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 2,
+          "digit": "7",
+          "token_span": [
+            13,
+            16
+          ],
+          "strokes": 2
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-33",
+      "amount": "368",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "3",
+          "token_span": [
+            0,
+            7
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "6",
+          "token_span": [
+            8,
+            14
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 2,
+          "digit": "8",
+          "token_span": [
+            14,
+            20
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-34",
+      "amount": "479",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "4",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "7",
+          "token_span": [
+            7,
+            12
+          ],
+          "strokes": 2
+        },
+        {
+          "digit_index": 2,
+          "digit": "9",
+          "token_span": [
+            13,
+            20
+          ],
+          "strokes": 3
+        }
+      ]
+    },
+    {
+      "line_id": "A-train-35",
+      "amount": "50",
+      "ligature_at": [],
+      "truth": [
+        {
+          "digit_index": 0,
+          "digit": "5",
+          "token_span": [
+            0,
+            6
+          ],
+          "strokes": 3
+        },
+        {
+          "digit_index": 1,
+          "digit": "0",
+          "token_span": [
+            7,
+            11
+          ],
+          "strokes": 2
+        }
+      ]
+    }
+  ]
+}
