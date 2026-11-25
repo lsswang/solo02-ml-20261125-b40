@@ -1,0 +1,92 @@
+{
+  "fabrics": {
+    "FAB-8802": {
+      "blocked_cells": [
+        1,
+        2
+      ],
+      "current_order": null,
+      "events": [
+        {
+          "device": "bridge",
+          "order": {
+            "bridge_fee": 0.15,
+            "device": "bridge",
+            "fabric_id": "FAB-8802",
+            "head0": 0,
+            "losses": [
+              1,
+              1,
+              2,
+              1,
+              1
+            ],
+            "move_fee": 0.25,
+            "order_id": "CUST-2026-009",
+            "readings": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "retain": [],
+            "startup_fee": 0.6
+          },
+          "order_id": "CUST-2026-009",
+          "plan": {
+            "bridge_fee": 0.15,
+            "device": "bridge",
+            "expected_cost": 1.025698120258957,
+            "expected_cut_loss": 0.8756981202589571,
+            "kind": "one_pass",
+            "window": [
+              1,
+              2
+            ]
+          },
+          "ts": 1795621537.4330914,
+          "type": "prepared"
+        },
+        {
+          "order_id": "CUST-2026-009",
+          "precision": {
+            "1": 1,
+            "2": 1
+          },
+          "scan_fee": 0.15,
+          "ts": 1795621537.4331067,
+          "type": "reading"
+        },
+        {
+          "cells": [
+            1,
+            2
+          ],
+          "expected_cut_loss_at_cut": 0.7661925839664642,
+          "expected_total_cost": 0.9161925839664642,
+          "order_id": "CUST-2026-009",
+          "scan_fee": 0.15,
+          "segment": [
+            1,
+            2
+          ],
+          "ts": 1795621537.4333134,
+          "type": "cut"
+        }
+      ],
+      "retain_cells": []
+    }
+  }
+}

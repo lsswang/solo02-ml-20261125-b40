@@ -1,0 +1,885 @@
+{
+  "config": {
+    "flip": 0.15,
+    "missing_rate": 0.12,
+    "n": 5,
+    "n_holdout": 6,
+    "n_train": 32,
+    "name": "material_b",
+    "p0": 0.4,
+    "seed": 777001,
+    "stay": 0.6
+  },
+  "fabrics": [
+    {
+      "fabric_id": "material_b-000",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "10111"
+    },
+    {
+      "fabric_id": "material_b-001",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "00111"
+    },
+    {
+      "fabric_id": "material_b-002",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        null,
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "10100"
+    },
+    {
+      "fabric_id": "material_b-003",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "00000"
+    },
+    {
+      "fabric_id": "material_b-004",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        null
+      ],
+      "split": "train",
+      "truth": "00111"
+    },
+    {
+      "fabric_id": "material_b-005",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "11110"
+    },
+    {
+      "fabric_id": "material_b-006",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        null,
+        [
+          0,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "00000"
+    },
+    {
+      "fabric_id": "material_b-007",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "00000"
+    },
+    {
+      "fabric_id": "material_b-008",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "00000"
+    },
+    {
+      "fabric_id": "material_b-009",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          1
+        ],
+        null,
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "11111"
+    },
+    {
+      "fabric_id": "material_b-010",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "00001"
+    },
+    {
+      "fabric_id": "material_b-011",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "00101"
+    },
+    {
+      "fabric_id": "material_b-012",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "00111"
+    },
+    {
+      "fabric_id": "material_b-013",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        null,
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "00101"
+    },
+    {
+      "fabric_id": "material_b-014",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "10000"
+    },
+    {
+      "fabric_id": "material_b-015",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          1
+        ],
+        null,
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "10001"
+    },
+    {
+      "fabric_id": "material_b-016",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "01111"
+    },
+    {
+      "fabric_id": "material_b-017",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "10100"
+    },
+    {
+      "fabric_id": "material_b-018",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "01100"
+    },
+    {
+      "fabric_id": "material_b-019",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "00111"
+    },
+    {
+      "fabric_id": "material_b-020",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        null
+      ],
+      "split": "train",
+      "truth": "00111"
+    },
+    {
+      "fabric_id": "material_b-021",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "01100"
+    },
+    {
+      "fabric_id": "material_b-022",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "00011"
+    },
+    {
+      "fabric_id": "material_b-023",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          0
+        ],
+        null,
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "10100"
+    },
+    {
+      "fabric_id": "material_b-024",
+      "n": 5,
+      "readings": [
+        null,
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "00111"
+    },
+    {
+      "fabric_id": "material_b-025",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        null,
+        [
+          0,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "01000"
+    },
+    {
+      "fabric_id": "material_b-026",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "01001"
+    },
+    {
+      "fabric_id": "material_b-027",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "11100"
+    },
+    {
+      "fabric_id": "material_b-028",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "11111"
+    },
+    {
+      "fabric_id": "material_b-029",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "01110"
+    },
+    {
+      "fabric_id": "material_b-030",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "split": "train",
+      "truth": "10010"
+    },
+    {
+      "fabric_id": "material_b-031",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "train",
+      "truth": "01001"
+    },
+    {
+      "fabric_id": "material_b-032",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "holdout",
+      "truth": "01111"
+    },
+    {
+      "fabric_id": "material_b-033",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          1
+        ],
+        null,
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "split": "holdout",
+      "truth": "10000"
+    },
+    {
+      "fabric_id": "material_b-034",
+      "n": 5,
+      "readings": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "holdout",
+      "truth": "00010"
+    },
+    {
+      "fabric_id": "material_b-035",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          0
+        ],
+        null,
+        [
+          1,
+          1
+        ],
+        null
+      ],
+      "split": "holdout",
+      "truth": "10111"
+    },
+    {
+      "fabric_id": "material_b-036",
+      "n": 5,
+      "readings": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "holdout",
+      "truth": "01001"
+    },
+    {
+      "fabric_id": "material_b-037",
+      "n": 5,
+      "readings": [
+        null,
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "split": "holdout",
+      "truth": "00011"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "order_id": "CUST-2026-009",
+  "fabric_id": "FAB-8802",
+  "device": "bridge",
+  "losses": [1, 1, 2, 1, 1],
+  "retain": [],
+  "head0": 0,
+  "startup_fee": 0.6,
+  "move_fee": 0.25,
+  "bridge_fee": 0.15,
+  "readings": [[0, 1], [1, 1], [0, 0], [0, 1]]
+}
