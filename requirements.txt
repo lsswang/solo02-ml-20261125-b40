@@ -1,0 +1,2 @@
+# No third-party packages are required. The code targets Python 3.10+ and
+# uses only the standard library (wave, array, json, csv, unittest, ...).

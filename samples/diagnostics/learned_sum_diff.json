@@ -1,0 +1,49 @@
+{
+  "format": "soundbench-learned-room-v1",
+  "source_recording": "cal_sum_diff.json",
+  "sample_rate": 4000,
+  "partition_position": "tailless_sum_diff",
+  "tap_delays": [
+    0
+  ],
+  "ir": [
+    [
+      [
+        {
+          "delay": 0,
+          "coeff": 0.9999992115318197
+        }
+      ],
+      [
+        {
+          "delay": 0,
+          "coeff": 1.000003264812606
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "delay": 0,
+          "coeff": 1.0000023504426212
+        }
+      ],
+      [
+        {
+          "delay": 0,
+          "coeff": -0.9999982615338546
+        }
+      ]
+    ]
+  ],
+  "fit_report": {
+    "near": {
+      "rmse": 1.4147642537280225e-05,
+      "peak_abs_error": 3.16157782971338e-05
+    },
+    "far": {
+      "rmse": 1.4516338471345704e-05,
+      "peak_abs_error": 3.146748603694016e-05
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "format": "soundbench-robust-build-report-v1",
+  "program": "/workspace/samples/programs/scene_change_program.json",
+  "rooms": [
+    "/workspace/samples/learned/partition_open.json",
+    "/workspace/samples/learned/partition_half.json",
+    "/workspace/samples/learned/partition_closed.json"
+  ],
+  "speaker_track": "/workspace/samples/deliverables/universal_all_states/speaker_track.wav",
+  "averaged_room": "samples/deliverables/universal_all_states/averaged_room.json",
+  "robust_checks": {
+    "passes": true,
+    "method": "inverse of coefficient-averaged room, then checked on every candidate state",
+    "candidate_room_count": 3,
+    "average_room_constraints": {
+      "passes": true,
+      "speaker_peak": 0.3597734909031933,
+      "speaker_peak_limit": 0.9,
+      "speaker_peak_pass": true,
+      "applied_scale": 1.0,
+      "leakage_rms_max": 0.02,
+      "leakage_peak_max": 0.06,
+      "active_rmse_max": 0.03,
+      "cues": [
+        {
+          "id": "scene_left_line",
+          "cabinet": "near",
+          "start_sample": 1000,
+          "end_sample": 2000,
+          "leak_window_end": 3001,
+          "active_rmse": 6.082469851788945e-17,
+          "active_peak_error": 2.220446049250313e-16,
+          "leakage_rms": 1.984470734661225e-17,
+          "leakage_peak": 1.1102230246251565e-16,
+          "checks": {
+            "id": "scene_left_line",
+            "leakage_rms_pass": true,
+            "leakage_peak_pass": true,
+            "active_rmse_pass": true
+          }
+        },
+        {
+          "id": "scene_right_line",
+          "cabinet": "far",
+          "start_sample": 3000,
+          "end_sample": 4000,
+          "leak_window_end": 5001,
+          "active_rmse": 6.286557197585804e-17,
+          "active_peak_error": 2.220446049250313e-16,
+          "leakage_rms": 2.1061522260134575e-17,
+          "leakage_peak": 1.1102230246251565e-16,
+          "checks": {
+            "id": "scene_right_line",
+            "leakage_rms_pass": true,
+            "leakage_peak_pass": true,
+            "active_rmse_pass": true
+          }
+        }
+      ],
+      "rank_deficient_h0": false
+    },
+    "per_room": [
+      {
+        "room_index": 0,
+        "passes": true,
+        "cues": [
+          {
+            "id": "scene_left_line",
+            "cabinet": "near",
+            "active_rmse": 0.00027347228995687207,
+            "leakage_rms": 0.00294280938532594,
+            "leakage_peak": 0.008056560240183593,
+            "checks": {
+              "active_rmse_pass": true,
+              "leakage_rms_pass": true,
+              "leakage_peak_pass": true
+            }
+          },
+          {
+            "id": "scene_right_line",
+            "cabinet": "far",
+            "active_rmse": 0.002636774395891291,
+            "leakage_rms": 0.01490380734585788,
+            "leakage_peak": 0.04185374484637586,
+            "checks": {
+              "active_rmse_pass": true,
+              "leakage_rms_pass": true,
+              "leakage_peak_pass": true
+            }
+          }
+        ]
+      },
+      {
+        "room_index": 1,
+        "passes": true,
+        "cues": [
+          {
+            "id": "scene_left_line",
+            "cabinet": "near",
+            "active_rmse": 0.00013942583688375065,
+            "leakage_rms": 0.0006770395701804093,
+            "leakage_peak": 0.0016577018498537266,
+            "checks": {
+              "active_rmse_pass": true,
+              "leakage_rms_pass": true,
+              "leakage_peak_pass": true
+            }
+          },
+          {
+            "id": "scene_right_line",
+            "cabinet": "far",
+            "active_rmse": 0.001317818736997979,
+            "leakage_rms": 0.003185234781495542,
+            "leakage_peak": 0.008490901991229517,
+            "checks": {
+              "active_rmse_pass": true,
+              "leakage_rms_pass": true,
+              "leakage_peak_pass": true
+            }
+          }
+        ]
+      },
+      {
+        "room_index": 2,
+        "passes": true,
+        "cues": [
+          {
+            "id": "scene_left_line",
+            "cabinet": "near",
+            "active_rmse": 0.0001340483933478785,
+            "leakage_rms": 0.0022976817976356027,
+            "leakage_peak": 0.006398858390329887,
+            "checks": {
+              "active_rmse_pass": true,
+              "leakage_rms_pass": true,
+              "leakage_peak_pass": true
+            }
+          },
+          {
+            "id": "scene_right_line",
+            "cabinet": "far",
+            "active_rmse": 0.0013189578878603568,
+            "leakage_rms": 0.011778772804310568,
+            "leakage_peak": 0.033362842855146374,
+            "checks": {
+              "active_rmse_pass": true,
+              "leakage_rms_pass": true,
+              "leakage_peak_pass": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pcm_verification_on_average_room": {
+    "format": "soundbench-verification-v1",
+    "track": "speaker_track.wav",
+    "room": "averaged_room.json",
+    "sample_rate": 4000,
+    "track_samples": 11065,
+    "simulated_mic_samples": 12065,
+    "max_ir_delay": 1000,
+    "zones": {
+      "near": {
+        "full_rms": 0.10083319244853609,
+        "full_peak": 0.7199681777439748
+      },
+      "far": {
+        "full_rms": 0.09980059545347063,
+        "full_peak": 0.7199473174018003
+      }
+    },
+    "post_track_tail": {
+      "near_peak": 0.0,
+      "far_peak": 0.0,
+      "near_rms": 0.0,
+      "far_rms": 0.0,
+      "samples": 1000
+    },
+    "speaker_peaks": [
+      0.359649658203125,
+      0.359771728515625
+    ],
+    "simulated_mic_wav": "playback_mics.wav"
+  }
+}

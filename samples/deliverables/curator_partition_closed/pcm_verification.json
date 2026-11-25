@@ -1,0 +1,31 @@
+{
+  "format": "soundbench-verification-v1",
+  "track": "speaker_track.wav",
+  "room": "partition_closed.json",
+  "sample_rate": 4000,
+  "track_samples": 17064,
+  "simulated_mic_samples": 18064,
+  "max_ir_delay": 1000,
+  "zones": {
+    "near": {
+      "full_rms": 0.1546905747895359,
+      "full_peak": 0.6799785650587762
+    },
+    "far": {
+      "full_rms": 0.15378637220864,
+      "full_peak": 0.6799914628549785
+    }
+  },
+  "post_track_tail": {
+    "near_peak": 0.0,
+    "far_peak": 0.0,
+    "near_rms": 0.0,
+    "far_rms": 0.0,
+    "samples": 1000
+  },
+  "speaker_peaks": [
+    0.352264404296875,
+    0.43988037109375
+  ],
+  "simulated_mic_wav": "playback_mics.wav"
+}

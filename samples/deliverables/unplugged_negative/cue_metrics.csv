@@ -1,0 +1,3 @@
+id,cabinet,start_sample,end_sample,leak_window_end,active_rmse,active_peak_error,leakage_rms,leakage_peak,leakage_rms_pass,leakage_peak_pass,active_rmse_pass
+scene_left_line,near,1000,2000,3001,0.17158282136592937,0.3591857851489328,0.12250529005697756,0.35919376760484834,False,False,False
+scene_right_line,far,3000,4000,5001,0.17509343852264517,0.3531507950304211,0.12494794465879375,0.3531429468690465,False,False,False

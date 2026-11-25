@@ -1,0 +1,83 @@
+{
+  "format": "soundbench-learned-room-v1",
+  "source_recording": "cal_partition_closed.json",
+  "sample_rate": 4000,
+  "partition_position": "partition_closed",
+  "tap_delays": [
+    0,
+    3,
+    1000
+  ],
+  "ir": [
+    [
+      [
+        {
+          "delay": 0,
+          "coeff": 1.0000112039351627
+        },
+        {
+          "delay": 3,
+          "coeff": 0.04998309632969791
+        },
+        {
+          "delay": 1000,
+          "coeff": -0.2196116192466409
+        }
+      ],
+      [
+        {
+          "delay": 0,
+          "coeff": 0.9999951394279899
+        },
+        {
+          "delay": 3,
+          "coeff": -0.03998715670354754
+        },
+        {
+          "delay": 1000,
+          "coeff": 0.17081385270892258
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "delay": 0,
+          "coeff": 1.0000140362129424
+        },
+        {
+          "delay": 3,
+          "coeff": -0.03001194984411567
+        },
+        {
+          "delay": 1000,
+          "coeff": 0.1220196637386131
+        }
+      ],
+      [
+        {
+          "delay": 0,
+          "coeff": -0.9999755571565747
+        },
+        {
+          "delay": 3,
+          "coeff": 0.06000378323518912
+        },
+        {
+          "delay": 1000,
+          "coeff": -0.19521720509323295
+        }
+      ]
+    ]
+  ],
+  "fit_report": {
+    "near": {
+      "rmse": 0.0001462425771836793,
+      "peak_abs_error": 0.0002852722096428062
+    },
+    "far": {
+      "rmse": 0.00014434555290159507,
+      "peak_abs_error": 0.0002799380902720472
+    }
+  }
+}

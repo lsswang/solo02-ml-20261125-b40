@@ -1,0 +1,275 @@
+{
+  "format": "soundbench-ground-truth-rooms-v1",
+  "sample_rate": 4000,
+  "beat_samples": 1000,
+  "states": {
+    "partition_open": {
+      "partition_position": 0,
+      "description": "partition open; short and one-beat reflections are weak",
+      "ir": [
+        [
+          [
+            {
+              "delay": 0,
+              "coeff": 1.0
+            },
+            {
+              "delay": 3,
+              "coeff": 0.037500000000000006
+            },
+            {
+              "delay": 1000,
+              "coeff": -0.099
+            }
+          ],
+          [
+            {
+              "delay": 0,
+              "coeff": 1.0
+            },
+            {
+              "delay": 3,
+              "coeff": -0.03
+            },
+            {
+              "delay": 1000,
+              "coeff": 0.07700000000000001
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "delay": 0,
+              "coeff": 1.0
+            },
+            {
+              "delay": 3,
+              "coeff": -0.0225
+            },
+            {
+              "delay": 1000,
+              "coeff": 0.05500000000000001
+            }
+          ],
+          [
+            {
+              "delay": 0,
+              "coeff": -1.0
+            },
+            {
+              "delay": 3,
+              "coeff": 0.045
+            },
+            {
+              "delay": 1000,
+              "coeff": -0.08800000000000001
+            }
+          ]
+        ]
+      ]
+    },
+    "partition_half": {
+      "partition_position": 1,
+      "description": "middle partition; original calibrated state",
+      "ir": [
+        [
+          [
+            {
+              "delay": 0,
+              "coeff": 1.0
+            },
+            {
+              "delay": 3,
+              "coeff": 0.05
+            },
+            {
+              "delay": 1000,
+              "coeff": -0.18
+            }
+          ],
+          [
+            {
+              "delay": 0,
+              "coeff": 1.0
+            },
+            {
+              "delay": 3,
+              "coeff": -0.04
+            },
+            {
+              "delay": 1000,
+              "coeff": 0.14
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "delay": 0,
+              "coeff": 1.0
+            },
+            {
+              "delay": 3,
+              "coeff": -0.03
+            },
+            {
+              "delay": 1000,
+              "coeff": 0.1
+            }
+          ],
+          [
+            {
+              "delay": 0,
+              "coeff": -1.0
+            },
+            {
+              "delay": 3,
+              "coeff": 0.06
+            },
+            {
+              "delay": 1000,
+              "coeff": -0.16
+            }
+          ]
+        ]
+      ]
+    },
+    "partition_closed": {
+      "partition_position": 2,
+      "description": "closed partition; early path matches half, late reflection is stronger",
+      "ir": [
+        [
+          [
+            {
+              "delay": 0,
+              "coeff": 1.0
+            },
+            {
+              "delay": 3,
+              "coeff": 0.05
+            },
+            {
+              "delay": 1000,
+              "coeff": -0.2196
+            }
+          ],
+          [
+            {
+              "delay": 0,
+              "coeff": 1.0
+            },
+            {
+              "delay": 3,
+              "coeff": -0.04
+            },
+            {
+              "delay": 1000,
+              "coeff": 0.1708
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "delay": 0,
+              "coeff": 1.0
+            },
+            {
+              "delay": 3,
+              "coeff": -0.03
+            },
+            {
+              "delay": 1000,
+              "coeff": 0.122
+            }
+          ],
+          [
+            {
+              "delay": 0,
+              "coeff": -1.0
+            },
+            {
+              "delay": 3,
+              "coeff": 0.06
+            },
+            {
+              "delay": 1000,
+              "coeff": -0.1952
+            }
+          ]
+        ]
+      ]
+    }
+  },
+  "sum_diff": {
+    "ir": [
+      [
+        [
+          {
+            "delay": 0,
+            "coeff": 1.0
+          }
+        ],
+        [
+          {
+            "delay": 0,
+            "coeff": 1.0
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "delay": 0,
+            "coeff": 1.0
+          }
+        ],
+        [
+          {
+            "delay": 0,
+            "coeff": -1.0
+          }
+        ]
+      ]
+    ],
+    "tap_delays": [
+      0
+    ]
+  },
+  "far_sum": {
+    "ir": [
+      [
+        [
+          {
+            "delay": 0,
+            "coeff": 1.0
+          }
+        ],
+        [
+          {
+            "delay": 0,
+            "coeff": 1.0
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "delay": 0,
+            "coeff": 1.0
+          }
+        ],
+        [
+          {
+            "delay": 0,
+            "coeff": 1.0
+          }
+        ]
+      ]
+    ],
+    "tap_delays": [
+      0
+    ]
+  }
+}

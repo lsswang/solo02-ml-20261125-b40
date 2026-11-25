@@ -1,0 +1,20 @@
+{
+  "format": "soundbench-recording-v1",
+  "name": "unused stereo hold-out",
+  "audio": "holdout.wav",
+  "sample_rate": 4000,
+  "channels": [
+    "unused_speaker_1",
+    "unused_speaker_2",
+    "mic_near",
+    "mic_far"
+  ],
+  "partition_position": "partition_half",
+  "tap_delays": [
+    0,
+    3,
+    1000
+  ],
+  "used_in_calibration": false,
+  "note": "Neither speaker channel was used to fit the original calibration."
+}

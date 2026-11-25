@@ -1,0 +1,150 @@
+{
+  "format": "soundbench-diagnostics-v1",
+  "sample_rate": 4000,
+  "requirement": "near target = calibration sentence, far target = 0, each speaker in [-1, +1]",
+  "sum_diff_original": {
+    "rank_deficient_h0": false,
+    "enabled_speakers": [
+      true,
+      true
+    ],
+    "speaker_1_peak": 0.49998309994800166,
+    "speaker_2_peak": 0.4999851443368363,
+    "speakers_within_plus_minus_1": true,
+    "near_rmse": 1.383130611288806e-17,
+    "near_peak_error": 1.1102230246251565e-16,
+    "far_leakage_rms": 3.219724653690078e-17,
+    "far_leakage_peak": 1.1102230246251565e-16,
+    "meets_near_one_far_zero": true,
+    "pcm_verification": {
+      "format": "soundbench-verification-v1",
+      "track": "sum_diff_calibration_sentence.wav",
+      "room": "learned_sum_diff.json",
+      "sample_rate": 4000,
+      "track_samples": 1064,
+      "simulated_mic_samples": 1064,
+      "max_ir_delay": 0,
+      "zones": {
+        "near": {
+          "full_rms": 0.6121814790367708,
+          "full_peak": 0.9999402029403908
+        },
+        "far": {
+          "full_rms": 9.956895910249328e-06,
+          "full_peak": 2.8658374323142777e-05
+        }
+      },
+      "post_track_tail": {
+        "near_peak": 0.0,
+        "far_peak": 0.0,
+        "near_rms": 0.0,
+        "far_rms": 0.0,
+        "samples": 0
+      },
+      "speaker_peaks": [
+        0.499969482421875,
+        0.499969482421875
+      ],
+      "simulated_mic_wav": "sum_diff_calibration_sentence_mics.wav"
+    },
+    "max_deviation_from_each_channel_half": 3.0517578125e-05,
+    "emits_two_half_level_channels": true
+  },
+  "far_also_sum_recalibration": {
+    "rank_deficient_h0": true,
+    "enabled_speakers": [
+      true,
+      true
+    ],
+    "speaker_1_peak": 0.4999847412109375,
+    "speaker_2_peak": 0.4999847412109375,
+    "speakers_within_plus_minus_1": true,
+    "near_rmse": 1.517051303104808e-06,
+    "near_peak_error": 2.4022831526249178e-06,
+    "far_leakage_rms": 0.6314831623029334,
+    "far_leakage_peak": 0.9999670801387224,
+    "meets_near_one_far_zero": false,
+    "pcm_verification": {
+      "format": "soundbench-verification-v1",
+      "track": "far_sum_attempt.wav",
+      "room": "learned_far_sum.json",
+      "sample_rate": 4000,
+      "track_samples": 1000,
+      "simulated_mic_samples": 1000,
+      "max_ir_delay": 0,
+      "zones": {
+        "near": {
+          "full_rms": 0.6314711575382819,
+          "full_peak": 0.9999365626339114
+        },
+        "far": {
+          "full_rms": 0.6314711575382819,
+          "full_peak": 0.9999365626339114
+        }
+      },
+      "post_track_tail": {
+        "near_peak": 0.0,
+        "far_peak": 0.0,
+        "near_rms": 0.0,
+        "far_rms": 0.0,
+        "samples": 0
+      },
+      "speaker_peaks": [
+        0.499969482421875,
+        0.499969482421875
+      ],
+      "simulated_mic_wav": "far_sum_attempt_mics.wav"
+    },
+    "isolable": false,
+    "same_half_sentence_used": true,
+    "reason": "H rows are identical: near=x1+x2 and far=x1+x2; the half/half sentence gives target at both."
+  },
+  "restored_sum_diff_then_speaker_2_unplugged": {
+    "rank_deficient_h0": false,
+    "enabled_speakers": [
+      true,
+      false
+    ],
+    "speaker_1_peak": 0.4999835660257909,
+    "speaker_2_peak": 0.0,
+    "speakers_within_plus_minus_1": true,
+    "near_rmse": 0.3157433307633845,
+    "near_peak_error": 0.49998631061721655,
+    "far_leakage_rms": 0.31574233967556276,
+    "far_leakage_peak": 0.4999847412084744,
+    "meets_near_one_far_zero": false,
+    "pcm_verification": {
+      "format": "soundbench-verification-v1",
+      "track": "unplugged_speaker2_attempt.wav",
+      "room": "learned_sum_diff.json",
+      "sample_rate": 4000,
+      "track_samples": 1064,
+      "simulated_mic_samples": 1064,
+      "max_ir_delay": 0,
+      "zones": {
+        "near": {
+          "full_rms": 0.30608821692005717,
+          "full_peak": 0.499969088211847
+        },
+        "far": {
+          "full_rms": 0.306089177704425,
+          "full_peak": 0.4999706575714558
+        }
+      },
+      "post_track_tail": {
+        "near_peak": 0.0,
+        "far_peak": 0.0,
+        "near_rms": 0.0,
+        "far_rms": 0.0,
+        "samples": 0
+      },
+      "speaker_peaks": [
+        0.499969482421875,
+        0.0
+      ],
+      "simulated_mic_wav": "unplugged_speaker2_attempt_mics.wav"
+    },
+    "isolable": false,
+    "reason": "With speaker 2 unplugged, near=x1 and far=x1 in the tailless room."
+  }
+}

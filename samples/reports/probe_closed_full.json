@@ -1,0 +1,38 @@
+{
+  "recording": "/workspace/samples/probes/live_probe_partition_closed.json",
+  "mode": "full_response_probe",
+  "scores": [
+    {
+      "room": "samples/learned/partition_open.json",
+      "window_end": 1176,
+      "near_rmse": 0.01184310669476936,
+      "far_rmse": 0.009740079690670136,
+      "score": 0.015333894761745813
+    },
+    {
+      "room": "samples/learned/partition_half.json",
+      "window_end": 1176,
+      "near_rmse": 0.003872649885464363,
+      "far_rmse": 0.003174555405853784,
+      "score": 0.005007516266595909
+    },
+    {
+      "room": "samples/learned/partition_closed.json",
+      "window_end": 1176,
+      "near_rmse": 0.00014435007165099044,
+      "far_rmse": 0.00014707369112110846,
+      "score": 0.00020607671825228897
+    }
+  ],
+  "best": {
+    "room": "samples/learned/partition_closed.json",
+    "window_end": 1176,
+    "near_rmse": 0.00014435007165099044,
+    "far_rmse": 0.00014707369112110846,
+    "score": 0.00020607671825228897
+  },
+  "indistinguishable_candidates": [
+    "partition_closed"
+  ],
+  "safe_action": "use the fixed track for partition_closed.json"
+}

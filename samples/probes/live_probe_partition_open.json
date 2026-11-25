@@ -1,0 +1,24 @@
+{
+  "format": "soundbench-recording-v1",
+  "name": "short scene-change probe for partition_open",
+  "audio": "live_probe_partition_open.wav",
+  "sample_rate": 4000,
+  "channels": [
+    "speaker_1_probe",
+    "speaker_2_probe",
+    "mic_near",
+    "mic_far"
+  ],
+  "partition_position": "partition_open",
+  "tap_delays": [
+    0,
+    3,
+    1000
+  ],
+  "used_in_calibration": false,
+  "noise_note": "deterministic synthetic microphone noise is included in the WAV",
+  "purpose": "scene_change_state_probe",
+  "probe_active_samples": 144,
+  "early_window_samples": 160,
+  "full_decision_samples": 1160
+}

@@ -1,0 +1,20 @@
+{
+  "format": "soundbench-recording-v1",
+  "name": "same room, new probe realization",
+  "audio": "cal_new_probe.wav",
+  "sample_rate": 4000,
+  "channels": [
+    "speaker_1_probe",
+    "speaker_2_probe",
+    "mic_near",
+    "mic_far"
+  ],
+  "partition_position": "partition_half",
+  "tap_delays": [
+    0,
+    3,
+    1000
+  ],
+  "used_in_calibration": true,
+  "noise_note": "deterministic synthetic microphone noise is included in the WAV"
+}

@@ -1,0 +1,88 @@
+{
+  "format": "soundbench-route-comparison-v1",
+  "chosen_route": "fixed per-partition stereo tracks",
+  "sample_rate": 4000,
+  "fixed_route": {
+    "tracks": {
+      "partition_open": "samples/deliverables/fixed_partition_open/speaker_track.wav",
+      "partition_half": "samples/deliverables/fixed_partition_half/speaker_track.wav",
+      "partition_closed": "samples/deliverables/fixed_partition_closed/speaker_track.wav"
+    },
+    "passes": {
+      "partition_open": true,
+      "partition_half": true,
+      "partition_closed": true
+    },
+    "universal_track_verified_on_all_states": true,
+    "universal_track": "samples/deliverables/universal_all_states/speaker_track.wav",
+    "scene_gap_samples_occupied_by_probe": 0,
+    "decision_latency_samples": 0,
+    "benefit": "No scene-change air time is spent probing; choose the directory matching the known partition."
+  },
+  "probe_route_early_window": {
+    "scores": [
+      {
+        "room": "samples/learned/partition_open.json",
+        "window_end": 160,
+        "near_rmse": 0.003340078655426909,
+        "far_rmse": 0.0034430794804207387,
+        "score": 0.004796970057539735
+      },
+      {
+        "room": "samples/learned/partition_half.json",
+        "window_end": 160,
+        "near_rmse": 0.00014052471516677454,
+        "far_rmse": 0.00015073000883454257,
+        "score": 0.0002060745766366254
+      },
+      {
+        "room": "samples/learned/partition_closed.json",
+        "window_end": 160,
+        "near_rmse": 0.00013946276951862718,
+        "far_rmse": 0.00015080492070093144,
+        "score": 0.00020540688447425503
+      }
+    ],
+    "candidates": [
+      "partition_half",
+      "partition_closed"
+    ],
+    "decision_latency_samples": 160,
+    "decision_latency_seconds": 0.04,
+    "safe_start_after_echo_samples": 1160,
+    "safe_start_after_echo_seconds": 0.29,
+    "safe_branch": "half/closed use build-robust and a WAV verified on both states",
+    "robust_track_passes": true
+  },
+  "probe_route_full_response": {
+    "scores": [
+      {
+        "room": "samples/learned/partition_open.json",
+        "window_end": 1176,
+        "near_rmse": 0.01184310669476936,
+        "far_rmse": 0.009740079690670136,
+        "score": 0.015333894761745813
+      },
+      {
+        "room": "samples/learned/partition_half.json",
+        "window_end": 1176,
+        "near_rmse": 0.003872649885464363,
+        "far_rmse": 0.003174555405853784,
+        "score": 0.005007516266595909
+      },
+      {
+        "room": "samples/learned/partition_closed.json",
+        "window_end": 1176,
+        "near_rmse": 0.00014435007165099044,
+        "far_rmse": 0.00014707369112110846,
+        "score": 0.00020607671825228897
+      }
+    ],
+    "candidates": [
+      "partition_closed"
+    ],
+    "decision_latency_samples": 1176,
+    "decision_latency_seconds": 0.294,
+    "benefit": "Distinguishes all states only after the one-beat reflection has arrived."
+  }
+}

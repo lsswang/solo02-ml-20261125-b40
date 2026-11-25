@@ -1,0 +1,22 @@
+{
+  "format": "soundbench-holdout-report-v1",
+  "recording": "holdout.json",
+  "learned_room": "original.json",
+  "used_in_calibration": false,
+  "frames": 145,
+  "frame_csv": "holdout_frame_errors.csv",
+  "zones": {
+    "near": {
+      "overall_rmse": 0.00014589052528694873,
+      "mean_frame_rmse": 0.00014565425334531106,
+      "max_frame_rmse": 0.0001649351055116709,
+      "mean_frame_mae": 0.00012619721902109462
+    },
+    "far": {
+      "overall_rmse": 0.0001453253729146977,
+      "mean_frame_rmse": 0.0001450662008967346,
+      "max_frame_rmse": 0.00016806771876223377,
+      "mean_frame_mae": 0.00012605451789891503
+    }
+  }
+}

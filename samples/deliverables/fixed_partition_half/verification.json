@@ -1,0 +1,115 @@
+{
+  "format": "soundbench-build-report-v1",
+  "program": "/workspace/samples/programs/scene_change_program.json",
+  "room": "/workspace/samples/learned/partition_half.json",
+  "speaker_track": "/workspace/samples/deliverables/fixed_partition_half/speaker_track.wav",
+  "naive_tail_ignoring_track": "/workspace/samples/deliverables/fixed_partition_half/naive_ignores_tails.wav",
+  "naive_cue_reports": [
+    {
+      "id": "scene_left_line",
+      "active_rmse": 0.001756134128593018,
+      "leakage_rms": 0.00831055414275067,
+      "leakage_peak": 0.02161097954722177
+    },
+    {
+      "id": "scene_right_line",
+      "active_rmse": 0.015602207517576102,
+      "leakage_rms": 0.0407419013220665,
+      "leakage_peak": 0.11518930642401395
+    }
+  ],
+  "cue_metrics_csv": "/workspace/samples/deliverables/fixed_partition_half/cue_metrics.csv",
+  "simulated_playback_mics": "/workspace/samples/deliverables/fixed_partition_half/playback_mics.wav",
+  "constraints": {
+    "passes": true,
+    "speaker_peak": 0.35971999774991237,
+    "speaker_peak_limit": 0.9,
+    "speaker_peak_pass": true,
+    "applied_scale": 1.0,
+    "leakage_rms_max": 0.02,
+    "leakage_peak_max": 0.06,
+    "active_rmse_max": 0.03,
+    "cues": [
+      {
+        "id": "scene_left_line",
+        "cabinet": "near",
+        "start_sample": 1000,
+        "end_sample": 2000,
+        "leak_window_end": 3001,
+        "active_rmse": 3.506723300189696e-17,
+        "active_peak_error": 2.220446049250313e-16,
+        "leakage_rms": 1.7981608750180065e-17,
+        "leakage_peak": 1.6653345369377348e-16,
+        "checks": {
+          "id": "scene_left_line",
+          "leakage_rms_pass": true,
+          "leakage_peak_pass": true,
+          "active_rmse_pass": true
+        }
+      },
+      {
+        "id": "scene_right_line",
+        "cabinet": "far",
+        "start_sample": 3000,
+        "end_sample": 4000,
+        "leak_window_end": 5001,
+        "active_rmse": 3.512061706316033e-17,
+        "active_peak_error": 2.220446049250313e-16,
+        "leakage_rms": 2.0557922591136293e-17,
+        "leakage_peak": 1.1102230246251565e-16,
+        "checks": {
+          "id": "scene_right_line",
+          "leakage_rms_pass": true,
+          "leakage_peak_pass": true,
+          "active_rmse_pass": true
+        }
+      }
+    ],
+    "rank_deficient_h0": false
+  },
+  "pcm_verification": {
+    "format": "soundbench-verification-v1",
+    "track": "speaker_track.wav",
+    "room": "partition_half.json",
+    "sample_rate": 4000,
+    "track_samples": 11065,
+    "simulated_mic_samples": 12065,
+    "max_ir_delay": 1000,
+    "zones": {
+      "near": {
+        "full_rms": 0.10083309115754714,
+        "full_peak": 0.7199633315856229
+      },
+      "far": {
+        "full_rms": 0.09980038304947914,
+        "full_peak": 0.719930686418188
+      }
+    },
+    "post_track_tail": {
+      "near_peak": 0.0,
+      "far_peak": 0.0,
+      "near_rms": 0.0,
+      "far_rms": 0.0,
+      "samples": 1000
+    },
+    "speaker_peaks": [
+      0.359619140625,
+      0.359710693359375
+    ],
+    "simulated_mic_wav": "playback_mics.wav"
+  },
+  "pcm_roundtrip_error": {
+    "speaker_peak_error": 2.5919713408262268e-05,
+    "mic_near_peak_error": 4.62693668349202e-05,
+    "mic_far_peak_error": 5.060530012892701e-05,
+    "mic_near_rms_error": 1.0458360990646006e-05,
+    "mic_far_rms_error": 1.0407379385238867e-05,
+    "note": "Float cue leakage is around 1e-16; these are the added PCM-16 round-trip errors."
+  },
+  "timeline": {
+    "content_end_samples": 4000,
+    "flush_samples": 6064,
+    "release_silence_samples": 1001,
+    "exported_track_samples": 11065
+  }
+}

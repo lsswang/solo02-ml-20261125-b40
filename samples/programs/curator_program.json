@@ -1,0 +1,61 @@
+{
+  "format": "soundbench-program-v1",
+  "name": "four-cabinet rotation",
+  "sample_rate": 4000,
+  "beat_samples": 1000,
+  "lead_silence_beats": 1,
+  "tail_beats": 2,
+  "speaker_peak_limit": 0.9,
+  "leakage_rms_max": 0.02,
+  "leakage_peak_max": 0.06,
+  "active_rmse_max": 0.03,
+  "cabinet_by_beat": [
+    "silence",
+    "near",
+    "near",
+    "far",
+    "far",
+    "near",
+    "near",
+    "far",
+    "far",
+    "release",
+    "release"
+  ],
+  "cues": [
+    {
+      "id": "line_1",
+      "clip": "../clips/narration_1.wav",
+      "start_beat": 1,
+      "cabinet": "near",
+      "gain": 1.0
+    },
+    {
+      "id": "line_2",
+      "clip": "../clips/narration_2.wav",
+      "start_beat": 3,
+      "cabinet": "far",
+      "gain": 1.0
+    },
+    {
+      "id": "line_3",
+      "clip": "../clips/narration_3.wav",
+      "start_beat": 5,
+      "cabinet": "near",
+      "gain": 1.0
+    },
+    {
+      "id": "line_4",
+      "clip": "../clips/narration_4.wav",
+      "start_beat": 7,
+      "cabinet": "far",
+      "gain": 1.0
+    }
+  ],
+  "switch_times_seconds": [
+    0.25,
+    0.75,
+    1.25,
+    1.75
+  ]
+}

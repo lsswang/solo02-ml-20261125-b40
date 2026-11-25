@@ -1,0 +1,41 @@
+{
+  "format": "soundbench-program-v1",
+  "name": "one-beat-tail scene change",
+  "sample_rate": 4000,
+  "beat_samples": 1000,
+  "lead_silence_beats": 1,
+  "scene_change_gap_beats": 1,
+  "tail_beats": 1,
+  "speaker_peak_limit": 0.9,
+  "leakage_rms_max": 0.02,
+  "leakage_peak_max": 0.06,
+  "active_rmse_max": 0.03,
+  "cabinet_by_beat": [
+    "silence",
+    "near",
+    "scene_change_gap",
+    "far",
+    "release"
+  ],
+  "cues": [
+    {
+      "id": "scene_left_line",
+      "clip": "../clips/scene_near.wav",
+      "start_beat": 1,
+      "cabinet": "near",
+      "gain": 1.0
+    },
+    {
+      "id": "scene_right_line",
+      "clip": "../clips/scene_far.wav",
+      "start_beat": 3,
+      "cabinet": "far",
+      "gain": 1.0
+    }
+  ],
+  "switch_times_seconds": [
+    0.25,
+    0.75
+  ],
+  "note": "The room has a nonzero reflection at exactly one beat delay."
+}
