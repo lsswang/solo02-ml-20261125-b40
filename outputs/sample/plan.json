@@ -1,0 +1,1226 @@
+{
+  "primary_objective": "input_task_prefixes_with_model_successor_expectation",
+  "fixed_route": {
+    "route": "fixed_preset",
+    "objective": "input_task_prefixes_with_model_successor_expectation",
+    "candidate_count": 120,
+    "best_score": 16.02563640409435,
+    "best_layout": {
+      "num_pages": 3,
+      "cards": [
+        {
+          "word": "甲",
+          "page": 1,
+          "slot": 1,
+          "slot_name": "首格",
+          "fixed": true,
+          "familiar": true
+        },
+        {
+          "word": "乙",
+          "page": 1,
+          "slot": 2,
+          "slot_name": "另一格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "丁",
+          "page": 2,
+          "slot": 1,
+          "slot_name": "首格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "丙",
+          "page": 2,
+          "slot": 2,
+          "slot_name": "另一格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "戊",
+          "page": 3,
+          "slot": 1,
+          "slot_name": "首格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "己",
+          "page": 3,
+          "slot": 2,
+          "slot_name": "另一格",
+          "fixed": false,
+          "familiar": false
+        }
+      ],
+      "grid_1_based_pages": [
+        {
+          "page": 1,
+          "first": "甲",
+          "second": "乙"
+        },
+        {
+          "page": 2,
+          "first": "丁",
+          "second": "丙"
+        },
+        {
+          "page": 3,
+          "first": "戊",
+          "second": "己"
+        }
+      ]
+    },
+    "task_report": {
+      "expected_total_cost": 16.02563640409435,
+      "segments": [
+        {
+          "scene": "home",
+          "entry_cost": 0.0,
+          "incoming_page": 1,
+          "expected_task_cost": 8.06547619047619,
+          "segment_total": 8.06547619047619,
+          "actual_prefix_final_page": 2,
+          "report": {
+            "scene": "home",
+            "sentence_prefix_used_for_contexts": [
+              "甲",
+              "乙",
+              "丙"
+            ],
+            "length": 3,
+            "incoming_page": 1,
+            "first_word_cost": {
+              "target_word": "甲",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 1.0
+            },
+            "context_expected_costs": [
+              {
+                "task_position": 2,
+                "rule_context_previous_word": "甲",
+                "expected_cost": 2.9404761904761902,
+                "chosen_start_slot": 2,
+                "candidate_expected_costs": {
+                  "slot_1": 3.0476190476190474,
+                  "slot_2": 2.9404761904761902
+                },
+                "model_distribution": {
+                  "甲": 0.023809523809523808,
+                  "乙": 0.6309523809523809,
+                  "丙": 0.21428571428571427,
+                  "丁": 0.08333333333333333,
+                  "戊": 0.023809523809523808,
+                  "己": 0.023809523809523808
+                }
+              },
+              {
+                "task_position": 3,
+                "rule_context_previous_word": "乙",
+                "expected_cost": 4.125,
+                "chosen_start_slot": 1,
+                "candidate_expected_costs": {
+                  "slot_1": 4.125,
+                  "slot_2": 4.762500000000001
+                },
+                "model_distribution": {
+                  "甲": 0.1875,
+                  "乙": 0.05,
+                  "丙": 0.6125,
+                  "丁": 0.1,
+                  "戊": 0.025,
+                  "己": 0.025
+                }
+              }
+            ],
+            "expected_cost": 8.06547619047619,
+            "final_page": 1
+          }
+        },
+        {
+          "scene": "school",
+          "entry_cost": 0.0,
+          "incoming_page": 2,
+          "expected_task_cost": 7.960160213618158,
+          "segment_total": 7.960160213618158,
+          "actual_prefix_final_page": 3,
+          "report": {
+            "scene": "school",
+            "sentence_prefix_used_for_contexts": [
+              "丁",
+              "戊",
+              "己"
+            ],
+            "length": 3,
+            "incoming_page": 2,
+            "first_word_cost": {
+              "target_word": "丁",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 1.0
+            },
+            "context_expected_costs": [
+              {
+                "task_position": 2,
+                "rule_context_previous_word": "丁",
+                "expected_cost": 4.191588785046729,
+                "chosen_start_slot": 1,
+                "candidate_expected_costs": {
+                  "slot_1": 4.191588785046729,
+                  "slot_2": 4.719626168224298
+                },
+                "model_distribution": {
+                  "甲": 0.07009345794392523,
+                  "乙": 0.02803738317757009,
+                  "丙": 0.02803738317757009,
+                  "丁": 0.05607476635514018,
+                  "戊": 0.7242990654205608,
+                  "己": 0.09345794392523363
+                }
+              },
+              {
+                "task_position": 3,
+                "rule_context_previous_word": "戊",
+                "expected_cost": 2.7685714285714287,
+                "chosen_start_slot": 2,
+                "candidate_expected_costs": {
+                  "slot_1": 2.8285714285714283,
+                  "slot_2": 2.7685714285714287
+                },
+                "model_distribution": {
+                  "甲": 0.06857142857142857,
+                  "乙": 0.03428571428571429,
+                  "丙": 0.03428571428571429,
+                  "丁": 0.09714285714285714,
+                  "戊": 0.10285714285714286,
+                  "己": 0.6628571428571429
+                }
+              }
+            ],
+            "expected_cost": 7.960160213618158,
+            "final_page": 2
+          }
+        }
+      ]
+    }
+  },
+  "swappable_route": {
+    "route": "swappable_cards",
+    "objective": "input_task_prefixes_with_retained_page",
+    "candidate_count": 1320,
+    "eligible_pairs": [
+      [
+        "丁",
+        "丙"
+      ],
+      [
+        "丁",
+        "乙"
+      ],
+      [
+        "丁",
+        "己"
+      ],
+      [
+        "丁",
+        "戊"
+      ],
+      [
+        "丙",
+        "乙"
+      ],
+      [
+        "丙",
+        "己"
+      ],
+      [
+        "丙",
+        "戊"
+      ],
+      [
+        "乙",
+        "己"
+      ],
+      [
+        "乙",
+        "戊"
+      ],
+      [
+        "己",
+        "戊"
+      ]
+    ],
+    "best_total_cost": 16.192779261237206,
+    "home_layout": {
+      "num_pages": 3,
+      "cards": [
+        {
+          "word": "甲",
+          "page": 1,
+          "slot": 1,
+          "slot_name": "首格",
+          "fixed": true,
+          "familiar": true
+        },
+        {
+          "word": "乙",
+          "page": 1,
+          "slot": 2,
+          "slot_name": "另一格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "丁",
+          "page": 2,
+          "slot": 1,
+          "slot_name": "首格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "丙",
+          "page": 2,
+          "slot": 2,
+          "slot_name": "另一格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "戊",
+          "page": 3,
+          "slot": 1,
+          "slot_name": "首格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "己",
+          "page": 3,
+          "slot": 2,
+          "slot_name": "另一格",
+          "fixed": false,
+          "familiar": false
+        }
+      ],
+      "grid_1_based_pages": [
+        {
+          "page": 1,
+          "first": "甲",
+          "second": "乙"
+        },
+        {
+          "page": 2,
+          "first": "丁",
+          "second": "丙"
+        },
+        {
+          "page": 3,
+          "first": "戊",
+          "second": "己"
+        }
+      ]
+    },
+    "school_option": {
+      "swap_pair": null,
+      "swap_cost": 0.0,
+      "school_layout": {
+        "num_pages": 3,
+        "cards": [
+          {
+            "word": "甲",
+            "page": 1,
+            "slot": 1,
+            "slot_name": "首格",
+            "fixed": true,
+            "familiar": true
+          },
+          {
+            "word": "乙",
+            "page": 1,
+            "slot": 2,
+            "slot_name": "另一格",
+            "fixed": false,
+            "familiar": false
+          },
+          {
+            "word": "丁",
+            "page": 2,
+            "slot": 1,
+            "slot_name": "首格",
+            "fixed": false,
+            "familiar": false
+          },
+          {
+            "word": "丙",
+            "page": 2,
+            "slot": 2,
+            "slot_name": "另一格",
+            "fixed": false,
+            "familiar": false
+          },
+          {
+            "word": "戊",
+            "page": 3,
+            "slot": 1,
+            "slot_name": "首格",
+            "fixed": false,
+            "familiar": false
+          },
+          {
+            "word": "己",
+            "page": 3,
+            "slot": 2,
+            "slot_name": "另一格",
+            "fixed": false,
+            "familiar": false
+          }
+        ],
+        "grid_1_based_pages": [
+          {
+            "page": 1,
+            "first": "甲",
+            "second": "乙"
+          },
+          {
+            "page": 2,
+            "first": "丁",
+            "second": "丙"
+          },
+          {
+            "page": 3,
+            "first": "戊",
+            "second": "己"
+          }
+        ]
+      },
+      "task_report": {
+        "expected_total_cost": 16.192779261237206,
+        "segments": [
+          {
+            "scene": "home",
+            "entry_cost": 0.0,
+            "incoming_page": 1,
+            "expected_task_cost": 8.172619047619047,
+            "segment_total": 8.172619047619047,
+            "actual_prefix_final_page": 2,
+            "report": {
+              "scene": "home",
+              "sentence_prefix_used_for_contexts": [
+                "甲",
+                "乙",
+                "丙"
+              ],
+              "length": 3,
+              "incoming_page": 1,
+              "first_word_cost": {
+                "target_word": "甲",
+                "current_page": 1,
+                "target_page": 1,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 1.0
+              },
+              "context_expected_costs": [
+                {
+                  "task_position": 2,
+                  "rule_context_previous_word": "甲",
+                  "expected_cost": 3.0476190476190474,
+                  "chosen_start_slot": 1,
+                  "candidate_expected_costs": {
+                    "slot_1": 3.0476190476190474
+                  },
+                  "model_distribution": {
+                    "甲": 0.023809523809523808,
+                    "乙": 0.6309523809523809,
+                    "丙": 0.21428571428571427,
+                    "丁": 0.08333333333333333,
+                    "戊": 0.023809523809523808,
+                    "己": 0.023809523809523808
+                  }
+                },
+                {
+                  "task_position": 3,
+                  "rule_context_previous_word": "乙",
+                  "expected_cost": 4.125,
+                  "chosen_start_slot": 1,
+                  "candidate_expected_costs": {
+                    "slot_1": 4.125
+                  },
+                  "model_distribution": {
+                    "甲": 0.1875,
+                    "乙": 0.05,
+                    "丙": 0.6125,
+                    "丁": 0.1,
+                    "戊": 0.025,
+                    "己": 0.025
+                  }
+                }
+              ],
+              "expected_cost": 8.172619047619047,
+              "final_page": 1
+            }
+          },
+          {
+            "scene": "school",
+            "entry_cost": 0.0,
+            "incoming_page": 2,
+            "expected_task_cost": 8.020160213618158,
+            "segment_total": 8.020160213618158,
+            "actual_prefix_final_page": 3,
+            "report": {
+              "scene": "school",
+              "sentence_prefix_used_for_contexts": [
+                "丁",
+                "戊",
+                "己"
+              ],
+              "length": 3,
+              "incoming_page": 2,
+              "first_word_cost": {
+                "target_word": "丁",
+                "current_page": 2,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 1.0
+              },
+              "context_expected_costs": [
+                {
+                  "task_position": 2,
+                  "rule_context_previous_word": "丁",
+                  "expected_cost": 4.191588785046729,
+                  "chosen_start_slot": 1,
+                  "candidate_expected_costs": {
+                    "slot_1": 4.191588785046729
+                  },
+                  "model_distribution": {
+                    "甲": 0.07009345794392523,
+                    "乙": 0.02803738317757009,
+                    "丙": 0.02803738317757009,
+                    "丁": 0.05607476635514018,
+                    "戊": 0.7242990654205608,
+                    "己": 0.09345794392523363
+                  }
+                },
+                {
+                  "task_position": 3,
+                  "rule_context_previous_word": "戊",
+                  "expected_cost": 2.8285714285714283,
+                  "chosen_start_slot": 1,
+                  "candidate_expected_costs": {
+                    "slot_1": 2.8285714285714283
+                  },
+                  "model_distribution": {
+                    "甲": 0.06857142857142857,
+                    "乙": 0.03428571428571429,
+                    "丙": 0.03428571428571429,
+                    "丁": 0.09714285714285714,
+                    "戊": 0.10285714285714286,
+                    "己": 0.6628571428571429
+                  }
+                }
+              ],
+              "expected_cost": 8.020160213618158,
+              "final_page": 2
+            }
+          }
+        ]
+      }
+    },
+    "best_available_pair": {
+      "swap_pair": [
+        "丙",
+        "乙"
+      ],
+      "gross_school_task_saving": 0.0,
+      "net_after_standard_swap_cost": -4.0,
+      "school_layout": {
+        "num_pages": 3,
+        "cards": [
+          {
+            "word": "甲",
+            "page": 1,
+            "slot": 1,
+            "slot_name": "首格",
+            "fixed": true,
+            "familiar": true
+          },
+          {
+            "word": "丙",
+            "page": 1,
+            "slot": 2,
+            "slot_name": "另一格",
+            "fixed": false,
+            "familiar": false
+          },
+          {
+            "word": "丁",
+            "page": 2,
+            "slot": 1,
+            "slot_name": "首格",
+            "fixed": false,
+            "familiar": false
+          },
+          {
+            "word": "乙",
+            "page": 2,
+            "slot": 2,
+            "slot_name": "另一格",
+            "fixed": false,
+            "familiar": false
+          },
+          {
+            "word": "戊",
+            "page": 3,
+            "slot": 1,
+            "slot_name": "首格",
+            "fixed": false,
+            "familiar": false
+          },
+          {
+            "word": "己",
+            "page": 3,
+            "slot": 2,
+            "slot_name": "另一格",
+            "fixed": false,
+            "familiar": false
+          }
+        ],
+        "grid_1_based_pages": [
+          {
+            "page": 1,
+            "first": "甲",
+            "second": "丙"
+          },
+          {
+            "page": 2,
+            "first": "丁",
+            "second": "乙"
+          },
+          {
+            "page": 3,
+            "first": "戊",
+            "second": "己"
+          }
+        ]
+      }
+    },
+    "no_swap_full_task_cost": 16.192779261237206,
+    "net_swap_benefit": 0.0,
+    "swap_worthwhile_now": false,
+    "swap_indifferent": true,
+    "largest_available_gross_saving": 0.0,
+    "break_even_school_entries": null,
+    "task_report": {
+      "expected_total_cost": 16.192779261237206,
+      "segments": [
+        {
+          "scene": "home",
+          "entry_cost": 0.0,
+          "incoming_page": 1,
+          "expected_task_cost": 8.172619047619047,
+          "segment_total": 8.172619047619047,
+          "actual_prefix_final_page": 2,
+          "report": {
+            "scene": "home",
+            "sentence_prefix_used_for_contexts": [
+              "甲",
+              "乙",
+              "丙"
+            ],
+            "length": 3,
+            "incoming_page": 1,
+            "first_word_cost": {
+              "target_word": "甲",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 1.0
+            },
+            "context_expected_costs": [
+              {
+                "task_position": 2,
+                "rule_context_previous_word": "甲",
+                "expected_cost": 3.0476190476190474,
+                "chosen_start_slot": 1,
+                "candidate_expected_costs": {
+                  "slot_1": 3.0476190476190474
+                },
+                "model_distribution": {
+                  "甲": 0.023809523809523808,
+                  "乙": 0.6309523809523809,
+                  "丙": 0.21428571428571427,
+                  "丁": 0.08333333333333333,
+                  "戊": 0.023809523809523808,
+                  "己": 0.023809523809523808
+                }
+              },
+              {
+                "task_position": 3,
+                "rule_context_previous_word": "乙",
+                "expected_cost": 4.125,
+                "chosen_start_slot": 1,
+                "candidate_expected_costs": {
+                  "slot_1": 4.125
+                },
+                "model_distribution": {
+                  "甲": 0.1875,
+                  "乙": 0.05,
+                  "丙": 0.6125,
+                  "丁": 0.1,
+                  "戊": 0.025,
+                  "己": 0.025
+                }
+              }
+            ],
+            "expected_cost": 8.172619047619047,
+            "final_page": 1
+          }
+        },
+        {
+          "scene": "school",
+          "entry_cost": 0.0,
+          "incoming_page": 2,
+          "expected_task_cost": 8.020160213618158,
+          "segment_total": 8.020160213618158,
+          "actual_prefix_final_page": 3,
+          "report": {
+            "scene": "school",
+            "sentence_prefix_used_for_contexts": [
+              "丁",
+              "戊",
+              "己"
+            ],
+            "length": 3,
+            "incoming_page": 2,
+            "first_word_cost": {
+              "target_word": "丁",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 1.0
+            },
+            "context_expected_costs": [
+              {
+                "task_position": 2,
+                "rule_context_previous_word": "丁",
+                "expected_cost": 4.191588785046729,
+                "chosen_start_slot": 1,
+                "candidate_expected_costs": {
+                  "slot_1": 4.191588785046729
+                },
+                "model_distribution": {
+                  "甲": 0.07009345794392523,
+                  "乙": 0.02803738317757009,
+                  "丙": 0.02803738317757009,
+                  "丁": 0.05607476635514018,
+                  "戊": 0.7242990654205608,
+                  "己": 0.09345794392523363
+                }
+              },
+              {
+                "task_position": 3,
+                "rule_context_previous_word": "戊",
+                "expected_cost": 2.8285714285714283,
+                "chosen_start_slot": 1,
+                "candidate_expected_costs": {
+                  "slot_1": 2.8285714285714283
+                },
+                "model_distribution": {
+                  "甲": 0.06857142857142857,
+                  "乙": 0.03428571428571429,
+                  "丙": 0.03428571428571429,
+                  "丁": 0.09714285714285714,
+                  "戊": 0.10285714285714286,
+                  "己": 0.6628571428571429
+                }
+              }
+            ],
+            "expected_cost": 8.020160213618158,
+            "final_page": 2
+          }
+        }
+      ]
+    }
+  },
+  "fully_distributional_rollout": {
+    "chosen_fixed_layout_schedule": {
+      "expected_total_cost": 22.253578594644885,
+      "segments": [
+        {
+          "scene": "home",
+          "length": 3,
+          "entry_cost": 0.0,
+          "expected_task_cost": 10.286552292870688,
+          "segment_total": 10.286552292870688,
+          "incoming_page_distribution": {
+            "1": 1.0
+          },
+          "outgoing_page_distribution": {
+            "1": 0.4155863474016947,
+            "2": 0.4182985441485496,
+            "3": 0.16611510844975574
+          },
+          "position_expected_costs": [
+            2.0440251572327046,
+            3.6169498279415406,
+            4.6255773076964415
+          ]
+        },
+        {
+          "scene": "school",
+          "length": 3,
+          "entry_cost": 0.0,
+          "expected_task_cost": 11.9670263017742,
+          "segment_total": 11.9670263017742,
+          "incoming_page_distribution": {
+            "1": 0.4155863474016947,
+            "2": 0.4182985441485496,
+            "3": 0.16611510844975574
+          },
+          "outgoing_page_distribution": {
+            "1": 0.17189817898054965,
+            "2": 0.24791773619307816,
+            "3": 0.5801840848263722
+          },
+          "position_expected_costs": [
+            4.102602636067974,
+            4.009114610427356,
+            3.8553090552788674
+          ]
+        }
+      ]
+    },
+    "fixed_rollout_best_score": 22.253578594644885,
+    "fixed_rollout_best_layout": {
+      "num_pages": 3,
+      "cards": [
+        {
+          "word": "甲",
+          "page": 1,
+          "slot": 1,
+          "slot_name": "首格",
+          "fixed": true,
+          "familiar": true
+        },
+        {
+          "word": "乙",
+          "page": 1,
+          "slot": 2,
+          "slot_name": "另一格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "丁",
+          "page": 2,
+          "slot": 1,
+          "slot_name": "首格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "丙",
+          "page": 2,
+          "slot": 2,
+          "slot_name": "另一格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "戊",
+          "page": 3,
+          "slot": 1,
+          "slot_name": "首格",
+          "fixed": false,
+          "familiar": false
+        },
+        {
+          "word": "己",
+          "page": 3,
+          "slot": 2,
+          "slot_name": "另一格",
+          "fixed": false,
+          "familiar": false
+        }
+      ],
+      "grid_1_based_pages": [
+        {
+          "page": 1,
+          "first": "甲",
+          "second": "乙"
+        },
+        {
+          "page": 2,
+          "first": "丁",
+          "second": "丙"
+        },
+        {
+          "page": 3,
+          "first": "戊",
+          "second": "己"
+        }
+      ]
+    },
+    "swappable_rollout_best_score": 22.35168031289583,
+    "swappable_rollout_swap_pair": null
+  },
+  "policy_table": [
+    {
+      "scene": "home",
+      "context": "甲",
+      "current_page": 1,
+      "chosen_start_slot": 2,
+      "expected_cost": 2.9404761904761902,
+      "candidate_expected_costs": {
+        "slot_1": 3.0476190476190474,
+        "slot_2": 2.9404761904761902
+      },
+      "on_board_probability_mass": 1.0,
+      "successor_distribution_used": {
+        "甲": 0.023809523809523808,
+        "乙": 0.6309523809523809,
+        "丙": 0.21428571428571427,
+        "丁": 0.08333333333333333,
+        "戊": 0.023809523809523808,
+        "己": 0.023809523809523808
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "home",
+      "context": "乙",
+      "current_page": 1,
+      "chosen_start_slot": 1,
+      "expected_cost": 4.125,
+      "candidate_expected_costs": {
+        "slot_1": 4.125,
+        "slot_2": 4.762500000000001
+      },
+      "on_board_probability_mass": 1.0,
+      "successor_distribution_used": {
+        "甲": 0.1875,
+        "乙": 0.05,
+        "丙": 0.6125,
+        "丁": 0.1,
+        "戊": 0.025,
+        "己": 0.025
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "home",
+      "context": "丙",
+      "current_page": 2,
+      "chosen_start_slot": 1,
+      "expected_cost": 5.907692307692309,
+      "candidate_expected_costs": {
+        "slot_1": 5.907692307692309,
+        "slot_2": 6.346153846153847
+      },
+      "on_board_probability_mass": 1.0,
+      "successor_distribution_used": {
+        "甲": 0.36923076923076925,
+        "乙": 0.26153846153846155,
+        "丙": 0.09230769230769231,
+        "丁": 0.03076923076923077,
+        "戊": 0.2153846153846154,
+        "己": 0.03076923076923077
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "home",
+      "context": "丁",
+      "current_page": 2,
+      "chosen_start_slot": 1,
+      "expected_cost": 4.293103448275863,
+      "candidate_expected_costs": {
+        "slot_1": 4.293103448275863,
+        "slot_2": 4.689655172413794
+      },
+      "on_board_probability_mass": 1.0,
+      "successor_distribution_used": {
+        "甲": 0.15517241379310345,
+        "乙": 0.10344827586206898,
+        "丙": 0.20689655172413796,
+        "丁": 0.10344827586206898,
+        "戊": 0.2931034482758621,
+        "己": 0.13793103448275862
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "home",
+      "context": "戊",
+      "current_page": 3,
+      "chosen_start_slot": 1,
+      "expected_cost": 4.967213114754099,
+      "candidate_expected_costs": {
+        "slot_1": 4.967213114754099,
+        "slot_2": 5.4344262295081975
+      },
+      "on_board_probability_mass": 1.0,
+      "successor_distribution_used": {
+        "甲": 0.19672131147540986,
+        "乙": 0.19672131147540986,
+        "丙": 0.19672131147540986,
+        "丁": 0.18032786885245902,
+        "戊": 0.09836065573770493,
+        "己": 0.13114754098360656
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "home",
+      "context": "己",
+      "current_page": 3,
+      "chosen_start_slot": 1,
+      "expected_cost": 4.45,
+      "candidate_expected_costs": {
+        "slot_1": 4.45,
+        "slot_2": 5.0
+      },
+      "on_board_probability_mass": 0.9999999999999999,
+      "successor_distribution_used": {
+        "甲": 0.15000000000000002,
+        "乙": 0.15000000000000002,
+        "丙": 0.15000000000000002,
+        "丁": 0.2,
+        "戊": 0.2,
+        "己": 0.15000000000000002
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "school",
+      "context": "甲",
+      "current_page": 1,
+      "chosen_start_slot": 1,
+      "expected_cost": 4.000000000000001,
+      "candidate_expected_costs": {
+        "slot_1": 4.000000000000001,
+        "slot_2": 4.55357142857143
+      },
+      "on_board_probability_mass": 0.9999999999999999,
+      "successor_distribution_used": {
+        "甲": 0.14285714285714288,
+        "乙": 0.0892857142857143,
+        "丙": 0.03571428571428572,
+        "丁": 0.5535714285714287,
+        "戊": 0.14285714285714288,
+        "己": 0.03571428571428572
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "school",
+      "context": "乙",
+      "current_page": 1,
+      "chosen_start_slot": 1,
+      "expected_cost": 4.428571428571429,
+      "candidate_expected_costs": {
+        "slot_1": 4.428571428571429,
+        "slot_2": 5.035714285714286
+      },
+      "on_board_probability_mass": 1.0,
+      "successor_distribution_used": {
+        "甲": 0.17857142857142858,
+        "乙": 0.07142857142857142,
+        "丙": 0.10714285714285714,
+        "丁": 0.35714285714285715,
+        "戊": 0.14285714285714285,
+        "己": 0.14285714285714285
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "school",
+      "context": "丙",
+      "current_page": 2,
+      "chosen_start_slot": 1,
+      "expected_cost": 4.769230769230769,
+      "candidate_expected_costs": {
+        "slot_1": 4.769230769230769,
+        "slot_2": 5.26923076923077
+      },
+      "on_board_probability_mass": 1.0,
+      "successor_distribution_used": {
+        "甲": 0.15384615384615385,
+        "乙": 0.23076923076923078,
+        "丙": 0.15384615384615385,
+        "丁": 0.15384615384615385,
+        "戊": 0.15384615384615385,
+        "己": 0.15384615384615385
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "school",
+      "context": "丁",
+      "current_page": 2,
+      "chosen_start_slot": 1,
+      "expected_cost": 4.191588785046729,
+      "candidate_expected_costs": {
+        "slot_1": 4.191588785046729,
+        "slot_2": 4.719626168224298
+      },
+      "on_board_probability_mass": 1.0,
+      "successor_distribution_used": {
+        "甲": 0.07009345794392523,
+        "乙": 0.02803738317757009,
+        "丙": 0.02803738317757009,
+        "丁": 0.05607476635514018,
+        "戊": 0.7242990654205608,
+        "己": 0.09345794392523363
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "school",
+      "context": "戊",
+      "current_page": 3,
+      "chosen_start_slot": 2,
+      "expected_cost": 2.7685714285714287,
+      "candidate_expected_costs": {
+        "slot_1": 2.8285714285714283,
+        "slot_2": 2.7685714285714287
+      },
+      "on_board_probability_mass": 0.9999999999999999,
+      "successor_distribution_used": {
+        "甲": 0.06857142857142857,
+        "乙": 0.03428571428571429,
+        "丙": 0.03428571428571429,
+        "丁": 0.09714285714285714,
+        "戊": 0.10285714285714286,
+        "己": 0.6628571428571429
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    },
+    {
+      "scene": "school",
+      "context": "己",
+      "current_page": 3,
+      "chosen_start_slot": 1,
+      "expected_cost": 4.711864406779661,
+      "candidate_expected_costs": {
+        "slot_1": 4.711864406779661,
+        "slot_2": 5.38135593220339
+      },
+      "on_board_probability_mass": 1.0000000000000002,
+      "successor_distribution_used": {
+        "甲": 0.15254237288135591,
+        "乙": 0.15254237288135591,
+        "丙": 0.050847457627118633,
+        "丁": 0.3728813559322034,
+        "戊": 0.22033898305084743,
+        "己": 0.050847457627118633
+      },
+      "simple_two_slot_break_even_probability_for_nondefault": 0.75
+    }
+  ],
+  "task_runs": [
+    {
+      "scene": "home",
+      "sentence": [
+        "甲",
+        "乙",
+        "丙"
+      ],
+      "length": 3,
+      "start_page": 0,
+      "weight": 1.0
+    },
+    {
+      "scene": "school",
+      "sentence": [
+        "丁",
+        "戊",
+        "己"
+      ],
+      "length": 3,
+      "start_page": 0,
+      "weight": 1.0
+    }
+  ],
+  "task_sequence": [
+    {
+      "scene": "home",
+      "sentence": [
+        "甲",
+        "乙",
+        "丙"
+      ],
+      "entry_cost": 0.0
+    },
+    {
+      "scene": "school",
+      "sentence": [
+        "丁",
+        "戊",
+        "己"
+      ],
+      "entry_cost": 0.0
+    }
+  ],
+  "schedule": [
+    {
+      "scene": "home",
+      "length": 3,
+      "entry_cost": 0.0
+    },
+    {
+      "scene": "school",
+      "length": 3,
+      "entry_cost": 0.0
+    }
+  ]
+}

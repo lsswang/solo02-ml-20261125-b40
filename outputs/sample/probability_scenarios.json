@@ -1,0 +1,1258 @@
+[
+  {
+    "id": "given-page1-high-yi",
+    "num_pages": 2,
+    "start_page": 1,
+    "locked_word": "甲",
+    "locked_page": 1,
+    "locked_slot": 1,
+    "distribution": {
+      "乙": 0.8,
+      "丙": 0.2
+    },
+    "expected_position": {
+      "word": "乙",
+      "page": 1,
+      "slot": 2
+    },
+    "start_page_zero_based": 0,
+    "best": {
+      "expected_cost": 2.4000000000000004,
+      "positions": {
+        "甲": {
+          "page": 1,
+          "slot": 1
+        },
+        "乙": {
+          "page": 1,
+          "slot": 2
+        },
+        "丙": {
+          "page": 2,
+          "slot": 1
+        }
+      },
+      "weighted_actions": [
+        {
+          "word": "乙",
+          "probability": 0.8,
+          "cost": {
+            "target_word": "乙",
+            "current_page": 1,
+            "target_page": 1,
+            "target_slot": 2,
+            "chosen_start_slot": 1,
+            "page_steps_forward": 0,
+            "page_turn_cost": 0,
+            "adjustment_cost": 0.0,
+            "wait_beats": 1,
+            "wait_cost": 1,
+            "select_cost": 1,
+            "total_cost": 2.0
+          },
+          "weighted_cost": 1.6
+        },
+        {
+          "word": "丙",
+          "probability": 0.2,
+          "cost": {
+            "target_word": "丙",
+            "current_page": 1,
+            "target_page": 2,
+            "target_slot": 1,
+            "chosen_start_slot": 1,
+            "page_steps_forward": 1,
+            "page_turn_cost": 3,
+            "adjustment_cost": 0.0,
+            "wait_beats": 0,
+            "wait_cost": 0,
+            "select_cost": 1,
+            "total_cost": 4.0
+          },
+          "weighted_cost": 0.8
+        }
+      ]
+    },
+    "all_candidates": [
+      {
+        "expected_cost": 2.4000000000000004,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 1,
+            "slot": 2
+          },
+          "丙": {
+            "page": 2,
+            "slot": 1
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 1.6
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 4.0
+            },
+            "weighted_cost": 0.8
+          }
+        ]
+      },
+      {
+        "expected_cost": 2.6,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 1,
+            "slot": 2
+          },
+          "丙": {
+            "page": 2,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 1.6
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 1.0
+          }
+        ]
+      },
+      {
+        "expected_cost": 3.6,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 1
+          },
+          "丙": {
+            "page": 1,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 4.0
+            },
+            "weighted_cost": 3.2
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 0.4
+          }
+        ]
+      },
+      {
+        "expected_cost": 4.2,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 1
+          },
+          "丙": {
+            "page": 2,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 4.0
+            },
+            "weighted_cost": 3.2
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 1.0
+          }
+        ]
+      },
+      {
+        "expected_cost": 4.4,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 2
+          },
+          "丙": {
+            "page": 1,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 4.0
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 0.4
+          }
+        ]
+      },
+      {
+        "expected_cost": 4.8,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 2
+          },
+          "丙": {
+            "page": 2,
+            "slot": 1
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 4.0
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 4.0
+            },
+            "weighted_cost": 0.8
+          }
+        ]
+      }
+    ],
+    "expectation_met": true
+  },
+  {
+    "id": "given-page1-swapped",
+    "num_pages": 2,
+    "start_page": 1,
+    "locked_word": "甲",
+    "distribution": {
+      "乙": 0.2,
+      "丙": 0.8
+    },
+    "expected_position": {
+      "word": "丙",
+      "page": 1,
+      "slot": 2
+    },
+    "start_page_zero_based": 0,
+    "best": {
+      "expected_cost": 2.4000000000000004,
+      "positions": {
+        "甲": {
+          "page": 1,
+          "slot": 1
+        },
+        "乙": {
+          "page": 2,
+          "slot": 1
+        },
+        "丙": {
+          "page": 1,
+          "slot": 2
+        }
+      },
+      "weighted_actions": [
+        {
+          "word": "乙",
+          "probability": 0.2,
+          "cost": {
+            "target_word": "乙",
+            "current_page": 1,
+            "target_page": 2,
+            "target_slot": 1,
+            "chosen_start_slot": 1,
+            "page_steps_forward": 1,
+            "page_turn_cost": 3,
+            "adjustment_cost": 0.0,
+            "wait_beats": 0,
+            "wait_cost": 0,
+            "select_cost": 1,
+            "total_cost": 4.0
+          },
+          "weighted_cost": 0.8
+        },
+        {
+          "word": "丙",
+          "probability": 0.8,
+          "cost": {
+            "target_word": "丙",
+            "current_page": 1,
+            "target_page": 1,
+            "target_slot": 2,
+            "chosen_start_slot": 1,
+            "page_steps_forward": 0,
+            "page_turn_cost": 0,
+            "adjustment_cost": 0.0,
+            "wait_beats": 1,
+            "wait_cost": 1,
+            "select_cost": 1,
+            "total_cost": 2.0
+          },
+          "weighted_cost": 1.6
+        }
+      ]
+    },
+    "all_candidates": [
+      {
+        "expected_cost": 2.4000000000000004,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 1
+          },
+          "丙": {
+            "page": 1,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 4.0
+            },
+            "weighted_cost": 0.8
+          },
+          {
+            "word": "丙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 1.6
+          }
+        ]
+      },
+      {
+        "expected_cost": 2.6,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 2
+          },
+          "丙": {
+            "page": 1,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 1.0
+          },
+          {
+            "word": "丙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 1.6
+          }
+        ]
+      },
+      {
+        "expected_cost": 3.6,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 1,
+            "slot": 2
+          },
+          "丙": {
+            "page": 2,
+            "slot": 1
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 0.4
+          },
+          {
+            "word": "丙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 4.0
+            },
+            "weighted_cost": 3.2
+          }
+        ]
+      },
+      {
+        "expected_cost": 4.2,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 2
+          },
+          "丙": {
+            "page": 2,
+            "slot": 1
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 1.0
+          },
+          {
+            "word": "丙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 4.0
+            },
+            "weighted_cost": 3.2
+          }
+        ]
+      },
+      {
+        "expected_cost": 4.4,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 1,
+            "slot": 2
+          },
+          "丙": {
+            "page": 2,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 0.4
+          },
+          {
+            "word": "丙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 4.0
+          }
+        ]
+      },
+      {
+        "expected_cost": 4.8,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 1
+          },
+          "丙": {
+            "page": 2,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 4.0
+            },
+            "weighted_cost": 0.8
+          },
+          {
+            "word": "丙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 4.0
+          }
+        ]
+      }
+    ],
+    "expectation_met": true
+  },
+  {
+    "id": "given-page2-start",
+    "num_pages": 2,
+    "start_page": 2,
+    "locked_word": "甲",
+    "distribution": {
+      "乙": 0.8,
+      "丙": 0.2
+    },
+    "expected_position": {
+      "word": "乙",
+      "page": 2,
+      "slot": 1
+    },
+    "start_page_zero_based": 1,
+    "best": {
+      "expected_cost": 1.2000000000000002,
+      "positions": {
+        "甲": {
+          "page": 1,
+          "slot": 1
+        },
+        "乙": {
+          "page": 2,
+          "slot": 1
+        },
+        "丙": {
+          "page": 2,
+          "slot": 2
+        }
+      },
+      "weighted_actions": [
+        {
+          "word": "乙",
+          "probability": 0.8,
+          "cost": {
+            "target_word": "乙",
+            "current_page": 2,
+            "target_page": 2,
+            "target_slot": 1,
+            "chosen_start_slot": 1,
+            "page_steps_forward": 0,
+            "page_turn_cost": 0,
+            "adjustment_cost": 0.0,
+            "wait_beats": 0,
+            "wait_cost": 0,
+            "select_cost": 1,
+            "total_cost": 1.0
+          },
+          "weighted_cost": 0.8
+        },
+        {
+          "word": "丙",
+          "probability": 0.2,
+          "cost": {
+            "target_word": "丙",
+            "current_page": 2,
+            "target_page": 2,
+            "target_slot": 2,
+            "chosen_start_slot": 1,
+            "page_steps_forward": 0,
+            "page_turn_cost": 0,
+            "adjustment_cost": 0.0,
+            "wait_beats": 1,
+            "wait_cost": 1,
+            "select_cost": 1,
+            "total_cost": 2.0
+          },
+          "weighted_cost": 0.4
+        }
+      ]
+    },
+    "all_candidates": [
+      {
+        "expected_cost": 1.2000000000000002,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 1
+          },
+          "丙": {
+            "page": 2,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 1.0
+            },
+            "weighted_cost": 0.8
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 0.4
+          }
+        ]
+      },
+      {
+        "expected_cost": 1.8,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 1
+          },
+          "丙": {
+            "page": 1,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 1.0
+            },
+            "weighted_cost": 0.8
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 2,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 1.0
+          }
+        ]
+      },
+      {
+        "expected_cost": 1.8,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 2
+          },
+          "丙": {
+            "page": 2,
+            "slot": 1
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 1.6
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 1.0
+            },
+            "weighted_cost": 0.2
+          }
+        ]
+      },
+      {
+        "expected_cost": 2.6,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 2
+          },
+          "丙": {
+            "page": 1,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 1.6
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 2,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 1.0
+          }
+        ]
+      },
+      {
+        "expected_cost": 4.2,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 1,
+            "slot": 2
+          },
+          "丙": {
+            "page": 2,
+            "slot": 1
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 2,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 4.0
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 1.0
+            },
+            "weighted_cost": 0.2
+          }
+        ]
+      },
+      {
+        "expected_cost": 4.4,
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 1,
+            "slot": 2
+          },
+          "丙": {
+            "page": 2,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 2,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 5.0
+            },
+            "weighted_cost": 4.0
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 0.4
+          }
+        ]
+      }
+    ],
+    "expectation_met": true
+  }
+]

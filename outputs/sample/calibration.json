@@ -1,0 +1,2171 @@
+{
+  "cost_config": {
+    "select": 1,
+    "wait": 1,
+    "page_turn": 3,
+    "toggle": 0.5,
+    "card_swap": 4,
+    "default_slot": 0,
+    "landing_slot_after_page_turn": 0,
+    "page_turn_resets_slot": true,
+    "slots_per_page": 2,
+    "max_words": 6
+  },
+  "statements_checked": [
+    "甲锁定第一页首格",
+    "切页一次三拍",
+    "第一页开始且不预调：P(乙)=0.8 时乙在第一页另一格",
+    "交换概率后：该格留给丙",
+    "第二页开始且原概率：乙在第二页首格",
+    "选择/等待/翻页/调整分项花费已逐词枚举"
+  ],
+  "scenarios": [
+    {
+      "id": "page1_yi_0.8_bing_0.2_no_preset",
+      "start_page": 0,
+      "distribution": {
+        "乙": 0.8,
+        "丙": 0.2
+      },
+      "expected_position": {
+        "word": "乙",
+        "page": 1,
+        "slot": 2
+      },
+      "best": {
+        "expected_cost": 2.4000000000000004,
+        "layout": {
+          "num_pages": 2,
+          "cards": [
+            {
+              "word": "甲",
+              "page": 1,
+              "slot": 1,
+              "slot_name": "首格",
+              "fixed": true,
+              "familiar": true
+            },
+            {
+              "word": "乙",
+              "page": 1,
+              "slot": 2,
+              "slot_name": "另一格",
+              "fixed": false,
+              "familiar": false
+            },
+            {
+              "word": "丙",
+              "page": 2,
+              "slot": 1,
+              "slot_name": "首格",
+              "fixed": false,
+              "familiar": false
+            }
+          ],
+          "grid_1_based_pages": [
+            {
+              "page": 1,
+              "first": "甲",
+              "second": "乙"
+            },
+            {
+              "page": 2,
+              "first": "丙",
+              "second": null
+            }
+          ]
+        },
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 1,
+            "slot": 2
+          },
+          "丙": {
+            "page": 2,
+            "slot": 1
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 1.6
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 4.0
+            },
+            "weighted_cost": 0.8
+          }
+        ]
+      },
+      "all_candidates": [
+        {
+          "expected_cost": 2.4000000000000004,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "乙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "乙"
+              },
+              {
+                "page": 2,
+                "first": "丙",
+                "second": null
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 1,
+              "slot": 2
+            },
+            "丙": {
+              "page": 2,
+              "slot": 1
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 1.6
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 4.0
+              },
+              "weighted_cost": 0.8
+            }
+          ]
+        },
+        {
+          "expected_cost": 2.6,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "乙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "乙"
+              },
+              {
+                "page": 2,
+                "first": null,
+                "second": "丙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 1,
+              "slot": 2
+            },
+            "丙": {
+              "page": 2,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 1.6
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 1.0
+            }
+          ]
+        },
+        {
+          "expected_cost": 3.6,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "丙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "丙"
+              },
+              {
+                "page": 2,
+                "first": "乙",
+                "second": null
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 1
+            },
+            "丙": {
+              "page": 1,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 4.0
+              },
+              "weighted_cost": 3.2
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 0.4
+            }
+          ]
+        },
+        {
+          "expected_cost": 4.2,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": null
+              },
+              {
+                "page": 2,
+                "first": "乙",
+                "second": "丙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 1
+            },
+            "丙": {
+              "page": 2,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 4.0
+              },
+              "weighted_cost": 3.2
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 1.0
+            }
+          ]
+        },
+        {
+          "expected_cost": 4.4,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "丙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "丙"
+              },
+              {
+                "page": 2,
+                "first": null,
+                "second": "乙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 2
+            },
+            "丙": {
+              "page": 1,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 4.0
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 0.4
+            }
+          ]
+        },
+        {
+          "expected_cost": 4.8,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": null
+              },
+              {
+                "page": 2,
+                "first": "丙",
+                "second": "乙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 2
+            },
+            "丙": {
+              "page": 2,
+              "slot": 1
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 4.0
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 4.0
+              },
+              "weighted_cost": 0.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page1_swapped_probabilities",
+      "start_page": 0,
+      "distribution": {
+        "乙": 0.2,
+        "丙": 0.8
+      },
+      "expected_position": {
+        "word": "丙",
+        "page": 1,
+        "slot": 2
+      },
+      "best": {
+        "expected_cost": 2.4000000000000004,
+        "layout": {
+          "num_pages": 2,
+          "cards": [
+            {
+              "word": "甲",
+              "page": 1,
+              "slot": 1,
+              "slot_name": "首格",
+              "fixed": true,
+              "familiar": true
+            },
+            {
+              "word": "丙",
+              "page": 1,
+              "slot": 2,
+              "slot_name": "另一格",
+              "fixed": false,
+              "familiar": false
+            },
+            {
+              "word": "乙",
+              "page": 2,
+              "slot": 1,
+              "slot_name": "首格",
+              "fixed": false,
+              "familiar": false
+            }
+          ],
+          "grid_1_based_pages": [
+            {
+              "page": 1,
+              "first": "甲",
+              "second": "丙"
+            },
+            {
+              "page": 2,
+              "first": "乙",
+              "second": null
+            }
+          ]
+        },
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 1
+          },
+          "丙": {
+            "page": 1,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 1,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 1,
+              "page_turn_cost": 3,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 4.0
+            },
+            "weighted_cost": 0.8
+          },
+          {
+            "word": "丙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 1,
+              "target_page": 1,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 1.6
+          }
+        ]
+      },
+      "all_candidates": [
+        {
+          "expected_cost": 2.4000000000000004,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "丙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "丙"
+              },
+              {
+                "page": 2,
+                "first": "乙",
+                "second": null
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 1
+            },
+            "丙": {
+              "page": 1,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 4.0
+              },
+              "weighted_cost": 0.8
+            },
+            {
+              "word": "丙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 1.6
+            }
+          ]
+        },
+        {
+          "expected_cost": 2.6,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "丙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "丙"
+              },
+              {
+                "page": 2,
+                "first": null,
+                "second": "乙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 2
+            },
+            "丙": {
+              "page": 1,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 1.0
+            },
+            {
+              "word": "丙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 1.6
+            }
+          ]
+        },
+        {
+          "expected_cost": 3.6,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "乙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "乙"
+              },
+              {
+                "page": 2,
+                "first": "丙",
+                "second": null
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 1,
+              "slot": 2
+            },
+            "丙": {
+              "page": 2,
+              "slot": 1
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 0.4
+            },
+            {
+              "word": "丙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 4.0
+              },
+              "weighted_cost": 3.2
+            }
+          ]
+        },
+        {
+          "expected_cost": 4.2,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": null
+              },
+              {
+                "page": 2,
+                "first": "丙",
+                "second": "乙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 2
+            },
+            "丙": {
+              "page": 2,
+              "slot": 1
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 1.0
+            },
+            {
+              "word": "丙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 4.0
+              },
+              "weighted_cost": 3.2
+            }
+          ]
+        },
+        {
+          "expected_cost": 4.4,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "乙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "乙"
+              },
+              {
+                "page": 2,
+                "first": null,
+                "second": "丙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 1,
+              "slot": 2
+            },
+            "丙": {
+              "page": 2,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 0.4
+            },
+            {
+              "word": "丙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 4.0
+            }
+          ]
+        },
+        {
+          "expected_cost": 4.8,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": null
+              },
+              {
+                "page": 2,
+                "first": "乙",
+                "second": "丙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 1
+            },
+            "丙": {
+              "page": 2,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 4.0
+              },
+              "weighted_cost": 0.8
+            },
+            {
+              "word": "丙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 1,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 4.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page2_start_original_probabilities",
+      "start_page": 1,
+      "distribution": {
+        "乙": 0.8,
+        "丙": 0.2
+      },
+      "expected_position": {
+        "word": "乙",
+        "page": 2,
+        "slot": 1
+      },
+      "best": {
+        "expected_cost": 1.2000000000000002,
+        "layout": {
+          "num_pages": 2,
+          "cards": [
+            {
+              "word": "甲",
+              "page": 1,
+              "slot": 1,
+              "slot_name": "首格",
+              "fixed": true,
+              "familiar": true
+            },
+            {
+              "word": "乙",
+              "page": 2,
+              "slot": 1,
+              "slot_name": "首格",
+              "fixed": false,
+              "familiar": false
+            },
+            {
+              "word": "丙",
+              "page": 2,
+              "slot": 2,
+              "slot_name": "另一格",
+              "fixed": false,
+              "familiar": false
+            }
+          ],
+          "grid_1_based_pages": [
+            {
+              "page": 1,
+              "first": "甲",
+              "second": null
+            },
+            {
+              "page": 2,
+              "first": "乙",
+              "second": "丙"
+            }
+          ]
+        },
+        "positions": {
+          "甲": {
+            "page": 1,
+            "slot": 1
+          },
+          "乙": {
+            "page": 2,
+            "slot": 1
+          },
+          "丙": {
+            "page": 2,
+            "slot": 2
+          }
+        },
+        "weighted_actions": [
+          {
+            "word": "乙",
+            "probability": 0.8,
+            "cost": {
+              "target_word": "乙",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 1,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 0,
+              "wait_cost": 0,
+              "select_cost": 1,
+              "total_cost": 1.0
+            },
+            "weighted_cost": 0.8
+          },
+          {
+            "word": "丙",
+            "probability": 0.2,
+            "cost": {
+              "target_word": "丙",
+              "current_page": 2,
+              "target_page": 2,
+              "target_slot": 2,
+              "chosen_start_slot": 1,
+              "page_steps_forward": 0,
+              "page_turn_cost": 0,
+              "adjustment_cost": 0.0,
+              "wait_beats": 1,
+              "wait_cost": 1,
+              "select_cost": 1,
+              "total_cost": 2.0
+            },
+            "weighted_cost": 0.4
+          }
+        ]
+      },
+      "all_candidates": [
+        {
+          "expected_cost": 1.2000000000000002,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": null
+              },
+              {
+                "page": 2,
+                "first": "乙",
+                "second": "丙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 1
+            },
+            "丙": {
+              "page": 2,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 2,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 1.0
+              },
+              "weighted_cost": 0.8
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 2,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 0.4
+            }
+          ]
+        },
+        {
+          "expected_cost": 1.8,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "丙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "丙"
+              },
+              {
+                "page": 2,
+                "first": "乙",
+                "second": null
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 1
+            },
+            "丙": {
+              "page": 1,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 2,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 1.0
+              },
+              "weighted_cost": 0.8
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 2,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 1.0
+            }
+          ]
+        },
+        {
+          "expected_cost": 1.8,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": null
+              },
+              {
+                "page": 2,
+                "first": "丙",
+                "second": "乙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 2
+            },
+            "丙": {
+              "page": 2,
+              "slot": 1
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 2,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 1.6
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 2,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 1.0
+              },
+              "weighted_cost": 0.2
+            }
+          ]
+        },
+        {
+          "expected_cost": 2.6,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "丙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "乙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "丙"
+              },
+              {
+                "page": 2,
+                "first": null,
+                "second": "乙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 2,
+              "slot": 2
+            },
+            "丙": {
+              "page": 1,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 2,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 1.6
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 2,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 1.0
+            }
+          ]
+        },
+        {
+          "expected_cost": 4.2,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "乙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "乙"
+              },
+              {
+                "page": 2,
+                "first": "丙",
+                "second": null
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 1,
+              "slot": 2
+            },
+            "丙": {
+              "page": 2,
+              "slot": 1
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 2,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 4.0
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 2,
+                "target_page": 2,
+                "target_slot": 1,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 0,
+                "wait_cost": 0,
+                "select_cost": 1,
+                "total_cost": 1.0
+              },
+              "weighted_cost": 0.2
+            }
+          ]
+        },
+        {
+          "expected_cost": 4.4,
+          "layout": {
+            "num_pages": 2,
+            "cards": [
+              {
+                "word": "甲",
+                "page": 1,
+                "slot": 1,
+                "slot_name": "首格",
+                "fixed": true,
+                "familiar": true
+              },
+              {
+                "word": "乙",
+                "page": 1,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              },
+              {
+                "word": "丙",
+                "page": 2,
+                "slot": 2,
+                "slot_name": "另一格",
+                "fixed": false,
+                "familiar": false
+              }
+            ],
+            "grid_1_based_pages": [
+              {
+                "page": 1,
+                "first": "甲",
+                "second": "乙"
+              },
+              {
+                "page": 2,
+                "first": null,
+                "second": "丙"
+              }
+            ]
+          },
+          "positions": {
+            "甲": {
+              "page": 1,
+              "slot": 1
+            },
+            "乙": {
+              "page": 1,
+              "slot": 2
+            },
+            "丙": {
+              "page": 2,
+              "slot": 2
+            }
+          },
+          "weighted_actions": [
+            {
+              "word": "乙",
+              "probability": 0.8,
+              "cost": {
+                "target_word": "乙",
+                "current_page": 2,
+                "target_page": 1,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 1,
+                "page_turn_cost": 3,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 5.0
+              },
+              "weighted_cost": 4.0
+            },
+            {
+              "word": "丙",
+              "probability": 0.2,
+              "cost": {
+                "target_word": "丙",
+                "current_page": 2,
+                "target_page": 2,
+                "target_slot": 2,
+                "chosen_start_slot": 1,
+                "page_steps_forward": 0,
+                "page_turn_cost": 0,
+                "adjustment_cost": 0.0,
+                "wait_beats": 1,
+                "wait_cost": 1,
+                "select_cost": 1,
+                "total_cost": 2.0
+              },
+              "weighted_cost": 0.4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "component_checks": {
+    "yi_on_page1_second_from_page1": {
+      "target_word": "乙",
+      "current_page": 1,
+      "target_page": 1,
+      "target_slot": 2,
+      "chosen_start_slot": 1,
+      "page_steps_forward": 0,
+      "page_turn_cost": 0,
+      "adjustment_cost": 0.0,
+      "wait_beats": 1,
+      "wait_cost": 1,
+      "select_cost": 1,
+      "total_cost": 2.0
+    },
+    "bing_on_page2_first_from_page1": {
+      "target_word": "丙",
+      "current_page": 1,
+      "target_page": 2,
+      "target_slot": 1,
+      "chosen_start_slot": 1,
+      "page_steps_forward": 1,
+      "page_turn_cost": 3,
+      "adjustment_cost": 0.0,
+      "wait_beats": 0,
+      "wait_cost": 0,
+      "select_cost": 1,
+      "total_cost": 4.0
+    },
+    "yi_with_preset_second_slot": {
+      "target_word": "乙",
+      "current_page": 1,
+      "target_page": 1,
+      "target_slot": 2,
+      "chosen_start_slot": 2,
+      "page_steps_forward": 0,
+      "page_turn_cost": 0,
+      "adjustment_cost": 0.5,
+      "wait_beats": 0,
+      "wait_cost": 0,
+      "select_cost": 1,
+      "total_cost": 1.5
+    }
+  }
+}

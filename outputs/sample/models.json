@@ -1,0 +1,1858 @@
+{
+  "home": {
+    "scene": "home",
+    "alpha": 1.0,
+    "ambiguity_weighting": "uniform",
+    "vocabulary": [
+      "甲",
+      "乙",
+      "丙",
+      "戊",
+      "丁",
+      "己"
+    ],
+    "weighted_records": 46.999999999999986,
+    "weighted_tokens": 151.99999999999983,
+    "start_probabilities": {
+      "甲": 0.5660377358490567,
+      "乙": 0.26415094339622647,
+      "丙": 0.06603773584905662,
+      "戊": 0.034591194968553465,
+      "丁": 0.04402515723270442,
+      "己": 0.02515723270440252
+    },
+    "unigram_probabilities": {
+      "甲": 0.31012658227848133,
+      "乙": 0.31012658227848133,
+      "丙": 0.24683544303797494,
+      "戊": 0.06329113924050637,
+      "丁": 0.05696202531645577,
+      "己": 0.01265822784810128
+    },
+    "transition_probabilities": {
+      "甲 -> 甲": 0.023809523809523808,
+      "甲 -> 乙": 0.6309523809523809,
+      "甲 -> 丙": 0.21428571428571427,
+      "甲 -> 戊": 0.023809523809523808,
+      "甲 -> 丁": 0.08333333333333333,
+      "甲 -> 己": 0.023809523809523808,
+      "乙 -> 甲": 0.1875,
+      "乙 -> 乙": 0.05,
+      "乙 -> 丙": 0.6125,
+      "乙 -> 戊": 0.025,
+      "乙 -> 丁": 0.1,
+      "乙 -> 己": 0.025,
+      "丙 -> 甲": 0.36923076923076925,
+      "丙 -> 乙": 0.26153846153846155,
+      "丙 -> 丙": 0.09230769230769231,
+      "丙 -> 戊": 0.2153846153846154,
+      "丙 -> 丁": 0.03076923076923077,
+      "丙 -> 己": 0.03076923076923077,
+      "戊 -> 甲": 0.19672131147540986,
+      "戊 -> 乙": 0.19672131147540986,
+      "戊 -> 丙": 0.19672131147540986,
+      "戊 -> 戊": 0.09836065573770493,
+      "戊 -> 丁": 0.18032786885245902,
+      "戊 -> 己": 0.13114754098360656,
+      "丁 -> 甲": 0.15517241379310345,
+      "丁 -> 乙": 0.10344827586206898,
+      "丁 -> 丙": 0.20689655172413796,
+      "丁 -> 戊": 0.2931034482758621,
+      "丁 -> 丁": 0.10344827586206898,
+      "丁 -> 己": 0.13793103448275862,
+      "己 -> 甲": 0.15,
+      "己 -> 乙": 0.15,
+      "己 -> 丙": 0.15,
+      "己 -> 戊": 0.19999999999999998,
+      "己 -> 丁": 0.19999999999999998,
+      "己 -> 己": 0.15
+    },
+    "counts": {
+      "bos": {
+        "甲": 29.0,
+        "乙": 13.0,
+        "丙": 2.5,
+        "丁": 1.3333333333333335,
+        "戊": 0.8333333333333333,
+        "己": 0.3333333333333333
+      },
+      "unigram": {
+        "甲": 48.0,
+        "乙": 48.0,
+        "丙": 38.0,
+        "戊": 8.999999999999996,
+        "丁": 8.000000000000002,
+        "己": 0.9999999999999999
+      },
+      "context": {
+        "甲": 36.0,
+        "乙": 34.0,
+        "丙": 26.5,
+        "戊": 4.166666666666666,
+        "丁": 3.666666666666666,
+        "己": 0.6666666666666666
+      },
+      "transition": {
+        "丁->丙": 1.0,
+        "丁->己": 0.3333333333333333,
+        "丁->戊": 1.8333333333333335,
+        "丁->甲": 0.5,
+        "丙->丙": 2.0,
+        "丙->乙": 7.5,
+        "丙->戊": 6.0,
+        "丙->甲": 11.0,
+        "乙->丁": 3.0,
+        "乙->丙": 23.5,
+        "乙->乙": 1.0,
+        "乙->甲": 6.5,
+        "己->丁": 0.3333333333333333,
+        "己->戊": 0.3333333333333333,
+        "戊->丁": 0.8333333333333333,
+        "戊->丙": 1.0,
+        "戊->乙": 1.0,
+        "戊->己": 0.3333333333333333,
+        "戊->甲": 1.0,
+        "甲->丁": 2.5,
+        "甲->丙": 8.0,
+        "甲->乙": 25.5
+      }
+    },
+    "compatible_order_enumerations": [
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丙",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丙",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "乙",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "乙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丙",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丙",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丙",
+          "甲",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丙",
+            "甲",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丙",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丙",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丙",
+          "甲",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丙",
+            "甲",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丙",
+          "戊",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "丙",
+            "戊",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丙",
+          "乙",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丙",
+            "乙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丙",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丙",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丙",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丙",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丙",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丙",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丙",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丙",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丙",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "甲",
+          "丙",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "甲",
+            "丙",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丙",
+          "乙",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙",
+            "乙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丙",
+          "甲",
+          "乙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙",
+            "甲",
+            "乙",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丙",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丙",
+          "戊",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙",
+            "戊",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丙",
+          "甲",
+          "乙",
+          "丙",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "丙",
+            "甲",
+            "乙",
+            "丙",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丙",
+          "戊",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙",
+            "戊",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "甲",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "甲",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丁",
+          "丙",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丁",
+            "丙",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丙",
+          "甲",
+          "乙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丙",
+            "甲",
+            "乙",
+            "丙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙",
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙",
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "group",
+        "record": [
+          "甲",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙"
+          ],
+          [
+            "乙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 0.5
+      },
+      {
+        "kind": "group",
+        "record": [
+          "乙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙"
+          ],
+          [
+            "丙",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 0.5
+      },
+      {
+        "kind": "group",
+        "record": [
+          "甲",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁"
+          ],
+          [
+            "丁",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 0.5
+      },
+      {
+        "kind": "group",
+        "record": [
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊"
+          ],
+          [
+            "戊",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 0.5
+      },
+      {
+        "kind": "group",
+        "record": [
+          "丁",
+          "戊",
+          "己"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "己"
+          ],
+          [
+            "丁",
+            "己",
+            "戊"
+          ],
+          [
+            "戊",
+            "丁",
+            "己"
+          ],
+          [
+            "戊",
+            "己",
+            "丁"
+          ],
+          [
+            "己",
+            "丁",
+            "戊"
+          ],
+          [
+            "己",
+            "戊",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 0.16666666666666666
+      }
+    ]
+  },
+  "school": {
+    "scene": "school",
+    "alpha": 1.0,
+    "ambiguity_weighting": "uniform",
+    "vocabulary": [
+      "甲",
+      "乙",
+      "丙",
+      "戊",
+      "丁",
+      "己"
+    ],
+    "weighted_records": 46.999999999999986,
+    "weighted_tokens": 143.99999999999983,
+    "start_probabilities": {
+      "甲": 0.35849056603773594,
+      "乙": 0.16981132075471703,
+      "丙": 0.028301886792452838,
+      "戊": 0.12893081761006295,
+      "丁": 0.289308176100629,
+      "己": 0.02515723270440252
+    },
+    "unigram_probabilities": {
+      "甲": 0.18666666666666687,
+      "乙": 0.08666666666666677,
+      "丙": 0.013333333333333348,
+      "戊": 0.27333333333333354,
+      "丁": 0.2866666666666669,
+      "己": 0.15333333333333354
+    },
+    "transition_probabilities": {
+      "甲 -> 甲": 0.14285714285714285,
+      "甲 -> 乙": 0.08928571428571429,
+      "甲 -> 丙": 0.03571428571428571,
+      "甲 -> 戊": 0.14285714285714285,
+      "甲 -> 丁": 0.5535714285714286,
+      "甲 -> 己": 0.03571428571428571,
+      "乙 -> 甲": 0.17857142857142858,
+      "乙 -> 乙": 0.07142857142857142,
+      "乙 -> 丙": 0.10714285714285714,
+      "乙 -> 戊": 0.14285714285714285,
+      "乙 -> 丁": 0.35714285714285715,
+      "乙 -> 己": 0.14285714285714285,
+      "丙 -> 甲": 0.15384615384615385,
+      "丙 -> 乙": 0.23076923076923078,
+      "丙 -> 丙": 0.15384615384615385,
+      "丙 -> 戊": 0.15384615384615385,
+      "丙 -> 丁": 0.15384615384615385,
+      "丙 -> 己": 0.15384615384615385,
+      "戊 -> 甲": 0.06857142857142856,
+      "戊 -> 乙": 0.03428571428571428,
+      "戊 -> 丙": 0.03428571428571428,
+      "戊 -> 戊": 0.10285714285714284,
+      "戊 -> 丁": 0.09714285714285713,
+      "戊 -> 己": 0.6628571428571428,
+      "丁 -> 甲": 0.07009345794392523,
+      "丁 -> 乙": 0.02803738317757009,
+      "丁 -> 丙": 0.02803738317757009,
+      "丁 -> 戊": 0.7242990654205608,
+      "丁 -> 丁": 0.05607476635514018,
+      "丁 -> 己": 0.09345794392523363,
+      "己 -> 甲": 0.15254237288135594,
+      "己 -> 乙": 0.15254237288135594,
+      "己 -> 丙": 0.05084745762711865,
+      "己 -> 戊": 0.22033898305084748,
+      "己 -> 丁": 0.37288135593220345,
+      "己 -> 己": 0.05084745762711865
+    },
+    "counts": {
+      "bos": {
+        "甲": 18.0,
+        "丁": 14.333333333333332,
+        "乙": 8.0,
+        "戊": 5.833333333333334,
+        "丙": 0.5,
+        "己": 0.3333333333333333
+      },
+      "unigram": {
+        "甲": 27.0,
+        "丁": 41.999999999999986,
+        "戊": 39.999999999999986,
+        "己": 22.000000000000007,
+        "乙": 12.0,
+        "丙": 1.0
+      },
+      "context": {
+        "甲": 22.0,
+        "丁": 29.66666666666667,
+        "戊": 23.16666666666667,
+        "己": 13.666666666666664,
+        "乙": 8.0,
+        "丙": 0.5
+      },
+      "transition": {
+        "丁->丁": 1.0,
+        "丁->己": 2.333333333333333,
+        "丁->戊": 24.833333333333336,
+        "丁->甲": 1.5,
+        "丙->乙": 0.5,
+        "乙->丁": 4.0,
+        "乙->丙": 0.5,
+        "乙->己": 1.0,
+        "乙->戊": 1.0,
+        "乙->甲": 1.5,
+        "己->丁": 6.333333333333334,
+        "己->乙": 2.0,
+        "己->戊": 3.333333333333333,
+        "己->甲": 2.0,
+        "戊->丁": 1.8333333333333335,
+        "戊->己": 18.333333333333336,
+        "戊->戊": 2.0,
+        "戊->甲": 1.0,
+        "甲->丁": 14.5,
+        "甲->乙": 1.5,
+        "甲->戊": 3.0,
+        "甲->甲": 3.0
+      }
+    },
+    "compatible_order_enumerations": [
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁",
+          "戊",
+          "己"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁",
+            "戊",
+            "己"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "己",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "己",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊",
+          "己",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "己",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊",
+          "己",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "己",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丁",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丁",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "甲",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "甲",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "戊",
+          "己"
+        ],
+        "compatible_orders": [
+          [
+            "戊",
+            "己"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "戊",
+          "己"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "戊",
+            "己"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "戊",
+          "己",
+          "甲",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "戊",
+            "己",
+            "甲",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁",
+          "己",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁",
+            "己",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊",
+          "己"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "己"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁",
+          "戊",
+          "甲"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁",
+            "戊",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "甲",
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "甲",
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "戊",
+          "己"
+        ],
+        "compatible_orders": [
+          [
+            "戊",
+            "己"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊",
+          "己",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "己",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "戊",
+          "己",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "戊",
+            "己",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁",
+          "戊",
+          "己",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁",
+            "戊",
+            "己",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊",
+          "己",
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "己",
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丁",
+          "戊",
+          "己"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丁",
+            "戊",
+            "己"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "戊",
+          "己",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "戊",
+            "己",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "戊",
+          "己"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "戊",
+            "己"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "甲",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "甲",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "甲",
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "丁",
+          "戊",
+          "己"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "己"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "戊",
+          "己",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "戊",
+            "己",
+            "戊"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "丁",
+          "戊",
+          "己",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丁",
+            "戊",
+            "己",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "sentence",
+        "record": [
+          "乙",
+          "己",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "己",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 1.0
+      },
+      {
+        "kind": "group",
+        "record": [
+          "甲",
+          "乙"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "乙"
+          ],
+          [
+            "乙",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 0.5
+      },
+      {
+        "kind": "group",
+        "record": [
+          "乙",
+          "丙"
+        ],
+        "compatible_orders": [
+          [
+            "乙",
+            "丙"
+          ],
+          [
+            "丙",
+            "乙"
+          ]
+        ],
+        "weight_per_order": 0.5
+      },
+      {
+        "kind": "group",
+        "record": [
+          "甲",
+          "丁"
+        ],
+        "compatible_orders": [
+          [
+            "甲",
+            "丁"
+          ],
+          [
+            "丁",
+            "甲"
+          ]
+        ],
+        "weight_per_order": 0.5
+      },
+      {
+        "kind": "group",
+        "record": [
+          "丁",
+          "戊"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊"
+          ],
+          [
+            "戊",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 0.5
+      },
+      {
+        "kind": "group",
+        "record": [
+          "丁",
+          "戊",
+          "己"
+        ],
+        "compatible_orders": [
+          [
+            "丁",
+            "戊",
+            "己"
+          ],
+          [
+            "丁",
+            "己",
+            "戊"
+          ],
+          [
+            "戊",
+            "丁",
+            "己"
+          ],
+          [
+            "戊",
+            "己",
+            "丁"
+          ],
+          [
+            "己",
+            "丁",
+            "戊"
+          ],
+          [
+            "己",
+            "戊",
+            "丁"
+          ]
+        ],
+        "weight_per_order": 0.16666666666666666
+      }
+    ]
+  }
+}

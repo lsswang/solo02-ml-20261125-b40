@@ -1,0 +1,97 @@
+{
+  "primary_objective": "input_task_prefixes_with_model_successor_expectation",
+  "fixed_expected_task_cost": 16.02563640409435,
+  "swappable_expected_task_cost": 16.192779261237206,
+  "fixed_expected_schedule_cost": 16.02563640409435,
+  "swappable_expected_schedule_cost": 16.192779261237206,
+  "fixed_model_rollout_cost": 22.253578594644885,
+  "fixed_layout": {
+    "num_pages": 3,
+    "cards": [
+      {
+        "word": "甲",
+        "page": 1,
+        "slot": 1,
+        "slot_name": "首格",
+        "fixed": true,
+        "familiar": true
+      },
+      {
+        "word": "乙",
+        "page": 1,
+        "slot": 2,
+        "slot_name": "另一格",
+        "fixed": false,
+        "familiar": false
+      },
+      {
+        "word": "丁",
+        "page": 2,
+        "slot": 1,
+        "slot_name": "首格",
+        "fixed": false,
+        "familiar": false
+      },
+      {
+        "word": "丙",
+        "page": 2,
+        "slot": 2,
+        "slot_name": "另一格",
+        "fixed": false,
+        "familiar": false
+      },
+      {
+        "word": "戊",
+        "page": 3,
+        "slot": 1,
+        "slot_name": "首格",
+        "fixed": false,
+        "familiar": false
+      },
+      {
+        "word": "己",
+        "page": 3,
+        "slot": 2,
+        "slot_name": "另一格",
+        "fixed": false,
+        "familiar": false
+      }
+    ],
+    "grid_1_based_pages": [
+      {
+        "page": 1,
+        "first": "甲",
+        "second": "乙"
+      },
+      {
+        "page": 2,
+        "first": "丁",
+        "second": "丙"
+      },
+      {
+        "page": 3,
+        "first": "戊",
+        "second": "己"
+      }
+    ]
+  },
+  "swap_pair": null,
+  "swap_worthwhile": false,
+  "replay_fixed_total": 23.0,
+  "replay_swappable_total": 24.0,
+  "fixed_replay_final_pages": {
+    "one-word-from-page-1": 1,
+    "carry-page-demo": 3,
+    "mid-sentence-restore": 2
+  },
+  "evaluation_accuracy": {
+    "home": {
+      "transition": 0.5882352941176471,
+      "frequency": 0.35294117647058826
+    },
+    "school": {
+      "transition": 0.46153846153846156,
+      "frequency": 0.28205128205128205
+    }
+  }
+}
