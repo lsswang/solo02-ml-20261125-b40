@@ -1,0 +1,89 @@
+{
+  "source_input": "examples/half_b_transmits.json",
+  "exact_bayesian": {
+    "best_recognition_probability": 0.25,
+    "minimum_expected_cost_at_best_rate": 1.0,
+    "expected_correct_recognition_probability": 0.25,
+    "state_count": 3
+  },
+  "synthetic_new_specimens": {
+    "n": 0,
+    "signed_out": 0,
+    "correct_signed_out": 0,
+    "signed_rate": null,
+    "correct_rate_over_all": null,
+    "accuracy_among_signed": null,
+    "mean_spent": null,
+    "by_material": {},
+    "specimens": []
+  },
+  "heldout_reading_checks": {
+    "checked_readings": 3,
+    "mean_brier": 0.229167,
+    "mean_log_loss": 0.653886,
+    "reading_accuracy": 0.666667
+  },
+  "hypothesis_paths": [
+    {
+      "material": "A",
+      "orientation": "A-fixed",
+      "joint_prior": 0.5,
+      "terminal": "stop",
+      "called_material": null,
+      "correct": false,
+      "spent": 1.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "trans",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "stop"
+        }
+      ]
+    },
+    {
+      "material": "B",
+      "orientation": "B-opaque",
+      "joint_prior": 0.25,
+      "terminal": "checkout",
+      "called_material": "B",
+      "correct": true,
+      "spent": 1.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "trans",
+          "result": "dark",
+          "charge": 1.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "B"
+        }
+      ]
+    },
+    {
+      "material": "B",
+      "orientation": "B-bright",
+      "joint_prior": 0.25,
+      "terminal": "stop",
+      "called_material": null,
+      "correct": false,
+      "spent": 1.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "trans",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "stop"
+        }
+      ]
+    }
+  ]
+}

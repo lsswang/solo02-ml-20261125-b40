@@ -1,0 +1,572 @@
+{
+  "schema_version": "mineral-optical-tray/v1",
+  "experiment_name": "正反各一项辨别读数的极小展盘",
+  "description": "正面暗可签乙；正面明后甲为2/3，翻面做背面项可区分甲明与乙亮取向。第二件仪器调机费1，故走完整条分支花费3。",
+  "random_seed": 404,
+  "confidence_threshold": 0.9,
+  "budget": 3,
+  "currency": "试验元",
+  "max_flips": 1,
+  "initial_side": "front",
+  "orientation_smoothing": 0.5,
+  "second_instrument_setup_fee": 1,
+  "instruments": [
+    {
+      "id": "front_eye",
+      "name": "正面目镜",
+      "setup_fee": 0
+    },
+    {
+      "id": "back_bench",
+      "name": "第二件仪器/背面台",
+      "setup_fee": 1
+    }
+  ],
+  "initial_paid_instruments": [
+    "front_eye"
+  ],
+  "tests": [
+    {
+      "id": "front_signal",
+      "name": "正面辨别试验",
+      "instrument": "front_eye",
+      "side": "front",
+      "cost": 1
+    },
+    {
+      "id": "back_signal",
+      "name": "背面辨别试验",
+      "instrument": "back_bench",
+      "side": "back",
+      "cost": 1
+    }
+  ],
+  "flip_action": {
+    "id": "flip",
+    "name": "翻面",
+    "cost": 0
+  },
+  "materials": [
+    {
+      "id": "A",
+      "name": "甲",
+      "prior": 0.5
+    },
+    {
+      "id": "B",
+      "name": "乙",
+      "prior": 0.5
+    }
+  ],
+  "templates": [
+    {
+      "material": "A",
+      "orientation": "A-clear",
+      "weight": 1.0,
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "material": "B",
+      "orientation": "B-opaque",
+      "weight": 0.5,
+      "readings": {
+        "front_signal": 0,
+        "back_signal": 1
+      }
+    },
+    {
+      "material": "B",
+      "orientation": "B-bright",
+      "weight": 0.5,
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 0
+      }
+    }
+  ],
+  "training_records": [
+    {
+      "id": "tr-a-01",
+      "material": "A",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-02",
+      "material": "A",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-03",
+      "material": "A",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-04",
+      "material": "A",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-05",
+      "material": "A",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-06",
+      "material": "A",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-07",
+      "material": "A",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-08",
+      "material": "A",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-09",
+      "material": "A",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-10",
+      "material": "A",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-11",
+      "material": "A",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-12",
+      "material": "A",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-13",
+      "material": "A",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-14",
+      "material": "A",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-15",
+      "material": "A",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-16",
+      "material": "A",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-17",
+      "material": "A",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-18",
+      "material": "A",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-19",
+      "material": "A",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-20",
+      "material": "A",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-21",
+      "material": "A",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-22",
+      "material": "A",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-23",
+      "material": "A",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-24",
+      "material": "A",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-25",
+      "material": "A",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-26",
+      "material": "A",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-27",
+      "material": "A",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-28",
+      "material": "A",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-29",
+      "material": "A",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-a-30",
+      "material": "A",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-opaque-01",
+      "material": "B",
+      "readings": {
+        "front_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-opaque-02",
+      "material": "B",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-opaque-03",
+      "material": "B",
+      "readings": {
+        "front_signal": 0,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-opaque-04",
+      "material": "B",
+      "readings": {
+        "front_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-opaque-05",
+      "material": "B",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-opaque-06",
+      "material": "B",
+      "readings": {
+        "front_signal": 0,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-opaque-07",
+      "material": "B",
+      "readings": {
+        "front_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-opaque-08",
+      "material": "B",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-opaque-09",
+      "material": "B",
+      "readings": {
+        "front_signal": 0,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-opaque-10",
+      "material": "B",
+      "readings": {
+        "front_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-opaque-11",
+      "material": "B",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-opaque-12",
+      "material": "B",
+      "readings": {
+        "front_signal": 0,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-opaque-13",
+      "material": "B",
+      "readings": {
+        "front_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-opaque-14",
+      "material": "B",
+      "readings": {
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-opaque-15",
+      "material": "B",
+      "readings": {
+        "front_signal": 0,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-01",
+      "material": "B",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-02",
+      "material": "B",
+      "readings": {
+        "back_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-bright-03",
+      "material": "B",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-bright-04",
+      "material": "B",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-05",
+      "material": "B",
+      "readings": {
+        "back_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-bright-06",
+      "material": "B",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-bright-07",
+      "material": "B",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-08",
+      "material": "B",
+      "readings": {
+        "back_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-bright-09",
+      "material": "B",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-bright-10",
+      "material": "B",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-11",
+      "material": "B",
+      "readings": {
+        "back_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-bright-12",
+      "material": "B",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-bright-13",
+      "material": "B",
+      "readings": {
+        "front_signal": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-14",
+      "material": "B",
+      "readings": {
+        "back_signal": 0
+      }
+    },
+    {
+      "id": "tr-b-bright-15",
+      "material": "B",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 0
+      }
+    }
+  ],
+  "heldout_records": [
+    {
+      "id": "ho-a",
+      "material": "A",
+      "orientation": "A-clear",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "ho-b-opaque",
+      "material": "B",
+      "orientation": "B-opaque",
+      "readings": {
+        "front_signal": 0,
+        "back_signal": 1
+      }
+    },
+    {
+      "id": "ho-b-bright",
+      "material": "B",
+      "orientation": "B-bright",
+      "readings": {
+        "front_signal": 1,
+        "back_signal": 0
+      }
+    }
+  ],
+  "new_specimens": [
+    {
+      "id": "demo-A",
+      "material": "A",
+      "orientation": "A-clear",
+      "actual_readings": {
+        "front_signal": 1,
+        "back_signal": 1
+      }
+    }
+  ]
+}

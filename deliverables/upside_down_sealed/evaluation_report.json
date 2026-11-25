@@ -1,0 +1,56 @@
+{
+  "source_input": "examples/upside_down_sealed.json",
+  "exact_bayesian": {
+    "best_recognition_probability": 0.0,
+    "minimum_expected_cost_at_best_rate": 0.0,
+    "expected_correct_recognition_probability": 0.0,
+    "state_count": 4
+  },
+  "synthetic_new_specimens": {
+    "n": 0,
+    "signed_out": 0,
+    "correct_signed_out": 0,
+    "signed_rate": null,
+    "correct_rate_over_all": null,
+    "accuracy_among_signed": null,
+    "mean_spent": null,
+    "by_material": {},
+    "specimens": []
+  },
+  "heldout_reading_checks": {
+    "checked_readings": 2,
+    "mean_brier": 0.0,
+    "mean_log_loss": 0.0,
+    "reading_accuracy": 1.0
+  },
+  "hypothesis_paths": [
+    {
+      "material": "A",
+      "orientation": "A-fixed",
+      "joint_prior": 0.5,
+      "terminal": "stop",
+      "called_material": null,
+      "correct": false,
+      "spent": 0.0,
+      "actions": [
+        {
+          "type": "stop"
+        }
+      ]
+    },
+    {
+      "material": "B",
+      "orientation": "B-fixed",
+      "joint_prior": 0.5,
+      "terminal": "stop",
+      "called_material": null,
+      "correct": false,
+      "spent": 0.0,
+      "actions": [
+        {
+          "type": "stop"
+        }
+      ]
+    }
+  ]
+}

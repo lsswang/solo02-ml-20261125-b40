@@ -1,0 +1,657 @@
+{
+  "schema_version": "mineral-optical-tray/v1",
+  "experiment_name": "训练改样：乙有一半取向也透光",
+  "description": "明分支 P(A|明)=2/3，未达 0.90，必须留未定；暗分支可签乙。",
+  "random_seed": 202,
+  "confidence_threshold": 0.9,
+  "budget": 1,
+  "currency": "试验元",
+  "max_flips": 0,
+  "initial_side": "front",
+  "orientation_smoothing": 0.5,
+  "instruments": [
+    {
+      "id": "lamp",
+      "name": "透光灯",
+      "setup_fee": 0
+    }
+  ],
+  "initial_paid_instruments": [
+    "lamp"
+  ],
+  "tests": [
+    {
+      "id": "trans",
+      "name": "透光试验",
+      "instrument": "lamp",
+      "side": "front",
+      "cost": 1
+    }
+  ],
+  "materials": [
+    {
+      "id": "A",
+      "name": "甲",
+      "prior": 0.5
+    },
+    {
+      "id": "B",
+      "name": "乙",
+      "prior": 0.5
+    }
+  ],
+  "templates": [
+    {
+      "material": "A",
+      "orientation": "A-fixed",
+      "weight": 1.0,
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "material": "B",
+      "orientation": "B-opaque",
+      "weight": 0.5,
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "material": "B",
+      "orientation": "B-bright",
+      "weight": 0.5,
+      "readings": {
+        "trans": 1
+      }
+    }
+  ],
+  "training_records": [
+    {
+      "id": "tr-a-01",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-02",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-03",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-04",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-05",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-06",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-07",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-08",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-09",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-10",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-11",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-12",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-13",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-14",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-15",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-16",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-17",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-18",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-19",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-20",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-21",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-22",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-23",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-24",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-25",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-26",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-27",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-28",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-29",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-30",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-31",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-32",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-33",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-34",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-35",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-36",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-37",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-38",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-39",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-a-40",
+      "material": "A",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-dark-01",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-02",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-03",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-04",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-05",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-06",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-07",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-08",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-09",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-10",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-11",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-12",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-13",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-14",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-15",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-16",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-17",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-18",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-19",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-dark-20",
+      "material": "B",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "tr-b-bright-01",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-02",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-03",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-04",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-05",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-06",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-07",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-08",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-09",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-10",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-11",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-12",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-13",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-14",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-15",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-16",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-17",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-18",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-19",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "tr-b-bright-20",
+      "material": "B",
+      "readings": {
+        "trans": 1
+      }
+    }
+  ],
+  "heldout_records": [
+    {
+      "id": "ho-a",
+      "material": "A",
+      "orientation": "A-fixed",
+      "readings": {
+        "trans": 1
+      }
+    },
+    {
+      "id": "ho-b-dark",
+      "material": "B",
+      "orientation": "B-opaque",
+      "readings": {
+        "trans": 0
+      }
+    },
+    {
+      "id": "ho-b-bright",
+      "material": "B",
+      "orientation": "B-bright",
+      "readings": {
+        "trans": 1
+      }
+    }
+  ]
+}

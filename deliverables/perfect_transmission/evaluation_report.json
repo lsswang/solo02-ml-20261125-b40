@@ -1,0 +1,70 @@
+{
+  "source_input": "examples/perfect_transmission.json",
+  "exact_bayesian": {
+    "best_recognition_probability": 1.0,
+    "minimum_expected_cost_at_best_rate": 1.0,
+    "expected_correct_recognition_probability": 1.0,
+    "state_count": 4
+  },
+  "synthetic_new_specimens": {
+    "n": 0,
+    "signed_out": 0,
+    "correct_signed_out": 0,
+    "signed_rate": null,
+    "correct_rate_over_all": null,
+    "accuracy_among_signed": null,
+    "mean_spent": null,
+    "by_material": {},
+    "specimens": []
+  },
+  "heldout_reading_checks": {
+    "checked_readings": 2,
+    "mean_brier": 0.25,
+    "mean_log_loss": 0.693147,
+    "reading_accuracy": 0.5
+  },
+  "hypothesis_paths": [
+    {
+      "material": "A",
+      "orientation": "A-fixed",
+      "joint_prior": 0.5,
+      "terminal": "checkout",
+      "called_material": "A",
+      "correct": true,
+      "spent": 1.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "trans",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "A"
+        }
+      ]
+    },
+    {
+      "material": "B",
+      "orientation": "B-fixed",
+      "joint_prior": 0.5,
+      "terminal": "checkout",
+      "called_material": "B",
+      "correct": true,
+      "spent": 1.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "trans",
+          "result": "dark",
+          "charge": 1.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "B"
+        }
+      ]
+    }
+  ]
+}

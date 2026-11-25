@@ -1,0 +1,290 @@
+{
+  "schema_version": "mineral-workbench-policy/v1",
+  "route": "adaptive_workbench_only",
+  "source_input": "examples/upside_down_sealed.json",
+  "learned_orientation_weights": {
+    "A": {
+      "A-fixed": 1.0
+    },
+    "B": {
+      "B-fixed": 1.0
+    }
+  },
+  "summary": {
+    "route": "adaptive_workbench",
+    "budget": 1.0,
+    "threshold": 0.9,
+    "currency": "试验元",
+    "best_recognition_probability": 0.0,
+    "minimum_expected_cost_at_best_rate": 0.0,
+    "expected_correct_recognition_probability": 0.0,
+    "first_action": {
+      "type": "undecided"
+    },
+    "state_count": 4
+  },
+  "budget_curve": [
+    {
+      "budget": 0,
+      "best_recognition_probability": 0.0,
+      "expected_cost": 0.0,
+      "expected_correct_probability": 0.0,
+      "first_action": {
+        "type": "undecided"
+      }
+    },
+    {
+      "budget": 1,
+      "best_recognition_probability": 0.0,
+      "expected_cost": 0.0,
+      "expected_correct_probability": 0.0,
+      "first_action": {
+        "type": "undecided"
+      }
+    },
+    {
+      "budget": 2,
+      "best_recognition_probability": 0.0,
+      "expected_cost": 0.0,
+      "expected_correct_probability": 0.0,
+      "first_action": {
+        "type": "undecided"
+      }
+    },
+    {
+      "budget": 3,
+      "best_recognition_probability": 0.0,
+      "expected_cost": 0.0,
+      "expected_correct_probability": 0.0,
+      "first_action": {
+        "type": "undecided"
+      }
+    }
+  ],
+  "decision_table": [
+    {
+      "state": "alive3|sidefront|flips0|done1|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sideback|flips1|done1|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sidefront|flips0|done0|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sideback|flips1|done0|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sidefront|flips0|done0|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sideback|flips1|done0|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sidefront|flips0|done1|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sideback|flips1|done1|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sidefront|flips0|done0|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sideback|flips1|done0|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sidefront|flips0|done1|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sideback|flips1|done1|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sidefront|flips0|done0|paid1|budget3/1",
+      "side": "front",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive3|sideback|flips1|done0|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    }
+  ]
+}

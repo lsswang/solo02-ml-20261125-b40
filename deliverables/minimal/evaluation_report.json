@@ -1,0 +1,150 @@
+{
+  "source_input": "examples/minimal_tray.json",
+  "exact_bayesian": {
+    "best_recognition_probability": 1.0,
+    "minimum_expected_cost_at_best_rate": 2.5,
+    "expected_correct_recognition_probability": 1.0,
+    "state_count": 9
+  },
+  "synthetic_new_specimens": {
+    "n": 1,
+    "signed_out": 1,
+    "correct_signed_out": 1,
+    "signed_rate": 1.0,
+    "correct_rate_over_all": 1.0,
+    "accuracy_among_signed": 1.0,
+    "mean_spent": 3.0,
+    "by_material": {
+      "A": {
+        "n": 1,
+        "signed": 1,
+        "correct": 1,
+        "spent": 3.0
+      }
+    },
+    "specimens": [
+      {
+        "specimen_id": "demo-A",
+        "true_material": "A",
+        "true_orientation": "A-clear",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "front_signal",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "back_signal",
+            "result": "bright",
+            "charge": 2.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      }
+    ]
+  },
+  "heldout_reading_checks": {
+    "checked_readings": 6,
+    "mean_brier": 0.185185,
+    "mean_log_loss": 0.501359,
+    "reading_accuracy": 0.666667
+  },
+  "hypothesis_paths": [
+    {
+      "material": "A",
+      "orientation": "A-clear",
+      "joint_prior": 0.5,
+      "terminal": "checkout",
+      "called_material": "A",
+      "correct": true,
+      "spent": 3.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "front_signal",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "flip",
+          "charge": 0.0
+        },
+        {
+          "type": "test",
+          "test_id": "back_signal",
+          "result": "bright",
+          "charge": 2.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "A"
+        }
+      ]
+    },
+    {
+      "material": "B",
+      "orientation": "B-opaque",
+      "joint_prior": 0.25,
+      "terminal": "checkout",
+      "called_material": "B",
+      "correct": true,
+      "spent": 1.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "front_signal",
+          "result": "dark",
+          "charge": 1.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "B"
+        }
+      ]
+    },
+    {
+      "material": "B",
+      "orientation": "B-bright",
+      "joint_prior": 0.25,
+      "terminal": "checkout",
+      "called_material": "B",
+      "correct": true,
+      "spent": 3.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "front_signal",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "flip",
+          "charge": 0.0
+        },
+        {
+          "type": "test",
+          "test_id": "back_signal",
+          "result": "dark",
+          "charge": 2.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "B"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "schema_version": "mineral-optical-tray/v1",
+  "experiment_name": "原展盘倒扣并封住透光试验",
+  "description": "唯一余下读数对甲乙相同，更新后仍为先验各半，必须留未定。",
+  "random_seed": 303,
+  "confidence_threshold": 0.9,
+  "budget": 1,
+  "currency": "试验元",
+  "max_flips": 1,
+  "initial_side": "back",
+  "orientation_smoothing": 0.5,
+  "instruments": [
+    {
+      "id": "loupe",
+      "name": "边缘读数台",
+      "setup_fee": 0
+    }
+  ],
+  "initial_paid_instruments": [
+    "loupe"
+  ],
+  "tests": [
+    {
+      "id": "trans",
+      "name": "已封住的透光试验",
+      "instrument": "loupe",
+      "side": "front",
+      "cost": 1,
+      "sealed": true
+    },
+    {
+      "id": "rim",
+      "name": "余下的边缘明暗项",
+      "instrument": "loupe",
+      "side": "back",
+      "cost": 1
+    }
+  ],
+  "flip_action": {
+    "id": "flip",
+    "name": "翻回正面",
+    "cost": 0
+  },
+  "materials": [
+    {
+      "id": "A",
+      "name": "甲",
+      "prior": 0.5
+    },
+    {
+      "id": "B",
+      "name": "乙",
+      "prior": 0.5
+    }
+  ],
+  "templates": [
+    {
+      "material": "A",
+      "orientation": "A-fixed",
+      "weight": 1,
+      "readings": {
+        "trans": 1,
+        "rim": 1
+      }
+    },
+    {
+      "material": "B",
+      "orientation": "B-fixed",
+      "weight": 1,
+      "readings": {
+        "trans": 0,
+        "rim": 1
+      }
+    }
+  ],
+  "training_records": [
+    {
+      "id": "tr-1",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-2",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-3",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-4",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-5",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-6",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-7",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-8",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-9",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-10",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-11",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-12",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-13",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-14",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-15",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-16",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-17",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-18",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-19",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-20",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-21",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-22",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-23",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-24",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-25",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-26",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-27",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-28",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-29",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-30",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-31",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-32",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-33",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-34",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-35",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-36",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-37",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-38",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-39",
+      "material": "A",
+      "readings": {
+        "rim": 1
+      }
+    },
+    {
+      "id": "tr-40",
+      "material": "B",
+      "readings": {
+        "rim": 1
+      }
+    }
+  ],
+  "heldout_records": [
+    {
+      "id": "ho-a",
+      "material": "A",
+      "orientation": "A-fixed",
+      "readings": {
+        "trans": 1,
+        "rim": 1
+      }
+    },
+    {
+      "id": "ho-b",
+      "material": "B",
+      "orientation": "B-fixed",
+      "readings": {
+        "trans": 0,
+        "rim": 1
+      }
+    }
+  ],
+  "learned_orientation_weights": {
+    "A": {
+      "A-fixed": 1.0
+    },
+    "B": {
+      "B-fixed": 1.0
+    }
+  },
+  "learning_info": {
+    "training_records": 40,
+    "iterations": 1,
+    "converged": true,
+    "tolerance": 1e-11,
+    "log_likelihood": 0.0,
+    "smoothing": 0.5,
+    "reference_template_weights_if_supplied": {
+      "A": {
+        "A-fixed": 1.0
+      },
+      "B": {
+        "B-fixed": 1.0
+      }
+    },
+    "warnings": []
+  }
+}

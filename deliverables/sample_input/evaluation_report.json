@@ -1,0 +1,1426 @@
+{
+  "source_input": "examples/sample_input.json",
+  "exact_bayesian": {
+    "best_recognition_probability": 1.0,
+    "minimum_expected_cost_at_best_rate": 2.3514252330115704,
+    "expected_correct_recognition_probability": 1.0,
+    "state_count": 87
+  },
+  "synthetic_new_specimens": {
+    "n": 36,
+    "signed_out": 36,
+    "correct_signed_out": 36,
+    "signed_rate": 1.0,
+    "correct_rate_over_all": 1.0,
+    "accuracy_among_signed": 1.0,
+    "mean_spent": 2.472222,
+    "by_material": {
+      "B": {
+        "n": 16,
+        "signed": 16,
+        "correct": 16,
+        "spent": 39.0
+      },
+      "A": {
+        "n": 20,
+        "signed": 20,
+        "correct": 20,
+        "spent": 50.0
+      }
+    },
+    "specimens": [
+      {
+        "specimen_id": "new-001",
+        "true_material": "B",
+        "true_orientation": "B3",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-002",
+        "true_material": "A",
+        "true_orientation": "A1",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-003",
+        "true_material": "B",
+        "true_orientation": "B2",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-004",
+        "true_material": "A",
+        "true_orientation": "A2",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-005",
+        "true_material": "A",
+        "true_orientation": "A1",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-006",
+        "true_material": "A",
+        "true_orientation": "A2",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-007",
+        "true_material": "A",
+        "true_orientation": "A3",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-008",
+        "true_material": "A",
+        "true_orientation": "A1",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-009",
+        "true_material": "B",
+        "true_orientation": "B1",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-010",
+        "true_material": "B",
+        "true_orientation": "B3",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-011",
+        "true_material": "A",
+        "true_orientation": "A3",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-012",
+        "true_material": "B",
+        "true_orientation": "B3",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-013",
+        "true_material": "B",
+        "true_orientation": "B3",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-014",
+        "true_material": "A",
+        "true_orientation": "A1",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-015",
+        "true_material": "A",
+        "true_orientation": "A3",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-016",
+        "true_material": "B",
+        "true_orientation": "B2",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-017",
+        "true_material": "B",
+        "true_orientation": "B3",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-018",
+        "true_material": "A",
+        "true_orientation": "A1",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-019",
+        "true_material": "A",
+        "true_orientation": "A2",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-020",
+        "true_material": "B",
+        "true_orientation": "B2",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-021",
+        "true_material": "B",
+        "true_orientation": "B3",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-022",
+        "true_material": "B",
+        "true_orientation": "B3",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-023",
+        "true_material": "B",
+        "true_orientation": "B1",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-024",
+        "true_material": "A",
+        "true_orientation": "A1",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-025",
+        "true_material": "A",
+        "true_orientation": "A1",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-026",
+        "true_material": "A",
+        "true_orientation": "A1",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-027",
+        "true_material": "A",
+        "true_orientation": "A2",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-028",
+        "true_material": "A",
+        "true_orientation": "A2",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-029",
+        "true_material": "B",
+        "true_orientation": "B2",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-030",
+        "true_material": "A",
+        "true_orientation": "A2",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-031",
+        "true_material": "B",
+        "true_orientation": "B2",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-032",
+        "true_material": "A",
+        "true_orientation": "A3",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-033",
+        "true_material": "A",
+        "true_orientation": "A1",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-034",
+        "true_material": "B",
+        "true_orientation": "B2",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-035",
+        "true_material": "B",
+        "true_orientation": "B2",
+        "signed": true,
+        "called_material": "B",
+        "correct": true,
+        "spent": 2.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "B"
+          }
+        ]
+      },
+      {
+        "specimen_id": "new-036",
+        "true_material": "A",
+        "true_orientation": "A1",
+        "signed": true,
+        "called_material": "A",
+        "correct": true,
+        "spent": 3.0,
+        "actions": [
+          {
+            "type": "test",
+            "test_id": "cleavage",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "test",
+            "test_id": "luster",
+            "result": "bright",
+            "charge": 1.0
+          },
+          {
+            "type": "flip",
+            "charge": 0.0
+          },
+          {
+            "type": "test",
+            "test_id": "asterism",
+            "result": "dark",
+            "charge": 1.0
+          },
+          {
+            "type": "checkout",
+            "material_id": "A"
+          }
+        ]
+      }
+    ]
+  },
+  "heldout_reading_checks": {
+    "checked_readings": 240,
+    "mean_brier": 0.103467,
+    "mean_log_loss": 0.290594,
+    "reading_accuracy": 0.833333
+  },
+  "hypothesis_paths": [
+    {
+      "material": "A",
+      "orientation": "A1",
+      "joint_prior": 0.21877217178708078,
+      "terminal": "checkout",
+      "called_material": "A",
+      "correct": true,
+      "spent": 3.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "cleavage",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "test",
+          "test_id": "luster",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "flip",
+          "charge": 0.0
+        },
+        {
+          "type": "test",
+          "test_id": "asterism",
+          "result": "dark",
+          "charge": 1.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "A"
+        }
+      ]
+    },
+    {
+      "material": "A",
+      "orientation": "A2",
+      "joint_prior": 0.1912990659869611,
+      "terminal": "checkout",
+      "called_material": "A",
+      "correct": true,
+      "spent": 2.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "cleavage",
+          "result": "dark",
+          "charge": 1.0
+        },
+        {
+          "type": "flip",
+          "charge": 0.0
+        },
+        {
+          "type": "test",
+          "test_id": "asterism",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "A"
+        }
+      ]
+    },
+    {
+      "material": "A",
+      "orientation": "A3",
+      "joint_prior": 0.08992876222595814,
+      "terminal": "checkout",
+      "called_material": "A",
+      "correct": true,
+      "spent": 2.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "cleavage",
+          "result": "dark",
+          "charge": 1.0
+        },
+        {
+          "type": "flip",
+          "charge": 0.0
+        },
+        {
+          "type": "test",
+          "test_id": "asterism",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "A"
+        }
+      ]
+    },
+    {
+      "material": "B",
+      "orientation": "B1",
+      "joint_prior": 0.17486720715683532,
+      "terminal": "checkout",
+      "called_material": "B",
+      "correct": true,
+      "spent": 2.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "cleavage",
+          "result": "dark",
+          "charge": 1.0
+        },
+        {
+          "type": "flip",
+          "charge": 0.0
+        },
+        {
+          "type": "test",
+          "test_id": "asterism",
+          "result": "dark",
+          "charge": 1.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "B"
+        }
+      ]
+    },
+    {
+      "material": "B",
+      "orientation": "B2",
+      "joint_prior": 0.1924797316186749,
+      "terminal": "checkout",
+      "called_material": "B",
+      "correct": true,
+      "spent": 2.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "cleavage",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "test",
+          "test_id": "luster",
+          "result": "dark",
+          "charge": 1.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "B"
+        }
+      ]
+    },
+    {
+      "material": "B",
+      "orientation": "B3",
+      "joint_prior": 0.1326530612244898,
+      "terminal": "checkout",
+      "called_material": "B",
+      "correct": true,
+      "spent": 3.0,
+      "actions": [
+        {
+          "type": "test",
+          "test_id": "cleavage",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "test",
+          "test_id": "luster",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "flip",
+          "charge": 0.0
+        },
+        {
+          "type": "test",
+          "test_id": "asterism",
+          "result": "bright",
+          "charge": 1.0
+        },
+        {
+          "type": "checkout",
+          "material_id": "B"
+        }
+      ]
+    }
+  ]
+}

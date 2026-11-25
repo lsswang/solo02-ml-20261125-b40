@@ -1,0 +1,41 @@
+{
+  "schema_version": "mineral-optical-tray/v1",
+  "source_input": "examples/sample_input.json",
+  "orientation_weights": {
+    "A": {
+      "A1": 0.43754434357416155,
+      "A2": 0.3825981319739222,
+      "A3": 0.17985752445191627
+    },
+    "B": {
+      "B1": 0.34973441431367064,
+      "B2": 0.3849594632373498,
+      "B3": 0.2653061224489796
+    }
+  },
+  "material_priors": {
+    "A": 0.5,
+    "B": 0.5
+  },
+  "learning": {
+    "training_records": 420,
+    "iterations": 15,
+    "converged": true,
+    "tolerance": 1e-11,
+    "log_likelihood": -416.1173324446493,
+    "smoothing": 0.5,
+    "reference_template_weights_if_supplied": {
+      "A": {
+        "A1": 0.45,
+        "A2": 0.35,
+        "A3": 0.2
+      },
+      "B": {
+        "B1": 0.4,
+        "B2": 0.35,
+        "B3": 0.25
+      }
+    },
+    "warnings": []
+  }
+}

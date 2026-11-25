@@ -1,0 +1,120 @@
+{
+  "perfect_transmission": {
+    "bright_posterior": {
+      "A": {
+        "exact": "1",
+        "value": 1.0
+      },
+      "B": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    "dark_posterior": {
+      "A": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "B": {
+        "exact": "1",
+        "value": 1.0
+      }
+    },
+    "expected_conclusion": "both bright and dark branches are checkout-eligible"
+  },
+  "half_b_transmits": {
+    "bright_posterior": {
+      "A": {
+        "exact": "2/3",
+        "value": 0.666667
+      },
+      "B": {
+        "exact": "1/3",
+        "value": 0.333333
+      }
+    },
+    "dark_posterior": {
+      "A": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "B": {
+        "exact": "1",
+        "value": 1.0
+      }
+    },
+    "expected_conclusion": "bright gives A=2/3 and remains undecided; dark can check out B"
+  },
+  "upside_down_sealed": {
+    "rim_bright_posterior": {
+      "A": {
+        "exact": "1/2",
+        "value": 0.5
+      },
+      "B": {
+        "exact": "1/2",
+        "value": 0.5
+      }
+    },
+    "expected_conclusion": "identical remaining reading leaves A/B at 1/2"
+  },
+  "minimal_two_sides": {
+    "budget_curve": [
+      {
+        "budget": 0,
+        "best_recognition_probability": 0.0,
+        "expected_cost": 0.0,
+        "expected_correct_probability": 0.0,
+        "first_action": {
+          "type": "undecided"
+        }
+      },
+      {
+        "budget": 1,
+        "best_recognition_probability": 0.25,
+        "expected_cost": 1.0,
+        "expected_correct_probability": 0.25,
+        "first_action": {
+          "type": "run_test",
+          "test_id": "front_signal",
+          "name": "正面辨别试验",
+          "instrument": "front_eye",
+          "charge": 1.0
+        }
+      },
+      {
+        "budget": 2,
+        "best_recognition_probability": 0.25,
+        "expected_cost": 1.0,
+        "expected_correct_probability": 0.25,
+        "first_action": {
+          "type": "run_test",
+          "test_id": "front_signal",
+          "name": "正面辨别试验",
+          "instrument": "front_eye",
+          "charge": 1.0
+        }
+      },
+      {
+        "budget": 3,
+        "best_recognition_probability": 1.0,
+        "expected_cost": 2.5,
+        "expected_correct_probability": 1.0,
+        "first_action": {
+          "type": "run_test",
+          "test_id": "front_signal",
+          "name": "正面辨别试验",
+          "instrument": "front_eye",
+          "charge": 1.0
+        }
+      }
+    ],
+    "demo_path": [
+      "register DEMO-001",
+      "front_signal=bright -> A=2/3, undecided, spent=1",
+      "flip -> back face, front action unavailable",
+      "back_signal=bright -> A=1, spent=3 including setup fee=1",
+      "checkout A"
+    ]
+  }
+}

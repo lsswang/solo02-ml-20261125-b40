@@ -1,0 +1,6054 @@
+{
+  "schema_version": "mineral-optical-tray/v1",
+  "experiment_name": "展台五读数光学矿片识别工作台",
+  "description": "每种材质三个已知取向模板；训练记录只含部分读数且有材质标签。工作台按当前联合概率自适应选择试验，并对第二件仪器收取一次调机费。",
+  "random_seed": 606,
+  "confidence_threshold": 0.9,
+  "budget": 4,
+  "currency": "试验元",
+  "max_flips": 1,
+  "initial_side": "front",
+  "orientation_smoothing": 0.5,
+  "second_instrument_setup_fee": 1,
+  "instruments": [
+    {
+      "id": "loupe",
+      "name": "首选目镜台",
+      "setup_fee": 0
+    },
+    {
+      "id": "optical_bench",
+      "name": "第二件仪器：透光/偏光台",
+      "setup_fee": 1
+    }
+  ],
+  "initial_paid_instruments": [
+    "loupe"
+  ],
+  "tests": [
+    {
+      "id": "cleavage",
+      "name": "正面解理明暗",
+      "instrument": "loupe",
+      "side": "front",
+      "cost": 1
+    },
+    {
+      "id": "luster",
+      "name": "正面反光强弱",
+      "instrument": "loupe",
+      "side": "front",
+      "cost": 1
+    },
+    {
+      "id": "trans",
+      "name": "透光试验",
+      "instrument": "optical_bench",
+      "side": "front",
+      "cost": 1
+    },
+    {
+      "id": "polar",
+      "name": "背面偏光花样",
+      "instrument": "optical_bench",
+      "side": "back",
+      "cost": 1
+    },
+    {
+      "id": "asterism",
+      "name": "背面星线",
+      "instrument": "loupe",
+      "side": "back",
+      "cost": 1
+    }
+  ],
+  "flip_action": {
+    "id": "flip",
+    "name": "翻面",
+    "cost": 0
+  },
+  "materials": [
+    {
+      "id": "A",
+      "name": "甲质矿片",
+      "prior": 0.5
+    },
+    {
+      "id": "B",
+      "name": "乙质矿片",
+      "prior": 0.5
+    }
+  ],
+  "templates": [
+    {
+      "material": "A",
+      "orientation": "A1",
+      "weight": 0.45,
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "material": "A",
+      "orientation": "A2",
+      "weight": 0.35,
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "material": "A",
+      "orientation": "A3",
+      "weight": 0.2,
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "material": "B",
+      "orientation": "B1",
+      "weight": 0.4,
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "material": "B",
+      "orientation": "B2",
+      "weight": 0.35,
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "material": "B",
+      "orientation": "B3",
+      "weight": 0.25,
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    }
+  ],
+  "training_records": [
+    {
+      "id": "train-001",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "trans": 0,
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-002",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-003",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-004",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-005",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-006",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "polar": 0,
+        "trans": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-007",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-008",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-009",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-010",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "polar": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-011",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-012",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "asterism": 0,
+        "cleavage": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-013",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-014",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-015",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-016",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "luster": 0,
+        "polar": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-017",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "polar": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-018",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-019",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 1,
+        "trans": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-020",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "cleavage": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-021",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-022",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-023",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-024",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "asterism": 1,
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-025",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 0,
+        "asterism": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-026",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-027",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "luster": 1,
+        "trans": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-028",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "polar": 1,
+        "asterism": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-029",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-030",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "cleavage": 1,
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-031",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "asterism": 0,
+        "polar": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-032",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "polar": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-033",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-034",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-035",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 1,
+        "polar": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-036",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-037",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "cleavage": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-038",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "trans": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-039",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "luster": 0,
+        "trans": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-040",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-041",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "trans": 1,
+        "polar": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-042",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "asterism": 1,
+        "cleavage": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-043",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "cleavage": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-044",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "asterism": 0,
+        "cleavage": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-045",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-046",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-047",
+      "material": "A",
+      "readings": {
+        "luster": 0,
+        "cleavage": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-048",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "polar": 0,
+        "luster": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-049",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-050",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "luster": 1,
+        "asterism": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-051",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-052",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-053",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-054",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-055",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "asterism": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-056",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "trans": 1,
+        "asterism": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-057",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-058",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "polar": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-059",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-060",
+      "material": "A",
+      "readings": {
+        "luster": 0,
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-061",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "trans": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-062",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "luster": 0,
+        "trans": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-063",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "polar": 0,
+        "cleavage": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-064",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-065",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "polar": 1,
+        "cleavage": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-066",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "trans": 1,
+        "cleavage": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-067",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-068",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "luster": 0,
+        "asterism": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-069",
+      "material": "B",
+      "readings": {
+        "asterism": 1,
+        "polar": 1,
+        "trans": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-070",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "polar": 0,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-071",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-072",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-073",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-074",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-075",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "luster": 0,
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-076",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-077",
+      "material": "B",
+      "readings": {
+        "asterism": 1,
+        "cleavage": 1,
+        "polar": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-078",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1,
+        "polar": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-079",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-080",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-081",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "luster": 1,
+        "trans": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-082",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "cleavage": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-083",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-084",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-085",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 0,
+        "polar": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-086",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-087",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "trans": 1,
+        "asterism": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-088",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-089",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "polar": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-090",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-091",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "cleavage": 1,
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-092",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "polar": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-093",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "polar": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-094",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-095",
+      "material": "B",
+      "readings": {
+        "asterism": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-096",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "asterism": 0,
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-097",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-098",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-099",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "trans": 1,
+        "cleavage": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-100",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-101",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-102",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-103",
+      "material": "B",
+      "readings": {
+        "asterism": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-104",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "asterism": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-105",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-106",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-107",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-108",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-109",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-110",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "asterism": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-111",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-112",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "polar": 0,
+        "luster": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-113",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-114",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "luster": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-115",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 0,
+        "polar": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-116",
+      "material": "B",
+      "readings": {
+        "asterism": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-117",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "trans": 0,
+        "asterism": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-118",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-119",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0,
+        "luster": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-120",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "trans": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-121",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-122",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0,
+        "luster": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-123",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "trans": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-124",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-125",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "trans": 1,
+        "luster": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-126",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "cleavage": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-127",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0,
+        "cleavage": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-128",
+      "material": "A",
+      "readings": {
+        "luster": 0,
+        "cleavage": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-129",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "trans": 1,
+        "cleavage": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-130",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-131",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-132",
+      "material": "B",
+      "readings": {
+        "asterism": 1,
+        "trans": 0,
+        "luster": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-133",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "trans": 1,
+        "asterism": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-134",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-135",
+      "material": "A",
+      "readings": {
+        "luster": 0,
+        "asterism": 1,
+        "cleavage": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-136",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-137",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-138",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "trans": 1,
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-139",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 0,
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-140",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "cleavage": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-141",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-142",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-143",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-144",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-145",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-146",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "trans": 1,
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-147",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "cleavage": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-148",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "asterism": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-149",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "trans": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-150",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-151",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-152",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-153",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "trans": 1,
+        "cleavage": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-154",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-155",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "cleavage": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-156",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "cleavage": 1,
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-157",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-158",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "asterism": 0,
+        "trans": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-159",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-160",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-161",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "asterism": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-162",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-163",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "luster": 1,
+        "polar": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-164",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "luster": 0,
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-165",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-166",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-167",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-168",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-169",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "asterism": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-170",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "luster": 1,
+        "asterism": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-171",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "luster": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-172",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-173",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-174",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "asterism": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-175",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-176",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-177",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-178",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-179",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-180",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "trans": 0,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-181",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "polar": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-182",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-183",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-184",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-185",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-186",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "cleavage": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-187",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "asterism": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-188",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-189",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-190",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-191",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-192",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "luster": 1,
+        "trans": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-193",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "asterism": 0,
+        "polar": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-194",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "trans": 1,
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-195",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-196",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "polar": 1,
+        "luster": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-197",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "polar": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-198",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-199",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-200",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "trans": 0,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-201",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "asterism": 1,
+        "trans": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-202",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "polar": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-203",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-204",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-205",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "polar": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-206",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-207",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "trans": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-208",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "polar": 1,
+        "cleavage": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-209",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "trans": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-210",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-211",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-212",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "polar": 1,
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-213",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-214",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "cleavage": 1,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-215",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-216",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1,
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-217",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-218",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "cleavage": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-219",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-220",
+      "material": "B",
+      "readings": {
+        "asterism": 1,
+        "luster": 1,
+        "cleavage": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-221",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "polar": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-222",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-223",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "trans": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-224",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-225",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-226",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-227",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "asterism": 1,
+        "cleavage": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-228",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-229",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-230",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-231",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "polar": 1,
+        "cleavage": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-232",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-233",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "asterism": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-234",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 1,
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-235",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-236",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-237",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-238",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "asterism": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-239",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-240",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-241",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-242",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "asterism": 0,
+        "trans": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-243",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "polar": 1,
+        "cleavage": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-244",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-245",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-246",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "cleavage": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-247",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-248",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "asterism": 1,
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-249",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-250",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "polar": 0,
+        "luster": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-251",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-252",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "polar": 0,
+        "asterism": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-253",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-254",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "asterism": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-255",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "asterism": 0,
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-256",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-257",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-258",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-259",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0,
+        "luster": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-260",
+      "material": "A",
+      "readings": {
+        "luster": 0,
+        "asterism": 1,
+        "trans": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-261",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-262",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "polar": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-263",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-264",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-265",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "asterism": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-266",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-267",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "cleavage": 1,
+        "trans": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-268",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "cleavage": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-269",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-270",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-271",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-272",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "trans": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-273",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "polar": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-274",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-275",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-276",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-277",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-278",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-279",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-280",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 0,
+        "asterism": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-281",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "asterism": 1,
+        "trans": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-282",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-283",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-284",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-285",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-286",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "luster": 0,
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-287",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-288",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-289",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "asterism": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-290",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 0,
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-291",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 0,
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-292",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-293",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "trans": 0,
+        "cleavage": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-294",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-295",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "asterism": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-296",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-297",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-298",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-299",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-300",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "luster": 1,
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-301",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "trans": 0,
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-302",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-303",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-304",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "asterism": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-305",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "luster": 1,
+        "asterism": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-306",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-307",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-308",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "polar": 0,
+        "cleavage": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-309",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "luster": 0,
+        "asterism": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-310",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 1,
+        "luster": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-311",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-312",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-313",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-314",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "trans": 1,
+        "luster": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-315",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-316",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-317",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-318",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-319",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-320",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "polar": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-321",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "polar": 0,
+        "cleavage": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-322",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-323",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-324",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-325",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-326",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-327",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-328",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-329",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-330",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-331",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-332",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-333",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "trans": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-334",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "asterism": 1,
+        "luster": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-335",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-336",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "luster": 1,
+        "polar": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-337",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "cleavage": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-338",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "luster": 1,
+        "trans": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-339",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-340",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "asterism": 0,
+        "polar": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-341",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "luster": 1,
+        "asterism": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-342",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "asterism": 1,
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-343",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1,
+        "polar": 0,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-344",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-345",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "polar": 1,
+        "cleavage": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-346",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-347",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "asterism": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-348",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "luster": 1,
+        "asterism": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-349",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-350",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-351",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "polar": 1,
+        "trans": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-352",
+      "material": "B",
+      "readings": {
+        "asterism": 1,
+        "luster": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-353",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "luster": 1,
+        "asterism": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-354",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "polar": 1,
+        "luster": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-355",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-356",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-357",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "trans": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-358",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-359",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-360",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-361",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "polar": 0,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-362",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-363",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-364",
+      "material": "A",
+      "readings": {
+        "polar": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-365",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-366",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-367",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "train-368",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-369",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "cleavage": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-370",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-371",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-372",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "cleavage": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-373",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "trans": 1,
+        "luster": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-374",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-375",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-376",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "cleavage": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-377",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "polar": 0,
+        "luster": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-378",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "cleavage": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-379",
+      "material": "A",
+      "readings": {
+        "asterism": 1,
+        "cleavage": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-380",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1,
+        "trans": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-381",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "cleavage": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-382",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "polar": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-383",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "polar": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-384",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 1,
+        "cleavage": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-385",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-386",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "polar": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-387",
+      "material": "A",
+      "readings": {
+        "asterism": 0,
+        "trans": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-388",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "cleavage": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-389",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-390",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "polar": 0,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-391",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-392",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "trans": 1,
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-393",
+      "material": "A",
+      "readings": {
+        "cleavage": 1,
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-394",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "trans": 1,
+        "luster": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-395",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "asterism": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-396",
+      "material": "A",
+      "readings": {
+        "luster": 1,
+        "asterism": 1,
+        "cleavage": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-397",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "train-398",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "luster": 0,
+        "polar": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "train-399",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-400",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "luster": 0,
+        "trans": 0,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-401",
+      "material": "A",
+      "readings": {
+        "polar": 0,
+        "asterism": 1,
+        "cleavage": 0
+      }
+    },
+    {
+      "id": "train-402",
+      "material": "A",
+      "readings": {
+        "luster": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-403",
+      "material": "A",
+      "readings": {
+        "cleavage": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-404",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-405",
+      "material": "B",
+      "readings": {
+        "polar": 0,
+        "cleavage": 1,
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-406",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 1,
+        "cleavage": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-407",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "trans": 0,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-408",
+      "material": "B",
+      "readings": {
+        "asterism": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "train-409",
+      "material": "B",
+      "readings": {
+        "asterism": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-410",
+      "material": "B",
+      "readings": {
+        "polar": 1,
+        "trans": 0,
+        "asterism": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-411",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "polar": 0,
+        "asterism": 0,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-412",
+      "material": "B",
+      "readings": {
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-413",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-414",
+      "material": "B",
+      "readings": {
+        "cleavage": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "train-415",
+      "material": "B",
+      "readings": {
+        "cleavage": 1,
+        "trans": 1,
+        "luster": 0
+      }
+    },
+    {
+      "id": "train-416",
+      "material": "B",
+      "readings": {
+        "luster": 1,
+        "trans": 0,
+        "asterism": 1,
+        "cleavage": 1
+      }
+    },
+    {
+      "id": "train-417",
+      "material": "B",
+      "readings": {
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-418",
+      "material": "B",
+      "readings": {
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "train-419",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "luster": 1
+      }
+    },
+    {
+      "id": "train-420",
+      "material": "A",
+      "readings": {
+        "trans": 1,
+        "asterism": 1,
+        "polar": 1,
+        "luster": 0
+      }
+    }
+  ],
+  "heldout_records": [
+    {
+      "id": "heldout-001",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-002",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "polar": 1,
+        "asterism": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0
+      }
+    },
+    {
+      "id": "heldout-003",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "trans": 0,
+        "luster": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-004",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "luster": 0,
+        "asterism": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-005",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "luster": 1,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-006",
+      "material": "A",
+      "orientation": "A3",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "polar": 1,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-007",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "luster": 1,
+        "trans": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-008",
+      "material": "A",
+      "orientation": "A3",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "trans": 1,
+        "luster": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-009",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 0,
+        "luster": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-010",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "polar": 1,
+        "asterism": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "heldout-011",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 1,
+        "luster": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-012",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "cleavage": 0,
+        "asterism": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-013",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "polar": 0,
+        "trans": 1
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-014",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "trans": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-015",
+      "material": "A",
+      "orientation": "A3",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "luster": 0,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-016",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "trans": 0,
+        "luster": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-017",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "cleavage": 1,
+        "asterism": 1
+      },
+      "check_readings": {
+        "luster": 1,
+        "trans": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "heldout-018",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "polar": 0,
+        "luster": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-019",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "asterism": 1,
+        "cleavage": 1
+      },
+      "check_readings": {
+        "luster": 1,
+        "trans": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "heldout-020",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "luster": 1,
+        "trans": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-021",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "asterism": 1,
+        "cleavage": 1
+      },
+      "check_readings": {
+        "luster": 1,
+        "trans": 0,
+        "polar": 1
+      }
+    },
+    {
+      "id": "heldout-022",
+      "material": "A",
+      "orientation": "A3",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "cleavage": 0,
+        "asterism": 1
+      },
+      "check_readings": {
+        "luster": 0,
+        "trans": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "heldout-023",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "polar": 0,
+        "luster": 1
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-024",
+      "material": "A",
+      "orientation": "A3",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "polar": 1,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-025",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "polar": 1,
+        "luster": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "trans": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-026",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 1,
+        "asterism": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-027",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "asterism": 1,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "luster": 1,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-028",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "luster": 1,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-029",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "cleavage": 0,
+        "trans": 1
+      },
+      "check_readings": {
+        "luster": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-030",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-031",
+      "material": "A",
+      "orientation": "A3",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "luster": 0,
+        "polar": 1
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-032",
+      "material": "A",
+      "orientation": "A3",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "trans": 1,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-033",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "polar": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "heldout-034",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "polar": 0,
+        "asterism": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1
+      }
+    },
+    {
+      "id": "heldout-035",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "cleavage": 1
+      },
+      "check_readings": {
+        "luster": 0,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-036",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 1,
+        "cleavage": 1
+      },
+      "check_readings": {
+        "luster": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-037",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "cleavage": 0,
+        "asterism": 1
+      },
+      "check_readings": {
+        "luster": 1,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-038",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "trans": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "heldout-039",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "cleavage": 1,
+        "trans": 0
+      },
+      "check_readings": {
+        "luster": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-040",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 0,
+        "polar": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-041",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 1,
+        "polar": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-042",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "polar": 1,
+        "trans": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-043",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 0,
+        "asterism": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-044",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 0,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-045",
+      "material": "A",
+      "orientation": "A3",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "luster": 0,
+        "asterism": 1
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "trans": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "heldout-046",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "luster": 1,
+        "trans": 1
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-047",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "luster": 0,
+        "polar": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-048",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "luster": 0,
+        "cleavage": 1
+      },
+      "check_readings": {
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-049",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "trans": 1,
+        "asterism": 1
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-050",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "trans": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "heldout-051",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "trans": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "heldout-052",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "cleavage": 1
+      },
+      "check_readings": {
+        "luster": 0,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-053",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "trans": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-054",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "polar": 1,
+        "cleavage": 1
+      },
+      "check_readings": {
+        "luster": 1,
+        "trans": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-055",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "cleavage": 1,
+        "polar": 1
+      },
+      "check_readings": {
+        "luster": 1,
+        "trans": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-056",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "polar": 0,
+        "luster": 1
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-057",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "luster": 1,
+        "cleavage": 1
+      },
+      "check_readings": {
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-058",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 0,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-059",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "luster": 1,
+        "polar": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "trans": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-060",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "trans": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "heldout-061",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "cleavage": 0,
+        "asterism": 1
+      },
+      "check_readings": {
+        "luster": 1,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-062",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "cleavage": 1,
+        "asterism": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-063",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "luster": 1,
+        "cleavage": 1
+      },
+      "check_readings": {
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-064",
+      "material": "B",
+      "orientation": "B3",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "trans": 0,
+        "asterism": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "polar": 1
+      }
+    },
+    {
+      "id": "heldout-065",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "polar": 0,
+        "trans": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-066",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "luster": 1,
+        "cleavage": 1
+      },
+      "check_readings": {
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-067",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "luster": 1,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-068",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "polar": 1,
+        "asterism": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1
+      }
+    },
+    {
+      "id": "heldout-069",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "trans": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-070",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "polar": 0,
+        "trans": 1
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-071",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "polar": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "heldout-072",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "asterism": 1,
+        "luster": 1
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "trans": 1,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-073",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "polar": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0
+      }
+    },
+    {
+      "id": "heldout-074",
+      "material": "B",
+      "orientation": "B2",
+      "readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 1,
+        "luster": 0
+      },
+      "check_readings": {
+        "cleavage": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-075",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "cleavage": 0,
+        "luster": 0
+      },
+      "check_readings": {
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-076",
+      "material": "A",
+      "orientation": "A2",
+      "readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "trans": 1,
+        "luster": 1
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-077",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "asterism": 0,
+        "trans": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "polar": 0
+      }
+    },
+    {
+      "id": "heldout-078",
+      "material": "A",
+      "orientation": "A3",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      },
+      "evidence_readings": {
+        "trans": 1,
+        "luster": 0
+      },
+      "check_readings": {
+        "cleavage": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "heldout-079",
+      "material": "A",
+      "orientation": "A1",
+      "readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "cleavage": 1,
+        "luster": 1
+      },
+      "check_readings": {
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "heldout-080",
+      "material": "B",
+      "orientation": "B1",
+      "readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      },
+      "evidence_readings": {
+        "trans": 0,
+        "cleavage": 0
+      },
+      "check_readings": {
+        "luster": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    }
+  ],
+  "new_specimens": [
+    {
+      "id": "new-001",
+      "material": "B",
+      "orientation": "B3",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-002",
+      "material": "A",
+      "orientation": "A1",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-003",
+      "material": "B",
+      "orientation": "B2",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-004",
+      "material": "A",
+      "orientation": "A2",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-005",
+      "material": "A",
+      "orientation": "A1",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-006",
+      "material": "A",
+      "orientation": "A2",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-007",
+      "material": "A",
+      "orientation": "A3",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-008",
+      "material": "A",
+      "orientation": "A1",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-009",
+      "material": "B",
+      "orientation": "B1",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-010",
+      "material": "B",
+      "orientation": "B3",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-011",
+      "material": "A",
+      "orientation": "A3",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-012",
+      "material": "B",
+      "orientation": "B3",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-013",
+      "material": "B",
+      "orientation": "B3",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-014",
+      "material": "A",
+      "orientation": "A1",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-015",
+      "material": "A",
+      "orientation": "A3",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-016",
+      "material": "B",
+      "orientation": "B2",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-017",
+      "material": "B",
+      "orientation": "B3",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-018",
+      "material": "A",
+      "orientation": "A1",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-019",
+      "material": "A",
+      "orientation": "A2",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-020",
+      "material": "B",
+      "orientation": "B2",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-021",
+      "material": "B",
+      "orientation": "B3",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-022",
+      "material": "B",
+      "orientation": "B3",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 0,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-023",
+      "material": "B",
+      "orientation": "B1",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 0,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-024",
+      "material": "A",
+      "orientation": "A1",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-025",
+      "material": "A",
+      "orientation": "A1",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-026",
+      "material": "A",
+      "orientation": "A1",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-027",
+      "material": "A",
+      "orientation": "A2",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-028",
+      "material": "A",
+      "orientation": "A2",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-029",
+      "material": "B",
+      "orientation": "B2",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-030",
+      "material": "A",
+      "orientation": "A2",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 1,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-031",
+      "material": "B",
+      "orientation": "B2",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-032",
+      "material": "A",
+      "orientation": "A3",
+      "actual_readings": {
+        "cleavage": 0,
+        "luster": 0,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 1
+      }
+    },
+    {
+      "id": "new-033",
+      "material": "A",
+      "orientation": "A1",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-034",
+      "material": "B",
+      "orientation": "B2",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-035",
+      "material": "B",
+      "orientation": "B2",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 0,
+        "trans": 1,
+        "polar": 0,
+        "asterism": 0
+      }
+    },
+    {
+      "id": "new-036",
+      "material": "A",
+      "orientation": "A1",
+      "actual_readings": {
+        "cleavage": 1,
+        "luster": 1,
+        "trans": 1,
+        "polar": 1,
+        "asterism": 0
+      }
+    }
+  ]
+}

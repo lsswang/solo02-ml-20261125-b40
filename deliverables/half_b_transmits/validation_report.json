@@ -1,0 +1,51 @@
+{
+  "checked_readings": 3,
+  "records": 3,
+  "mean_brier": 0.229167,
+  "mean_log_loss": 0.653886,
+  "reading_accuracy": 0.666667,
+  "material_accuracy_on_evidence": 0.333333,
+  "per_test": {
+    "trans": {
+      "n": 3,
+      "brier": 0.229167,
+      "log_loss": 0.653886,
+      "reading_accuracy": 0.666667
+    }
+  },
+  "rows": [
+    {
+      "record_id": "ho-a",
+      "target_test": "trans",
+      "actual": "bright",
+      "predicted_bright_probability": 0.75,
+      "brier": 0.0625,
+      "log_loss": 0.287682,
+      "predicted_material": "A",
+      "material_posterior": 0.5,
+      "true_material": "A"
+    },
+    {
+      "record_id": "ho-b-dark",
+      "target_test": "trans",
+      "actual": "dark",
+      "predicted_bright_probability": 0.75,
+      "brier": 0.5625,
+      "log_loss": 1.386294,
+      "predicted_material": "A",
+      "material_posterior": 0.5,
+      "true_material": "B"
+    },
+    {
+      "record_id": "ho-b-bright",
+      "target_test": "trans",
+      "actual": "bright",
+      "predicted_bright_probability": 0.75,
+      "brier": 0.0625,
+      "log_loss": 0.287682,
+      "predicted_material": "A",
+      "material_posterior": 0.5,
+      "true_material": "B"
+    }
+  ]
+}

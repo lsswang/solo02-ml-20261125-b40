@@ -1,0 +1,90 @@
+{
+  "checked_readings": 6,
+  "records": 3,
+  "mean_brier": 0.185185,
+  "mean_log_loss": 0.501359,
+  "reading_accuracy": 0.666667,
+  "material_accuracy_on_evidence": 0.666667,
+  "per_test": {
+    "front_signal": {
+      "n": 3,
+      "brier": 0.185185,
+      "log_loss": 0.501359,
+      "reading_accuracy": 0.666667
+    },
+    "back_signal": {
+      "n": 3,
+      "brier": 0.185185,
+      "log_loss": 0.501359,
+      "reading_accuracy": 0.666667
+    }
+  },
+  "rows": [
+    {
+      "record_id": "ho-a",
+      "target_test": "front_signal",
+      "actual": "bright",
+      "predicted_bright_probability": 0.666667,
+      "brier": 0.111111,
+      "log_loss": 0.405465,
+      "predicted_material": "A",
+      "material_posterior": 0.666667,
+      "true_material": "A"
+    },
+    {
+      "record_id": "ho-a",
+      "target_test": "back_signal",
+      "actual": "bright",
+      "predicted_bright_probability": 0.666667,
+      "brier": 0.111111,
+      "log_loss": 0.405465,
+      "predicted_material": "A",
+      "material_posterior": 0.666667,
+      "true_material": "A"
+    },
+    {
+      "record_id": "ho-b-opaque",
+      "target_test": "front_signal",
+      "actual": "dark",
+      "predicted_bright_probability": 0.666667,
+      "brier": 0.444444,
+      "log_loss": 1.098612,
+      "predicted_material": "A",
+      "material_posterior": 0.666667,
+      "true_material": "B"
+    },
+    {
+      "record_id": "ho-b-opaque",
+      "target_test": "back_signal",
+      "actual": "bright",
+      "predicted_bright_probability": 1.0,
+      "brier": 0.0,
+      "log_loss": -0.0,
+      "predicted_material": "B",
+      "material_posterior": 1.0,
+      "true_material": "B"
+    },
+    {
+      "record_id": "ho-b-bright",
+      "target_test": "front_signal",
+      "actual": "bright",
+      "predicted_bright_probability": 1.0,
+      "brier": 0.0,
+      "log_loss": -0.0,
+      "predicted_material": "B",
+      "material_posterior": 1.0,
+      "true_material": "B"
+    },
+    {
+      "record_id": "ho-b-bright",
+      "target_test": "back_signal",
+      "actual": "dark",
+      "predicted_bright_probability": 0.666667,
+      "brier": 0.444444,
+      "log_loss": 1.098612,
+      "predicted_material": "A",
+      "material_posterior": 0.666667,
+      "true_material": "B"
+    }
+  ]
+}

@@ -1,0 +1,6121 @@
+{
+  "schema_version": "mineral-workbench-policy/v1",
+  "route": "adaptive_workbench_only",
+  "source_input": "examples/sample_input.json",
+  "learned_orientation_weights": {
+    "A": {
+      "A1": 0.43754434357416155,
+      "A2": 0.3825981319739222,
+      "A3": 0.17985752445191627
+    },
+    "B": {
+      "B1": 0.34973441431367064,
+      "B2": 0.3849594632373498,
+      "B3": 0.2653061224489796
+    }
+  },
+  "summary": {
+    "route": "adaptive_workbench",
+    "budget": 4.0,
+    "threshold": 0.9,
+    "currency": "试验元",
+    "best_recognition_probability": 1.0,
+    "minimum_expected_cost_at_best_rate": 2.3514252330115704,
+    "expected_correct_recognition_probability": 1.0,
+    "first_action": {
+      "type": "run_test",
+      "test_id": "cleavage",
+      "name": "正面解理明暗",
+      "instrument": "loupe",
+      "charge": 1.0
+    },
+    "state_count": 87
+  },
+  "budget_curve": [
+    {
+      "budget": 0,
+      "best_recognition_probability": 0.0,
+      "expected_cost": 0.0,
+      "expected_correct_probability": 0.0,
+      "first_action": {
+        "type": "undecided"
+      }
+    },
+    {
+      "budget": 1,
+      "best_recognition_probability": 0.0,
+      "expected_cost": 0.0,
+      "expected_correct_probability": 0.0,
+      "first_action": {
+        "type": "undecided"
+      }
+    },
+    {
+      "budget": 2,
+      "best_recognition_probability": 0.6760478727885492,
+      "expected_cost": 2.0,
+      "expected_correct_probability": 0.6760478727885492,
+      "first_action": {
+        "type": "run_test",
+        "test_id": "luster",
+        "name": "正面反光强弱",
+        "instrument": "loupe",
+        "charge": 1.0
+      }
+    },
+    {
+      "budget": 3,
+      "best_recognition_probability": 1.0,
+      "expected_cost": 2.3514252330115704,
+      "expected_correct_probability": 1.0,
+      "first_action": {
+        "type": "run_test",
+        "test_id": "cleavage",
+        "name": "正面解理明暗",
+        "instrument": "loupe",
+        "charge": 1.0
+      }
+    },
+    {
+      "budget": 4,
+      "best_recognition_probability": 1.0,
+      "expected_cost": 2.3514252330115704,
+      "expected_correct_probability": 1.0,
+      "first_action": {
+        "type": "run_test",
+        "test_id": "cleavage",
+        "name": "正面解理明暗",
+        "instrument": "loupe",
+        "charge": 1.0
+      }
+    },
+    {
+      "budget": 5,
+      "best_recognition_probability": 1.0,
+      "expected_cost": 2.3514252330115704,
+      "expected_correct_probability": 1.0,
+      "first_action": {
+        "type": "run_test",
+        "test_id": "cleavage",
+        "name": "正面解理明暗",
+        "instrument": "loupe",
+        "charge": 1.0
+      }
+    },
+    {
+      "budget": 6,
+      "best_recognition_probability": 1.0,
+      "expected_cost": 2.3514252330115704,
+      "expected_correct_probability": 1.0,
+      "first_action": {
+        "type": "run_test",
+        "test_id": "cleavage",
+        "name": "正面解理明暗",
+        "instrument": "loupe",
+        "charge": 1.0
+      }
+    }
+  ],
+  "decision_table": [
+    {
+      "state": "alive1|sidefront|flips1|done7|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done7|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done11|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 11,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done19|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done19|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done3|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive33|sidefront|flips1|done3|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive16|sidefront|flips1|done3|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sidefront|flips1|done7|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done13|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 13,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done13|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 13,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done21|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 21,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done5|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive17|sidefront|flips1|done5|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done5|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done25|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done25|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done9|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done9|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done17|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done25|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done17|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive49|sideback|flips0|done1|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.512219708034218
+    },
+    {
+      "state": "alive49|sidefront|flips1|done1|paid1|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.6461151411818324
+    },
+    {
+      "state": "alive2|sidefront|flips1|done3|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sidefront|flips1|done7|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done7|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done11|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 11,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done11|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 11,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done19|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done19|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive12|sideback|flips0|done3|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.33961529866021345,
+        "B": 0.6603847013397866
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive12|sidefront|flips1|done3|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.33961529866021345,
+        "B": 0.6603847013397866
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive6|sidefront|flips1|done5|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done5|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done9|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done25|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done25|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive10|sideback|flips0|done9|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.522437701169262,
+        "B": 0.4775622988307379
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive6|sideback|flips0|done17|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done17|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive14|sideback|flips0|done1|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive14|sidefront|flips1|done1|paid1|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive3|sidefront|flips1|done6|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done6|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done26|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 26,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done26|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 26,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done10|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done10|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done26|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 26,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive34|sideback|flips0|done18|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5905164680770745,
+        "B": 0.4094835319229256
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done18|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive35|sideback|flips0|done2|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.1937999747172823
+    },
+    {
+      "state": "alive35|sidefront|flips1|done2|paid1|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.6475207276697248
+    },
+    {
+      "state": "alive4|sideback|flips0|done14|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 14,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done14|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 14,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done22|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 22,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done22|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 22,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive20|sideback|flips0|done6|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.31843504776252385,
+        "B": 0.6815649522374762
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive20|sidefront|flips1|done6|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.31843504776252385,
+        "B": 0.6815649522374762
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done6|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done10|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done10|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done18|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done18|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive28|sideback|flips0|done2|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive28|sidefront|flips1|done2|paid1|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive5|sideback|flips0|done12|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 12,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done28|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 28,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done28|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 28,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive18|sideback|flips0|done12|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 12,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.49846178887541487,
+        "B": 0.5015382111245852
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive6|sideback|flips0|done20|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 20,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done28|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 28,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done20|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 20,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive23|sideback|flips0|done4|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.7220427937020589,
+        "B": 0.2779572062979411
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.554209430373581
+    },
+    {
+      "state": "alive23|sidefront|flips1|done4|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.7220427937020589,
+        "B": 0.2779572062979411
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.407822035721539
+    },
+    {
+      "state": "alive40|sidefront|flips1|done4|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive36|sideback|flips0|done24|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.40402563350362003,
+        "B": 0.5959743664963799
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done24|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive37|sideback|flips0|done8|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 8,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.6994406697211423,
+        "B": 0.30055933027885773
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 0.49568413144043605,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done24|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done24|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive26|sideback|flips0|done8|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 8,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.3424334271723627,
+        "B": 0.6575665728276373
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive38|sideback|flips0|done16|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.6794897647852116,
+        "B": 0.3205102352147884
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 0.4622080189471786,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive25|sideback|flips0|done16|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.3732554831339497,
+        "B": 0.6267445168660503
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive63|sideback|flips0|done0|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 0.777418176549552,
+      "expected_cost": 3.0
+    },
+    {
+      "state": "alive63|sidefront|flips1|done0|paid1|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.3514252330115704
+    },
+    {
+      "state": "alive63|sideback|flips0|done0|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive63|sidefront|flips1|done0|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive49|sideback|flips0|done1|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive49|sidefront|flips1|done1|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive14|sideback|flips0|done1|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive14|sidefront|flips1|done1|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive35|sideback|flips0|done2|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive35|sidefront|flips1|done2|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive28|sideback|flips0|done2|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive28|sidefront|flips1|done2|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive38|sideback|flips0|done16|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.6794897647852116,
+        "B": 0.3205102352147884
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive25|sideback|flips0|done16|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.3732554831339497,
+        "B": 0.6267445168660503
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive63|sideback|flips0|done0|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive63|sidefront|flips1|done0|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done3|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sidefront|flips1|done3|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sidefront|flips1|done3|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done17|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done17|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive49|sideback|flips0|done1|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 0.2438901459828911,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive49|sidefront|flips1|done1|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 0.35388485881816767,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive2|sidefront|flips1|done3|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive12|sideback|flips0|done3|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.33961529866021345,
+        "B": 0.6603847013397866
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive12|sidefront|flips1|done3|paid1|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.33961529866021345,
+        "B": 0.6603847013397866
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive6|sideback|flips0|done17|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done17|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive14|sideback|flips0|done1|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive14|sidefront|flips1|done1|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive34|sideback|flips0|done18|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5905164680770745,
+        "B": 0.4094835319229256
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done18|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive35|sideback|flips0|done2|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 0.4031000126413589,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive35|sidefront|flips1|done2|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 0.4031000126413589,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done18|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done18|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive28|sideback|flips0|done2|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive28|sidefront|flips1|done2|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive23|sideback|flips0|done4|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.7220427937020589,
+        "B": 0.2779572062979411
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive23|sidefront|flips1|done4|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.7220427937020589,
+        "B": 0.2779572062979411
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive40|sidefront|flips1|done4|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive37|sideback|flips0|done8|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 8,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.6994406697211423,
+        "B": 0.30055933027885773
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive26|sideback|flips0|done8|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 8,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.3424334271723627,
+        "B": 0.6575665728276373
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive38|sideback|flips0|done16|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.6794897647852116,
+        "B": 0.3205102352147884
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive25|sideback|flips0|done16|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.3732554831339497,
+        "B": 0.6267445168660503
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive63|sideback|flips0|done0|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive63|sidefront|flips1|done0|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 0.6760478727885492,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done19|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done19|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done3|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive33|sidefront|flips1|done3|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive16|sidefront|flips1|done3|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done5|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sidefront|flips1|done5|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done5|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done9|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done9|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done17|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done17|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive49|sideback|flips0|done1|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 0.35388485881816767,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive49|sidefront|flips1|done1|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.6461151411818324
+    },
+    {
+      "state": "alive2|sidefront|flips1|done3|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done19|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done19|paid1|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive12|sideback|flips0|done3|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.33961529866021345,
+        "B": 0.6603847013397866
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive12|sidefront|flips1|done3|paid1|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.33961529866021345,
+        "B": 0.6603847013397866
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive6|sidefront|flips1|done5|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done5|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done9|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive10|sideback|flips0|done9|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.522437701169262,
+        "B": 0.4775622988307379
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive6|sideback|flips0|done17|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done17|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive14|sideback|flips0|done1|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive14|sidefront|flips1|done1|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive3|sidefront|flips1|done6|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done6|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done10|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done10|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive34|sideback|flips0|done18|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5905164680770745,
+        "B": 0.4094835319229256
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done18|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive35|sideback|flips0|done2|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 0.4031000126413589,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive35|sidefront|flips1|done2|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.6475207276697248
+    },
+    {
+      "state": "alive20|sideback|flips0|done6|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.31843504776252385,
+        "B": 0.6815649522374762
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive20|sidefront|flips1|done6|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.31843504776252385,
+        "B": 0.6815649522374762
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done6|paid3|budget0/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done10|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done10|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done18|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done18|paid1|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive28|sideback|flips0|done2|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive28|sidefront|flips1|done2|paid1|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive5|sideback|flips0|done12|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 12,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive18|sideback|flips0|done12|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 12,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.49846178887541487,
+        "B": 0.5015382111245852
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive6|sideback|flips0|done20|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 20,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done20|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 20,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive23|sideback|flips0|done4|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.7220427937020589,
+        "B": 0.2779572062979411
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 0.4457905696264191,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive23|sidefront|flips1|done4|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.7220427937020589,
+        "B": 0.2779572062979411
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 0.5921779642784609,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive40|sidefront|flips1|done4|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive36|sideback|flips0|done24|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.40402563350362003,
+        "B": 0.5959743664963799
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done24|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive37|sideback|flips0|done8|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 8,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.6994406697211423,
+        "B": 0.30055933027885773
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 0.49568413144043605,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done24|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done24|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive26|sideback|flips0|done8|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 8,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.3424334271723627,
+        "B": 0.6575665728276373
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive38|sideback|flips0|done16|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.6794897647852116,
+        "B": 0.3205102352147884
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 0.4622080189471786,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive25|sideback|flips0|done16|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.3732554831339497,
+        "B": 0.6267445168660503
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive63|sideback|flips0|done0|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 0.777418176549552,
+      "expected_cost": 3.0
+    },
+    {
+      "state": "alive63|sidefront|flips1|done0|paid1|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.3514252330115704
+    },
+    {
+      "state": "alive1|sidefront|flips1|done7|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done7|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done27|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 27,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done27|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 27,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done11|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 11,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done19|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done19|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done3|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive33|sidefront|flips1|done3|paid1|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive16|sidefront|flips1|done3|paid1|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sidefront|flips1|done7|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done13|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 13,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done13|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 13,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done29|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 29,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done29|paid3|budget0/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 29,
+      "paid_mask": 3,
+      "remaining_budget": 0.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done21|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 21,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done5|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive17|sidefront|flips1|done5|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done5|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done25|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done25|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done9|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done9|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done17|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done25|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done17|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive49|sideback|flips0|done1|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.512219708034218
+    },
+    {
+      "state": "alive49|sidefront|flips1|done1|paid1|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.6461151411818324
+    },
+    {
+      "state": "alive2|sidefront|flips1|done3|paid1|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sidefront|flips1|done7|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done7|paid3|budget1/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done11|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 11,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done11|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 11,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done19|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done19|paid1|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive12|sideback|flips0|done3|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.33961529866021345,
+        "B": 0.6603847013397866
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive12|sidefront|flips1|done3|paid1|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.33961529866021345,
+        "B": 0.6603847013397866
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive6|sidefront|flips1|done5|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done5|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done9|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done25|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done25|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive10|sideback|flips0|done9|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.522437701169262,
+        "B": 0.4775622988307379
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive6|sideback|flips0|done17|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done17|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive14|sideback|flips0|done1|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive14|sidefront|flips1|done1|paid1|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive3|sidefront|flips1|done6|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done6|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done26|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 26,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done26|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 26,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done10|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done10|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done26|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 26,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive34|sideback|flips0|done18|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.5905164680770745,
+        "B": 0.4094835319229256
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done18|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive35|sideback|flips0|done2|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.1937999747172823
+    },
+    {
+      "state": "alive35|sidefront|flips1|done2|paid1|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.6475207276697248
+    },
+    {
+      "state": "alive4|sideback|flips0|done14|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 14,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done14|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 14,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done22|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 22,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done22|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 22,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive20|sideback|flips0|done6|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.31843504776252385,
+        "B": 0.6815649522374762
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive20|sidefront|flips1|done6|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.31843504776252385,
+        "B": 0.6815649522374762
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done6|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done10|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done10|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done18|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done18|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive28|sideback|flips0|done2|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive28|sidefront|flips1|done2|paid1|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive5|sideback|flips0|done12|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 12,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done28|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 28,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done28|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 28,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive18|sideback|flips0|done12|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 12,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.49846178887541487,
+        "B": 0.5015382111245852
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive6|sideback|flips0|done20|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 20,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done28|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 28,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done20|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 20,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive23|sideback|flips0|done4|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.7220427937020589,
+        "B": 0.2779572062979411
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.554209430373581
+    },
+    {
+      "state": "alive23|sidefront|flips1|done4|paid3|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.7220427937020589,
+        "B": 0.2779572062979411
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.407822035721539
+    },
+    {
+      "state": "alive40|sidefront|flips1|done4|paid3|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive36|sideback|flips0|done24|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.40402563350362003,
+        "B": 0.5959743664963799
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done24|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive37|sideback|flips0|done8|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 8,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.6994406697211423,
+        "B": 0.30055933027885773
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 0.49568413144043605,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done24|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done24|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive26|sideback|flips0|done8|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 8,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.3424334271723627,
+        "B": 0.6575665728276373
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive38|sideback|flips0|done16|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.6794897647852116,
+        "B": 0.3205102352147884
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 0.4622080189471786,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive25|sideback|flips0|done16|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.3732554831339497,
+        "B": 0.6267445168660503
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive63|sideback|flips0|done0|paid1|budget5/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 0.777418176549552,
+      "expected_cost": 3.0
+    },
+    {
+      "state": "alive63|sidefront|flips1|done0|paid1|budget5/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.3514252330115704
+    },
+    {
+      "state": "alive1|sidefront|flips1|done7|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done7|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done27|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 27,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done27|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 27,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done11|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 11,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done19|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done19|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done3|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive33|sidefront|flips1|done3|paid1|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive16|sidefront|flips1|done3|paid1|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sidefront|flips1|done7|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done13|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 13,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done13|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 13,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done29|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 29,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done29|paid3|budget1/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 29,
+      "paid_mask": 3,
+      "remaining_budget": 1.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done21|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 21,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done5|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive17|sidefront|flips1|done5|paid3|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done5|paid3|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done25|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done25|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done9|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done9|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done17|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done25|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done17|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive49|sideback|flips0|done1|paid1|budget5/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.512219708034218
+    },
+    {
+      "state": "alive49|sidefront|flips1|done1|paid1|budget5/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.4022249951989412,
+        "B": 0.5977750048010588
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.6461151411818324
+    },
+    {
+      "state": "alive2|sidefront|flips1|done3|paid1|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sidefront|flips1|done7|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done7|paid3|budget2/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 7,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done11|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 11,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done11|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 11,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done19|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done19|paid1|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 19,
+      "paid_mask": 1,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive12|sideback|flips0|done3|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.33961529866021345,
+        "B": 0.6603847013397866
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive12|sidefront|flips1|done3|paid1|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 3,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.33961529866021345,
+        "B": 0.6603847013397866
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive6|sidefront|flips1|done5|paid3|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done5|paid3|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 5,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done9|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done25|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done25|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 25,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive10|sideback|flips0|done9|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 9,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.522437701169262,
+        "B": 0.4775622988307379
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive6|sideback|flips0|done17|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive8|sideback|flips0|done17|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 17,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive14|sideback|flips0|done1|paid1|budget5/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive14|sidefront|flips1|done1|paid1|budget5/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 1,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.6165991874586595,
+        "B": 0.38340081254134045
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive3|sidefront|flips1|done6|paid3|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sidefront|flips1|done6|paid3|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive32|sideback|flips0|done26|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 26,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done26|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 26,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive33|sideback|flips0|done10|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.6225283537903431,
+        "B": 0.3774716462096569
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done10|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done26|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 26,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive34|sideback|flips0|done18|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.5905164680770745,
+        "B": 0.4094835319229256
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done18|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive35|sideback|flips0|done2|paid1|budget5/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.1937999747172823
+    },
+    {
+      "state": "alive35|sidefront|flips1|done2|paid1|budget5/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.7555792849716341,
+        "B": 0.24442071502836596
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.6475207276697248
+    },
+    {
+      "state": "alive4|sideback|flips0|done14|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 14,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done14|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 14,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done22|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 22,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done22|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 22,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive20|sideback|flips0|done6|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.31843504776252385,
+        "B": 0.6815649522374762
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive20|sidefront|flips1|done6|paid3|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.31843504776252385,
+        "B": 0.6815649522374762
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive8|sidefront|flips1|done6|paid3|budget3/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 6,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done10|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done10|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 10,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive4|sideback|flips0|done18|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done18|paid1|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 18,
+      "paid_mask": 1,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive28|sideback|flips0|done2|paid1|budget5/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive28|sidefront|flips1|done2|paid1|budget5/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 2,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.1966620181851066,
+        "B": 0.8033379818148934
+      },
+      "recommendation": "flip:flip",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive5|sideback|flips0|done12|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 12,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done28|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 28,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive16|sideback|flips0|done28|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 28,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive18|sideback|flips0|done12|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 12,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.49846178887541487,
+        "B": 0.5015382111245852
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive6|sideback|flips0|done20|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 20,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done28|paid3|budget2/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 28,
+      "paid_mask": 3,
+      "remaining_budget": 2.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive17|sideback|flips0|done20|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 20,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.5319663446547807,
+        "B": 0.46803365534521935
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive23|sideback|flips0|done4|paid3|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.7220427937020589,
+        "B": 0.2779572062979411
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.554209430373581
+    },
+    {
+      "state": "alive23|sidefront|flips1|done4|paid3|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.7220427937020589,
+        "B": 0.2779572062979411
+      },
+      "recommendation": "test:luster",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.407822035721539
+    },
+    {
+      "state": "alive40|sidefront|flips1|done4|paid3|budget4/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 4,
+      "paid_mask": 3,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive36|sideback|flips0|done24|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.40402563350362003,
+        "B": 0.5959743664963799
+      },
+      "recommendation": "stop",
+      "material_id": null,
+      "optimal_recognition_probability": 0.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive1|sideback|flips0|done24|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive37|sideback|flips0|done8|paid3|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 8,
+      "paid_mask": 3,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.6994406697211423,
+        "B": 0.30055933027885773
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 0.49568413144043605,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive2|sideback|flips0|done24|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "recommendation": "checkout",
+      "material_id": "A",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive24|sideback|flips0|done24|paid3|budget3/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 24,
+      "paid_mask": 3,
+      "remaining_budget": 3.0,
+      "posterior": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "recommendation": "checkout",
+      "material_id": "B",
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 0.0
+    },
+    {
+      "state": "alive26|sideback|flips0|done8|paid3|budget4/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 8,
+      "paid_mask": 3,
+      "remaining_budget": 4.0,
+      "posterior": {
+        "A": 0.3424334271723627,
+        "B": 0.6575665728276373
+      },
+      "recommendation": "test:asterism",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 1.0
+    },
+    {
+      "state": "alive38|sideback|flips0|done16|paid1|budget5/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.6794897647852116,
+        "B": 0.3205102352147884
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 0.4622080189471786,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive25|sideback|flips0|done16|paid1|budget5/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 16,
+      "paid_mask": 1,
+      "remaining_budget": 5.0,
+      "posterior": {
+        "A": 0.3732554831339497,
+        "B": 0.6267445168660503
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.0
+    },
+    {
+      "state": "alive63|sideback|flips0|done0|paid1|budget6/1",
+      "side": "back",
+      "flips_remaining": 0,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 6.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "test:polar",
+      "material_id": null,
+      "optimal_recognition_probability": 0.777418176549552,
+      "expected_cost": 3.0
+    },
+    {
+      "state": "alive63|sidefront|flips1|done0|paid1|budget6/1",
+      "side": "front",
+      "flips_remaining": 1,
+      "done_mask": 0,
+      "paid_mask": 1,
+      "remaining_budget": 6.0,
+      "posterior": {
+        "A": 0.5,
+        "B": 0.5
+      },
+      "recommendation": "test:cleavage",
+      "material_id": null,
+      "optimal_recognition_probability": 1.0,
+      "expected_cost": 2.3514252330115704
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "mineral-optical-tray/v1",
+  "source_input": "examples/perfect_transmission.json",
+  "orientation_weights": {
+    "A": {
+      "A-fixed": 1.0
+    },
+    "B": {
+      "B-fixed": 1.0
+    }
+  },
+  "material_priors": {
+    "A": 0.5,
+    "B": 0.5
+  },
+  "learning": {
+    "training_records": 40,
+    "iterations": 1,
+    "converged": true,
+    "tolerance": 1e-11,
+    "log_likelihood": 0.0,
+    "smoothing": 0.5,
+    "reference_template_weights_if_supplied": {
+      "A": {
+        "A-fixed": 1.0
+      },
+      "B": {
+        "B-fixed": 1.0
+      }
+    },
+    "warnings": []
+  }
+}
