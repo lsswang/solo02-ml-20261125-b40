@@ -1,0 +1,96 @@
+[
+  {
+    "record_id": "R-EN-0158",
+    "script_id": "S06",
+    "language": "en",
+    "site_id": "east_gate",
+    "prior_person_ids": [
+      "chen"
+    ],
+    "last_person_id": "chen",
+    "heard_wording": "she",
+    "chosen_person_id": "zhou",
+    "intended_person_id": "lin",
+    "listener_id": "L-mishear-en-06",
+    "probability_assigned_to_chosen": 0.8343307086614173,
+    "log_loss_nats": 0.1811254220547223,
+    "distribution": {
+      "lin": 0.10488188976377953,
+      "zhou": 0.8343307086614173,
+      "chen": 0.060787401574803154
+    },
+    "model_top_person_id": "zhou",
+    "model_top_probability": 0.8343307086614173,
+    "holdout_scope": "held_out_scripts"
+  },
+  {
+    "record_id": "R-EN-0159",
+    "script_id": "S07",
+    "language": "en",
+    "site_id": "east_gate",
+    "prior_person_ids": [
+      "chen"
+    ],
+    "last_person_id": "chen",
+    "heard_wording": "she",
+    "chosen_person_id": "zhou",
+    "intended_person_id": "lin",
+    "listener_id": "L-mishear-en-07",
+    "probability_assigned_to_chosen": 0.8343307086614173,
+    "log_loss_nats": 0.1811254220547223,
+    "distribution": {
+      "lin": 0.10488188976377953,
+      "zhou": 0.8343307086614173,
+      "chen": 0.060787401574803154
+    },
+    "model_top_person_id": "zhou",
+    "model_top_probability": 0.8343307086614173,
+    "holdout_scope": "held_out_scripts"
+  },
+  {
+    "record_id": "R-ZH-0078",
+    "script_id": "S06",
+    "language": "zh",
+    "site_id": "east_gate",
+    "prior_person_ids": [
+      "chen"
+    ],
+    "last_person_id": "chen",
+    "heard_wording": "她",
+    "chosen_person_id": "zhou",
+    "intended_person_id": "lin",
+    "listener_id": "L-mishear-zh-06",
+    "probability_assigned_to_chosen": 0.8343307086614173,
+    "log_loss_nats": 0.1811254220547223,
+    "distribution": {
+      "lin": 0.10488188976377953,
+      "zhou": 0.8343307086614173,
+      "chen": 0.060787401574803154
+    },
+    "model_top_person_id": "zhou",
+    "model_top_probability": 0.8343307086614173
+  },
+  {
+    "record_id": "R-ZH-0079",
+    "script_id": "S07",
+    "language": "zh",
+    "site_id": "east_gate",
+    "prior_person_ids": [
+      "chen"
+    ],
+    "last_person_id": "chen",
+    "heard_wording": "她",
+    "chosen_person_id": "zhou",
+    "intended_person_id": "lin",
+    "listener_id": "L-mishear-zh-07",
+    "probability_assigned_to_chosen": 0.8343307086614173,
+    "log_loss_nats": 0.1811254220547223,
+    "distribution": {
+      "lin": 0.10488188976377953,
+      "zhou": 0.8343307086614173,
+      "chen": 0.060787401574803154
+    },
+    "model_top_person_id": "zhou",
+    "model_top_probability": 0.8343307086614173
+  }
+]

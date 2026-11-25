@@ -1,0 +1,70 @@
+{
+  "device": "wall",
+  "language": "zh",
+  "plates": [
+    "west_gate",
+    "zhou_hall",
+    "silent_porch",
+    "portrait"
+  ],
+  "steps": [
+    {
+      "stop_order": 1,
+      "station_id": "west_gate",
+      "device_memory": {
+        "previous_station": "∅"
+      },
+      "device_key": "zh|west_gate|prev1=∅",
+      "group_id": "G06",
+      "wording_id": "zh_w_gate_name",
+      "recording_asset_id": "zh_w_gate_name",
+      "audio_file": "audio/zh/zh_w_gate_name.wav",
+      "text": "西门入线：先读周琴。",
+      "duration_sec": 4.0
+    },
+    {
+      "stop_order": 2,
+      "station_id": "zhou_hall",
+      "device_memory": {
+        "previous_station": "west_gate"
+      },
+      "device_key": "zh|zhou_hall|prev1=west_gate",
+      "group_id": "G07",
+      "wording_id": "zh_zhou_short",
+      "recording_asset_id": "zh_zhou_short",
+      "audio_file": "audio/zh/zh_zhou_short.wav",
+      "text": "她常在灯下设色。",
+      "duration_sec": 2.0
+    },
+    {
+      "stop_order": 3,
+      "station_id": "silent_porch",
+      "device_memory": {
+        "previous_station": "zhou_hall"
+      },
+      "device_key": "zh|silent_porch|prev1=zhou_hall",
+      "group_id": "G05",
+      "wording_id": "zh_porch_west",
+      "recording_asset_id": "zh_porch_west",
+      "audio_file": "audio/zh/zh_porch_west.wav",
+      "text": "想着周琴，再穿过静默廊。",
+      "duration_sec": 2.0
+    },
+    {
+      "stop_order": 4,
+      "station_id": "portrait",
+      "device_memory": {
+        "previous_station": "silent_porch"
+      },
+      "device_key": "zh|portrait|prev1=silent_porch",
+      "group_id": "G03",
+      "wording_id": "zh_portrait_full",
+      "recording_asset_id": "zh_portrait_full",
+      "audio_file": "audio/zh/zh_portrait_full.wav",
+      "text": "林岚，正在这幅肖像里。",
+      "duration_sec": 4.0
+    }
+  ],
+  "unweighted_play_duration_sec": 12.0,
+  "note": "Duration shown is the produced recording duration; objective weights route-level totals."
+}

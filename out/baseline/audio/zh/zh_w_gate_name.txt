@@ -1,0 +1,3 @@
+西门入线：先读周琴。
+
+station=west_gate language=zh wording=zh_w_gate_name fee=4.0

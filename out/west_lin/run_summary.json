@@ -1,0 +1,337 @@
+{
+  "input_dir": "/workspace/sample_input_west_lin",
+  "output_dir": "/workspace/out/west_lin",
+  "closed_stations": [],
+  "seed": 20261125,
+  "holdout": {
+    "split": {
+      "train": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S08"
+      ],
+      "test": [
+        "S06",
+        "S07"
+      ]
+    },
+    "mean_log_loss_nats": 0.20455640458509045,
+    "mean_log_loss_bits": 0.2951125104769864,
+    "per_language": {
+      "en": {
+        "mean_log_loss_nats": 0.2045564045850905,
+        "mean_log_loss_bits": 0.2951125104769865,
+        "n_heldout_records": 18,
+        "n_actual_mishearings": 2
+      },
+      "zh": {
+        "mean_log_loss_nats": 0.2045564045850905,
+        "mean_log_loss_bits": 0.2951125104769865,
+        "n_heldout_records": 18,
+        "n_actual_mishearings": 2
+      }
+    },
+    "selected_two_record_ids": [
+      "R-ZH-0078",
+      "R-EN-0158"
+    ]
+  },
+  "proofreading": [
+    {
+      "line_id": "ML-EN-01",
+      "language": "en",
+      "approved": true,
+      "decision": "approve",
+      "intended_probability": 0.9007987489474317,
+      "threshold": 0.8,
+      "reason": "intended person ranks first and reaches threshold"
+    },
+    {
+      "line_id": "ML-EN-02",
+      "language": "en",
+      "approved": true,
+      "decision": "approve",
+      "intended_probability": 0.8341320822807651,
+      "threshold": 0.8,
+      "reason": "intended person ranks first and reaches threshold"
+    },
+    {
+      "line_id": "ML-EN-03",
+      "language": "en",
+      "approved": true,
+      "decision": "approve",
+      "intended_probability": 1.0,
+      "threshold": 0.8,
+      "reason": "full name maps to exactly one person"
+    },
+    {
+      "line_id": "ML-ZH-01",
+      "language": "zh",
+      "approved": true,
+      "decision": "approve",
+      "intended_probability": 0.9007987489474317,
+      "threshold": 0.8,
+      "reason": "intended person ranks first and reaches threshold"
+    },
+    {
+      "line_id": "ML-ZH-02",
+      "language": "zh",
+      "approved": true,
+      "decision": "approve",
+      "intended_probability": 0.8341320822807651,
+      "threshold": 0.8,
+      "reason": "intended person ranks first and reaches threshold"
+    },
+    {
+      "line_id": "ML-ZH-03",
+      "language": "zh",
+      "approved": true,
+      "decision": "approve",
+      "intended_probability": 1.0,
+      "threshold": 0.8,
+      "reason": "full name maps to exactly one person"
+    }
+  ],
+  "plans": {
+    "wall": {
+      "en": {
+        "feasible": true,
+        "objective": 80.0,
+        "weighted_duration_cost": 52.0,
+        "production_cost": 28.0,
+        "recording_count": 7,
+        "pen_capacity": null,
+        "wall_bonus_used_stations": [
+          "silent_porch"
+        ],
+        "reason": null
+      },
+      "zh": {
+        "feasible": true,
+        "objective": 80.0,
+        "weighted_duration_cost": 52.0,
+        "production_cost": 28.0,
+        "recording_count": 7,
+        "pen_capacity": null,
+        "wall_bonus_used_stations": [
+          "silent_porch"
+        ],
+        "reason": null
+      }
+    },
+    "pen": {
+      "en": {
+        "feasible": true,
+        "objective": 80.0,
+        "weighted_duration_cost": 52.0,
+        "production_cost": 28.0,
+        "recording_count": 7,
+        "pen_capacity": 7,
+        "wall_bonus_used_stations": [],
+        "reason": null
+      },
+      "zh": {
+        "feasible": true,
+        "objective": 80.0,
+        "weighted_duration_cost": 52.0,
+        "production_cost": 28.0,
+        "recording_count": 7,
+        "pen_capacity": 7,
+        "wall_bonus_used_stations": [],
+        "reason": null
+      }
+    }
+  },
+  "portrait_findings": [
+    {
+      "device": "wall",
+      "language": "en",
+      "route_id": "east",
+      "portrait_wording_id": "en_portrait_she",
+      "appellation": "she",
+      "text": "She is present in this portrait.",
+      "incoming_last_person_id": "lin",
+      "intended_probability": 0.9007987489474317,
+      "reference_approved": true,
+      "recording_asset_id": "en_portrait_she"
+    },
+    {
+      "device": "wall",
+      "language": "en",
+      "route_id": "west",
+      "portrait_wording_id": "en_portrait_she",
+      "appellation": "she",
+      "text": "She is present in this portrait.",
+      "incoming_last_person_id": "zhou",
+      "intended_probability": 0.8341320822807651,
+      "reference_approved": true,
+      "recording_asset_id": "en_portrait_she"
+    },
+    {
+      "device": "wall",
+      "language": "zh",
+      "route_id": "east",
+      "portrait_wording_id": "zh_portrait_she",
+      "appellation": "她",
+      "text": "她，正在这幅肖像里。",
+      "incoming_last_person_id": "lin",
+      "intended_probability": 0.9007987489474317,
+      "reference_approved": true,
+      "recording_asset_id": "zh_portrait_she"
+    },
+    {
+      "device": "wall",
+      "language": "zh",
+      "route_id": "west",
+      "portrait_wording_id": "zh_portrait_she",
+      "appellation": "她",
+      "text": "她，正在这幅肖像里。",
+      "incoming_last_person_id": "zhou",
+      "intended_probability": 0.8341320822807651,
+      "reference_approved": true,
+      "recording_asset_id": "zh_portrait_she"
+    },
+    {
+      "device": "pen",
+      "language": "en",
+      "route_id": "east",
+      "portrait_wording_id": "en_portrait_she",
+      "appellation": "she",
+      "text": "She is present in this portrait.",
+      "incoming_last_person_id": "lin",
+      "intended_probability": 0.9007987489474317,
+      "reference_approved": true,
+      "recording_asset_id": "en_portrait_she"
+    },
+    {
+      "device": "pen",
+      "language": "en",
+      "route_id": "west",
+      "portrait_wording_id": "en_portrait_she",
+      "appellation": "she",
+      "text": "She is present in this portrait.",
+      "incoming_last_person_id": "zhou",
+      "intended_probability": 0.8341320822807651,
+      "reference_approved": true,
+      "recording_asset_id": "en_portrait_she"
+    },
+    {
+      "device": "pen",
+      "language": "zh",
+      "route_id": "east",
+      "portrait_wording_id": "zh_portrait_she",
+      "appellation": "她",
+      "text": "她，正在这幅肖像里。",
+      "incoming_last_person_id": "lin",
+      "intended_probability": 0.9007987489474317,
+      "reference_approved": true,
+      "recording_asset_id": "zh_portrait_she"
+    },
+    {
+      "device": "pen",
+      "language": "zh",
+      "route_id": "west",
+      "portrait_wording_id": "zh_portrait_she",
+      "appellation": "她",
+      "text": "她，正在这幅肖像里。",
+      "incoming_last_person_id": "zhou",
+      "intended_probability": 0.8341320822807651,
+      "reference_approved": true,
+      "recording_asset_id": "zh_portrait_she"
+    }
+  ],
+  "replays": [
+    {
+      "device": "wall",
+      "language": "en",
+      "route_id": "east",
+      "plates": [
+        "east_gate",
+        "lin_hall",
+        "silent_porch",
+        "portrait"
+      ]
+    },
+    {
+      "device": "wall",
+      "language": "en",
+      "route_id": "west",
+      "plates": [
+        "west_gate",
+        "zhou_hall",
+        "silent_porch",
+        "portrait"
+      ]
+    },
+    {
+      "device": "wall",
+      "language": "zh",
+      "route_id": "east",
+      "plates": [
+        "east_gate",
+        "lin_hall",
+        "silent_porch",
+        "portrait"
+      ]
+    },
+    {
+      "device": "wall",
+      "language": "zh",
+      "route_id": "west",
+      "plates": [
+        "west_gate",
+        "zhou_hall",
+        "silent_porch",
+        "portrait"
+      ]
+    },
+    {
+      "device": "pen",
+      "language": "en",
+      "route_id": "east",
+      "plates": [
+        "east_gate",
+        "lin_hall",
+        "silent_porch",
+        "portrait"
+      ]
+    },
+    {
+      "device": "pen",
+      "language": "en",
+      "route_id": "west",
+      "plates": [
+        "west_gate",
+        "zhou_hall",
+        "silent_porch",
+        "portrait"
+      ]
+    },
+    {
+      "device": "pen",
+      "language": "zh",
+      "route_id": "east",
+      "plates": [
+        "east_gate",
+        "lin_hall",
+        "silent_porch",
+        "portrait"
+      ]
+    },
+    {
+      "device": "pen",
+      "language": "zh",
+      "route_id": "west",
+      "plates": [
+        "west_gate",
+        "zhou_hall",
+        "silent_porch",
+        "portrait"
+      ]
+    }
+  ],
+  "audio_note": "WAV files are deterministic quiet placeholder masters with transcript sidecars; replace them with studio audio using the same paths."
+}

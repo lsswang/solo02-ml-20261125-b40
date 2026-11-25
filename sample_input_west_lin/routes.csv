@@ -1,0 +1,3 @@
+route_id,display_name,weight,gate_station_id
+east,东路：东门—林岚—静默廊—肖像,3,east_gate
+west,西路：西门—周琴—静默廊—肖像,2,west_gate

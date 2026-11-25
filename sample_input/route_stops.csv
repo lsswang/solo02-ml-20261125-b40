@@ -1,0 +1,9 @@
+route_id,stop_order,station_id,target_person_id
+east,1,east_gate,lin
+east,2,lin_hall,lin
+east,3,silent_porch,lin
+east,4,portrait,lin
+west,1,west_gate,zhou
+west,2,zhou_hall,zhou
+west,3,silent_porch,zhou
+west,4,portrait,lin

@@ -1,0 +1,3 @@
+她常在窗前作画。
+
+station=lin_hall language=zh wording=zh_lin_short fee=4.0

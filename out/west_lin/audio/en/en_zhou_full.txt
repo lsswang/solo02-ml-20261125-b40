@@ -1,0 +1,3 @@
+Zhou Qin mixed colors beneath the lamp.
+
+station=zhou_hall language=en wording=en_zhou_full fee=4.0

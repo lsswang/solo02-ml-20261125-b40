@@ -1,0 +1,3 @@
+record_id,script_id,language,site_id,prior_person_ids,last_person_id,heard_wording,chosen_person_id,intended_person_id,listener_id,probability_assigned_to_chosen,log_loss_nats,distribution,model_top_person_id,model_top_probability
+R-ZH-0078,S06,zh,east_gate,chen,chen,她,zhou,lin,L-mishear-zh-06,0.8091338582677166,0.21179091421690843,"{""chen"": 0.060787401574803154, ""lin"": 0.13007874015748033, ""zhou"": 0.8091338582677166}",zhou,0.8091338582677166
+R-EN-0158,S06,en,east_gate,chen,chen,she,zhou,lin,L-mishear-en-06,0.8091338582677166,0.21179091421690843,"{""chen"": 0.060787401574803154, ""lin"": 0.13007874015748033, ""zhou"": 0.8091338582677166}",zhou,0.8091338582677166

@@ -1,0 +1,3 @@
+东门入线：先读林岚。
+
+station=east_gate language=zh wording=zh_e_gate_name fee=4.0

@@ -1,0 +1,373 @@
+{
+  "model_type": "hierarchical_mixture_dirichlet_v1",
+  "fitted_on": "all_records_for_production",
+  "n_records": 160,
+  "seed": 20261125,
+  "smoothing_alpha": 0.5,
+  "mixture_weights": [
+    0.03,
+    0.07,
+    0.25,
+    0.65
+  ],
+  "levels": [
+    "language",
+    "wording",
+    "last",
+    "site_last"
+  ],
+  "persons": {
+    "zh": [
+      "lin",
+      "zhou",
+      "chen"
+    ],
+    "en": [
+      "lin",
+      "zhou",
+      "chen"
+    ]
+  },
+  "appellation_index": {
+    "zh\u001f林岚": {
+      "language": "zh",
+      "appellation": "林岚",
+      "kind": "full",
+      "person_id": "lin"
+    },
+    "zh\u001f林岚女士": {
+      "language": "zh",
+      "appellation": "林岚女士",
+      "kind": "full",
+      "person_id": "lin"
+    },
+    "zh\u001f周琴": {
+      "language": "zh",
+      "appellation": "周琴",
+      "kind": "full",
+      "person_id": "zhou"
+    },
+    "zh\u001f周琴女士": {
+      "language": "zh",
+      "appellation": "周琴女士",
+      "kind": "full",
+      "person_id": "zhou"
+    },
+    "zh\u001f陈屿": {
+      "language": "zh",
+      "appellation": "陈屿",
+      "kind": "full",
+      "person_id": "chen"
+    },
+    "zh\u001f她": {
+      "language": "zh",
+      "appellation": "她",
+      "kind": "short",
+      "person_id": ""
+    },
+    "zh\u001f林": {
+      "language": "zh",
+      "appellation": "林",
+      "kind": "short",
+      "person_id": "lin"
+    },
+    "zh\u001f周": {
+      "language": "zh",
+      "appellation": "周",
+      "kind": "short",
+      "person_id": "zhou"
+    },
+    "zh\u001f他": {
+      "language": "zh",
+      "appellation": "他",
+      "kind": "short",
+      "person_id": ""
+    },
+    "en\u001flinlan": {
+      "language": "en",
+      "appellation": "Lin Lan",
+      "kind": "full",
+      "person_id": "lin"
+    },
+    "en\u001fzhouqin": {
+      "language": "en",
+      "appellation": "Zhou Qin",
+      "kind": "full",
+      "person_id": "zhou"
+    },
+    "en\u001fchenyu": {
+      "language": "en",
+      "appellation": "Chen Yu",
+      "kind": "full",
+      "person_id": "chen"
+    },
+    "en\u001fmslin": {
+      "language": "en",
+      "appellation": "Ms. Lin",
+      "kind": "short",
+      "person_id": "lin"
+    },
+    "en\u001fmszhou": {
+      "language": "en",
+      "appellation": "Ms. Zhou",
+      "kind": "short",
+      "person_id": "zhou"
+    },
+    "en\u001flin": {
+      "language": "en",
+      "appellation": "Lin",
+      "kind": "short",
+      "person_id": "lin"
+    },
+    "en\u001fzhou": {
+      "language": "en",
+      "appellation": "Zhou",
+      "kind": "short",
+      "person_id": "zhou"
+    },
+    "en\u001fshe": {
+      "language": "en",
+      "appellation": "she",
+      "kind": "short",
+      "person_id": ""
+    },
+    "en\u001fher": {
+      "language": "en",
+      "appellation": "her",
+      "kind": "short",
+      "person_id": ""
+    },
+    "en\u001fhe": {
+      "language": "en",
+      "appellation": "he",
+      "kind": "short",
+      "person_id": ""
+    },
+    "en\u001fhim": {
+      "language": "en",
+      "appellation": "him",
+      "kind": "short",
+      "person_id": ""
+    }
+  },
+  "counts": {
+    "language": {
+      "zh": {
+        "lin": 58,
+        "zhou": 22,
+        "chen": 0
+      },
+      "en": {
+        "lin": 58,
+        "zhou": 22,
+        "chen": 0
+      }
+    },
+    "wording": {
+      "zh\u001f她": {
+        "lin": 58,
+        "zhou": 22,
+        "chen": 0
+      },
+      "en\u001fshe": {
+        "lin": 58,
+        "zhou": 22,
+        "chen": 0
+      }
+    },
+    "last": {
+      "zh\u001f她\u001flin": {
+        "lin": 34,
+        "zhou": 2,
+        "chen": 0
+      },
+      "zh\u001f她\u001fzhou": {
+        "lin": 24,
+        "zhou": 12,
+        "chen": 0
+      },
+      "zh\u001f她\u001fchen": {
+        "lin": 0,
+        "zhou": 8,
+        "chen": 0
+      },
+      "en\u001fshe\u001flin": {
+        "lin": 34,
+        "zhou": 2,
+        "chen": 0
+      },
+      "en\u001fshe\u001fzhou": {
+        "lin": 24,
+        "zhou": 12,
+        "chen": 0
+      },
+      "en\u001fshe\u001fchen": {
+        "lin": 0,
+        "zhou": 8,
+        "chen": 0
+      }
+    },
+    "site_last": {
+      "zh\u001f她\u001fportrait\u001flin": {
+        "lin": 23,
+        "zhou": 1,
+        "chen": 0
+      },
+      "zh\u001f她\u001flin_hall\u001flin": {
+        "lin": 11,
+        "zhou": 1,
+        "chen": 0
+      },
+      "zh\u001f她\u001fportrait\u001fzhou": {
+        "lin": 23,
+        "zhou": 1,
+        "chen": 0
+      },
+      "zh\u001f她\u001fzhou_hall\u001fzhou": {
+        "lin": 1,
+        "zhou": 11,
+        "chen": 0
+      },
+      "zh\u001f她\u001feast_gate\u001fchen": {
+        "lin": 0,
+        "zhou": 8,
+        "chen": 0
+      },
+      "en\u001fshe\u001fportrait\u001flin": {
+        "lin": 23,
+        "zhou": 1,
+        "chen": 0
+      },
+      "en\u001fshe\u001flin_hall\u001flin": {
+        "lin": 11,
+        "zhou": 1,
+        "chen": 0
+      },
+      "en\u001fshe\u001fportrait\u001fzhou": {
+        "lin": 23,
+        "zhou": 1,
+        "chen": 0
+      },
+      "en\u001fshe\u001fzhou_hall\u001fzhou": {
+        "lin": 1,
+        "zhou": 11,
+        "chen": 0
+      },
+      "en\u001fshe\u001feast_gate\u001fchen": {
+        "lin": 0,
+        "zhou": 8,
+        "chen": 0
+      }
+    }
+  },
+  "distributions": {
+    "language": {
+      "zh": {
+        "lin": 0.7177914110429447,
+        "zhou": 0.27607361963190186,
+        "chen": 0.006134969325153374
+      },
+      "en": {
+        "lin": 0.7177914110429447,
+        "zhou": 0.27607361963190186,
+        "chen": 0.006134969325153374
+      }
+    },
+    "wording": {
+      "zh\u001f她": {
+        "lin": 0.7177914110429447,
+        "zhou": 0.27607361963190186,
+        "chen": 0.006134969325153374
+      },
+      "en\u001fshe": {
+        "lin": 0.7177914110429447,
+        "zhou": 0.27607361963190186,
+        "chen": 0.006134969325153374
+      }
+    },
+    "last": {
+      "zh\u001f她\u001flin": {
+        "lin": 0.92,
+        "zhou": 0.06666666666666667,
+        "chen": 0.013333333333333334
+      },
+      "zh\u001f她\u001fzhou": {
+        "lin": 0.6533333333333333,
+        "zhou": 0.3333333333333333,
+        "chen": 0.013333333333333334
+      },
+      "zh\u001f她\u001fchen": {
+        "lin": 0.05263157894736842,
+        "zhou": 0.8947368421052632,
+        "chen": 0.05263157894736842
+      },
+      "en\u001fshe\u001flin": {
+        "lin": 0.92,
+        "zhou": 0.06666666666666667,
+        "chen": 0.013333333333333334
+      },
+      "en\u001fshe\u001fzhou": {
+        "lin": 0.6533333333333333,
+        "zhou": 0.3333333333333333,
+        "chen": 0.013333333333333334
+      },
+      "en\u001fshe\u001fchen": {
+        "lin": 0.05263157894736842,
+        "zhou": 0.8947368421052632,
+        "chen": 0.05263157894736842
+      }
+    },
+    "site_last": {
+      "zh\u001f她\u001fportrait\u001flin": {
+        "lin": 0.9215686274509803,
+        "zhou": 0.058823529411764705,
+        "chen": 0.0196078431372549
+      },
+      "zh\u001f她\u001flin_hall\u001flin": {
+        "lin": 0.8518518518518519,
+        "zhou": 0.1111111111111111,
+        "chen": 0.037037037037037035
+      },
+      "zh\u001f她\u001fportrait\u001fzhou": {
+        "lin": 0.9215686274509803,
+        "zhou": 0.058823529411764705,
+        "chen": 0.0196078431372549
+      },
+      "zh\u001f她\u001fzhou_hall\u001fzhou": {
+        "lin": 0.1111111111111111,
+        "zhou": 0.8518518518518519,
+        "chen": 0.037037037037037035
+      },
+      "zh\u001f她\u001feast_gate\u001fchen": {
+        "lin": 0.05263157894736842,
+        "zhou": 0.8947368421052632,
+        "chen": 0.05263157894736842
+      },
+      "en\u001fshe\u001fportrait\u001flin": {
+        "lin": 0.9215686274509803,
+        "zhou": 0.058823529411764705,
+        "chen": 0.0196078431372549
+      },
+      "en\u001fshe\u001flin_hall\u001flin": {
+        "lin": 0.8518518518518519,
+        "zhou": 0.1111111111111111,
+        "chen": 0.037037037037037035
+      },
+      "en\u001fshe\u001fportrait\u001fzhou": {
+        "lin": 0.9215686274509803,
+        "zhou": 0.058823529411764705,
+        "chen": 0.0196078431372549
+      },
+      "en\u001fshe\u001fzhou_hall\u001fzhou": {
+        "lin": 0.1111111111111111,
+        "zhou": 0.8518518518518519,
+        "chen": 0.037037037037037035
+      },
+      "en\u001fshe\u001feast_gate\u001fchen": {
+        "lin": 0.05263157894736842,
+        "zhou": 0.8947368421052632,
+        "chen": 0.05263157894736842
+      }
+    }
+  }
+}

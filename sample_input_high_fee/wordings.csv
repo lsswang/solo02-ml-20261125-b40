@@ -1,0 +1,27 @@
+wording_id,language,station_id,variant_label,appellation,text,recording_fee,duration_sec,intended_person_id,state_person_id
+zh_e_gate_name,zh,east_gate,点名林岚,林岚,东门入线：先读林岚。,4,4,lin,lin
+zh_e_gate_generic,zh,east_gate,通用开场,,东门入线，缓步进展厅。,4,3,,
+zh_lin_full,zh,lin_hall,全称,林岚,林岚常在窗前作画。,4,4,lin,lin
+zh_lin_short,zh,lin_hall,短称她,她,她常在窗前作画。,4,2,lin,lin
+zh_w_gate_name,zh,west_gate,点名周琴,周琴,西门入线：先读周琴。,4,4,zhou,zhou
+zh_w_gate_generic,zh,west_gate,通用开场,,西门入线，缓步进展厅。,4,3,,
+zh_zhou_full,zh,zhou_hall,全称,周琴,周琴常在灯下设色。,4,4,zhou,zhou
+zh_zhou_short,zh,zhou_hall,短称她,她,她常在灯下设色。,4,2,zhou,zhou
+zh_porch_common,zh,silent_porch,两路共用,,静默廊口，请把刚才的故事放在心里。,4,3,,
+zh_porch_east,zh,silent_porch,东路增录,林岚,想着林岚，再穿过静默廊。,4,2,lin,lin
+zh_porch_west,zh,silent_porch,西路增录,周琴,想着周琴，再穿过静默廊。,4,2,zhou,zhou
+zh_portrait_full,zh,portrait,全称共用,林岚,林岚，正在这幅肖像里。,4,4,lin,lin
+zh_portrait_she,zh,portrait,短称她,她,她，正在这幅肖像里。,10,2,lin,lin
+en_e_gate_name,en,east_gate,name Lin,Lin Lan,East gate: begin with Lin Lan.,4,4,lin,lin
+en_e_gate_generic,en,east_gate,generic,,East gate: enter slowly.,4,3,,
+en_lin_full,en,lin_hall,full name,Lin Lan,Lin Lan often painted by the window.,4,4,lin,lin
+en_lin_short,en,lin_hall,short she,she,She often painted by the window.,4,2,lin,lin
+en_w_gate_name,en,west_gate,name Zhou,Zhou Qin,West gate: begin with Zhou Qin.,4,4,zhou,zhou
+en_w_gate_generic,en,west_gate,generic,,West gate: enter slowly.,4,3,,
+en_zhou_full,en,zhou_hall,full name,Zhou Qin,Zhou Qin mixed colors beneath the lamp.,4,4,zhou,zhou
+en_zhou_short,en,zhou_hall,short she,she,She mixed colors beneath the lamp.,4,2,zhou,zhou
+en_porch_common,en,silent_porch,shared,,Silent porch: carry the recent story with you.,4,3,,
+en_porch_east,en,silent_porch,East version,Lin Lan,"Think of Lin Lan, then cross the silent porch.",4,2,lin,lin
+en_porch_west,en,silent_porch,West version,Zhou Qin,"Think of Zhou Qin, then cross the silent porch.",4,2,zhou,zhou
+en_portrait_full,en,portrait,full shared,Lin Lan,Lin Lan is present in this portrait.,4,4,lin,lin
+en_portrait_she,en,portrait,short she,she,She is present in this portrait.,10,2,lin,lin

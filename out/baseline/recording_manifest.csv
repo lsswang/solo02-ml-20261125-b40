@@ -1,0 +1,29 @@
+device,language,recording_asset_id,wording_id,station_id,appellation,text,duration_sec,recording_fee,audio_file
+wall,en,en_e_gate_name,en_e_gate_name,east_gate,Lin Lan,East gate: begin with Lin Lan.,4.0,4.0,audio/en/en_e_gate_name.wav
+wall,en,en_lin_short,en_lin_short,lin_hall,she,She often painted by the window.,2.0,4.0,audio/en/en_lin_short.wav
+wall,en,en_porch_east,en_porch_east,silent_porch,Lin Lan,"Think of Lin Lan, then cross the silent porch.",2.0,4.0,audio/en/en_porch_east.wav
+wall,en,en_porch_west,en_porch_west,silent_porch,Zhou Qin,"Think of Zhou Qin, then cross the silent porch.",2.0,4.0,audio/en/en_porch_west.wav
+wall,en,en_portrait_full,en_portrait_full,portrait,Lin Lan,Lin Lan is present in this portrait.,4.0,4.0,audio/en/en_portrait_full.wav
+wall,en,en_w_gate_name,en_w_gate_name,west_gate,Zhou Qin,West gate: begin with Zhou Qin.,4.0,4.0,audio/en/en_w_gate_name.wav
+wall,en,en_zhou_short,en_zhou_short,zhou_hall,she,She mixed colors beneath the lamp.,2.0,4.0,audio/en/en_zhou_short.wav
+wall,zh,zh_e_gate_name,zh_e_gate_name,east_gate,林岚,东门入线：先读林岚。,4.0,4.0,audio/zh/zh_e_gate_name.wav
+wall,zh,zh_lin_short,zh_lin_short,lin_hall,她,她常在窗前作画。,2.0,4.0,audio/zh/zh_lin_short.wav
+wall,zh,zh_porch_east,zh_porch_east,silent_porch,林岚,想着林岚，再穿过静默廊。,2.0,4.0,audio/zh/zh_porch_east.wav
+wall,zh,zh_porch_west,zh_porch_west,silent_porch,周琴,想着周琴，再穿过静默廊。,2.0,4.0,audio/zh/zh_porch_west.wav
+wall,zh,zh_portrait_full,zh_portrait_full,portrait,林岚,林岚，正在这幅肖像里。,4.0,4.0,audio/zh/zh_portrait_full.wav
+wall,zh,zh_w_gate_name,zh_w_gate_name,west_gate,周琴,西门入线：先读周琴。,4.0,4.0,audio/zh/zh_w_gate_name.wav
+wall,zh,zh_zhou_short,zh_zhou_short,zhou_hall,她,她常在灯下设色。,2.0,4.0,audio/zh/zh_zhou_short.wav
+pen,en,en_e_gate_name,en_e_gate_name,east_gate,Lin Lan,East gate: begin with Lin Lan.,4.0,4.0,audio/en/en_e_gate_name.wav
+pen,en,en_lin_short,en_lin_short,lin_hall,she,She often painted by the window.,2.0,4.0,audio/en/en_lin_short.wav
+pen,en,en_porch_common,en_porch_common,silent_porch,,Silent porch: carry the recent story with you.,3.0,4.0,audio/en/en_porch_common.wav
+pen,en,en_portrait_full,en_portrait_full,portrait,Lin Lan,Lin Lan is present in this portrait.,4.0,4.0,audio/en/en_portrait_full.wav
+pen,en,en_portrait_she,en_portrait_she,portrait,she,She is present in this portrait.,2.0,4.0,audio/en/en_portrait_she.wav
+pen,en,en_w_gate_name,en_w_gate_name,west_gate,Zhou Qin,West gate: begin with Zhou Qin.,4.0,4.0,audio/en/en_w_gate_name.wav
+pen,en,en_zhou_short,en_zhou_short,zhou_hall,she,She mixed colors beneath the lamp.,2.0,4.0,audio/en/en_zhou_short.wav
+pen,zh,zh_e_gate_name,zh_e_gate_name,east_gate,林岚,东门入线：先读林岚。,4.0,4.0,audio/zh/zh_e_gate_name.wav
+pen,zh,zh_lin_short,zh_lin_short,lin_hall,她,她常在窗前作画。,2.0,4.0,audio/zh/zh_lin_short.wav
+pen,zh,zh_porch_common,zh_porch_common,silent_porch,,静默廊口，请把刚才的故事放在心里。,3.0,4.0,audio/zh/zh_porch_common.wav
+pen,zh,zh_portrait_full,zh_portrait_full,portrait,林岚,林岚，正在这幅肖像里。,4.0,4.0,audio/zh/zh_portrait_full.wav
+pen,zh,zh_portrait_she,zh_portrait_she,portrait,她,她，正在这幅肖像里。,2.0,4.0,audio/zh/zh_portrait_she.wav
+pen,zh,zh_w_gate_name,zh_w_gate_name,west_gate,周琴,西门入线：先读周琴。,4.0,4.0,audio/zh/zh_w_gate_name.wav
+pen,zh,zh_zhou_short,zh_zhou_short,zhou_hall,她,她常在灯下设色。,2.0,4.0,audio/zh/zh_zhou_short.wav

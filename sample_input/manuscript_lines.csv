@@ -1,0 +1,7 @@
+line_id,script_id,language,line_order,site_id,prior_person_ids,wording,intended_person_id,text
+ML-ZH-01,MS-ZH-EAST,zh,1,portrait,lin,她,lin,她，正在这幅肖像里。
+ML-ZH-02,MS-ZH-WEST,zh,1,portrait,zhou,她,lin,林岚，正在这幅肖像里。
+ML-ZH-03,MS-ZH-WEST,zh,2,portrait,zhou,林岚,lin,林岚，正在这幅肖像里。
+ML-EN-01,MS-EN-EAST,en,1,portrait,lin,she,lin,She is present in this portrait.
+ML-EN-02,MS-EN-WEST,en,1,portrait,zhou,she,lin,Lin Lan is present in this portrait.
+ML-EN-03,MS-EN-WEST,en,2,portrait,zhou,Lin Lan,lin,Lin Lan is present in this portrait.

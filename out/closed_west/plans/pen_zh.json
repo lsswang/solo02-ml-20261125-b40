@@ -1,0 +1,217 @@
+{
+  "device": "pen",
+  "language": "zh",
+  "feasible": true,
+  "objective": 46.0,
+  "weighted_duration_cost": 30.0,
+  "production_cost": 16.0,
+  "recording_count": 4,
+  "pen_capacity": 7,
+  "capacity_remaining": 3,
+  "wall_bonus_used_stations": [],
+  "wall_bonus_allowed": null,
+  "selected_asset_ids": [
+    "zh_e_gate_name",
+    "zh_lin_short",
+    "zh_porch_east",
+    "zh_portrait_she"
+  ],
+  "assignment": {
+    "G01": "zh_e_gate_name",
+    "G02": "zh_lin_short",
+    "G03": "zh_portrait_she",
+    "G04": "zh_porch_east"
+  },
+  "traces": [
+    {
+      "route_id": "east",
+      "route_weight": 3.0,
+      "steps": [
+        {
+          "stop_order": 1,
+          "station_id": "east_gate",
+          "device_key": "zh|east_gate|prev2=∅|prev1=∅",
+          "group_id": "G01",
+          "wording_id": "zh_e_gate_name",
+          "recording_asset_id": "zh_e_gate_name",
+          "text": "东门入线：先读林岚。",
+          "appellation": "林岚",
+          "duration_sec": 4.0,
+          "route_weight": 3.0,
+          "weighted_duration_cost": 12.0,
+          "incoming_last_person_id": "",
+          "outgoing_last_person_id": "lin",
+          "reference_approved": true,
+          "reference_reason": "full name maps to exactly one person",
+          "intended_probability": 1.0,
+          "top_person_id": "lin"
+        },
+        {
+          "stop_order": 2,
+          "station_id": "lin_hall",
+          "device_key": "zh|lin_hall|prev2=∅|prev1=east_gate",
+          "group_id": "G02",
+          "wording_id": "zh_lin_short",
+          "recording_asset_id": "zh_lin_short",
+          "text": "她常在窗前作画。",
+          "appellation": "她",
+          "duration_sec": 2.0,
+          "route_weight": 3.0,
+          "weighted_duration_cost": 6.0,
+          "incoming_last_person_id": "lin",
+          "outgoing_last_person_id": "lin",
+          "reference_approved": true,
+          "reference_reason": "intended person ranks first and reaches threshold",
+          "intended_probability": 0.8284889797773234,
+          "top_person_id": "lin"
+        },
+        {
+          "stop_order": 3,
+          "station_id": "silent_porch",
+          "device_key": "zh|silent_porch|prev2=east_gate|prev1=lin_hall",
+          "group_id": "G04",
+          "wording_id": "zh_porch_east",
+          "recording_asset_id": "zh_porch_east",
+          "text": "想着林岚，再穿过静默廊。",
+          "appellation": "林岚",
+          "duration_sec": 2.0,
+          "route_weight": 3.0,
+          "weighted_duration_cost": 6.0,
+          "incoming_last_person_id": "lin",
+          "outgoing_last_person_id": "lin",
+          "reference_approved": true,
+          "reference_reason": "full name maps to exactly one person",
+          "intended_probability": 1.0,
+          "top_person_id": "lin"
+        },
+        {
+          "stop_order": 4,
+          "station_id": "portrait",
+          "device_key": "zh|portrait|prev2=lin_hall|prev1=silent_porch",
+          "group_id": "G03",
+          "wording_id": "zh_portrait_she",
+          "recording_asset_id": "zh_portrait_she",
+          "text": "她，正在这幅肖像里。",
+          "appellation": "她",
+          "duration_sec": 2.0,
+          "route_weight": 3.0,
+          "weighted_duration_cost": 6.0,
+          "incoming_last_person_id": "lin",
+          "outgoing_last_person_id": "lin",
+          "reference_approved": true,
+          "reference_reason": "intended person ranks first and reaches threshold",
+          "intended_probability": 0.8738048839167569,
+          "top_person_id": "lin"
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G01",
+      "device_key": "zh|east_gate|prev2=∅|prev1=∅",
+      "station_id": "east_gate",
+      "occurrence_ids": [
+        "east:1"
+      ],
+      "compatible_wording_ids": [
+        "zh_e_gate_generic",
+        "zh_e_gate_name"
+      ]
+    },
+    {
+      "group_id": "G02",
+      "device_key": "zh|lin_hall|prev2=∅|prev1=east_gate",
+      "station_id": "lin_hall",
+      "occurrence_ids": [
+        "east:2"
+      ],
+      "compatible_wording_ids": [
+        "zh_lin_full",
+        "zh_lin_short"
+      ]
+    },
+    {
+      "group_id": "G03",
+      "device_key": "zh|portrait|prev2=lin_hall|prev1=silent_porch",
+      "station_id": "portrait",
+      "occurrence_ids": [
+        "east:4"
+      ],
+      "compatible_wording_ids": [
+        "zh_portrait_full",
+        "zh_portrait_she"
+      ]
+    },
+    {
+      "group_id": "G04",
+      "device_key": "zh|silent_porch|prev2=east_gate|prev1=lin_hall",
+      "station_id": "silent_porch",
+      "occurrence_ids": [
+        "east:3"
+      ],
+      "compatible_wording_ids": [
+        "zh_porch_common",
+        "zh_porch_east"
+      ]
+    }
+  ],
+  "fee_by_asset_id": {
+    "zh_portrait_she": 4.0,
+    "zh_lin_short": 4.0,
+    "zh_porch_east": 4.0,
+    "zh_e_gate_name": 4.0
+  },
+  "evaluated_assignments": 16,
+  "feasible_assignments": 12,
+  "recordings": [
+    {
+      "recording_asset_id": "zh_e_gate_name",
+      "wording_id": "zh_e_gate_name",
+      "language": "zh",
+      "station_id": "east_gate",
+      "appellation": "林岚",
+      "text": "东门入线：先读林岚。",
+      "duration_sec": 4.0,
+      "recording_fee": 4.0,
+      "audio_file": "audio/zh/zh_e_gate_name.wav",
+      "transcript_file": "audio/zh/zh_e_gate_name.txt"
+    },
+    {
+      "recording_asset_id": "zh_lin_short",
+      "wording_id": "zh_lin_short",
+      "language": "zh",
+      "station_id": "lin_hall",
+      "appellation": "她",
+      "text": "她常在窗前作画。",
+      "duration_sec": 2.0,
+      "recording_fee": 4.0,
+      "audio_file": "audio/zh/zh_lin_short.wav",
+      "transcript_file": "audio/zh/zh_lin_short.txt"
+    },
+    {
+      "recording_asset_id": "zh_porch_east",
+      "wording_id": "zh_porch_east",
+      "language": "zh",
+      "station_id": "silent_porch",
+      "appellation": "林岚",
+      "text": "想着林岚，再穿过静默廊。",
+      "duration_sec": 2.0,
+      "recording_fee": 4.0,
+      "audio_file": "audio/zh/zh_porch_east.wav",
+      "transcript_file": "audio/zh/zh_porch_east.txt"
+    },
+    {
+      "recording_asset_id": "zh_portrait_she",
+      "wording_id": "zh_portrait_she",
+      "language": "zh",
+      "station_id": "portrait",
+      "appellation": "她",
+      "text": "她，正在这幅肖像里。",
+      "duration_sec": 2.0,
+      "recording_fee": 4.0,
+      "audio_file": "audio/zh/zh_portrait_she.wav",
+      "transcript_file": "audio/zh/zh_portrait_she.txt"
+    }
+  ]
+}

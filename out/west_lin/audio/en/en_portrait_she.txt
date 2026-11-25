@@ -1,0 +1,3 @@
+She is present in this portrait.
+
+station=portrait language=en wording=en_portrait_she fee=4.0

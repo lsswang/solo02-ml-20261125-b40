@@ -1,0 +1,6 @@
+Replay — device=pen language=en plates=west_gate -> zhou_hall -> silent_porch -> portrait
+Total playing duration: 13.00s
+ 1. [west_gate | prev2=∅, prev1=∅] (en_w_gate_name, 4.0s) West gate: begin with Zhou Qin.
+ 2. [zhou_hall | prev2=∅, prev1=west_gate] (en_zhou_short, 2.0s) She mixed colors beneath the lamp.
+ 3. [silent_porch | prev2=west_gate, prev1=zhou_hall] (en_porch_common, 3.0s) Silent porch: carry the recent story with you.
+ 4. [portrait | prev2=zhou_hall, prev1=silent_porch] (en_portrait_full, 4.0s) Lin Lan is present in this portrait.

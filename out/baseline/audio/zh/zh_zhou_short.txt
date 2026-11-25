@@ -1,0 +1,3 @@
+她常在灯下设色。
+
+station=zhou_hall language=zh wording=zh_zhou_short fee=4.0

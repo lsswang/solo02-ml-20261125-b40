@@ -1,0 +1,6 @@
+Replay — device=wall language=en plates=west_gate -> zhou_hall -> silent_porch -> portrait
+Total playing duration: 11.00s
+ 1. [west_gate | prev=∅] (en_w_gate_generic, 3.0s) West gate: enter slowly.
+ 2. [zhou_hall | prev=west_gate] (en_zhou_full, 4.0s) Zhou Qin mixed colors beneath the lamp.
+ 3. [silent_porch | prev=zhou_hall] (en_porch_west, 2.0s) Think of Zhou Qin, then cross the silent porch.
+ 4. [portrait | prev=silent_porch] (en_portrait_she, 2.0s) She is present in this portrait.

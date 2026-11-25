@@ -1,0 +1,6 @@
+Replay — device=pen language=zh plates=west_gate -> zhou_hall -> silent_porch -> portrait
+Total playing duration: 12.00s
+ 1. [west_gate | prev2=∅, prev1=∅] (zh_w_gate_name, 4.0s) 西门入线：先读周琴。
+ 2. [zhou_hall | prev2=∅, prev1=west_gate] (zh_zhou_short, 2.0s) 她常在灯下设色。
+ 3. [silent_porch | prev2=west_gate, prev1=zhou_hall] (zh_porch_west, 2.0s) 想着周琴，再穿过静默廊。
+ 4. [portrait | prev2=zhou_hall, prev1=silent_porch] (zh_portrait_full, 4.0s) 林岚，正在这幅肖像里。

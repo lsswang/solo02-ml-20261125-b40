@@ -1,0 +1,3 @@
+West gate: begin with Zhou Qin.
+
+station=west_gate language=en wording=en_w_gate_name fee=4.0

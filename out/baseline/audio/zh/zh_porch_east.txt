@@ -1,0 +1,3 @@
+想着林岚，再穿过静默廊。
+
+station=silent_porch language=zh wording=zh_porch_east fee=4.0

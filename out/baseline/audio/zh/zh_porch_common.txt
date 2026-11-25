@@ -1,0 +1,3 @@
+静默廊口，请把刚才的故事放在心里。
+
+station=silent_porch language=zh wording=zh_porch_common fee=4.0

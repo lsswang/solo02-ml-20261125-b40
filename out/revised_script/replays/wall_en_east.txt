@@ -1,0 +1,6 @@
+Replay — device=wall language=en plates=east_gate -> lin_hall -> silent_porch -> portrait
+Total playing duration: 12.00s
+ 1. [east_gate | prev=∅] (en_e_gate_name, 4.0s) East gate: begin with Lin Lan.
+ 2. [lin_hall | prev=east_gate] (en_lin_short, 2.0s) She often painted by the window.
+ 3. [silent_porch | prev=lin_hall] (en_porch_east, 2.0s) Think of Lin Lan, then cross the silent porch.
+ 4. [portrait | prev=silent_porch] (en_portrait_full, 4.0s) Lin Lan is present in this portrait.

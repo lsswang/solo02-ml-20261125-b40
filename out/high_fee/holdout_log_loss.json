@@ -1,0 +1,1016 @@
+{
+  "seed": 20261125,
+  "split": {
+    "train": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S08"
+    ],
+    "test": [
+      "S06",
+      "S07"
+    ]
+  },
+  "n_train_records": 124,
+  "n_heldout_records": 36,
+  "mean_log_loss_nats": 0.16913057720786498,
+  "mean_log_loss_bits": 0.24400384500047476,
+  "per_language": {
+    "en": {
+      "n_heldout_records": 18,
+      "mean_log_loss_nats": 0.16913057720786506,
+      "mean_log_loss_bits": 0.24400384500047487,
+      "n_actual_mishearings": 2,
+      "mishearing_records": [
+        {
+          "record_id": "R-EN-0158",
+          "script_id": "S06",
+          "language": "en",
+          "site_id": "east_gate",
+          "prior_person_ids": [
+            "chen"
+          ],
+          "last_person_id": "chen",
+          "heard_wording": "she",
+          "chosen_person_id": "zhou",
+          "intended_person_id": "lin",
+          "listener_id": "L-mishear-en-06",
+          "probability_assigned_to_chosen": 0.8343307086614173,
+          "log_loss_nats": 0.1811254220547223,
+          "distribution": {
+            "lin": 0.10488188976377953,
+            "zhou": 0.8343307086614173,
+            "chen": 0.060787401574803154
+          },
+          "model_top_person_id": "zhou",
+          "model_top_probability": 0.8343307086614173,
+          "holdout_scope": "held_out_scripts"
+        },
+        {
+          "record_id": "R-EN-0159",
+          "script_id": "S07",
+          "language": "en",
+          "site_id": "east_gate",
+          "prior_person_ids": [
+            "chen"
+          ],
+          "last_person_id": "chen",
+          "heard_wording": "she",
+          "chosen_person_id": "zhou",
+          "intended_person_id": "lin",
+          "listener_id": "L-mishear-en-07",
+          "probability_assigned_to_chosen": 0.8343307086614173,
+          "log_loss_nats": 0.1811254220547223,
+          "distribution": {
+            "lin": 0.10488188976377953,
+            "zhou": 0.8343307086614173,
+            "chen": 0.060787401574803154
+          },
+          "model_top_person_id": "zhou",
+          "model_top_probability": 0.8343307086614173,
+          "holdout_scope": "held_out_scripts"
+        }
+      ]
+    },
+    "zh": {
+      "n_heldout_records": 18,
+      "mean_log_loss_nats": 0.16913057720786506,
+      "mean_log_loss_bits": 0.24400384500047487,
+      "n_actual_mishearings": 2,
+      "mishearing_records": [
+        {
+          "record_id": "R-ZH-0078",
+          "script_id": "S06",
+          "language": "zh",
+          "site_id": "east_gate",
+          "prior_person_ids": [
+            "chen"
+          ],
+          "last_person_id": "chen",
+          "heard_wording": "她",
+          "chosen_person_id": "zhou",
+          "intended_person_id": "lin",
+          "listener_id": "L-mishear-zh-06",
+          "probability_assigned_to_chosen": 0.8343307086614173,
+          "log_loss_nats": 0.1811254220547223,
+          "distribution": {
+            "lin": 0.10488188976377953,
+            "zhou": 0.8343307086614173,
+            "chen": 0.060787401574803154
+          },
+          "model_top_person_id": "zhou",
+          "model_top_probability": 0.8343307086614173
+        },
+        {
+          "record_id": "R-ZH-0079",
+          "script_id": "S07",
+          "language": "zh",
+          "site_id": "east_gate",
+          "prior_person_ids": [
+            "chen"
+          ],
+          "last_person_id": "chen",
+          "heard_wording": "她",
+          "chosen_person_id": "zhou",
+          "intended_person_id": "lin",
+          "listener_id": "L-mishear-zh-07",
+          "probability_assigned_to_chosen": 0.8343307086614173,
+          "log_loss_nats": 0.1811254220547223,
+          "distribution": {
+            "lin": 0.10488188976377953,
+            "zhou": 0.8343307086614173,
+            "chen": 0.060787401574803154
+          },
+          "model_top_person_id": "zhou",
+          "model_top_probability": 0.8343307086614173
+        }
+      ]
+    }
+  },
+  "n_actual_mishearings_in_holdout": 4,
+  "mishearing_selection_scope": "one_per_language_held_out_scripts",
+  "selected_mishearing_records": [
+    {
+      "record_id": "R-ZH-0078",
+      "script_id": "S06",
+      "language": "zh",
+      "site_id": "east_gate",
+      "prior_person_ids": [
+        "chen"
+      ],
+      "last_person_id": "chen",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "lin",
+      "listener_id": "L-mishear-zh-06",
+      "probability_assigned_to_chosen": 0.8343307086614173,
+      "log_loss_nats": 0.1811254220547223,
+      "distribution": {
+        "lin": 0.10488188976377953,
+        "zhou": 0.8343307086614173,
+        "chen": 0.060787401574803154
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8343307086614173
+    },
+    {
+      "record_id": "R-EN-0158",
+      "script_id": "S06",
+      "language": "en",
+      "site_id": "east_gate",
+      "prior_person_ids": [
+        "chen"
+      ],
+      "last_person_id": "chen",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "lin",
+      "listener_id": "L-mishear-en-06",
+      "probability_assigned_to_chosen": 0.8343307086614173,
+      "log_loss_nats": 0.1811254220547223,
+      "distribution": {
+        "lin": 0.10488188976377953,
+        "zhou": 0.8343307086614173,
+        "chen": 0.060787401574803154
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8343307086614173,
+      "holdout_scope": "held_out_scripts"
+    }
+  ],
+  "heldout_record_losses": [
+    {
+      "record_id": "R-EN-0086",
+      "script_id": "S06",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "she",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-006",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-EN-0087",
+      "script_id": "S07",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "she",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-007",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-EN-0094",
+      "script_id": "S06",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "she",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-014",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-EN-0095",
+      "script_id": "S07",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "she",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-015",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-EN-0102",
+      "script_id": "S06",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "she",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-022",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-EN-0103",
+      "script_id": "S07",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "she",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-023",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-EN-0110",
+      "script_id": "S06",
+      "language": "en",
+      "site_id": "lin_hall",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "she",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-linhall-006",
+      "probability_assigned_to_chosen": 0.8064146826893507,
+      "log_loss_nats": 0.2151571741307034,
+      "distribution": {
+        "lin": 0.8064146826893507,
+        "zhou": 0.1602997580350356,
+        "chen": 0.03328555927561376
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8064146826893507
+    },
+    {
+      "record_id": "R-EN-0111",
+      "script_id": "S07",
+      "language": "en",
+      "site_id": "lin_hall",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "she",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-linhall-007",
+      "probability_assigned_to_chosen": 0.8064146826893507,
+      "log_loss_nats": 0.2151571741307034,
+      "distribution": {
+        "lin": 0.8064146826893507,
+        "zhou": 0.1602997580350356,
+        "chen": 0.03328555927561376
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8064146826893507
+    },
+    {
+      "record_id": "R-EN-0122",
+      "script_id": "S06",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-006",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-EN-0123",
+      "script_id": "S07",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-007",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-EN-0130",
+      "script_id": "S06",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-014",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-EN-0131",
+      "script_id": "S07",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-015",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-EN-0138",
+      "script_id": "S06",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-022",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-EN-0139",
+      "script_id": "S07",
+      "language": "en",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-023",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-EN-0146",
+      "script_id": "S06",
+      "language": "en",
+      "site_id": "zhou_hall",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-zhouhall-006",
+      "probability_assigned_to_chosen": 0.8158635015869885,
+      "log_loss_nats": 0.2035082154773918,
+      "distribution": {
+        "lin": 0.1508509391373978,
+        "zhou": 0.8158635015869885,
+        "chen": 0.03328555927561377
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8158635015869885
+    },
+    {
+      "record_id": "R-EN-0147",
+      "script_id": "S07",
+      "language": "en",
+      "site_id": "zhou_hall",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-zhouhall-007",
+      "probability_assigned_to_chosen": 0.8158635015869885,
+      "log_loss_nats": 0.2035082154773918,
+      "distribution": {
+        "lin": 0.1508509391373978,
+        "zhou": 0.8158635015869885,
+        "chen": 0.03328555927561377
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8158635015869885
+    },
+    {
+      "record_id": "R-EN-0158",
+      "script_id": "S06",
+      "language": "en",
+      "site_id": "east_gate",
+      "prior_person_ids": [
+        "chen"
+      ],
+      "last_person_id": "chen",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "lin",
+      "listener_id": "L-mishear-en-06",
+      "probability_assigned_to_chosen": 0.8343307086614173,
+      "log_loss_nats": 0.1811254220547223,
+      "distribution": {
+        "lin": 0.10488188976377953,
+        "zhou": 0.8343307086614173,
+        "chen": 0.060787401574803154
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8343307086614173,
+      "holdout_scope": "held_out_scripts"
+    },
+    {
+      "record_id": "R-EN-0159",
+      "script_id": "S07",
+      "language": "en",
+      "site_id": "east_gate",
+      "prior_person_ids": [
+        "chen"
+      ],
+      "last_person_id": "chen",
+      "heard_wording": "she",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "lin",
+      "listener_id": "L-mishear-en-07",
+      "probability_assigned_to_chosen": 0.8343307086614173,
+      "log_loss_nats": 0.1811254220547223,
+      "distribution": {
+        "lin": 0.10488188976377953,
+        "zhou": 0.8343307086614173,
+        "chen": 0.060787401574803154
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8343307086614173,
+      "holdout_scope": "held_out_scripts"
+    },
+    {
+      "record_id": "R-ZH-0006",
+      "script_id": "S06",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "她",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-006",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-ZH-0007",
+      "script_id": "S07",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "她",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-007",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-ZH-0014",
+      "script_id": "S06",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "她",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-014",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-ZH-0015",
+      "script_id": "S07",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "她",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-015",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-ZH-0022",
+      "script_id": "S06",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "她",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-022",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-ZH-0023",
+      "script_id": "S07",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "她",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-east-023",
+      "probability_assigned_to_chosen": 0.8527914942835536,
+      "log_loss_nats": 0.15924019949042578,
+      "distribution": {
+        "lin": 0.8527914942835536,
+        "zhou": 0.12551714933938343,
+        "chen": 0.021691356377063035
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8527914942835536
+    },
+    {
+      "record_id": "R-ZH-0030",
+      "script_id": "S06",
+      "language": "zh",
+      "site_id": "lin_hall",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "她",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-linhall-006",
+      "probability_assigned_to_chosen": 0.8064146826893507,
+      "log_loss_nats": 0.2151571741307034,
+      "distribution": {
+        "lin": 0.8064146826893507,
+        "zhou": 0.1602997580350356,
+        "chen": 0.03328555927561376
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8064146826893507
+    },
+    {
+      "record_id": "R-ZH-0031",
+      "script_id": "S07",
+      "language": "zh",
+      "site_id": "lin_hall",
+      "prior_person_ids": [
+        "lin"
+      ],
+      "last_person_id": "lin",
+      "heard_wording": "她",
+      "chosen_person_id": "lin",
+      "intended_person_id": "lin",
+      "listener_id": "L-linhall-007",
+      "probability_assigned_to_chosen": 0.8064146826893507,
+      "log_loss_nats": 0.2151571741307034,
+      "distribution": {
+        "lin": 0.8064146826893507,
+        "zhou": 0.1602997580350356,
+        "chen": 0.03328555927561376
+      },
+      "model_top_person_id": "lin",
+      "model_top_probability": 0.8064146826893507
+    },
+    {
+      "record_id": "R-ZH-0042",
+      "script_id": "S06",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-006",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-ZH-0043",
+      "script_id": "S07",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-007",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-ZH-0050",
+      "script_id": "S06",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-014",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-ZH-0051",
+      "script_id": "S07",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-015",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-ZH-0058",
+      "script_id": "S06",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-022",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-ZH-0059",
+      "script_id": "S07",
+      "language": "zh",
+      "site_id": "portrait",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-westzhou-023",
+      "probability_assigned_to_chosen": 0.8622403131811914,
+      "log_loss_nats": 0.14822126157889687,
+      "distribution": {
+        "lin": 0.11606833044174564,
+        "zhou": 0.8622403131811914,
+        "chen": 0.02169135637706304
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8622403131811914
+    },
+    {
+      "record_id": "R-ZH-0066",
+      "script_id": "S06",
+      "language": "zh",
+      "site_id": "zhou_hall",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-zhouhall-006",
+      "probability_assigned_to_chosen": 0.8158635015869885,
+      "log_loss_nats": 0.2035082154773918,
+      "distribution": {
+        "lin": 0.1508509391373978,
+        "zhou": 0.8158635015869885,
+        "chen": 0.03328555927561377
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8158635015869885
+    },
+    {
+      "record_id": "R-ZH-0067",
+      "script_id": "S07",
+      "language": "zh",
+      "site_id": "zhou_hall",
+      "prior_person_ids": [
+        "zhou"
+      ],
+      "last_person_id": "zhou",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "zhou",
+      "listener_id": "L-zhouhall-007",
+      "probability_assigned_to_chosen": 0.8158635015869885,
+      "log_loss_nats": 0.2035082154773918,
+      "distribution": {
+        "lin": 0.1508509391373978,
+        "zhou": 0.8158635015869885,
+        "chen": 0.03328555927561377
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8158635015869885
+    },
+    {
+      "record_id": "R-ZH-0078",
+      "script_id": "S06",
+      "language": "zh",
+      "site_id": "east_gate",
+      "prior_person_ids": [
+        "chen"
+      ],
+      "last_person_id": "chen",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "lin",
+      "listener_id": "L-mishear-zh-06",
+      "probability_assigned_to_chosen": 0.8343307086614173,
+      "log_loss_nats": 0.1811254220547223,
+      "distribution": {
+        "lin": 0.10488188976377953,
+        "zhou": 0.8343307086614173,
+        "chen": 0.060787401574803154
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8343307086614173
+    },
+    {
+      "record_id": "R-ZH-0079",
+      "script_id": "S07",
+      "language": "zh",
+      "site_id": "east_gate",
+      "prior_person_ids": [
+        "chen"
+      ],
+      "last_person_id": "chen",
+      "heard_wording": "她",
+      "chosen_person_id": "zhou",
+      "intended_person_id": "lin",
+      "listener_id": "L-mishear-zh-07",
+      "probability_assigned_to_chosen": 0.8343307086614173,
+      "log_loss_nats": 0.1811254220547223,
+      "distribution": {
+        "lin": 0.10488188976377953,
+        "zhou": 0.8343307086614173,
+        "chen": 0.060787401574803154
+      },
+      "model_top_person_id": "zhou",
+      "model_top_probability": 0.8343307086614173
+    }
+  ]
+}

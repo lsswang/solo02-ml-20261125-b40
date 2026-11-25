@@ -1,0 +1,3 @@
+Lin Lan is present in this portrait.
+
+station=portrait language=en wording=en_portrait_full fee=4.0

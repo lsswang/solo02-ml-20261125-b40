@@ -1,0 +1,3 @@
+林岚，正在这幅肖像里。
+
+station=portrait language=zh wording=zh_portrait_full fee=4.0

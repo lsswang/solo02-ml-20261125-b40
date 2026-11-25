@@ -1,0 +1,7 @@
+station_id,display_name,silent
+east_gate,东门,false
+lin_hall,林岚展区,false
+west_gate,西门,false
+zhou_hall,周琴展区,false
+silent_porch,静默廊口,true
+portrait,肖像站,false

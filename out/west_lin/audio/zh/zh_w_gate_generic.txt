@@ -1,0 +1,3 @@
+西门入线，缓步进展厅。
+
+station=west_gate language=zh wording=zh_w_gate_generic fee=4.0

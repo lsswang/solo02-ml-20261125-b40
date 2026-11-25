@@ -1,0 +1,3 @@
+Think of Zhou Qin, then cross the silent porch.
+
+station=silent_porch language=en wording=en_porch_west fee=4.0

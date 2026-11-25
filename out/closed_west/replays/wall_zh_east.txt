@@ -1,0 +1,6 @@
+Replay — device=wall language=zh plates=east_gate -> lin_hall -> silent_porch -> portrait
+Total playing duration: 10.00s
+ 1. [east_gate | prev=∅] (zh_e_gate_name, 4.0s) 东门入线：先读林岚。
+ 2. [lin_hall | prev=east_gate] (zh_lin_short, 2.0s) 她常在窗前作画。
+ 3. [silent_porch | prev=lin_hall] (zh_porch_east, 2.0s) 想着林岚，再穿过静默廊。
+ 4. [portrait | prev=silent_porch] (zh_portrait_she, 2.0s) 她，正在这幅肖像里。

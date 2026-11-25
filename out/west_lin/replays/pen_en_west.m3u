@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:3,west_gate en_w_gate_generic
+../audio/en/en_w_gate_generic.wav
+#EXTINF:4,zhou_hall en_zhou_full
+../audio/en/en_zhou_full.wav
+#EXTINF:2,silent_porch en_porch_west
+../audio/en/en_porch_west.wav
+#EXTINF:2,portrait en_portrait_she
+../audio/en/en_portrait_she.wav

@@ -1,0 +1,3 @@
+East gate: begin with Lin Lan.
+
+station=east_gate language=en wording=en_e_gate_name fee=4.0

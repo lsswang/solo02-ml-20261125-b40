@@ -1,0 +1,3 @@
+West gate: enter slowly.
+
+station=west_gate language=en wording=en_w_gate_generic fee=4.0

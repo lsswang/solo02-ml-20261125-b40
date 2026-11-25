@@ -1,0 +1,3 @@
+Silent porch: carry the recent story with you.
+
+station=silent_porch language=en wording=en_porch_common fee=4.0
