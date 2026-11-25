@@ -1,0 +1,242 @@
+{
+  "format": "boulder-heldout-report/v1",
+  "split": "heldout",
+  "clip_count": 8,
+  "frame_count": 102,
+  "joint_distribution_check": {
+    "table": [
+      {
+        "state": [
+          "NONE",
+          "NONE"
+        ],
+        "manual_frequency": 0.39215686274509803,
+        "mean_posterior_probability": 0.40489290583034043,
+        "absolute_error": 0.012736043085242399
+      },
+      {
+        "state": [
+          "NONE",
+          "ZONE"
+        ],
+        "manual_frequency": 0.13725490196078433,
+        "mean_posterior_probability": 0.12464635099486092,
+        "absolute_error": 0.012608550965923407
+      },
+      {
+        "state": [
+          "NONE",
+          "TOP"
+        ],
+        "manual_frequency": 0.0196078431372549,
+        "mean_posterior_probability": 0.026166724781971826,
+        "absolute_error": 0.006558881644716925
+      },
+      {
+        "state": [
+          "ZONE",
+          "NONE"
+        ],
+        "manual_frequency": 0.1568627450980392,
+        "mean_posterior_probability": 0.14598535949671765,
+        "absolute_error": 0.010877385601321565
+      },
+      {
+        "state": [
+          "ZONE",
+          "ZONE"
+        ],
+        "manual_frequency": 0.12745098039215685,
+        "mean_posterior_probability": 0.11357488200861816,
+        "absolute_error": 0.01387609838353869
+      },
+      {
+        "state": [
+          "ZONE",
+          "TOP"
+        ],
+        "manual_frequency": 0.00980392156862745,
+        "mean_posterior_probability": 0.022152419264546228,
+        "absolute_error": 0.012348497695918777
+      },
+      {
+        "state": [
+          "TOP",
+          "NONE"
+        ],
+        "manual_frequency": 0.029411764705882353,
+        "mean_posterior_probability": 0.02814786048110122,
+        "absolute_error": 0.001263904224781131
+      },
+      {
+        "state": [
+          "TOP",
+          "ZONE"
+        ],
+        "manual_frequency": 0.0,
+        "mean_posterior_probability": 0.015950889852815887,
+        "absolute_error": 0.015950889852815887
+      },
+      {
+        "state": [
+          "TOP",
+          "TOP"
+        ],
+        "manual_frequency": 0.12745098039215685,
+        "mean_posterior_probability": 0.11848260728902762,
+        "absolute_error": 0.008968373103129229
+      }
+    ],
+    "total_variation": 0.047594312278694005,
+    "jensen_shannon_nats": 0.0075773801052410085,
+    "max_absolute_state_error": 0.015950889852815887
+  },
+  "frame_joint_state_argmax_accuracy": 0.8431372549019608,
+  "both_top_brier_score": 0.008758315806372256,
+  "both_top_detection_at_signing_threshold": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 11,
+    "precision": 1.0,
+    "recall": 0.15384615384615385,
+    "f1": 0.2666666666666667
+  },
+  "both_top_detection_at_0.5": {
+    "tp": 13,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "manual_class_counts": {
+    "TOP": 3,
+    "ZONE": 5,
+    "NO_ZONE": 0
+  },
+  "signed_class_counts": {
+    "TOP": 1,
+    "ZONE": 2,
+    "NO_ZONE": 0
+  },
+  "signed_accuracy": 1.0,
+  "signed_coverage": 0.375,
+  "clips": [
+    {
+      "clip_id": "heldout-000",
+      "known_truth_outcome": "zone",
+      "manual_route_class": "ZONE",
+      "predicted_probabilities": {
+        "TOP": 0.08774218958882703,
+        "ZONE": 0.9122454451308077,
+        "NO_ZONE": 1.2365280366045947e-05
+      },
+      "signed_class": null,
+      "status": "appealable_no_class_reached_threshold",
+      "high_confidence_top_frames": [],
+      "p_any_tt": 0.1450132158930684
+    },
+    {
+      "clip_id": "heldout-001",
+      "known_truth_outcome": "none",
+      "manual_route_class": "ZONE",
+      "predicted_probabilities": {
+        "TOP": 5.1254736031369114e-05,
+        "ZONE": 0.8589160631796848,
+        "NO_ZONE": 0.14103268208428407
+      },
+      "signed_class": null,
+      "status": "appealable_no_class_reached_threshold",
+      "high_confidence_top_frames": [],
+      "p_any_tt": 0.0007182925132230408
+    },
+    {
+      "clip_id": "heldout-002",
+      "known_truth_outcome": "top",
+      "manual_route_class": "TOP",
+      "predicted_probabilities": {
+        "TOP": 0.784172971664523,
+        "ZONE": 0.21559445149958434,
+        "NO_ZONE": 0.0002325768358926243
+      },
+      "signed_class": null,
+      "status": "appealable_no_class_reached_threshold",
+      "high_confidence_top_frames": [],
+      "p_any_tt": 0.8525254372548386
+    },
+    {
+      "clip_id": "heldout-003",
+      "known_truth_outcome": "zone",
+      "manual_route_class": "ZONE",
+      "predicted_probabilities": {
+        "TOP": 0.031969741263112215,
+        "ZONE": 0.9680251781421366,
+        "NO_ZONE": 5.080594752284567e-06
+      },
+      "signed_class": "ZONE",
+      "status": "signed",
+      "high_confidence_top_frames": [],
+      "p_any_tt": 0.06320929707735051
+    },
+    {
+      "clip_id": "heldout-004",
+      "known_truth_outcome": "none",
+      "manual_route_class": "ZONE",
+      "predicted_probabilities": {
+        "TOP": 2.3150361495427153e-05,
+        "ZONE": 0.4327328150810717,
+        "NO_ZONE": 0.5672440345574343
+      },
+      "signed_class": null,
+      "status": "appealable_no_class_reached_threshold",
+      "high_confidence_top_frames": [],
+      "p_any_tt": 0.0004621442855007591
+    },
+    {
+      "clip_id": "heldout-005",
+      "known_truth_outcome": "top",
+      "manual_route_class": "TOP",
+      "predicted_probabilities": {
+        "TOP": 0.907171235720697,
+        "ZONE": 0.09276424245875348,
+        "NO_ZONE": 6.452182054805528e-05
+      },
+      "signed_class": null,
+      "status": "appealable_no_class_reached_threshold",
+      "high_confidence_top_frames": [
+        6
+      ],
+      "p_any_tt": 0.9951301028839298
+    },
+    {
+      "clip_id": "heldout-006",
+      "known_truth_outcome": "zone",
+      "manual_route_class": "ZONE",
+      "predicted_probabilities": {
+        "TOP": 0.0045823517041423895,
+        "ZONE": 0.995417580538017,
+        "NO_ZONE": 6.77578423781931e-08
+      },
+      "signed_class": "ZONE",
+      "status": "signed",
+      "high_confidence_top_frames": [],
+      "p_any_tt": 0.028691661949561877
+    },
+    {
+      "clip_id": "heldout-007",
+      "known_truth_outcome": "top",
+      "manual_route_class": "TOP",
+      "predicted_probabilities": {
+        "TOP": 0.9684583855016317,
+        "ZONE": 0.030759991279765128,
+        "NO_ZONE": 0.0007816232186007148
+      },
+      "signed_class": "TOP",
+      "status": "signed",
+      "high_confidence_top_frames": [
+        9
+      ],
+      "p_any_tt": 0.9985377266714015
+    }
+  ]
+}

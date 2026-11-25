@@ -1,0 +1,1169 @@
+{
+  "format": "boulder-calibration-batch/v1",
+  "vertices": [
+    "NONE",
+    "ZONE",
+    "TOP"
+  ],
+  "reading_values": [
+    "NONE",
+    "ZONE",
+    "TOP",
+    "OCCLUDED"
+  ],
+  "note": "Post-appeal paired-error calibration: correlated false TOP/TOP readings from ZONE/ZONE.",
+  "clips": [
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-00",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-01",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-02",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-03",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-04",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-05",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-06",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-07",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-08",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-09",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-10",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-11",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-12",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-13",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-14",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-15",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-16",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "paired-false-top-17",
+      "split": "train",
+      "calibration_note": "Both trackers snap to TOP together while labels remain ZONE/ZONE.",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    }
+  ]
+}

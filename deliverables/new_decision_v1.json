@@ -1,0 +1,460 @@
+{
+  "format": "boulder-decision/v1",
+  "clip_id": "public-new-W5-014",
+  "route_id": "W5-qualifier",
+  "route_summary": {
+    "top_vertex": "TOP",
+    "zone_vertex": "ZONE",
+    "stable_frames": 2,
+    "deadline_frame": 11,
+    "zone_requires": "any_hand"
+  },
+  "model_version": "cal-v1-initial",
+  "model_fingerprint": "2d7e73780b939bfce63c15bcad134b0fc0fd11e9329b41589af012b4d0392d87",
+  "threshold": 0.95,
+  "score_probabilities": [
+    {
+      "code": "TOP",
+      "label_zh": "完攀",
+      "probability": 0.9539405233214153
+    },
+    {
+      "code": "ZONE",
+      "label_zh": "区点",
+      "probability": 0.04603742480624414
+    },
+    {
+      "code": "NO_ZONE",
+      "label_zh": "无区点",
+      "probability": 2.205187234136004e-05
+    }
+  ],
+  "signed": true,
+  "signed_class": "TOP",
+  "status": "signed",
+  "leading_class": "TOP",
+  "frame_evidence": [
+    {
+      "frame": 0,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 7.995146132188292e-06,
+      "evidence_band": "effectively_absent",
+      "posterior_joint_state": [
+        "NONE",
+        "NONE"
+      ],
+      "posterior_dominant_probability": 0.9987427854694775,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.9987427854694775,
+        "NONE|ZONE": 0.0002725488590115272,
+        "NONE|TOP": 9.733965061293383e-05,
+        "ZONE|NONE": 0.00047385489560771896,
+        "ZONE|ZONE": 4.651872652557557e-05,
+        "ZONE|TOP": 0.0002668319052512061,
+        "TOP|NONE": 6.275578648350443e-05,
+        "TOP|ZONE": 2.9369560897854197e-05,
+        "TOP|TOP": 7.995146132188292e-06
+      },
+      "readings": {
+        "left": "NONE",
+        "right": "NONE"
+      }
+    },
+    {
+      "frame": 1,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 4.185209404421088e-06,
+      "evidence_band": "effectively_absent",
+      "posterior_joint_state": [
+        "NONE",
+        "NONE"
+      ],
+      "posterior_dominant_probability": 0.9874522891332566,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.9874522891332566,
+        "NONE|ZONE": 0.002443687304478435,
+        "NONE|TOP": 0.00021403374939172763,
+        "ZONE|NONE": 0.009300340430370627,
+        "ZONE|ZONE": 0.00045418457969741057,
+        "ZONE|TOP": 9.274529505224703e-05,
+        "TOP|NONE": 2.532112799963609e-05,
+        "TOP|ZONE": 1.321317034884897e-05,
+        "TOP|TOP": 4.185209404421088e-06
+      },
+      "readings": {
+        "left": "NONE",
+        "right": "NONE"
+      }
+    },
+    {
+      "frame": 2,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 1.2177752893540576e-05,
+      "evidence_band": "effectively_absent",
+      "posterior_joint_state": [
+        "NONE",
+        "NONE"
+      ],
+      "posterior_dominant_probability": 0.9511290921461982,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.9511290921461982,
+        "NONE|ZONE": 0.004826882539581464,
+        "NONE|TOP": 0.00030881955906453853,
+        "ZONE|NONE": 0.041939762104919995,
+        "ZONE|ZONE": 0.0015058574191993991,
+        "ZONE|TOP": 0.00014652403019079475,
+        "TOP|NONE": 7.966310419680681e-05,
+        "TOP|ZONE": 5.122134375498753e-05,
+        "TOP|TOP": 1.2177752893540576e-05
+      },
+      "readings": {
+        "left": "NONE",
+        "right": "NONE"
+      }
+    },
+    {
+      "frame": 3,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 0.0001125877552050957,
+      "evidence_band": "effectively_absent",
+      "posterior_joint_state": [
+        "NONE",
+        "NONE"
+      ],
+      "posterior_dominant_probability": 0.6950676571271314,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.6950676571271314,
+        "NONE|ZONE": 0.003705900114587942,
+        "NONE|TOP": 0.0019325141306711007,
+        "ZONE|NONE": 0.29140933913591355,
+        "ZONE|ZONE": 0.005965148479568008,
+        "ZONE|TOP": 0.0007614658940232146,
+        "TOP|NONE": 0.0006391514398641659,
+        "TOP|ZONE": 0.00040623592303556645,
+        "TOP|TOP": 0.0001125877552050957
+      },
+      "readings": {
+        "left": "OCCLUDED",
+        "right": "NONE"
+      }
+    },
+    {
+      "frame": 4,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 0.0003923162646015983,
+      "evidence_band": "effectively_absent",
+      "posterior_joint_state": [
+        "ZONE",
+        "NONE"
+      ],
+      "posterior_dominant_probability": 0.7814167735041305,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.14615527403363024,
+        "NONE|ZONE": 0.006317285095561668,
+        "NONE|TOP": 0.003327620327010362,
+        "ZONE|NONE": 0.7814167735041305,
+        "ZONE|ZONE": 0.0556000307829799,
+        "ZONE|TOP": 0.0012142270459172472,
+        "TOP|NONE": 0.004489523807265265,
+        "TOP|ZONE": 0.0010869491389030755,
+        "TOP|TOP": 0.0003923162646015983
+      },
+      "readings": {
+        "left": "ZONE",
+        "right": "NONE"
+      }
+    },
+    {
+      "frame": 5,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 0.0047075499505283185,
+      "evidence_band": "effectively_absent",
+      "posterior_joint_state": [
+        "ZONE",
+        "NONE"
+      ],
+      "posterior_dominant_probability": 0.7156497310179113,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.034814666009815975,
+        "NONE|ZONE": 0.009013466952272729,
+        "NONE|TOP": 0.0060271874128417615,
+        "ZONE|NONE": 0.7156497310179113,
+        "ZONE|ZONE": 0.1282280226704511,
+        "ZONE|TOP": 0.01790373436016652,
+        "TOP|NONE": 0.05947131702678576,
+        "TOP|ZONE": 0.02418432459922666,
+        "TOP|TOP": 0.0047075499505283185
+      },
+      "readings": {
+        "left": "ZONE",
+        "right": "NONE"
+      }
+    },
+    {
+      "frame": 6,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 0.16419239421508985,
+      "evidence_band": "weak",
+      "posterior_joint_state": [
+        "ZONE",
+        "ZONE"
+      ],
+      "posterior_dominant_probability": 0.33505310987911235,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.0011230521263336556,
+        "NONE|ZONE": 0.017290751291935393,
+        "NONE|TOP": 0.018021760422359805,
+        "ZONE|NONE": 0.019824187590521233,
+        "ZONE|ZONE": 0.33505310987911235,
+        "ZONE|TOP": 0.1329429878108419,
+        "TOP|NONE": 0.11234754765445776,
+        "TOP|ZONE": 0.1992042090093482,
+        "TOP|TOP": 0.16419239421508985
+      },
+      "readings": {
+        "left": "ZONE",
+        "right": "ZONE"
+      }
+    },
+    {
+      "frame": 7,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 0.799899791662092,
+      "evidence_band": "strong_below_signing",
+      "posterior_joint_state": [
+        "TOP",
+        "TOP"
+      ],
+      "posterior_dominant_probability": 0.799899791662092,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.0006658399663929609,
+        "NONE|ZONE": 0.0015709575286583786,
+        "NONE|TOP": 0.04018410511236788,
+        "ZONE|NONE": 0.0027793459532827994,
+        "ZONE|ZONE": 0.014385760216881939,
+        "ZONE|TOP": 0.021691962507940844,
+        "TOP|NONE": 0.018962523863395205,
+        "TOP|ZONE": 0.09985971318898791,
+        "TOP|TOP": 0.799899791662092
+      },
+      "readings": {
+        "left": "TOP",
+        "right": "TOP"
+      }
+    },
+    {
+      "frame": 8,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 0.8799805708056746,
+      "evidence_band": "strong_below_signing",
+      "posterior_joint_state": [
+        "TOP",
+        "TOP"
+      ],
+      "posterior_dominant_probability": 0.8799805708056746,
+      "joint_state_posterior": {
+        "NONE|NONE": 7.933488800662118e-05,
+        "NONE|ZONE": 0.00021023043458929418,
+        "NONE|TOP": 0.04794503647498909,
+        "ZONE|NONE": 0.001289394111356539,
+        "ZONE|ZONE": 0.0011741779629454781,
+        "ZONE|TOP": 0.019793946927305593,
+        "TOP|NONE": 0.023853618515216522,
+        "TOP|ZONE": 0.02567368987991633,
+        "TOP|TOP": 0.8799805708056746
+      },
+      "readings": {
+        "left": "OCCLUDED",
+        "right": "TOP"
+      }
+    },
+    {
+      "frame": 9,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 0.9366233525217692,
+      "evidence_band": "strong_below_signing",
+      "posterior_joint_state": [
+        "TOP",
+        "TOP"
+      ],
+      "posterior_dominant_probability": 0.9366233525217692,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.0005992862959666471,
+        "NONE|ZONE": 0.0002554276279600264,
+        "NONE|TOP": 0.027903536584844426,
+        "ZONE|NONE": 0.0006878995151436211,
+        "ZONE|ZONE": 0.0008964060877617675,
+        "ZONE|TOP": 0.007379896238389665,
+        "TOP|NONE": 0.014305128653002723,
+        "TOP|ZONE": 0.011349066475161911,
+        "TOP|TOP": 0.9366233525217692
+      },
+      "readings": {
+        "left": "TOP",
+        "right": "TOP"
+      }
+    },
+    {
+      "frame": 10,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 0.7502891213642686,
+      "evidence_band": "strong_below_signing",
+      "posterior_joint_state": [
+        "TOP",
+        "TOP"
+      ],
+      "posterior_dominant_probability": 0.7502891213642686,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.0021569299247410057,
+        "NONE|ZONE": 0.0031783762475697547,
+        "NONE|TOP": 0.15876852187478094,
+        "ZONE|NONE": 0.011092517242417747,
+        "ZONE|ZONE": 0.011088481898346809,
+        "ZONE|TOP": 0.018422743656186232,
+        "TOP|NONE": 0.02646172627020813,
+        "TOP|ZONE": 0.01854158152148079,
+        "TOP|TOP": 0.7502891213642686
+      },
+      "readings": {
+        "left": "OCCLUDED",
+        "right": "OCCLUDED"
+      }
+    },
+    {
+      "frame": 11,
+      "wrists": [
+        "left",
+        "right"
+      ],
+      "p_both_at_top_vertex": 0.129319592632752,
+      "evidence_band": "weak",
+      "posterior_joint_state": [
+        "TOP",
+        "ZONE"
+      ],
+      "posterior_dominant_probability": 0.5288629377931244,
+      "joint_state_posterior": {
+        "NONE|NONE": 0.0019396645221697562,
+        "NONE|ZONE": 0.010941362039748952,
+        "NONE|TOP": 0.05430837885038044,
+        "ZONE|NONE": 0.0037942774560500124,
+        "ZONE|ZONE": 0.014136052333036149,
+        "ZONE|TOP": 0.0380218165083765,
+        "TOP|NONE": 0.2186759178643619,
+        "TOP|ZONE": 0.5288629377931244,
+        "TOP|TOP": 0.129319592632752
+      },
+      "readings": {
+        "left": "TOP",
+        "right": "ZONE"
+      }
+    }
+  ],
+  "high_confidence_simultaneous_top_frames": [],
+  "probable_simultaneous_top_frames": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "p_any_simultaneous_top_in_clip": 0.9929472946354971,
+  "p_any_simultaneous_top_before_deadline": 0.9929472946354971,
+  "most_likely_joint_path": [
+    {
+      "frame": 0,
+      "left_contact": "NONE",
+      "right_contact": "NONE"
+    },
+    {
+      "frame": 1,
+      "left_contact": "NONE",
+      "right_contact": "NONE"
+    },
+    {
+      "frame": 2,
+      "left_contact": "NONE",
+      "right_contact": "NONE"
+    },
+    {
+      "frame": 3,
+      "left_contact": "NONE",
+      "right_contact": "NONE"
+    },
+    {
+      "frame": 4,
+      "left_contact": "ZONE",
+      "right_contact": "NONE"
+    },
+    {
+      "frame": 5,
+      "left_contact": "ZONE",
+      "right_contact": "NONE"
+    },
+    {
+      "frame": 6,
+      "left_contact": "TOP",
+      "right_contact": "ZONE"
+    },
+    {
+      "frame": 7,
+      "left_contact": "TOP",
+      "right_contact": "TOP"
+    },
+    {
+      "frame": 8,
+      "left_contact": "TOP",
+      "right_contact": "TOP"
+    },
+    {
+      "frame": 9,
+      "left_contact": "TOP",
+      "right_contact": "TOP"
+    },
+    {
+      "frame": 10,
+      "left_contact": "TOP",
+      "right_contact": "TOP"
+    },
+    {
+      "frame": 11,
+      "left_contact": "TOP",
+      "right_contact": "ZONE"
+    }
+  ],
+  "log_likelihood": -25.16324624835987,
+  "forward_backward_log_likelihood": -25.16324624835987,
+  "viterbi_log_score": -28.75325139538783
+}

@@ -1,0 +1,127 @@
+{
+  "format": "boulder-hand-checks/v1",
+  "all_expected_values_reproduced": true,
+  "examples": [
+    {
+      "name": "half_HH_half_EE_one_frame_K1",
+      "hand_path_calculation": "P(EE)=0.5，P(HH)=0.5；只有 HH 满足完攀，因此 P(TOP)=0.5。",
+      "hand_marginals": [
+        {
+          "frame": 0,
+          "p_left_hold": 0.5,
+          "p_right_hold": 0.5
+        }
+      ],
+      "score_probabilities": [
+        {
+          "code": "TOP",
+          "label_zh": "完攀",
+          "probability": 0.5
+        },
+        {
+          "code": "ZONE",
+          "label_zh": "区点",
+          "probability": 0.0
+        },
+        {
+          "code": "NO_ZONE",
+          "label_zh": "无区点",
+          "probability": 0.5
+        }
+      ],
+      "p_top": 0.5,
+      "expected_p_top": 0.5
+    },
+    {
+      "name": "always_exactly_one_hand_K1",
+      "hand_path_calculation": "P(EH,HE,EH,HE)=0.5，P(HE,EH,HE,EH)=0.5。两条路径都没有 HH，所以即使每只手腕边缘概率均为 0.5，P(TOP)=0。",
+      "hand_marginals": [
+        {
+          "frame": 0,
+          "p_left_hold": 0.5,
+          "p_right_hold": 0.5
+        },
+        {
+          "frame": 1,
+          "p_left_hold": 0.5,
+          "p_right_hold": 0.5
+        },
+        {
+          "frame": 2,
+          "p_left_hold": 0.5,
+          "p_right_hold": 0.5
+        },
+        {
+          "frame": 3,
+          "p_left_hold": 0.5,
+          "p_right_hold": 0.5
+        }
+      ],
+      "score_probabilities": [
+        {
+          "code": "TOP",
+          "label_zh": "完攀",
+          "probability": 0.0
+        },
+        {
+          "code": "ZONE",
+          "label_zh": "区点",
+          "probability": 0.0
+        },
+        {
+          "code": "NO_ZONE",
+          "label_zh": "无区点",
+          "probability": 1.0
+        }
+      ],
+      "p_top": 0.0,
+      "expected_p_top": 0.0
+    },
+    {
+      "name": "empty_then_final_HH_K1",
+      "hand_path_calculation": "唯一路径为 EE -> HH；K=1 时末帧满足，因此 P(TOP)=1。",
+      "score_probabilities": [
+        {
+          "code": "TOP",
+          "label_zh": "完攀",
+          "probability": 1.0
+        },
+        {
+          "code": "ZONE",
+          "label_zh": "区点",
+          "probability": 0.0
+        },
+        {
+          "code": "NO_ZONE",
+          "label_zh": "无区点",
+          "probability": 0.0
+        }
+      ],
+      "p_top": 1.0,
+      "expected_p_top": 1.0
+    },
+    {
+      "name": "empty_then_final_HH_K2",
+      "hand_path_calculation": "唯一路径为 EE -> HH。它没有连续两帧 HH，因此把 stable_frames 改为 2 后 P(TOP)=0。",
+      "score_probabilities": [
+        {
+          "code": "TOP",
+          "label_zh": "完攀",
+          "probability": 0.0
+        },
+        {
+          "code": "ZONE",
+          "label_zh": "区点",
+          "probability": 0.0
+        },
+        {
+          "code": "NO_ZONE",
+          "label_zh": "无区点",
+          "probability": 1.0
+        }
+      ],
+      "p_top": 0.0,
+      "expected_p_top": 0.0
+    }
+  ]
+}

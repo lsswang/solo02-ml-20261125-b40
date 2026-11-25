@@ -1,0 +1,195 @@
+{
+  "sealed_rejudgment": {
+    "probabilities": {
+      "TOP": 0.9817362194930577,
+      "ZONE": 0.018263349408709773,
+      "NO_ZONE": 4.310982326954979e-07
+    },
+    "log_joint_weights": {
+      "TOP": -19.120260340019108,
+      "ZONE": -23.104686709621124,
+      "NO_ZONE": -33.75875757244533
+    },
+    "log_likelihood": -19.10182771772029,
+    "deadline_frame": 11,
+    "frames_processed": 10
+  },
+  "testimony_comparison": {
+    "format": "boulder-sealed-testimony-comparison/v1",
+    "sealed_model_version": "cal-v1-initial",
+    "sealed_model_fingerprint": "2d7e73780b939bfce63c15bcad134b0fc0fd11e9329b41589af012b4d0392d87",
+    "rejudged_probabilities": {
+      "TOP": 0.9817362194930577,
+      "ZONE": 0.018263349408709773,
+      "NO_ZONE": 4.310982326954979e-07
+    },
+    "testimony_a": {
+      "testimony_id": "T-A-top-witness",
+      "source": "witness_A",
+      "route_class_if_testimony_exact": "TOP",
+      "state_path": [
+        [
+          "NONE",
+          "NONE"
+        ],
+        [
+          "NONE",
+          "NONE"
+        ],
+        [
+          "NONE",
+          "ZONE"
+        ],
+        [
+          "ZONE",
+          "ZONE"
+        ],
+        [
+          "ZONE",
+          "ZONE"
+        ],
+        [
+          "ZONE",
+          "ZONE"
+        ],
+        [
+          "TOP",
+          "TOP"
+        ],
+        [
+          "TOP",
+          "TOP"
+        ],
+        [
+          "TOP",
+          "TOP"
+        ],
+        [
+          "TOP",
+          "TOP"
+        ]
+      ],
+      "log_joint_weight": -21.34627174186675,
+      "posterior_path_probability_under_sealed_model": 0.10598644990283836
+    },
+    "testimony_b": {
+      "testimony_id": "T-B-zone-coach",
+      "source": "witness_B",
+      "route_class_if_testimony_exact": "ZONE",
+      "state_path": [
+        [
+          "NONE",
+          "NONE"
+        ],
+        [
+          "NONE",
+          "NONE"
+        ],
+        [
+          "NONE",
+          "ZONE"
+        ],
+        [
+          "ZONE",
+          "ZONE"
+        ],
+        [
+          "ZONE",
+          "ZONE"
+        ],
+        [
+          "ZONE",
+          "ZONE"
+        ],
+        [
+          "ZONE",
+          "ZONE"
+        ],
+        [
+          "ZONE",
+          "ZONE"
+        ],
+        [
+          "ZONE",
+          "ZONE"
+        ],
+        [
+          "ZONE",
+          "ZONE"
+        ]
+      ],
+      "log_joint_weight": -31.738607668793804,
+      "posterior_path_probability_under_sealed_model": 3.250245743574907e-06
+    },
+    "conflict_frames": [
+      {
+        "frame": 6,
+        "testimony_a_state": [
+          "TOP",
+          "TOP"
+        ],
+        "testimony_b_state": [
+          "ZONE",
+          "ZONE"
+        ],
+        "emission_likelihood_ratio_a_over_b": 45.48010849909583,
+        "transition_ratio_a_over_b": 0.011164274322169057,
+        "joint_frame_path_ratio_a_over_b": 0.5077524074859183,
+        "transition_context": "transition from ZONE|ZONE vs ZONE|ZONE",
+        "factor_favors": "A"
+      },
+      {
+        "frame": 7,
+        "testimony_a_state": [
+          "TOP",
+          "TOP"
+        ],
+        "testimony_b_state": [
+          "ZONE",
+          "ZONE"
+        ],
+        "emission_likelihood_ratio_a_over_b": 45.48010849909583,
+        "transition_ratio_a_over_b": 0.8805200032934763,
+        "joint_frame_path_ratio_a_over_b": 40.04614528541151,
+        "transition_context": "transition from TOP|TOP vs ZONE|ZONE",
+        "factor_favors": "A"
+      },
+      {
+        "frame": 8,
+        "testimony_a_state": [
+          "TOP",
+          "TOP"
+        ],
+        "testimony_b_state": [
+          "ZONE",
+          "ZONE"
+        ],
+        "emission_likelihood_ratio_a_over_b": 45.48010849909583,
+        "transition_ratio_a_over_b": 0.8805200032934763,
+        "joint_frame_path_ratio_a_over_b": 40.04614528541151,
+        "transition_context": "transition from TOP|TOP vs ZONE|ZONE",
+        "factor_favors": "A"
+      },
+      {
+        "frame": 9,
+        "testimony_a_state": [
+          "TOP",
+          "TOP"
+        ],
+        "testimony_b_state": [
+          "ZONE",
+          "ZONE"
+        ],
+        "emission_likelihood_ratio_a_over_b": 45.48010849909583,
+        "transition_ratio_a_over_b": 0.8805200032934763,
+        "joint_frame_path_ratio_a_over_b": 40.04614528541151,
+        "transition_context": "transition from TOP|TOP vs ZONE|ZONE",
+        "factor_favors": "A"
+      }
+    ],
+    "log_bayes_factor_a_over_b": 10.392335926927053,
+    "bayes_factor_a_over_b": 32608.749696035327,
+    "interpretation": "A is better supported by sealed joint evidence",
+    "venue_warning": "Raw readings are absent. A later emission calibration cannot be applied to these factors unless the new likelihoods were also sealed before readings destruction."
+  }
+}

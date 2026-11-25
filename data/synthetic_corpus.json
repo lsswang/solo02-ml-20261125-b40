@@ -1,0 +1,3214 @@
+{
+  "format": "boulder-synthetic-corpus/v1",
+  "seed": 20261125,
+  "vertices": [
+    "NONE",
+    "ZONE",
+    "TOP"
+  ],
+  "reading_values": [
+    "NONE",
+    "ZONE",
+    "TOP",
+    "OCCLUDED"
+  ],
+  "generator": "phase-and-paired-emission/v1",
+  "clips": [
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-000",
+      "split": "train",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "TOP",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 7,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "ZONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 11,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 13,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 14,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 15,
+          "left_contact": "ZONE",
+          "right_contact": "TOP",
+          "left_reading": "ZONE",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-001",
+      "split": "train",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 13,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-002",
+      "split": "train",
+      "known_truth_outcome": "none",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-003",
+      "split": "train",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 10,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-004",
+      "split": "train",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "OCCLUDED"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-005",
+      "split": "train",
+      "known_truth_outcome": "none",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 13,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-006",
+      "split": "train",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "TOP",
+          "left_reading": "ZONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 9,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 10,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 11,
+          "left_contact": "ZONE",
+          "right_contact": "TOP",
+          "left_reading": "ZONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 12,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-007",
+      "split": "train",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 11,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-008",
+      "split": "train",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "TOP",
+          "left_reading": "ZONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 10,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 11,
+          "left_contact": "TOP",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 12,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 13,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 14,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 15,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-009",
+      "split": "train",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 13,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 14,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-010",
+      "split": "train",
+      "known_truth_outcome": "none",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 13,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 14,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 15,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-011",
+      "split": "train",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "TOP",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-012",
+      "split": "train",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 13,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-013",
+      "split": "train",
+      "known_truth_outcome": "none",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-014",
+      "split": "train",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "TOP",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 11,
+          "left_contact": "TOP",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 13,
+          "left_contact": "TOP",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-015",
+      "split": "train",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 13,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 14,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 15,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-016",
+      "split": "train",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-017",
+      "split": "train",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-018",
+      "split": "train",
+      "known_truth_outcome": "none",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 13,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-019",
+      "split": "train",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 6,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "ZONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 10,
+          "left_contact": "ZONE",
+          "right_contact": "TOP",
+          "left_reading": "ZONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 13,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 14,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 15,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-020",
+      "split": "train",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 13,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-021",
+      "split": "train",
+      "known_truth_outcome": "none",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-022",
+      "split": "train",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 7,
+          "left_contact": "TOP",
+          "right_contact": "ZONE",
+          "left_reading": "TOP",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 9,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 10,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "train-023",
+      "split": "train",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "heldout-000",
+      "split": "heldout",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "heldout-001",
+      "split": "heldout",
+      "known_truth_outcome": "none",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 13,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "heldout-002",
+      "split": "heldout",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 10,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 11,
+          "left_contact": "TOP",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "heldout-003",
+      "split": "heldout",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "heldout-004",
+      "split": "heldout",
+      "known_truth_outcome": "none",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 13,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 14,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 15,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "heldout-005",
+      "split": "heldout",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 4,
+          "left_contact": "NONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "TOP",
+          "left_reading": "ZONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 10,
+          "left_contact": "TOP",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "heldout-006",
+      "split": "heldout",
+      "known_truth_outcome": "zone",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "NONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 6,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 7,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "NONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 8,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 9,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 10,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "ZONE",
+          "right_reading": "ZONE"
+        },
+        {
+          "frame": 11,
+          "left_contact": "ZONE",
+          "right_contact": "ZONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        }
+      ]
+    },
+    {
+      "format": "boulder-clip/v1",
+      "clip_id": "heldout-007",
+      "split": "heldout",
+      "known_truth_outcome": "top",
+      "frames": [
+        {
+          "frame": 0,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 1,
+          "left_contact": "NONE",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 2,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "ZONE",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 3,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 4,
+          "left_contact": "ZONE",
+          "right_contact": "NONE",
+          "left_reading": "OCCLUDED",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 5,
+          "left_contact": "NONE",
+          "right_contact": "TOP",
+          "left_reading": "NONE",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 6,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 7,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 8,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "OCCLUDED"
+        },
+        {
+          "frame": 9,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 10,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "OCCLUDED",
+          "right_reading": "TOP"
+        },
+        {
+          "frame": 11,
+          "left_contact": "TOP",
+          "right_contact": "NONE",
+          "left_reading": "TOP",
+          "right_reading": "NONE"
+        },
+        {
+          "frame": 12,
+          "left_contact": "TOP",
+          "right_contact": "TOP",
+          "left_reading": "TOP",
+          "right_reading": "TOP"
+        }
+      ]
+    }
+  ]
+}

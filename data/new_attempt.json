@@ -1,0 +1,67 @@
+{
+  "format": "boulder-clip/v1",
+  "clip_id": "public-new-W5-014",
+  "athlete": "demo-athlete-14",
+  "frames": [
+    {
+      "frame": 0,
+      "left_reading": "NONE",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 1,
+      "left_reading": "NONE",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 2,
+      "left_reading": "NONE",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 3,
+      "left_reading": "OCCLUDED",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 4,
+      "left_reading": "ZONE",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 5,
+      "left_reading": "ZONE",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 6,
+      "left_reading": "ZONE",
+      "right_reading": "ZONE"
+    },
+    {
+      "frame": 7,
+      "left_reading": "TOP",
+      "right_reading": "TOP"
+    },
+    {
+      "frame": 8,
+      "left_reading": "OCCLUDED",
+      "right_reading": "TOP"
+    },
+    {
+      "frame": 9,
+      "left_reading": "TOP",
+      "right_reading": "TOP"
+    },
+    {
+      "frame": 10,
+      "left_reading": "OCCLUDED",
+      "right_reading": "OCCLUDED"
+    },
+    {
+      "frame": 11,
+      "left_reading": "TOP",
+      "right_reading": "ZONE"
+    }
+  ]
+}

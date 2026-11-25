@@ -1,0 +1,92 @@
+{
+  "format": "boulder-clip/v1",
+  "clip_id": "public-new-W5-014",
+  "split": "new",
+  "known_truth_outcome": "top",
+  "frames": [
+    {
+      "frame": 0,
+      "left_contact": "NONE",
+      "right_contact": "NONE",
+      "left_reading": "NONE",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 1,
+      "left_contact": "NONE",
+      "right_contact": "NONE",
+      "left_reading": "NONE",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 2,
+      "left_contact": "NONE",
+      "right_contact": "NONE",
+      "left_reading": "NONE",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 3,
+      "left_contact": "ZONE",
+      "right_contact": "NONE",
+      "left_reading": "OCCLUDED",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 4,
+      "left_contact": "ZONE",
+      "right_contact": "NONE",
+      "left_reading": "ZONE",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 5,
+      "left_contact": "ZONE",
+      "right_contact": "NONE",
+      "left_reading": "ZONE",
+      "right_reading": "NONE"
+    },
+    {
+      "frame": 6,
+      "left_contact": "ZONE",
+      "right_contact": "TOP",
+      "left_reading": "ZONE",
+      "right_reading": "ZONE"
+    },
+    {
+      "frame": 7,
+      "left_contact": "TOP",
+      "right_contact": "TOP",
+      "left_reading": "TOP",
+      "right_reading": "TOP"
+    },
+    {
+      "frame": 8,
+      "left_contact": "TOP",
+      "right_contact": "TOP",
+      "left_reading": "OCCLUDED",
+      "right_reading": "TOP"
+    },
+    {
+      "frame": 9,
+      "left_contact": "TOP",
+      "right_contact": "TOP",
+      "left_reading": "TOP",
+      "right_reading": "TOP"
+    },
+    {
+      "frame": 10,
+      "left_contact": "TOP",
+      "right_contact": "TOP",
+      "left_reading": "OCCLUDED",
+      "right_reading": "OCCLUDED"
+    },
+    {
+      "frame": 11,
+      "left_contact": "TOP",
+      "right_contact": "ZONE",
+      "left_reading": "TOP",
+      "right_reading": "ZONE"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "format": "boulder-contact-testimony/v1",
+  "testimony_id": "T-B-zone-coach",
+  "source": "witness_B",
+  "claimed_outcome": "ZONE",
+  "frames": [
+    {
+      "frame": 0,
+      "left_contact": "NONE",
+      "right_contact": "NONE"
+    },
+    {
+      "frame": 1,
+      "left_contact": "NONE",
+      "right_contact": "NONE"
+    },
+    {
+      "frame": 2,
+      "left_contact": "NONE",
+      "right_contact": "ZONE"
+    },
+    {
+      "frame": 3,
+      "left_contact": "ZONE",
+      "right_contact": "ZONE"
+    },
+    {
+      "frame": 4,
+      "left_contact": "ZONE",
+      "right_contact": "ZONE"
+    },
+    {
+      "frame": 5,
+      "left_contact": "ZONE",
+      "right_contact": "ZONE"
+    },
+    {
+      "frame": 6,
+      "left_contact": "ZONE",
+      "right_contact": "ZONE"
+    },
+    {
+      "frame": 7,
+      "left_contact": "ZONE",
+      "right_contact": "ZONE"
+    },
+    {
+      "frame": 8,
+      "left_contact": "ZONE",
+      "right_contact": "ZONE"
+    },
+    {
+      "frame": 9,
+      "left_contact": "ZONE",
+      "right_contact": "ZONE"
+    }
+  ]
+}

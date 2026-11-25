@@ -1,0 +1,58 @@
+{
+  "appeal_id": "APP-2026-0001-R01",
+  "filed_at": "2026-11-25T16:07:59+00:00",
+  "appellant": "head_judge_review",
+  "reason": "新人工标注校准批次发现 TOP/TOP 成对读数可由 ZONE/ZONE 的相关误识别产生",
+  "review_type": "post_event_recalibration_from_retained_readings",
+  "raw_readings_used": "submission/clip.json",
+  "initial_judgment_reproduction": {
+    "reproduced_at": "2026-11-25T16:07:59+00:00",
+    "model_fingerprint": "2d7e73780b939bfce63c15bcad134b0fc0fd11e9329b41589af012b4d0392d87",
+    "recorded_model_fingerprint": "2d7e73780b939bfce63c15bcad134b0fc0fd11e9329b41589af012b4d0392d87",
+    "fingerprint_match": true,
+    "max_abs_probability_difference": 0.0,
+    "signed_class_match": true,
+    "signed_match": true,
+    "matches_recorded_judgment": true,
+    "matches_initial_judgment": true
+  },
+  "old_judgment_reproduction": {
+    "reproduced_at": "2026-11-25T16:07:59+00:00",
+    "model_fingerprint": "2d7e73780b939bfce63c15bcad134b0fc0fd11e9329b41589af012b4d0392d87",
+    "recorded_model_fingerprint": "2d7e73780b939bfce63c15bcad134b0fc0fd11e9329b41589af012b4d0392d87",
+    "fingerprint_match": true,
+    "max_abs_probability_difference": 0.0,
+    "signed_class_match": true,
+    "signed_match": true,
+    "matches_recorded_judgment": true,
+    "matches_initial_judgment": true
+  },
+  "prior_status": "signed",
+  "prior_signed_class": "TOP",
+  "new_model_version": "cal-v2-paired-error-revision",
+  "new_model_fingerprint": "f3a7098961cb0bcf1f5ad73b116b4233c9c3909345bbe0bf02fd32d0563a2cec",
+  "new_score_probabilities": [
+    {
+      "code": "TOP",
+      "label_zh": "完攀",
+      "probability": 0.001986630016740296
+    },
+    {
+      "code": "ZONE",
+      "label_zh": "区点",
+      "probability": 0.9980133691374091
+    },
+    {
+      "code": "NO_ZONE",
+      "label_zh": "无区点",
+      "probability": 8.458505972711427e-10
+    }
+  ],
+  "new_signed": true,
+  "new_signed_class": "ZONE",
+  "new_status": "signed",
+  "disposition": "revised",
+  "changed_signed_result": true,
+  "model_file": "models/appeal-01-model.json",
+  "decision_file": "decisions/appeal-01-decision.json"
+}

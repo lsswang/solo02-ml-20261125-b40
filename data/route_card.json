@@ -1,0 +1,12 @@
+{
+  "format": "boulder-route-card/v1",
+  "route_id": "W5-qualifier",
+  "top_vertex": "TOP",
+  "zone_vertex": "ZONE",
+  "none_vertex": "NONE",
+  "stable_frames": 2,
+  "deadline_frame": 11,
+  "frame_index_base": 0,
+  "zone_requires": "any_hand",
+  "threshold": 0.95
+}
