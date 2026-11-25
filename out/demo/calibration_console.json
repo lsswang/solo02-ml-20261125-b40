@@ -1,0 +1,17 @@
+{
+  "n_train": 700,
+  "model": "out/demo/model.json",
+  "classes": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "holdout": "data/generated_2x4/calibration_holdout.csv",
+  "holdout_coupon_id": "HELDOUT-3X4",
+  "n_holdout_edges": 17,
+  "holdout_mean_log_loss_nats": 0.008485917287262792,
+  "holdout_total_log_loss_nats": 0.14426059388346746,
+  "holdout_accuracy": 1.0
+}

@@ -1,0 +1,8 @@
+{
+  "feasible": false,
+  "solver_reason": "no height assignment satisfies holes, cuts, gauge and 0..3 domain",
+  "base_score": null,
+  "candidates": [],
+  "state_path": "out/demo/state/orders/WO-2X2-LOCK-RIGHT2.json",
+  "order_id": "WO-2X2-LOCK-RIGHT2"
+}

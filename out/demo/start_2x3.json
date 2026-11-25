@@ -1,0 +1,774 @@
+{
+  "feasible": true,
+  "optimal_score": -1.9788800306139585,
+  "optimal_height_map": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "cycle_errors": [],
+  "candidates": [
+    {
+      "method": "whole",
+      "seam_column": null,
+      "score": -1.9788800306139585,
+      "score_tied": true,
+      "tied_optimal_assignment_count": 1,
+      "heights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "target_deltas": {
+        "H-r1-c1": 0,
+        "H-r1-c2": 0,
+        "H-r2-c1": 0,
+        "H-r2-c2": 0,
+        "V-r1-c1": 0,
+        "V-r1-c2": 0,
+        "V-r1-c3": 0
+      },
+      "cuts": [
+        {
+          "cut_id": "C-1-1-whole",
+          "row": 1,
+          "col": 1,
+          "vertex_index": 0,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-1-2-whole",
+          "row": 1,
+          "col": 2,
+          "vertex_index": 1,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-1-3-whole",
+          "row": 1,
+          "col": 3,
+          "vertex_index": 2,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-2-1-whole",
+          "row": 2,
+          "col": 1,
+          "vertex_index": 3,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-2-2-whole",
+          "row": 2,
+          "col": 2,
+          "vertex_index": 4,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-2-3-whole",
+          "row": 2,
+          "col": 3,
+          "vertex_index": 5,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-2X3-SEAM"
+        }
+      ],
+      "risk": {
+        "expected_rejection_loss": 2.0,
+        "items": [
+          {
+            "contingency_id": "MID-2",
+            "label": "3/4 chance: middle column must be height 2; rejection loss 1",
+            "probability": 0.75,
+            "rejection_loss": 1.0,
+            "holes": [
+              {
+                "row": 1,
+                "col": 2,
+                "height": 2
+              },
+              {
+                "row": 2,
+                "col": 2,
+                "height": 2
+              }
+            ],
+            "accepted": false,
+            "reason": "cut_conflict",
+            "conflicts": [
+              {
+                "row": 1,
+                "col": 2,
+                "already_cut_height": 1,
+                "requested_height": 2,
+                "cut_id": "C-1-2-whole",
+                "work_order_id": "WO-2X3-SEAM"
+              },
+              {
+                "row": 2,
+                "col": 2,
+                "already_cut_height": 1,
+                "requested_height": 2,
+                "cut_id": "C-2-2-whole",
+                "work_order_id": "WO-2X3-SEAM"
+              }
+            ],
+            "expected_rejection_loss": 0.75,
+            "possible_height_map": null
+          },
+          {
+            "contingency_id": "RIGHT-2",
+            "label": "1/4 chance: right column must be height 2; rejection loss 5",
+            "probability": 0.25,
+            "rejection_loss": 5.0,
+            "holes": [
+              {
+                "row": 1,
+                "col": 3,
+                "height": 2
+              },
+              {
+                "row": 2,
+                "col": 3,
+                "height": 2
+              }
+            ],
+            "accepted": false,
+            "reason": "cut_conflict",
+            "conflicts": [
+              {
+                "row": 1,
+                "col": 3,
+                "already_cut_height": 1,
+                "requested_height": 2,
+                "cut_id": "C-1-3-whole",
+                "work_order_id": "WO-2X3-SEAM"
+              },
+              {
+                "row": 2,
+                "col": 3,
+                "already_cut_height": 1,
+                "requested_height": 2,
+                "cut_id": "C-2-3-whole",
+                "work_order_id": "WO-2X3-SEAM"
+              }
+            ],
+            "expected_rejection_loss": 1.25,
+            "possible_height_map": null
+          }
+        ]
+      },
+      "height_map": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "extra_station": false,
+      "station_requirement": null
+    },
+    {
+      "method": "segment",
+      "seam_column": 2,
+      "score": -1.9788800306139585,
+      "score_tied": true,
+      "tied_optimal_assignment_count": 1,
+      "heights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "target_deltas": {
+        "H-r1-c1": 0,
+        "H-r1-c2": 0,
+        "H-r2-c1": 0,
+        "H-r2-c2": 0,
+        "V-r1-c1": 0,
+        "V-r1-c2": 0,
+        "V-r1-c3": 0
+      },
+      "cuts": [
+        {
+          "cut_id": "C-1-1-first",
+          "row": 1,
+          "col": 1,
+          "vertex_index": 0,
+          "height": 1,
+          "phase": "first",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-1-3-first",
+          "row": 1,
+          "col": 3,
+          "vertex_index": 2,
+          "height": 1,
+          "phase": "first",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-2-1-first",
+          "row": 2,
+          "col": 1,
+          "vertex_index": 3,
+          "height": 1,
+          "phase": "first",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-2-3-first",
+          "row": 2,
+          "col": 3,
+          "vertex_index": 5,
+          "height": 1,
+          "phase": "first",
+          "work_order_id": "WO-2X3-SEAM"
+        }
+      ],
+      "risk": {
+        "expected_rejection_loss": 1.25,
+        "items": [
+          {
+            "contingency_id": "MID-2",
+            "label": "3/4 chance: middle column must be height 2; rejection loss 1",
+            "probability": 0.75,
+            "rejection_loss": 1.0,
+            "holes": [
+              {
+                "row": 1,
+                "col": 2,
+                "height": 2
+              },
+              {
+                "row": 2,
+                "col": 2,
+                "height": 2
+              }
+            ],
+            "accepted": true,
+            "reason": "compatible_and_feasible",
+            "conflicts": [],
+            "expected_rejection_loss": 0.0,
+            "possible_height_map": [
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "contingency_id": "RIGHT-2",
+            "label": "1/4 chance: right column must be height 2; rejection loss 5",
+            "probability": 0.25,
+            "rejection_loss": 5.0,
+            "holes": [
+              {
+                "row": 1,
+                "col": 3,
+                "height": 2
+              },
+              {
+                "row": 2,
+                "col": 3,
+                "height": 2
+              }
+            ],
+            "accepted": false,
+            "reason": "cut_conflict",
+            "conflicts": [
+              {
+                "row": 1,
+                "col": 3,
+                "already_cut_height": 1,
+                "requested_height": 2,
+                "cut_id": "C-1-3-first",
+                "work_order_id": "WO-2X3-SEAM"
+              },
+              {
+                "row": 2,
+                "col": 3,
+                "already_cut_height": 1,
+                "requested_height": 2,
+                "cut_id": "C-2-3-first",
+                "work_order_id": "WO-2X3-SEAM"
+              }
+            ],
+            "expected_rejection_loss": 1.25,
+            "possible_height_map": null
+          }
+        ]
+      },
+      "height_map": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "extra_station": true,
+      "station_requirement": {
+        "station_id": "SEAM-COL-2",
+        "kind": "open_seam",
+        "seam_column": 2,
+        "extra_station_count": 1
+      }
+    },
+    {
+      "method": "segment",
+      "seam_column": 3,
+      "score": -1.9788800306139585,
+      "score_tied": true,
+      "tied_optimal_assignment_count": 1,
+      "heights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "target_deltas": {
+        "H-r1-c1": 0,
+        "H-r1-c2": 0,
+        "H-r2-c1": 0,
+        "H-r2-c2": 0,
+        "V-r1-c1": 0,
+        "V-r1-c2": 0,
+        "V-r1-c3": 0
+      },
+      "cuts": [
+        {
+          "cut_id": "C-1-1-first",
+          "row": 1,
+          "col": 1,
+          "vertex_index": 0,
+          "height": 1,
+          "phase": "first",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-1-2-first",
+          "row": 1,
+          "col": 2,
+          "vertex_index": 1,
+          "height": 1,
+          "phase": "first",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-2-1-first",
+          "row": 2,
+          "col": 1,
+          "vertex_index": 3,
+          "height": 1,
+          "phase": "first",
+          "work_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-2-2-first",
+          "row": 2,
+          "col": 2,
+          "vertex_index": 4,
+          "height": 1,
+          "phase": "first",
+          "work_order_id": "WO-2X3-SEAM"
+        }
+      ],
+      "risk": {
+        "expected_rejection_loss": 0.75,
+        "items": [
+          {
+            "contingency_id": "MID-2",
+            "label": "3/4 chance: middle column must be height 2; rejection loss 1",
+            "probability": 0.75,
+            "rejection_loss": 1.0,
+            "holes": [
+              {
+                "row": 1,
+                "col": 2,
+                "height": 2
+              },
+              {
+                "row": 2,
+                "col": 2,
+                "height": 2
+              }
+            ],
+            "accepted": false,
+            "reason": "cut_conflict",
+            "conflicts": [
+              {
+                "row": 1,
+                "col": 2,
+                "already_cut_height": 1,
+                "requested_height": 2,
+                "cut_id": "C-1-2-first",
+                "work_order_id": "WO-2X3-SEAM"
+              },
+              {
+                "row": 2,
+                "col": 2,
+                "already_cut_height": 1,
+                "requested_height": 2,
+                "cut_id": "C-2-2-first",
+                "work_order_id": "WO-2X3-SEAM"
+              }
+            ],
+            "expected_rejection_loss": 0.75,
+            "possible_height_map": null
+          },
+          {
+            "contingency_id": "RIGHT-2",
+            "label": "1/4 chance: right column must be height 2; rejection loss 5",
+            "probability": 0.25,
+            "rejection_loss": 5.0,
+            "holes": [
+              {
+                "row": 1,
+                "col": 3,
+                "height": 2
+              },
+              {
+                "row": 2,
+                "col": 3,
+                "height": 2
+              }
+            ],
+            "accepted": true,
+            "reason": "compatible_and_feasible",
+            "conflicts": [],
+            "expected_rejection_loss": 0.0,
+            "possible_height_map": [
+              [
+                1,
+                1,
+                2
+              ],
+              [
+                1,
+                1,
+                2
+              ]
+            ]
+          }
+        ]
+      },
+      "height_map": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "extra_station": true,
+      "station_requirement": {
+        "station_id": "SEAM-COL-3",
+        "kind": "open_seam",
+        "seam_column": 3,
+        "extra_station_count": 1
+      },
+      "extra_station_required": true,
+      "legal_margin": {
+        "seam_column": 3,
+        "legal": true,
+        "legal_tuple_count": 3,
+        "allowed_heights_by_row": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "optimal_tuples": [
+          [
+            1,
+            1
+          ]
+        ],
+        "tuples": [
+          {
+            "heights_top_to_bottom": [
+              0,
+              0
+            ],
+            "score": -4.452405284911813
+          },
+          {
+            "heights_top_to_bottom": [
+              1,
+              1
+            ],
+            "score": -1.9788800306139585
+          },
+          {
+            "heights_top_to_bottom": [
+              2,
+              2
+            ],
+            "score": -4.56672211259171
+          }
+        ]
+      }
+    }
+  ],
+  "selected": {
+    "method": "segment",
+    "seam_column": 3,
+    "score": -1.9788800306139585,
+    "score_tied": true,
+    "tied_optimal_assignment_count": 1,
+    "heights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "target_deltas": {
+      "H-r1-c1": 0,
+      "H-r1-c2": 0,
+      "H-r2-c1": 0,
+      "H-r2-c2": 0,
+      "V-r1-c1": 0,
+      "V-r1-c2": 0,
+      "V-r1-c3": 0
+    },
+    "cuts": [
+      {
+        "cut_id": "C-1-1-first",
+        "row": 1,
+        "col": 1,
+        "vertex_index": 0,
+        "height": 1,
+        "phase": "first",
+        "work_order_id": "WO-2X3-SEAM"
+      },
+      {
+        "cut_id": "C-1-2-first",
+        "row": 1,
+        "col": 2,
+        "vertex_index": 1,
+        "height": 1,
+        "phase": "first",
+        "work_order_id": "WO-2X3-SEAM"
+      },
+      {
+        "cut_id": "C-2-1-first",
+        "row": 2,
+        "col": 1,
+        "vertex_index": 3,
+        "height": 1,
+        "phase": "first",
+        "work_order_id": "WO-2X3-SEAM"
+      },
+      {
+        "cut_id": "C-2-2-first",
+        "row": 2,
+        "col": 2,
+        "vertex_index": 4,
+        "height": 1,
+        "phase": "first",
+        "work_order_id": "WO-2X3-SEAM"
+      }
+    ],
+    "risk": {
+      "expected_rejection_loss": 0.75,
+      "items": [
+        {
+          "contingency_id": "MID-2",
+          "label": "3/4 chance: middle column must be height 2; rejection loss 1",
+          "probability": 0.75,
+          "rejection_loss": 1.0,
+          "holes": [
+            {
+              "row": 1,
+              "col": 2,
+              "height": 2
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "height": 2
+            }
+          ],
+          "accepted": false,
+          "reason": "cut_conflict",
+          "conflicts": [
+            {
+              "row": 1,
+              "col": 2,
+              "already_cut_height": 1,
+              "requested_height": 2,
+              "cut_id": "C-1-2-first",
+              "work_order_id": "WO-2X3-SEAM"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "already_cut_height": 1,
+              "requested_height": 2,
+              "cut_id": "C-2-2-first",
+              "work_order_id": "WO-2X3-SEAM"
+            }
+          ],
+          "expected_rejection_loss": 0.75,
+          "possible_height_map": null
+        },
+        {
+          "contingency_id": "RIGHT-2",
+          "label": "1/4 chance: right column must be height 2; rejection loss 5",
+          "probability": 0.25,
+          "rejection_loss": 5.0,
+          "holes": [
+            {
+              "row": 1,
+              "col": 3,
+              "height": 2
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "height": 2
+            }
+          ],
+          "accepted": true,
+          "reason": "compatible_and_feasible",
+          "conflicts": [],
+          "expected_rejection_loss": 0.0,
+          "possible_height_map": [
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    "height_map": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "extra_station": true,
+    "station_requirement": {
+      "station_id": "SEAM-COL-3",
+      "kind": "open_seam",
+      "seam_column": 3,
+      "extra_station_count": 1
+    },
+    "extra_station_required": true,
+    "legal_margin": {
+      "seam_column": 3,
+      "legal": true,
+      "legal_tuple_count": 3,
+      "allowed_heights_by_row": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "optimal_tuples": [
+        [
+          1,
+          1
+        ]
+      ],
+      "tuples": [
+        {
+          "heights_top_to_bottom": [
+            0,
+            0
+          ],
+          "score": -4.452405284911813
+        },
+        {
+          "heights_top_to_bottom": [
+            1,
+            1
+          ],
+          "score": -1.9788800306139585
+        },
+        {
+          "heights_top_to_bottom": [
+            2,
+            2
+          ],
+          "score": -4.56672211259171
+        }
+      ]
+    }
+  },
+  "selection_reason": "All start plans share the optimal score; expected rejection losses are [whole=2, segment:col2=1.25, segment:col3=0.75]. Selected segment seam column 3 with minimum expected loss 0.75.",
+  "state_path": "out/demo/state/orders/WO-2X3-SEAM.json"
+}

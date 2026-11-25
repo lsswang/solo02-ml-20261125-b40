@@ -1,0 +1,116 @@
+{
+  "queried_work_order": "WO-2X3-RIGHT2",
+  "parent_order_id": "WO-2X3-SEAM",
+  "status": "completed",
+  "method": "segment",
+  "seam_column": 3,
+  "station_requirement": {
+    "station_id": "SEAM-COL-3",
+    "kind": "open_seam",
+    "seam_column": 3,
+    "extra_station_count": 1
+  },
+  "cut_count": 2,
+  "board_cut_count": 6,
+  "cuts": [
+    {
+      "cut_id": "C-1-3-seam",
+      "row": 1,
+      "col": 3,
+      "vertex_index": 2,
+      "height": 2,
+      "phase": "seam",
+      "work_order_id": "WO-2X3-RIGHT2",
+      "parent_order_id": "WO-2X3-SEAM"
+    },
+    {
+      "cut_id": "C-2-3-seam",
+      "row": 2,
+      "col": 3,
+      "vertex_index": 5,
+      "height": 2,
+      "phase": "seam",
+      "work_order_id": "WO-2X3-RIGHT2",
+      "parent_order_id": "WO-2X3-SEAM"
+    }
+  ],
+  "cuts_for_queried_ticket": [
+    {
+      "cut_id": "C-1-3-seam",
+      "row": 1,
+      "col": 3,
+      "vertex_index": 2,
+      "height": 2,
+      "phase": "seam",
+      "work_order_id": "WO-2X3-RIGHT2",
+      "parent_order_id": "WO-2X3-SEAM"
+    },
+    {
+      "cut_id": "C-2-3-seam",
+      "row": 2,
+      "col": 3,
+      "vertex_index": 5,
+      "height": 2,
+      "phase": "seam",
+      "work_order_id": "WO-2X3-RIGHT2",
+      "parent_order_id": "WO-2X3-SEAM"
+    }
+  ],
+  "ticket_history": [
+    {
+      "work_order_id": "WO-2X3-RIGHT2",
+      "parent_order_id": "WO-2X3-SEAM",
+      "action": "supplement",
+      "status": "accepted",
+      "finalized": true,
+      "signed_cuts": [
+        {
+          "cut_id": "C-1-3-seam",
+          "row": 1,
+          "col": 3,
+          "vertex_index": 2,
+          "height": 2,
+          "phase": "seam",
+          "work_order_id": "WO-2X3-RIGHT2",
+          "parent_order_id": "WO-2X3-SEAM"
+        },
+        {
+          "cut_id": "C-2-3-seam",
+          "row": 2,
+          "col": 3,
+          "vertex_index": 5,
+          "height": 2,
+          "phase": "seam",
+          "work_order_id": "WO-2X3-RIGHT2",
+          "parent_order_id": "WO-2X3-SEAM"
+        }
+      ],
+      "score": -4.56672211259171,
+      "holes": [
+        {
+          "row": 1,
+          "col": 3,
+          "height": 2
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "height": 2
+        }
+      ]
+    }
+  ],
+  "rejections": [],
+  "latest_height_map": [
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      1,
+      2
+    ]
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "order_id": "WO-2X3-SEAM",
+  "rows": 2,
+  "cols": 3,
+  "holes": [
+    {"row": 1, "col": 1, "height": 1},
+    {"row": 2, "col": 1, "height": 1}
+  ],
+  "gauge": {
+    "vertical_allowed": [0],
+    "horizontal_allowed": [-1, 0, 1]
+  },
+  "method_policy": "any",
+  "seam_columns": [2, 3],
+  "contingencies": [
+    {
+      "contingency_id": "MID-2",
+      "ticket_id": "WO-2X3-MID2",
+      "label": "3/4 chance: middle column must be height 2; rejection loss 1",
+      "probability": 0.75,
+      "rejection_loss": 1,
+      "column": 2,
+      "height": 2
+    },
+    {
+      "contingency_id": "RIGHT-2",
+      "ticket_id": "WO-2X3-RIGHT2",
+      "label": "1/4 chance: right column must be height 2; rejection loss 5",
+      "probability": 0.25,
+      "rejection_loss": 5,
+      "column": 3,
+      "height": 2
+    }
+  ],
+  "expected_result": {
+    "initial_height_map": [[1, 1, 1], [1, 1, 1]],
+    "middle_seam_expected_loss": 1.25,
+    "right_seam_expected_loss": 0.75,
+    "whole_expected_loss": 2.0,
+    "selected": "segment with right-column seam"
+  }
+}

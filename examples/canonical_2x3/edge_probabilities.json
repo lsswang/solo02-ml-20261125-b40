@@ -1,0 +1,45 @@
+{
+  "format": "relief-edge-probabilities-v1",
+  "scan_id": "CANONICAL-2X3",
+  "rows": 2,
+  "cols": 3,
+  "coordinate_base": 1,
+  "probability_kind": "calibrated_synthetic_fixture",
+  "edges": [
+    {
+      "edge_id": "H-r1-c1",
+      "u_row": 1, "u_col": 1, "v_row": 1, "v_col": 2,
+      "probabilities": {"-2": 0.01, "-1": 0.18, "0": 0.62, "1": 0.17, "2": 0.02}
+    },
+    {
+      "edge_id": "H-r1-c2",
+      "u_row": 1, "u_col": 2, "v_row": 1, "v_col": 3,
+      "probabilities": {"-2": 0.01, "-1": 0.18, "0": 0.62, "1": 0.17, "2": 0.02}
+    },
+    {
+      "edge_id": "H-r2-c1",
+      "u_row": 2, "u_col": 1, "v_row": 2, "v_col": 2,
+      "probabilities": {"-2": 0.01, "-1": 0.18, "0": 0.62, "1": 0.17, "2": 0.02}
+    },
+    {
+      "edge_id": "H-r2-c2",
+      "u_row": 2, "u_col": 2, "v_row": 2, "v_col": 3,
+      "probabilities": {"-2": 0.01, "-1": 0.18, "0": 0.62, "1": 0.17, "2": 0.02}
+    },
+    {
+      "edge_id": "V-r1-c1",
+      "u_row": 1, "u_col": 1, "v_row": 2, "v_col": 1,
+      "probabilities": {"-2": 0.001, "-1": 0.01, "0": 0.978, "1": 0.01, "2": 0.001}
+    },
+    {
+      "edge_id": "V-r1-c2",
+      "u_row": 1, "u_col": 2, "v_row": 2, "v_col": 2,
+      "probabilities": {"-2": 0.001, "-1": 0.01, "0": 0.978, "1": 0.01, "2": 0.001}
+    },
+    {
+      "edge_id": "V-r1-c3",
+      "u_row": 1, "u_col": 3, "v_row": 2, "v_col": 3,
+      "probabilities": {"-2": 0.001, "-1": 0.01, "0": 0.978, "1": 0.01, "2": 0.001}
+    }
+  ]
+}

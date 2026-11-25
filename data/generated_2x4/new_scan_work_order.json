@@ -1,0 +1,26 @@
+{
+  "order_id": "WO-GENERATED-2X4",
+  "rows": 2,
+  "cols": 4,
+  "holes": [
+    {
+      "row": 1,
+      "col": 1,
+      "height": 3
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "height": 3
+    }
+  ],
+  "gauge": {},
+  "method_policy": "any",
+  "seam_columns": [
+    2,
+    3,
+    4
+  ],
+  "contingencies": [],
+  "note": "Generated work order. Holes copy true left-edge heights only to guarantee a feasible smoke test."
+}

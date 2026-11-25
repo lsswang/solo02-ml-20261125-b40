@@ -1,0 +1,28 @@
+{
+  "order_id": "WO-GENERATED-3X6",
+  "rows": 3,
+  "cols": 6,
+  "holes": [
+    {
+      "row": 1,
+      "col": 1,
+      "height": 3
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "height": 1
+    }
+  ],
+  "gauge": {},
+  "method_policy": "any",
+  "seam_columns": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "contingencies": [],
+  "note": "Generated work order. Holes copy true left-edge heights only to guarantee a feasible smoke test."
+}

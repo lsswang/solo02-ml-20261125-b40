@@ -1,0 +1,8 @@
+{
+  "ticket_id": "WO-2X3-MID2",
+  "holes": [
+    {"row": 1, "col": 2, "height": 2},
+    {"row": 2, "col": 2, "height": 2}
+  ],
+  "note": "Formal arrival of the 3/4 contingency. The selected right seam already cut column 2 to 1, so this must conflict."
+}

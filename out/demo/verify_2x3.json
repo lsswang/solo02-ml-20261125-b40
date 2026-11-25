@@ -1,0 +1,29 @@
+{
+  "vertices": 6,
+  "dp": {
+    "feasible": true,
+    "score": -1.9788800306139585,
+    "heights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "enumeration": {
+    "feasible": true,
+    "score": -1.9788800306139585,
+    "heights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "scores_match": true,
+  "assignments_match_or_both_optimal": true
+}

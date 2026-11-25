@@ -1,0 +1,19 @@
+{
+  "order_id": "WO-2X2-ORIG",
+  "rows": 2,
+  "cols": 2,
+  "holes": [
+    {"row": 1, "col": 1, "height": 1, "label": "left clamping column"},
+    {"row": 2, "col": 1, "height": 1, "label": "left clamping column"}
+  ],
+  "gauge": {
+    "vertical_allowed": [0],
+    "edge_allowed": {
+      "H-r2-c1": [-1]
+    }
+  },
+  "method_policy": "whole",
+  "seam_columns": [2],
+  "contingencies": [],
+  "expected_result": "right column is 0; the locally modal upper +1 would fail cycle closure"
+}

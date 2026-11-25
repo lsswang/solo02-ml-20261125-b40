@@ -1,0 +1,128 @@
+{
+  "order_id": "WO-2X2-LOCK-RIGHT2",
+  "rows": 2,
+  "cols": 2,
+  "edge_source": "examples/canonical_2x2/edge_probabilities.json",
+  "edge_doc": {
+    "format": "relief-edge-probabilities-v1",
+    "scan_id": "CANONICAL-2X2",
+    "rows": 2,
+    "cols": 2,
+    "coordinate_base": 1,
+    "probability_kind": "calibrated_synthetic_fixture",
+    "edges": [
+      {
+        "edge_id": "H-r1-c1",
+        "u_row": 1,
+        "u_col": 1,
+        "v_row": 1,
+        "v_col": 2,
+        "note": "upper edge: +1 is modal, -1 remains strongly supported",
+        "probabilities": {
+          "-2": 0.01,
+          "-1": 0.34,
+          "0": 0.05,
+          "1": 0.58,
+          "2": 0.02
+        }
+      },
+      {
+        "edge_id": "H-r2-c1",
+        "u_row": 2,
+        "u_col": 1,
+        "v_row": 2,
+        "v_col": 2,
+        "note": "lower edge: -1 is dominant; the work-order gauge makes it exact in the original job",
+        "probabilities": {
+          "-2": 0.01,
+          "-1": 0.95,
+          "0": 0.02,
+          "1": 0.015,
+          "2": 0.005
+        }
+      },
+      {
+        "edge_id": "V-r1-c1",
+        "u_row": 1,
+        "u_col": 1,
+        "v_row": 2,
+        "v_col": 1,
+        "probabilities": {
+          "-2": 0.001,
+          "-1": 0.01,
+          "0": 0.978,
+          "1": 0.01,
+          "2": 0.001
+        }
+      },
+      {
+        "edge_id": "V-r1-c2",
+        "u_row": 1,
+        "u_col": 2,
+        "v_row": 2,
+        "v_col": 2,
+        "probabilities": {
+          "-2": 0.001,
+          "-1": 0.01,
+          "0": 0.978,
+          "1": 0.01,
+          "2": 0.001
+        }
+      }
+    ]
+  },
+  "order": {
+    "order_id": "WO-2X2-LOCK-RIGHT2",
+    "rows": 2,
+    "cols": 2,
+    "holes": [
+      {
+        "row": 1,
+        "col": 1,
+        "height": 1
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "height": 1
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "height": 2,
+        "label": "right hole locked before first cut"
+      }
+    ],
+    "gauge": {
+      "vertical_allowed": [
+        0
+      ],
+      "edge_allowed": {
+        "H-r2-c1": [
+          -1
+        ]
+      }
+    },
+    "method_policy": "whole",
+    "contingencies": [],
+    "expected_result": "infeasible: lower edge would need +1 while the gauge permits only -1"
+  },
+  "ticket_ids": [
+    "WO-2X2-LOCK-RIGHT2"
+  ],
+  "cuts": [],
+  "rejections": [],
+  "accepted_extra_holes": [],
+  "history": [
+    {
+      "work_order_id": "WO-2X2-LOCK-RIGHT2",
+      "action": "start_attempt",
+      "status": "no_feasible_solution",
+      "reason": "no height assignment satisfies holes, cuts, gauge and 0..3 domain"
+    }
+  ],
+  "status": "no_feasible_solution",
+  "method": null,
+  "seam_column": null,
+  "last_full_heights": null
+}

@@ -1,0 +1,8 @@
+{
+  "ticket_id": "WO-2X3-RIGHT2",
+  "holes": [
+    {"row": 1, "col": 3, "height": 2},
+    {"row": 2, "col": 3, "height": 2}
+  ],
+  "note": "Formal arrival of the 1/4 contingency. Column 3 is the open seam, so it can be cut to 2."
+}

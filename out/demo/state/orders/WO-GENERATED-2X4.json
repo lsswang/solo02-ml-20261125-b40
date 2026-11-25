@@ -1,0 +1,970 @@
+{
+  "order_id": "WO-GENERATED-2X4",
+  "rows": 2,
+  "cols": 4,
+  "edge_source": "out/demo/generated_2x4_edges.json",
+  "edge_doc": {
+    "format": "relief-edge-probabilities-v1",
+    "rows": 2,
+    "cols": 4,
+    "coordinate_base": 1,
+    "probability_kind": "raw_calibrated",
+    "edges": [
+      {
+        "edge_id": "H-r1-c1",
+        "u_row": 1,
+        "u_col": 1,
+        "v_row": 1,
+        "v_col": 2,
+        "probabilities": {
+          "-2": 0.0008000000000000017,
+          "-1": 0.0008069779540366955,
+          "0": 0.9960539812572852,
+          "1": 0.0015390407886678517,
+          "2": 0.0008000000000104317
+        }
+      },
+      {
+        "edge_id": "H-r1-c2",
+        "u_row": 1,
+        "u_col": 2,
+        "v_row": 1,
+        "v_col": 3,
+        "probabilities": {
+          "-2": 0.0008000000000000109,
+          "-1": 0.000816179164976537,
+          "0": 0.9964704323820194,
+          "1": 0.0011133884530017415,
+          "2": 0.0008000000000022939
+        }
+      },
+      {
+        "edge_id": "H-r1-c3",
+        "u_row": 1,
+        "u_col": 3,
+        "v_row": 1,
+        "v_col": 4,
+        "probabilities": {
+          "-2": 0.9967588943873414,
+          "-1": 0.0008411056126583086,
+          "0": 0.0008000000000000017,
+          "1": 0.0008000000000000003,
+          "2": 0.0008000000000000003
+        }
+      },
+      {
+        "edge_id": "H-r2-c1",
+        "u_row": 2,
+        "u_col": 1,
+        "v_row": 2,
+        "v_col": 2,
+        "probabilities": {
+          "-2": 0.000800000008122797,
+          "-1": 0.023101016805392584,
+          "0": 0.9744988087329204,
+          "1": 0.0008001744535643022,
+          "2": 0.0008000000000000003
+        }
+      },
+      {
+        "edge_id": "H-r2-c2",
+        "u_row": 2,
+        "u_col": 2,
+        "v_row": 2,
+        "v_col": 3,
+        "probabilities": {
+          "-2": 0.9967724813146298,
+          "-1": 0.0008275186853705222,
+          "0": 0.0008000000000000031,
+          "1": 0.0008000000000000003,
+          "2": 0.0008000000000000003
+        }
+      },
+      {
+        "edge_id": "H-r2-c3",
+        "u_row": 2,
+        "u_col": 3,
+        "v_row": 2,
+        "v_col": 4,
+        "probabilities": {
+          "-2": 0.0008000000000028666,
+          "-1": 0.001081608046664201,
+          "0": 0.9964768792848034,
+          "1": 0.0008415126685296956,
+          "2": 0.0008000000000000201
+        }
+      },
+      {
+        "edge_id": "V-r1-c1",
+        "u_row": 1,
+        "u_col": 1,
+        "v_row": 2,
+        "v_col": 1,
+        "probabilities": {
+          "-2": 0.0008000000003311117,
+          "-1": 0.005135146708916562,
+          "0": 0.9924626814360588,
+          "1": 0.0008021718546937108,
+          "2": 0.0008000000000000003
+        }
+      },
+      {
+        "edge_id": "V-r1-c2",
+        "u_row": 1,
+        "u_col": 2,
+        "v_row": 2,
+        "v_col": 2,
+        "probabilities": {
+          "-2": 0.0008000000000000003,
+          "-1": 0.0008002017300736251,
+          "0": 0.9828213288994118,
+          "1": 0.01477846936418684,
+          "2": 0.0008000000063277933
+        }
+      },
+      {
+        "edge_id": "V-r1-c3",
+        "u_row": 1,
+        "u_col": 3,
+        "v_row": 2,
+        "v_col": 3,
+        "probabilities": {
+          "-2": 0.994948653794912,
+          "-1": 0.0026513462050842588,
+          "0": 0.0008000000000035288,
+          "1": 0.0008000000000000003,
+          "2": 0.0008000000000000003
+        }
+      },
+      {
+        "edge_id": "V-r1-c4",
+        "u_row": 1,
+        "u_col": 4,
+        "v_row": 2,
+        "v_col": 4,
+        "probabilities": {
+          "-2": 0.0008000000000000003,
+          "-1": 0.0008020844853040477,
+          "0": 0.9930586041582987,
+          "1": 0.004539311356281088,
+          "2": 0.0008000000001161917
+        }
+      }
+    ]
+  },
+  "order": {
+    "order_id": "WO-GENERATED-2X4",
+    "rows": 2,
+    "cols": 4,
+    "holes": [
+      {
+        "row": 1,
+        "col": 1,
+        "height": 3
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "height": 3
+      }
+    ],
+    "gauge": {},
+    "method_policy": "any",
+    "seam_columns": [
+      2,
+      3,
+      4
+    ],
+    "contingencies": [],
+    "note": "Generated work order. Holes copy true left-edge heights only to guarantee a feasible smoke test."
+  },
+  "ticket_ids": [
+    "WO-GENERATED-2X4"
+  ],
+  "cuts": [
+    {
+      "cut_id": "C-1-1-whole",
+      "row": 1,
+      "col": 1,
+      "vertex_index": 0,
+      "height": 3,
+      "phase": "whole",
+      "work_order_id": "WO-GENERATED-2X4"
+    },
+    {
+      "cut_id": "C-1-2-whole",
+      "row": 1,
+      "col": 2,
+      "vertex_index": 1,
+      "height": 3,
+      "phase": "whole",
+      "work_order_id": "WO-GENERATED-2X4"
+    },
+    {
+      "cut_id": "C-1-3-whole",
+      "row": 1,
+      "col": 3,
+      "vertex_index": 2,
+      "height": 3,
+      "phase": "whole",
+      "work_order_id": "WO-GENERATED-2X4"
+    },
+    {
+      "cut_id": "C-1-4-whole",
+      "row": 1,
+      "col": 4,
+      "vertex_index": 3,
+      "height": 1,
+      "phase": "whole",
+      "work_order_id": "WO-GENERATED-2X4"
+    },
+    {
+      "cut_id": "C-2-1-whole",
+      "row": 2,
+      "col": 1,
+      "vertex_index": 4,
+      "height": 3,
+      "phase": "whole",
+      "work_order_id": "WO-GENERATED-2X4"
+    },
+    {
+      "cut_id": "C-2-2-whole",
+      "row": 2,
+      "col": 2,
+      "vertex_index": 5,
+      "height": 3,
+      "phase": "whole",
+      "work_order_id": "WO-GENERATED-2X4"
+    },
+    {
+      "cut_id": "C-2-3-whole",
+      "row": 2,
+      "col": 3,
+      "vertex_index": 6,
+      "height": 1,
+      "phase": "whole",
+      "work_order_id": "WO-GENERATED-2X4"
+    },
+    {
+      "cut_id": "C-2-4-whole",
+      "row": 2,
+      "col": 4,
+      "vertex_index": 7,
+      "height": 1,
+      "phase": "whole",
+      "work_order_id": "WO-GENERATED-2X4"
+    }
+  ],
+  "rejections": [],
+  "accepted_extra_holes": [],
+  "history": [
+    {
+      "work_order_id": "WO-GENERATED-2X4",
+      "action": "start",
+      "status": "locked_whole",
+      "method": "whole",
+      "seam_column": null,
+      "signed_cut_count": 8,
+      "signed_cuts": [
+        {
+          "cut_id": "C-1-1-whole",
+          "row": 1,
+          "col": 1,
+          "vertex_index": 0,
+          "height": 3,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-1-2-whole",
+          "row": 1,
+          "col": 2,
+          "vertex_index": 1,
+          "height": 3,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-1-3-whole",
+          "row": 1,
+          "col": 3,
+          "vertex_index": 2,
+          "height": 3,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-1-4-whole",
+          "row": 1,
+          "col": 4,
+          "vertex_index": 3,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-2-1-whole",
+          "row": 2,
+          "col": 1,
+          "vertex_index": 4,
+          "height": 3,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-2-2-whole",
+          "row": 2,
+          "col": 2,
+          "vertex_index": 5,
+          "height": 3,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-2-3-whole",
+          "row": 2,
+          "col": 3,
+          "vertex_index": 6,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-2-4-whole",
+          "row": 2,
+          "col": 4,
+          "vertex_index": 7,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        }
+      ],
+      "optimal_score": -0.08025361864941191,
+      "expected_rejection_loss": 0.0
+    }
+  ],
+  "status": "locked_whole",
+  "method": "whole",
+  "seam_column": null,
+  "last_full_heights": [
+    3,
+    3,
+    3,
+    1,
+    3,
+    3,
+    1,
+    1
+  ],
+  "selected_summary": {
+    "method": "whole",
+    "seam_column": null,
+    "score": -0.08025361864941191,
+    "expected_rejection_loss": 0.0,
+    "extra_station_required": false,
+    "station_requirement": null,
+    "selection_reason": "All start plans share the optimal score; expected rejection losses are [whole=0, segment:col2=0, segment:col3=0, segment:col4=0]. Selected whole with minimum expected loss 0."
+  },
+  "start_report": {
+    "feasible": true,
+    "optimal_score": -0.08025361864941191,
+    "optimal_height_map": [
+      [
+        3,
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        3,
+        1,
+        1
+      ]
+    ],
+    "cycle_errors": [],
+    "candidates": [
+      {
+        "method": "whole",
+        "seam_column": null,
+        "score": -0.08025361864941191,
+        "score_tied": true,
+        "tied_optimal_assignment_count": 1,
+        "heights": [
+          3,
+          3,
+          3,
+          1,
+          3,
+          3,
+          1,
+          1
+        ],
+        "target_deltas": {
+          "H-r1-c1": 0,
+          "H-r1-c2": 0,
+          "H-r1-c3": -2,
+          "H-r2-c1": 0,
+          "H-r2-c2": -2,
+          "H-r2-c3": 0,
+          "V-r1-c1": 0,
+          "V-r1-c2": 0,
+          "V-r1-c3": -2,
+          "V-r1-c4": 0
+        },
+        "cuts": [
+          {
+            "cut_id": "C-1-1-whole",
+            "row": 1,
+            "col": 1,
+            "vertex_index": 0,
+            "height": 3,
+            "phase": "whole",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-1-2-whole",
+            "row": 1,
+            "col": 2,
+            "vertex_index": 1,
+            "height": 3,
+            "phase": "whole",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-1-3-whole",
+            "row": 1,
+            "col": 3,
+            "vertex_index": 2,
+            "height": 3,
+            "phase": "whole",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-1-4-whole",
+            "row": 1,
+            "col": 4,
+            "vertex_index": 3,
+            "height": 1,
+            "phase": "whole",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-1-whole",
+            "row": 2,
+            "col": 1,
+            "vertex_index": 4,
+            "height": 3,
+            "phase": "whole",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-2-whole",
+            "row": 2,
+            "col": 2,
+            "vertex_index": 5,
+            "height": 3,
+            "phase": "whole",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-3-whole",
+            "row": 2,
+            "col": 3,
+            "vertex_index": 6,
+            "height": 1,
+            "phase": "whole",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-4-whole",
+            "row": 2,
+            "col": 4,
+            "vertex_index": 7,
+            "height": 1,
+            "phase": "whole",
+            "work_order_id": "WO-GENERATED-2X4"
+          }
+        ],
+        "risk": {
+          "expected_rejection_loss": 0.0,
+          "items": []
+        },
+        "height_map": [
+          [
+            3,
+            3,
+            3,
+            1
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ]
+        ],
+        "extra_station": false,
+        "station_requirement": null,
+        "extra_station_required": false,
+        "legal_margin": null
+      },
+      {
+        "method": "segment",
+        "seam_column": 2,
+        "score": -0.08025361864941191,
+        "score_tied": true,
+        "tied_optimal_assignment_count": 1,
+        "heights": [
+          3,
+          3,
+          3,
+          1,
+          3,
+          3,
+          1,
+          1
+        ],
+        "target_deltas": {
+          "H-r1-c1": 0,
+          "H-r1-c2": 0,
+          "H-r1-c3": -2,
+          "H-r2-c1": 0,
+          "H-r2-c2": -2,
+          "H-r2-c3": 0,
+          "V-r1-c1": 0,
+          "V-r1-c2": 0,
+          "V-r1-c3": -2,
+          "V-r1-c4": 0
+        },
+        "cuts": [
+          {
+            "cut_id": "C-1-1-first",
+            "row": 1,
+            "col": 1,
+            "vertex_index": 0,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-1-3-first",
+            "row": 1,
+            "col": 3,
+            "vertex_index": 2,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-1-4-first",
+            "row": 1,
+            "col": 4,
+            "vertex_index": 3,
+            "height": 1,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-1-first",
+            "row": 2,
+            "col": 1,
+            "vertex_index": 4,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-3-first",
+            "row": 2,
+            "col": 3,
+            "vertex_index": 6,
+            "height": 1,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-4-first",
+            "row": 2,
+            "col": 4,
+            "vertex_index": 7,
+            "height": 1,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          }
+        ],
+        "risk": {
+          "expected_rejection_loss": 0.0,
+          "items": []
+        },
+        "height_map": [
+          [
+            3,
+            3,
+            3,
+            1
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ]
+        ],
+        "extra_station": true,
+        "station_requirement": {
+          "station_id": "SEAM-COL-2",
+          "kind": "open_seam",
+          "seam_column": 2,
+          "extra_station_count": 1
+        }
+      },
+      {
+        "method": "segment",
+        "seam_column": 3,
+        "score": -0.08025361864941191,
+        "score_tied": true,
+        "tied_optimal_assignment_count": 1,
+        "heights": [
+          3,
+          3,
+          3,
+          1,
+          3,
+          3,
+          1,
+          1
+        ],
+        "target_deltas": {
+          "H-r1-c1": 0,
+          "H-r1-c2": 0,
+          "H-r1-c3": -2,
+          "H-r2-c1": 0,
+          "H-r2-c2": -2,
+          "H-r2-c3": 0,
+          "V-r1-c1": 0,
+          "V-r1-c2": 0,
+          "V-r1-c3": -2,
+          "V-r1-c4": 0
+        },
+        "cuts": [
+          {
+            "cut_id": "C-1-1-first",
+            "row": 1,
+            "col": 1,
+            "vertex_index": 0,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-1-2-first",
+            "row": 1,
+            "col": 2,
+            "vertex_index": 1,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-1-4-first",
+            "row": 1,
+            "col": 4,
+            "vertex_index": 3,
+            "height": 1,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-1-first",
+            "row": 2,
+            "col": 1,
+            "vertex_index": 4,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-2-first",
+            "row": 2,
+            "col": 2,
+            "vertex_index": 5,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-4-first",
+            "row": 2,
+            "col": 4,
+            "vertex_index": 7,
+            "height": 1,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          }
+        ],
+        "risk": {
+          "expected_rejection_loss": 0.0,
+          "items": []
+        },
+        "height_map": [
+          [
+            3,
+            3,
+            3,
+            1
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ]
+        ],
+        "extra_station": true,
+        "station_requirement": {
+          "station_id": "SEAM-COL-3",
+          "kind": "open_seam",
+          "seam_column": 3,
+          "extra_station_count": 1
+        }
+      },
+      {
+        "method": "segment",
+        "seam_column": 4,
+        "score": -0.08025361864941191,
+        "score_tied": true,
+        "tied_optimal_assignment_count": 1,
+        "heights": [
+          3,
+          3,
+          3,
+          1,
+          3,
+          3,
+          1,
+          1
+        ],
+        "target_deltas": {
+          "H-r1-c1": 0,
+          "H-r1-c2": 0,
+          "H-r1-c3": -2,
+          "H-r2-c1": 0,
+          "H-r2-c2": -2,
+          "H-r2-c3": 0,
+          "V-r1-c1": 0,
+          "V-r1-c2": 0,
+          "V-r1-c3": -2,
+          "V-r1-c4": 0
+        },
+        "cuts": [
+          {
+            "cut_id": "C-1-1-first",
+            "row": 1,
+            "col": 1,
+            "vertex_index": 0,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-1-2-first",
+            "row": 1,
+            "col": 2,
+            "vertex_index": 1,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-1-3-first",
+            "row": 1,
+            "col": 3,
+            "vertex_index": 2,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-1-first",
+            "row": 2,
+            "col": 1,
+            "vertex_index": 4,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-2-first",
+            "row": 2,
+            "col": 2,
+            "vertex_index": 5,
+            "height": 3,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          },
+          {
+            "cut_id": "C-2-3-first",
+            "row": 2,
+            "col": 3,
+            "vertex_index": 6,
+            "height": 1,
+            "phase": "first",
+            "work_order_id": "WO-GENERATED-2X4"
+          }
+        ],
+        "risk": {
+          "expected_rejection_loss": 0.0,
+          "items": []
+        },
+        "height_map": [
+          [
+            3,
+            3,
+            3,
+            1
+          ],
+          [
+            3,
+            3,
+            1,
+            1
+          ]
+        ],
+        "extra_station": true,
+        "station_requirement": {
+          "station_id": "SEAM-COL-4",
+          "kind": "open_seam",
+          "seam_column": 4,
+          "extra_station_count": 1
+        }
+      }
+    ],
+    "selected": {
+      "method": "whole",
+      "seam_column": null,
+      "score": -0.08025361864941191,
+      "score_tied": true,
+      "tied_optimal_assignment_count": 1,
+      "heights": [
+        3,
+        3,
+        3,
+        1,
+        3,
+        3,
+        1,
+        1
+      ],
+      "target_deltas": {
+        "H-r1-c1": 0,
+        "H-r1-c2": 0,
+        "H-r1-c3": -2,
+        "H-r2-c1": 0,
+        "H-r2-c2": -2,
+        "H-r2-c3": 0,
+        "V-r1-c1": 0,
+        "V-r1-c2": 0,
+        "V-r1-c3": -2,
+        "V-r1-c4": 0
+      },
+      "cuts": [
+        {
+          "cut_id": "C-1-1-whole",
+          "row": 1,
+          "col": 1,
+          "vertex_index": 0,
+          "height": 3,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-1-2-whole",
+          "row": 1,
+          "col": 2,
+          "vertex_index": 1,
+          "height": 3,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-1-3-whole",
+          "row": 1,
+          "col": 3,
+          "vertex_index": 2,
+          "height": 3,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-1-4-whole",
+          "row": 1,
+          "col": 4,
+          "vertex_index": 3,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-2-1-whole",
+          "row": 2,
+          "col": 1,
+          "vertex_index": 4,
+          "height": 3,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-2-2-whole",
+          "row": 2,
+          "col": 2,
+          "vertex_index": 5,
+          "height": 3,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-2-3-whole",
+          "row": 2,
+          "col": 3,
+          "vertex_index": 6,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        },
+        {
+          "cut_id": "C-2-4-whole",
+          "row": 2,
+          "col": 4,
+          "vertex_index": 7,
+          "height": 1,
+          "phase": "whole",
+          "work_order_id": "WO-GENERATED-2X4"
+        }
+      ],
+      "risk": {
+        "expected_rejection_loss": 0.0,
+        "items": []
+      },
+      "height_map": [
+        [
+          3,
+          3,
+          3,
+          1
+        ],
+        [
+          3,
+          3,
+          1,
+          1
+        ]
+      ],
+      "extra_station": false,
+      "station_requirement": null,
+      "extra_station_required": false,
+      "legal_margin": null
+    },
+    "selection_reason": "All start plans share the optimal score; expected rejection losses are [whole=0, segment:col2=0, segment:col3=0, segment:col4=0]. Selected whole with minimum expected loss 0."
+  }
+}

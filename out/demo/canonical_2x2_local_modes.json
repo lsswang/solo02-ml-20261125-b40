@@ -1,0 +1,62 @@
+{
+  "uses_gauge_constrained_modes": true,
+  "all_elementary_loops_close": false,
+  "loop_checks": [
+    {
+      "row": 1,
+      "col": 1,
+      "clockwise_sum": 2,
+      "closes": false
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "H-r1-c1",
+      "raw_modal_delta": 1,
+      "gauge_constrained_modal_delta": 1,
+      "raw_probabilities": {
+        "-2": 0.01,
+        "-1": 0.34,
+        "0": 0.05,
+        "1": 0.58,
+        "2": 0.02
+      }
+    },
+    {
+      "edge_id": "H-r2-c1",
+      "raw_modal_delta": -1,
+      "gauge_constrained_modal_delta": -1,
+      "raw_probabilities": {
+        "-2": 0.01,
+        "-1": 0.95,
+        "0": 0.02,
+        "1": 0.015,
+        "2": 0.005
+      }
+    },
+    {
+      "edge_id": "V-r1-c1",
+      "raw_modal_delta": 0,
+      "gauge_constrained_modal_delta": 0,
+      "raw_probabilities": {
+        "-2": 0.001,
+        "-1": 0.01,
+        "0": 0.978,
+        "1": 0.01,
+        "2": 0.001
+      }
+    },
+    {
+      "edge_id": "V-r1-c2",
+      "raw_modal_delta": 0,
+      "gauge_constrained_modal_delta": 0,
+      "raw_probabilities": {
+        "-2": 0.001,
+        "-1": 0.01,
+        "0": 0.978,
+        "1": 0.01,
+        "2": 0.001
+      }
+    }
+  ]
+}

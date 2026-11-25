@@ -1,0 +1,2 @@
+# Standard library only for the offline pipeline and tests.
+# Python >= 3.10 is sufficient; developed on Python 3.11.

@@ -1,0 +1,18 @@
+{
+  "order_id": "WO-2X2-LOWER-PLUS",
+  "rows": 2,
+  "cols": 2,
+  "holes": [
+    {"row": 1, "col": 1, "height": 1},
+    {"row": 2, "col": 1, "height": 1}
+  ],
+  "gauge": {
+    "vertical_allowed": [0],
+    "edge_allowed": {
+      "H-r2-c1": [1]
+    }
+  },
+  "method_policy": "whole",
+  "contingencies": [],
+  "expected_result": "changing only the lower-edge gauge to +1 makes the right column 2"
+}

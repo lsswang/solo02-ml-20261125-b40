@@ -1,0 +1,19 @@
+{
+  "order_id": "WO-2X2-LOCK-RIGHT2",
+  "rows": 2,
+  "cols": 2,
+  "holes": [
+    {"row": 1, "col": 1, "height": 1},
+    {"row": 2, "col": 1, "height": 1},
+    {"row": 1, "col": 2, "height": 2, "label": "right hole locked before first cut"}
+  ],
+  "gauge": {
+    "vertical_allowed": [0],
+    "edge_allowed": {
+      "H-r2-c1": [-1]
+    }
+  },
+  "method_policy": "whole",
+  "contingencies": [],
+  "expected_result": "infeasible: lower edge would need +1 while the gauge permits only -1"
+}
