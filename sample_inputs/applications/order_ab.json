@@ -1,0 +1,8 @@
+{
+  "order_id": "ORD-AB-0002",
+  "horizon_nights": 8,
+  "ephemerides_file": "../ephemerides/ephemerides_ab.csv",
+  "clear_records_file": "../records/clear_ab.csv",
+  "known_clear_nights": [],
+  "voucher_fee": 0.5
+}

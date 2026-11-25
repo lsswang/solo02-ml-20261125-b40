@@ -1,0 +1,9 @@
+night,date,cost,first_eligible,voucher_eligible,fixed_eligible,note
+1,2026-12-01,1.0,true,false,true,fixed first night
+2,2026-12-02,0.0,false,false,false,not bookable
+3,2026-12-03,0.0,false,false,false,not bookable
+4,2026-12-04,0.0,false,false,false,not bookable
+5,2026-12-05,1.1,false,true,true,only voucher night 5 is open
+6,2026-12-06,0.0,false,false,false,not bookable
+7,2026-12-07,0.0,false,false,false,not bookable
+8,2026-12-08,0.0,false,false,false,not bookable

@@ -1,0 +1,95 @@
+{
+  "schema": "observatory-query-result-v1",
+  "drops": [
+    6.0,
+    3.0
+  ],
+  "error_bounds": [
+    0.3,
+    0.3
+  ],
+  "response_uncertainty": "none",
+  "stars": {
+    "甲": {
+      "possible": false,
+      "response_central": {
+        "ap1": 1.0,
+        "ap2": 1.0
+      },
+      "channel_details": [
+        {
+          "aperture": "ap1",
+          "possible": true,
+          "response_interval": [
+            1.0,
+            1.0
+          ],
+          "depth_interval": [
+            5.7,
+            6.3
+          ]
+        },
+        {
+          "aperture": "ap2",
+          "possible": true,
+          "response_interval": [
+            1.0,
+            1.0
+          ],
+          "depth_interval": [
+            2.7,
+            3.3
+          ]
+        }
+      ],
+      "depth_interval": null,
+      "reason": "two aperture depth intervals do not intersect within bounds"
+    },
+    "乙": {
+      "possible": true,
+      "response_central": {
+        "ap1": 1.0,
+        "ap2": 0.5
+      },
+      "channel_details": [
+        {
+          "aperture": "ap1",
+          "possible": true,
+          "response_interval": [
+            1.0,
+            1.0
+          ],
+          "depth_interval": [
+            5.7,
+            6.3
+          ]
+        },
+        {
+          "aperture": "ap2",
+          "possible": true,
+          "response_interval": [
+            0.5,
+            0.5
+          ],
+          "depth_interval": [
+            5.4,
+            6.6
+          ]
+        }
+      ],
+      "depth_interval": [
+        5.7,
+        6.3
+      ],
+      "depth_interval_text": "[5.7, 6.3]"
+    }
+  },
+  "supported_stars": [
+    "乙"
+  ],
+  "exactly_one_supported": true,
+  "columns_overlap_within_calibration_errors": false,
+  "observation_id": "SIM-DROP-6-3",
+  "observation_file": "sample_inputs/observations/drop_6_3.json",
+  "calibration_file": "sample_inputs/calibration_textbook_exact.json"
+}

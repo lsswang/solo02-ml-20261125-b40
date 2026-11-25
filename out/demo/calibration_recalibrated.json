@@ -1,0 +1,177 @@
+{
+  "schema": "observatory-calibration-v1",
+  "source_dir": "sample_inputs/calibration_recalibrated",
+  "stars": [
+    "甲",
+    "乙"
+  ],
+  "apertures": [
+    "ap1",
+    "ap2"
+  ],
+  "z": 1.96,
+  "responses": {
+    "甲": {
+      "ap1": 1.0514560178571428,
+      "ap2": 0.5877152321428579
+    },
+    "乙": {
+      "ap1": 1.029521232142858,
+      "ap2": 0.46134658928571476
+    }
+  },
+  "standard_errors": {
+    "甲": {
+      "ap1": 0.03826598638851107,
+      "ap2": 0.042302415295995835
+    },
+    "乙": {
+      "ap1": 0.03826598638851107,
+      "ap2": 0.05704057429672476
+    }
+  },
+  "response_intervals_95": {
+    "甲": {
+      "ap1": [
+        0.9764546845356611,
+        1.1264573511786244
+      ],
+      "ap2": [
+        0.5048024981627061,
+        0.6706279661230098
+      ]
+    },
+    "乙": {
+      "ap1": [
+        0.9545198988213762,
+        1.1045225654643396
+      ],
+      "ap2": [
+        0.34954706366413424,
+        0.5731461149072953
+      ]
+    }
+  },
+  "response_validation_margin": {
+    "甲": {
+      "ap1": 0.4916189102445586,
+      "ap2": 0.49953031090322875
+    },
+    "乙": {
+      "ap1": 0.4916189102445586,
+      "ap2": 0.5284171025446573
+    }
+  },
+  "max_holdout_response_error": 0.4166175769230769,
+  "columns_overlap_within_95": true,
+  "column_overlap_by_aperture": {
+    "ap1": {
+      "stars": [
+        "甲",
+        "乙"
+      ],
+      "overlap": true,
+      "common_interval": [
+        0.9764546845356611,
+        1.1045225654643396
+      ],
+      "star_1_interval": [
+        0.9764546845356611,
+        1.1264573511786244
+      ],
+      "star_2_interval": [
+        0.9545198988213762,
+        1.1045225654643396
+      ]
+    },
+    "ap2": {
+      "stars": [
+        "甲",
+        "乙"
+      ],
+      "overlap": true,
+      "common_interval": [
+        0.5048024981627061,
+        0.5731461149072953
+      ],
+      "star_1_interval": [
+        0.5048024981627061,
+        0.6706279661230098
+      ],
+      "star_2_interval": [
+        0.34954706366413424,
+        0.5731461149072953
+      ]
+    }
+  },
+  "pairwise_column_overlap": {
+    "甲__乙": {
+      "star_names": [
+        "甲",
+        "乙"
+      ],
+      "apertures": {
+        "ap1": {
+          "overlap": true,
+          "common_interval": [
+            0.9764546845356611,
+            1.1045225654643396
+          ],
+          "甲_interval": [
+            0.9764546845356611,
+            1.1264573511786244
+          ],
+          "乙_interval": [
+            0.9545198988213762,
+            1.1045225654643396
+          ]
+        },
+        "ap2": {
+          "overlap": true,
+          "common_interval": [
+            0.5048024981627061,
+            0.5731461149072953
+          ],
+          "甲_interval": [
+            0.5048024981627061,
+            0.6706279661230098
+          ],
+          "乙_interval": [
+            0.34954706366413424,
+            0.5731461149072953
+          ]
+        }
+      }
+    }
+  },
+  "holdout_validation": [
+    {
+      "held_out_level": "L1",
+      "n_rows": 4,
+      "max_abs_residual": 0.8332351538461609,
+      "rmse_residual": 0.49565761164587024,
+      "max_standardized_residual": 2.057527556056818,
+      "max_response_equivalent_error": 0.4166175769230769,
+      "z_used": 1.96
+    },
+    {
+      "held_out_level": "L2",
+      "n_rows": 4,
+      "max_abs_residual": 0.8053440999999992,
+      "rmse_residual": 0.43053638723364535,
+      "max_standardized_residual": 1.9886555076428147,
+      "max_response_equivalent_error": 0.20133602500000064,
+      "z_used": 1.96
+    },
+    {
+      "held_out_level": "L3",
+      "n_rows": 4,
+      "max_abs_residual": 0.5471787000000035,
+      "rmse_residual": 0.3640474001851343,
+      "max_standardized_residual": 1.3511614916156254,
+      "max_response_equivalent_error": 0.09119644999999987,
+      "z_used": 1.96
+    }
+  ],
+  "max_candidate_nights": 8
+}

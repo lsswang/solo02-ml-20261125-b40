@@ -1,0 +1,4 @@
+ephemeris_id,star,transit_time,pattern,note
+B4,乙,2026-12-04T22:10:00,00010000,乙 ephemeris: dims only on night 4
+B6,乙,2026-12-06T22:10:00,00000100,乙 ephemeris: dims only on night 6
+A4,甲,2026-12-04T22:40:00,00010000,甲 ephemeris with exactly the same future binary pattern as B4

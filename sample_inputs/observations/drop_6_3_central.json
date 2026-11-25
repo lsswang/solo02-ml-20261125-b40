@@ -1,0 +1,13 @@
+{
+  "observation_id": "TEXTBOOK-CENTRAL-6-3",
+  "drops": [
+    6.0,
+    3.0
+  ],
+  "error_bounds": [
+    0.3,
+    0.3
+  ],
+  "response_uncertainty": "none",
+  "note": "Use fitted central responses only, matching the textbook (1,1)/(1,0.5) example."
+}

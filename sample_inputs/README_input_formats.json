@@ -1,0 +1,35 @@
+{
+  "calibration_directory": [
+    "backgrounds.csv",
+    "calibration.csv"
+  ],
+  "observation_file": {
+    "drops": [
+      6.0,
+      3.0
+    ],
+    "error_bounds": [
+      0.3,
+      0.3
+    ]
+  },
+  "application_file": {
+    "order_id": "string",
+    "horizon_nights": "1..8",
+    "ephemerides": "list inline or use ephemerides_file CSV",
+    "known_clear_nights": [
+      2
+    ],
+    "voucher_fee": 0.5
+  },
+  "shift_csv_columns": [
+    "night",
+    "date",
+    "cost",
+    "first_eligible",
+    "voucher_eligible",
+    "fixed_eligible",
+    "note"
+  ],
+  "rule": "Replace any sample input with another file/directory of the same schema and rerun the same command."
+}

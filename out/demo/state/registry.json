@@ -1,0 +1,51 @@
+{
+  "schema": "observatory-voucher-registry-v1",
+  "vouchers": {
+    "VCH-FOUR-BRIGHT": {
+      "order_id": "ORD-FOUR-0001",
+      "reservation_id": "RSV-FOUR-BRIGHT",
+      "reservation_path": "/workspace/out/demo/state/RSV-FOUR-BRIGHT.json",
+      "held_since": "2026-11-25T18:49:58+00:00"
+    },
+    "VCH-FOUR-DIM": {
+      "order_id": "ORD-FOUR-0001",
+      "reservation_id": "RSV-FOUR-DIM",
+      "reservation_path": "/workspace/out/demo/state/RSV-FOUR-DIM.json",
+      "held_since": "2026-11-25T18:49:58+00:00"
+    },
+    "VCH-AB-ORIG": {
+      "order_id": "ORD-AB-0002",
+      "reservation_id": "RSV-AB-ORIG",
+      "reservation_path": "/workspace/out/demo/state/RSV-AB-ORIG.json",
+      "held_since": "2026-11-25T18:49:58+00:00"
+    },
+    "VCH-AB-RECAL": {
+      "order_id": "ORD-AB-0002",
+      "reservation_id": "RSV-AB-RECAL",
+      "reservation_path": "/workspace/out/demo/state/RSV-AB-RECAL.json",
+      "held_since": "2026-11-25T18:49:58+00:00"
+    }
+  },
+  "reservations": {
+    "RSV-FOUR-BRIGHT": {
+      "order_id": "ORD-FOUR-0001",
+      "voucher_id": "VCH-FOUR-BRIGHT",
+      "path": "/workspace/out/demo/state/RSV-FOUR-BRIGHT.json"
+    },
+    "RSV-FOUR-DIM": {
+      "order_id": "ORD-FOUR-0001",
+      "voucher_id": "VCH-FOUR-DIM",
+      "path": "/workspace/out/demo/state/RSV-FOUR-DIM.json"
+    },
+    "RSV-AB-ORIG": {
+      "order_id": "ORD-AB-0002",
+      "voucher_id": "VCH-AB-ORIG",
+      "path": "/workspace/out/demo/state/RSV-AB-ORIG.json"
+    },
+    "RSV-AB-RECAL": {
+      "order_id": "ORD-AB-0002",
+      "voucher_id": "VCH-AB-RECAL",
+      "path": "/workspace/out/demo/state/RSV-AB-RECAL.json"
+    }
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "schema": "observatory-reservation-v1",
+  "reservation_id": "RSV-FOUR-DIM",
+  "order_id": "ORD-FOUR-0001",
+  "voucher_id": "VCH-FOUR-DIM",
+  "created_at": "2026-11-25T18:49:58+00:00",
+  "status": "first_recorded",
+  "method": "flexible_voucher",
+  "plan": {
+    "method": "flexible_voucher",
+    "feasible": true,
+    "allow_skip_redemption": false,
+    "first_night": 1,
+    "first_night_cost": 1.0,
+    "voucher_fee": 0.0,
+    "voucher_listed_nights": [
+      2,
+      3
+    ],
+    "worst_remaining": 1,
+    "worst_cost": 2.2,
+    "cost_breakdown": {
+      "first_shift": 1.0,
+      "voucher_fee": 0.0,
+      "worst_redeem_shift": 1.2,
+      "total": 2.2
+    },
+    "policy_by_first_bit": {
+      "0": {
+        "possible": true,
+        "first_result": "bright",
+        "after_first_ids": [
+          "E000",
+          "E010"
+        ],
+        "action": "redeem",
+        "redeem_night": 2,
+        "redeem_cost": 1.0,
+        "remaining_after_redeem_worst": 1,
+        "groups_after_redeem": [
+          {
+            "observed_bits": [
+              0
+            ],
+            "count": 1,
+            "ephemeris_ids": [
+              "E000"
+            ]
+          },
+          {
+            "observed_bits": [
+              1
+            ],
+            "count": 1,
+            "ephemeris_ids": [
+              "E010"
+            ]
+          }
+        ],
+        "other_acceptable_nights": []
+      },
+      "1": {
+        "possible": true,
+        "first_result": "dim",
+        "after_first_ids": [
+          "E100",
+          "E101"
+        ],
+        "action": "redeem",
+        "redeem_night": 3,
+        "redeem_cost": 1.2,
+        "remaining_after_redeem_worst": 1,
+        "groups_after_redeem": [
+          {
+            "observed_bits": [
+              0
+            ],
+            "count": 1,
+            "ephemeris_ids": [
+              "E100"
+            ]
+          },
+          {
+            "observed_bits": [
+              1
+            ],
+            "count": 1,
+            "ephemeris_ids": [
+              "E101"
+            ]
+          }
+        ],
+        "other_acceptable_nights": []
+      }
+    },
+    "branches": {
+      "0": {
+        "possible": true,
+        "first_result": "bright",
+        "candidate_ids": [
+          "E000",
+          "E010"
+        ],
+        "candidate_count": 2,
+        "minimum_residual": 1,
+        "actions": [
+          {
+            "redeem_night": 2,
+            "action": "redeem",
+            "cost": 1.0,
+            "residual": 1,
+            "groups_after_redeem": [
+              {
+                "observed_bits": [
+                  0
+                ],
+                "count": 1,
+                "ephemeris_ids": [
+                  "E000"
+                ]
+              },
+              {
+                "observed_bits": [
+                  1
+                ],
+                "count": 1,
+                "ephemeris_ids": [
+                  "E010"
+                ]
+              }
+            ]
+          },
+          {
+            "redeem_night": 3,
+            "action": "redeem",
+            "cost": 1.2,
+            "residual": 2,
+            "groups_after_redeem": [
+              {
+                "observed_bits": [
+                  0
+                ],
+                "count": 2,
+                "ephemeris_ids": [
+                  "E000",
+                  "E010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "1": {
+        "possible": true,
+        "first_result": "dim",
+        "candidate_ids": [
+          "E100",
+          "E101"
+        ],
+        "candidate_count": 2,
+        "minimum_residual": 1,
+        "actions": [
+          {
+            "redeem_night": 3,
+            "action": "redeem",
+            "cost": 1.2,
+            "residual": 1,
+            "groups_after_redeem": [
+              {
+                "observed_bits": [
+                  0
+                ],
+                "count": 1,
+                "ephemeris_ids": [
+                  "E100"
+                ]
+              },
+              {
+                "observed_bits": [
+                  1
+                ],
+                "count": 1,
+                "ephemeris_ids": [
+                  "E101"
+                ]
+              }
+            ]
+          },
+          {
+            "redeem_night": 2,
+            "action": "redeem",
+            "cost": 1.0,
+            "residual": 2,
+            "groups_after_redeem": [
+              {
+                "observed_bits": [
+                  0
+                ],
+                "count": 2,
+                "ephemeris_ids": [
+                  "E100",
+                  "E101"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "ranked_first_nights": [
+      {
+        "first_night": 1,
+        "worst_remaining": 1,
+        "worst_cost": 2.2,
+        "voucher_listed_nights": [
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  "compatible_ephemerides": [
+    {
+      "id": "E000",
+      "star": "乙",
+      "transit_time": "2026-11-20T20:00:00",
+      "pattern": "000",
+      "dimming_nights": [],
+      "note": "canonical future light/dark string 000"
+    },
+    {
+      "id": "E010",
+      "star": "乙",
+      "transit_time": "2026-11-20T20:20:00",
+      "pattern": "010",
+      "dimming_nights": [
+        2
+      ],
+      "note": "canonical future light/dark string 010"
+    },
+    {
+      "id": "E100",
+      "star": "乙",
+      "transit_time": "2026-11-20T20:40:00",
+      "pattern": "100",
+      "dimming_nights": [
+        1
+      ],
+      "note": "canonical future light/dark string 100"
+    },
+    {
+      "id": "E101",
+      "star": "乙",
+      "transit_time": "2026-11-20T21:00:00",
+      "pattern": "101",
+      "dimming_nights": [
+        1,
+        3
+      ],
+      "note": "canonical future light/dark string 101"
+    }
+  ],
+  "excluded_ephemerides": [],
+  "shifts_snapshot": [
+    {
+      "night": 1,
+      "date": "2026-11-20",
+      "cost": 1.0,
+      "first_eligible": true,
+      "voucher_eligible": false,
+      "fixed_eligible": true,
+      "note": "canonical three-night test"
+    },
+    {
+      "night": 2,
+      "date": "2026-11-21",
+      "cost": 1.0,
+      "first_eligible": false,
+      "voucher_eligible": true,
+      "fixed_eligible": true,
+      "note": "canonical three-night test"
+    },
+    {
+      "night": 3,
+      "date": "2026-11-22",
+      "cost": 1.2,
+      "first_eligible": false,
+      "voucher_eligible": true,
+      "fixed_eligible": true,
+      "note": "canonical three-night test"
+    }
+  ],
+  "photometry_summary": {
+    "calibration_file": "out/demo/calibration_original.json",
+    "observation_file": "sample_inputs/observations/drop_6_3.json",
+    "observation_id": "SIM-DROP-6-3",
+    "supported_stars": [
+      "乙"
+    ],
+    "drops": [
+      6.0,
+      3.0
+    ],
+    "error_bounds": [
+      0.3,
+      0.3
+    ],
+    "response_uncertainty": "se95",
+    "depth_intervals": {
+      "乙": [
+        5.474462410269149,
+        6.345871133014432
+      ]
+    }
+  },
+  "first_result": 1,
+  "first_recorded_at": "2026-11-25T18:49:58+00:00",
+  "actual_redeem_night": 3,
+  "second_result": null,
+  "second_recorded_at": null,
+  "final_compatible_ids": null,
+  "compatible_after_first": [
+    {
+      "id": "E100",
+      "star": "乙",
+      "transit_time": "2026-11-20T20:40:00",
+      "pattern": "100",
+      "dimming_nights": [
+        1
+      ],
+      "note": "canonical future light/dark string 100"
+    },
+    {
+      "id": "E101",
+      "star": "乙",
+      "transit_time": "2026-11-20T21:00:00",
+      "pattern": "101",
+      "dimming_nights": [
+        1,
+        3
+      ],
+      "note": "canonical future light/dark string 101"
+    }
+  ],
+  "action_for_successor": {
+    "watch_night": 3,
+    "instruction": "Backfill accepted. Redeem the voucher for night 3 and report its binary result.",
+    "still_compatible_ephemerides": [
+      {
+        "id": "E100",
+        "star": "乙",
+        "transit_time": "2026-11-20T20:40:00",
+        "pattern": "100",
+        "dimming_nights": [
+          1
+        ],
+        "note": "canonical future light/dark string 100"
+      },
+      {
+        "id": "E101",
+        "star": "乙",
+        "transit_time": "2026-11-20T21:00:00",
+        "pattern": "101",
+        "dimming_nights": [
+          1,
+          3
+        ],
+        "note": "canonical future light/dark string 101"
+      }
+    ]
+  }
+}

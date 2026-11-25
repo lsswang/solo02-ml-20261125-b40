@@ -1,0 +1,99 @@
+{
+  "schema": "observatory-query-result-v1",
+  "drops": [
+    6.0,
+    3.0
+  ],
+  "error_bounds": [
+    0.3,
+    0.3
+  ],
+  "response_uncertainty": "se95",
+  "stars": {
+    "甲": {
+      "possible": true,
+      "response_central": {
+        "ap1": 1.0514560178571428,
+        "ap2": 0.5877152321428579
+      },
+      "channel_details": [
+        {
+          "aperture": "ap1",
+          "possible": true,
+          "response_interval": [
+            0.9764546845356611,
+            1.1264573511786244
+          ],
+          "depth_interval": [
+            5.060111680247839,
+            6.451912310703772
+          ]
+        },
+        {
+          "aperture": "ap2",
+          "possible": true,
+          "response_interval": [
+            0.5048024981627061,
+            0.6706279661230098
+          ],
+          "depth_interval": [
+            4.026077253546497,
+            6.537210120811162
+          ]
+        }
+      ],
+      "depth_interval": [
+        5.060111680247839,
+        6.451912310703772
+      ],
+      "depth_interval_text": "[5.06, 6.452]"
+    },
+    "乙": {
+      "possible": true,
+      "response_central": {
+        "ap1": 1.029521232142858,
+        "ap2": 0.46134658928571476
+      },
+      "channel_details": [
+        {
+          "aperture": "ap1",
+          "possible": true,
+          "response_interval": [
+            0.9545198988213762,
+            1.1045225654643396
+          ],
+          "depth_interval": [
+            5.16060076835436,
+            6.600176704308757
+          ]
+        },
+        {
+          "aperture": "ap2",
+          "possible": true,
+          "response_interval": [
+            0.34954706366413424,
+            0.5731461149072953
+          ],
+          "depth_interval": [
+            4.710840621220502,
+            9.44078878937698
+          ]
+        }
+      ],
+      "depth_interval": [
+        5.16060076835436,
+        6.600176704308757
+      ],
+      "depth_interval_text": "[5.161, 6.6]"
+    }
+  },
+  "supported_stars": [
+    "甲",
+    "乙"
+  ],
+  "exactly_one_supported": false,
+  "columns_overlap_within_calibration_errors": true,
+  "observation_id": "SIM-DROP-6-3",
+  "observation_file": "sample_inputs/observations/drop_6_3.json",
+  "calibration_file": "out/demo/calibration_recalibrated.json"
+}

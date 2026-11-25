@@ -1,0 +1,7 @@
+{
+  "order_id": "ORD-FOUR-0001",
+  "horizon_nights": 3,
+  "ephemerides_file": "../ephemerides/ephemerides_four.csv",
+  "known_clear_nights": [],
+  "voucher_fee": 0.0
+}

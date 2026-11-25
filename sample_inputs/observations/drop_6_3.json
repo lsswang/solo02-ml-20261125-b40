@@ -1,0 +1,13 @@
+{
+  "observation_id": "SIM-DROP-6-3",
+  "drops": [
+    6.0,
+    3.0
+  ],
+  "error_bounds": [
+    0.3,
+    0.3
+  ],
+  "response_uncertainty": "se95",
+  "note": "Canonical simultaneous two-aperture dimming. Error is an absolute bounded error per aperture."
+}

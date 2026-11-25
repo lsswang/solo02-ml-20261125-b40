@@ -1,0 +1,47 @@
+{
+  "schema": "observatory-calibration-v1",
+  "note": "Exact unit-response fixture for the (6,3) textbook check.",
+  "responses": {
+    "甲": {
+      "ap1": 1.0,
+      "ap2": 1.0
+    },
+    "乙": {
+      "ap1": 1.0,
+      "ap2": 0.5
+    }
+  },
+  "standard_errors": {
+    "甲": {
+      "ap1": 0.0,
+      "ap2": 0.0
+    },
+    "乙": {
+      "ap1": 0.0,
+      "ap2": 0.0
+    }
+  },
+  "response_intervals_95": {
+    "甲": {
+      "ap1": [
+        1.0,
+        1.0
+      ],
+      "ap2": [
+        1.0,
+        1.0
+      ]
+    },
+    "乙": {
+      "ap1": [
+        1.0,
+        1.0
+      ],
+      "ap2": [
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "columns_overlap_within_95": false
+}

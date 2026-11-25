@@ -1,0 +1,5 @@
+ephemeris_id,star,transit_time,pattern,note
+E000,乙,2026-11-20T20:00:00,000,canonical future light/dark string 000
+E010,乙,2026-11-20T20:20:00,010,canonical future light/dark string 010
+E100,乙,2026-11-20T20:40:00,100,canonical future light/dark string 100
+E101,乙,2026-11-20T21:00:00,101,canonical future light/dark string 101

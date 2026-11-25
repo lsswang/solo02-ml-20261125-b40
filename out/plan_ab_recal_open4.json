@@ -1,0 +1,237 @@
+{
+  "schema": "observatory-plan-v1",
+  "order_id": "ORD-AB-0002",
+  "horizon_nights": 8,
+  "star_filter_source": "query out/query_recalibrated.json",
+  "supported_stars": [
+    "甲",
+    "乙"
+  ],
+  "known_clear_nights": [
+    2
+  ],
+  "candidate_count": 3,
+  "candidate_ephemerides": [
+    {
+      "id": "B4",
+      "star": "乙",
+      "transit_time": "2026-12-04T22:10:00",
+      "pattern": "00010000",
+      "dimming_nights": [
+        4
+      ],
+      "note": "乙 ephemeris: dims only on night 4"
+    },
+    {
+      "id": "B6",
+      "star": "乙",
+      "transit_time": "2026-12-06T22:10:00",
+      "pattern": "00000100",
+      "dimming_nights": [
+        6
+      ],
+      "note": "乙 ephemeris: dims only on night 6"
+    },
+    {
+      "id": "A4",
+      "star": "甲",
+      "transit_time": "2026-12-04T22:40:00",
+      "pattern": "00010000",
+      "dimming_nights": [
+        4
+      ],
+      "note": "甲 ephemeris with exactly the same future binary pattern as B4"
+    }
+  ],
+  "excluded": [],
+  "shift_table": [
+    {
+      "night": 1,
+      "date": "2026-12-01",
+      "cost": 1.0,
+      "first_eligible": true,
+      "voucher_eligible": false,
+      "fixed_eligible": true,
+      "note": "fixed first night"
+    },
+    {
+      "night": 2,
+      "date": "2026-12-02",
+      "cost": 0.0,
+      "first_eligible": false,
+      "voucher_eligible": false,
+      "fixed_eligible": false,
+      "note": "not bookable"
+    },
+    {
+      "night": 3,
+      "date": "2026-12-03",
+      "cost": 0.0,
+      "first_eligible": false,
+      "voucher_eligible": false,
+      "fixed_eligible": false,
+      "note": "not bookable"
+    },
+    {
+      "night": 4,
+      "date": "2026-12-04",
+      "cost": 1.1,
+      "first_eligible": false,
+      "voucher_eligible": true,
+      "fixed_eligible": true,
+      "note": "only voucher night 4 is open"
+    },
+    {
+      "night": 5,
+      "date": "2026-12-05",
+      "cost": 0.0,
+      "first_eligible": false,
+      "voucher_eligible": false,
+      "fixed_eligible": false,
+      "note": "not bookable"
+    },
+    {
+      "night": 6,
+      "date": "2026-12-06",
+      "cost": 0.0,
+      "first_eligible": false,
+      "voucher_eligible": false,
+      "fixed_eligible": false,
+      "note": "not bookable"
+    },
+    {
+      "night": 7,
+      "date": "2026-12-07",
+      "cost": 0.0,
+      "first_eligible": false,
+      "voucher_eligible": false,
+      "fixed_eligible": false,
+      "note": "not bookable"
+    },
+    {
+      "night": 8,
+      "date": "2026-12-08",
+      "cost": 0.0,
+      "first_eligible": false,
+      "voucher_eligible": false,
+      "fixed_eligible": false,
+      "note": "not bookable"
+    }
+  ],
+  "flexible_voucher": {
+    "method": "flexible_voucher",
+    "feasible": true,
+    "allow_skip_redemption": false,
+    "first_night": 1,
+    "first_night_cost": 1.0,
+    "voucher_fee": 0.5,
+    "voucher_listed_nights": [
+      4
+    ],
+    "worst_remaining": 2,
+    "worst_cost": 2.6,
+    "cost_breakdown": {
+      "first_shift": 1.0,
+      "voucher_fee": 0.5,
+      "worst_redeem_shift": 1.1,
+      "total": 2.6
+    },
+    "policy_by_first_bit": {
+      "0": {
+        "possible": true,
+        "first_result": "bright",
+        "after_first_ids": [
+          "B4",
+          "B6",
+          "A4"
+        ],
+        "action": "redeem",
+        "redeem_night": 4,
+        "redeem_cost": 1.1,
+        "remaining_after_redeem_worst": 2,
+        "groups_after_redeem": [
+          {
+            "observed_bits": [
+              0
+            ],
+            "count": 1,
+            "ephemeris_ids": [
+              "B6"
+            ]
+          },
+          {
+            "observed_bits": [
+              1
+            ],
+            "count": 2,
+            "ephemeris_ids": [
+              "B4",
+              "A4"
+            ]
+          }
+        ],
+        "other_acceptable_nights": []
+      },
+      "1": {
+        "possible": false
+      }
+    },
+    "branches": {
+      "0": {
+        "possible": true,
+        "first_result": "bright",
+        "candidate_ids": [
+          "B4",
+          "B6",
+          "A4"
+        ],
+        "candidate_count": 3,
+        "minimum_residual": 2,
+        "actions": [
+          {
+            "redeem_night": 4,
+            "action": "redeem",
+            "cost": 1.1,
+            "residual": 2,
+            "groups_after_redeem": [
+              {
+                "observed_bits": [
+                  0
+                ],
+                "count": 1,
+                "ephemeris_ids": [
+                  "B6"
+                ]
+              },
+              {
+                "observed_bits": [
+                  1
+                ],
+                "count": 2,
+                "ephemeris_ids": [
+                  "B4",
+                  "A4"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "1": {
+        "possible": false,
+        "candidate_ids": [],
+        "actions": []
+      }
+    },
+    "ranked_first_nights": [
+      {
+        "first_night": 1,
+        "worst_remaining": 2,
+        "worst_cost": 2.6,
+        "voucher_listed_nights": [
+          4
+        ]
+      }
+    ]
+  }
+}

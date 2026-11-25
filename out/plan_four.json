@@ -1,0 +1,371 @@
+{
+  "schema": "observatory-plan-v1",
+  "order_id": "ORD-FOUR-0001",
+  "horizon_nights": 3,
+  "star_filter_source": "query out/query_original.json",
+  "supported_stars": [
+    "乙"
+  ],
+  "known_clear_nights": [],
+  "candidate_count": 4,
+  "candidate_ephemerides": [
+    {
+      "id": "E000",
+      "star": "乙",
+      "transit_time": "2026-11-20T20:00:00",
+      "pattern": "000",
+      "dimming_nights": [],
+      "note": "canonical future light/dark string 000"
+    },
+    {
+      "id": "E010",
+      "star": "乙",
+      "transit_time": "2026-11-20T20:20:00",
+      "pattern": "010",
+      "dimming_nights": [
+        2
+      ],
+      "note": "canonical future light/dark string 010"
+    },
+    {
+      "id": "E100",
+      "star": "乙",
+      "transit_time": "2026-11-20T20:40:00",
+      "pattern": "100",
+      "dimming_nights": [
+        1
+      ],
+      "note": "canonical future light/dark string 100"
+    },
+    {
+      "id": "E101",
+      "star": "乙",
+      "transit_time": "2026-11-20T21:00:00",
+      "pattern": "101",
+      "dimming_nights": [
+        1,
+        3
+      ],
+      "note": "canonical future light/dark string 101"
+    }
+  ],
+  "excluded": [],
+  "shift_table": [
+    {
+      "night": 1,
+      "date": "2026-11-20",
+      "cost": 1.0,
+      "first_eligible": true,
+      "voucher_eligible": false,
+      "fixed_eligible": true,
+      "note": "canonical three-night test"
+    },
+    {
+      "night": 2,
+      "date": "2026-11-21",
+      "cost": 1.0,
+      "first_eligible": false,
+      "voucher_eligible": true,
+      "fixed_eligible": true,
+      "note": "canonical three-night test"
+    },
+    {
+      "night": 3,
+      "date": "2026-11-22",
+      "cost": 1.2,
+      "first_eligible": false,
+      "voucher_eligible": true,
+      "fixed_eligible": true,
+      "note": "canonical three-night test"
+    }
+  ],
+  "fixed_buyout": {
+    "method": "fixed_buyout",
+    "nights": [
+      1,
+      2
+    ],
+    "worst_remaining": 2,
+    "worst_cost": 2.0,
+    "cost_breakdown": {
+      "night_costs": [
+        1.0,
+        1.0
+      ],
+      "total": 2.0
+    },
+    "groups": [
+      {
+        "observed_bits": [
+          0,
+          0
+        ],
+        "count": 1,
+        "ephemeris_ids": [
+          "E000"
+        ]
+      },
+      {
+        "observed_bits": [
+          0,
+          1
+        ],
+        "count": 1,
+        "ephemeris_ids": [
+          "E010"
+        ]
+      },
+      {
+        "observed_bits": [
+          1,
+          0
+        ],
+        "count": 2,
+        "ephemeris_ids": [
+          "E100",
+          "E101"
+        ]
+      }
+    ],
+    "feasible": true,
+    "ranked_plans": [
+      {
+        "nights": [
+          1,
+          2
+        ],
+        "worst_remaining": 2,
+        "worst_cost": 2.0
+      },
+      {
+        "nights": [
+          1,
+          3
+        ],
+        "worst_remaining": 2,
+        "worst_cost": 2.2
+      },
+      {
+        "nights": [
+          2,
+          3
+        ],
+        "worst_remaining": 2,
+        "worst_cost": 2.2
+      }
+    ]
+  },
+  "flexible_voucher": {
+    "method": "flexible_voucher",
+    "feasible": true,
+    "allow_skip_redemption": false,
+    "first_night": 1,
+    "first_night_cost": 1.0,
+    "voucher_fee": 0.0,
+    "voucher_listed_nights": [
+      2,
+      3
+    ],
+    "worst_remaining": 1,
+    "worst_cost": 2.2,
+    "cost_breakdown": {
+      "first_shift": 1.0,
+      "voucher_fee": 0.0,
+      "worst_redeem_shift": 1.2,
+      "total": 2.2
+    },
+    "policy_by_first_bit": {
+      "0": {
+        "possible": true,
+        "first_result": "bright",
+        "after_first_ids": [
+          "E000",
+          "E010"
+        ],
+        "action": "redeem",
+        "redeem_night": 2,
+        "redeem_cost": 1.0,
+        "remaining_after_redeem_worst": 1,
+        "groups_after_redeem": [
+          {
+            "observed_bits": [
+              0
+            ],
+            "count": 1,
+            "ephemeris_ids": [
+              "E000"
+            ]
+          },
+          {
+            "observed_bits": [
+              1
+            ],
+            "count": 1,
+            "ephemeris_ids": [
+              "E010"
+            ]
+          }
+        ],
+        "other_acceptable_nights": []
+      },
+      "1": {
+        "possible": true,
+        "first_result": "dim",
+        "after_first_ids": [
+          "E100",
+          "E101"
+        ],
+        "action": "redeem",
+        "redeem_night": 3,
+        "redeem_cost": 1.2,
+        "remaining_after_redeem_worst": 1,
+        "groups_after_redeem": [
+          {
+            "observed_bits": [
+              0
+            ],
+            "count": 1,
+            "ephemeris_ids": [
+              "E100"
+            ]
+          },
+          {
+            "observed_bits": [
+              1
+            ],
+            "count": 1,
+            "ephemeris_ids": [
+              "E101"
+            ]
+          }
+        ],
+        "other_acceptable_nights": []
+      }
+    },
+    "branches": {
+      "0": {
+        "possible": true,
+        "first_result": "bright",
+        "candidate_ids": [
+          "E000",
+          "E010"
+        ],
+        "candidate_count": 2,
+        "minimum_residual": 1,
+        "actions": [
+          {
+            "redeem_night": 2,
+            "action": "redeem",
+            "cost": 1.0,
+            "residual": 1,
+            "groups_after_redeem": [
+              {
+                "observed_bits": [
+                  0
+                ],
+                "count": 1,
+                "ephemeris_ids": [
+                  "E000"
+                ]
+              },
+              {
+                "observed_bits": [
+                  1
+                ],
+                "count": 1,
+                "ephemeris_ids": [
+                  "E010"
+                ]
+              }
+            ]
+          },
+          {
+            "redeem_night": 3,
+            "action": "redeem",
+            "cost": 1.2,
+            "residual": 2,
+            "groups_after_redeem": [
+              {
+                "observed_bits": [
+                  0
+                ],
+                "count": 2,
+                "ephemeris_ids": [
+                  "E000",
+                  "E010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "1": {
+        "possible": true,
+        "first_result": "dim",
+        "candidate_ids": [
+          "E100",
+          "E101"
+        ],
+        "candidate_count": 2,
+        "minimum_residual": 1,
+        "actions": [
+          {
+            "redeem_night": 3,
+            "action": "redeem",
+            "cost": 1.2,
+            "residual": 1,
+            "groups_after_redeem": [
+              {
+                "observed_bits": [
+                  0
+                ],
+                "count": 1,
+                "ephemeris_ids": [
+                  "E100"
+                ]
+              },
+              {
+                "observed_bits": [
+                  1
+                ],
+                "count": 1,
+                "ephemeris_ids": [
+                  "E101"
+                ]
+              }
+            ]
+          },
+          {
+            "redeem_night": 2,
+            "action": "redeem",
+            "cost": 1.0,
+            "residual": 2,
+            "groups_after_redeem": [
+              {
+                "observed_bits": [
+                  0
+                ],
+                "count": 2,
+                "ephemeris_ids": [
+                  "E100",
+                  "E101"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "ranked_first_nights": [
+      {
+        "first_night": 1,
+        "worst_remaining": 1,
+        "worst_cost": 2.2,
+        "voucher_listed_nights": [
+          2,
+          3
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+night,date,cost,first_eligible,voucher_eligible,fixed_eligible,note
+1,2026-11-20,1.0,true,false,true,canonical three-night test
+2,2026-11-21,1.0,false,true,true,canonical three-night test
+3,2026-11-22,1.2,false,true,true,canonical three-night test
