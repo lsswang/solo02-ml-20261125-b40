@@ -1,0 +1,355 @@
+{
+  "input_dir": "/workspace/input_bad_b",
+  "out_dir": "/workspace/deliverables/bad_b",
+  "records": "/workspace/input_bad_b/sensory_votes.csv",
+  "blind_metrics": {
+    "blind_vote_log_loss": 0.5123144289688208,
+    "blind_group_log_loss": 0.5123144289688206,
+    "intercept_baseline_log_loss": 0.5193321811083783,
+    "log_loss_improvement_vs_baseline": 0.007017752139557465,
+    "blind_weighted_votes": 45.0
+  },
+  "blind_roasts": [
+    "R-BLIND-N1",
+    "R-BLIND-N2"
+  ],
+  "split_invariants_ok": true,
+  "passing_recipes": [],
+  "shop_runs": {
+    "bad_b_first_order_must_change_or_refuse": {
+      "status": "ok",
+      "run_dir": "shops/bad_b_first_order_must_change_or_refuse",
+      "actions": [
+        {
+          "cmd": "recommend",
+          "label": "refit recommendations after swapping sensory CSV",
+          "ok": true,
+          "result": [
+            {
+              "formula_id": "BING-2409:1|JIA-2409:2|YI-2418:1",
+              "composition": {
+                "BING-2409": 1,
+                "JIA-2409": 2,
+                "YI-2418": 1
+              },
+              "predicted_probability": 0.1950724888823445,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 2,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "JIA-2409:3|YI-2418:1",
+              "composition": {
+                "JIA-2409": 3,
+                "YI-2418": 1
+              },
+              "predicted_probability": 0.19332115863787522,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 1,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "BING-2409:1|JIA-2409:1|YI-2418:2",
+              "composition": {
+                "BING-2409": 1,
+                "JIA-2409": 1,
+                "YI-2418": 2
+              },
+              "predicted_probability": 0.1742631929956141,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 2,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "BING-2409:2|JIA-2409:1|YI-2418:1",
+              "composition": {
+                "BING-2409": 2,
+                "JIA-2409": 1,
+                "YI-2418": 1
+              },
+              "predicted_probability": 0.17138208935448818,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 2,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "JIA-2409:2|YI-2418:2",
+              "composition": {
+                "JIA-2409": 2,
+                "YI-2418": 2
+              },
+              "predicted_probability": 0.16806867452187935,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 2,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "JIA-2409:4",
+              "composition": {
+                "JIA-2409": 4
+              },
+              "predicted_probability": 0.1606730166524164,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 1,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "BING-2409:1|JIA-2409:3",
+              "composition": {
+                "BING-2409": 1,
+                "JIA-2409": 3
+              },
+              "predicted_probability": 0.1578233608671313,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 1,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "BING-2409:2|YI-2418:2",
+              "composition": {
+                "BING-2409": 2,
+                "YI-2418": 2
+              },
+              "predicted_probability": 0.15686839450413895,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 2,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "BING-2409:2|JIA-2409:2",
+              "composition": {
+                "BING-2409": 2,
+                "JIA-2409": 2
+              },
+              "predicted_probability": 0.13406650902005657,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 2,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "BING-2409:3|YI-2418:1",
+              "composition": {
+                "BING-2409": 3,
+                "YI-2418": 1
+              },
+              "predicted_probability": 0.1296540856634364,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 1,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "BING-2409:1|YI-2418:3",
+              "composition": {
+                "BING-2409": 1,
+                "YI-2418": 3
+              },
+              "predicted_probability": 0.11012172607104484,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 1,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "JIA-2409:1|YI-2418:3",
+              "composition": {
+                "JIA-2409": 1,
+                "YI-2418": 3
+              },
+              "predicted_probability": 0.10287852672580246,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 1,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "BING-2409:3|JIA-2409:1",
+              "composition": {
+                "BING-2409": 3,
+                "JIA-2409": 1
+              },
+              "predicted_probability": 0.0974305983540985,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 1,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "BING-2409:4",
+              "composition": {
+                "BING-2409": 4
+              },
+              "predicted_probability": 0.059725494742657335,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 1,
+              "can_make_at_least_one": true
+            },
+            {
+              "formula_id": "YI-2418:4",
+              "composition": {
+                "YI-2418": 4
+              },
+              "predicted_probability": 0.041992357548776775,
+              "probability_source": "mixture_model",
+              "passes_gate": false,
+              "max_cups_from_loose_stock": 1,
+              "can_make_at_least_one": true
+            }
+          ]
+        },
+        {
+          "cmd": "order",
+          "label": null,
+          "ok": true,
+          "result": {
+            "order_id": "B1",
+            "probability": 0.16806867452187935,
+            "probability_source": "mixture_model",
+            "material": {
+              "matching_bucket_ids": [],
+              "matching_bucket_remaining_cups": 0,
+              "matching_bucket_unreserved_cups": 0,
+              "max_cups_from_loose_parts": 2,
+              "max_cups_from_raw_loose_parts": 2,
+              "direct_committed_parts": {},
+              "available_loose_parts": {
+                "JIA-2409": 4,
+                "YI-2418": 4,
+                "BING-2409": 4
+              },
+              "max_additional_cups_from_loose_parts": 2
+            },
+            "expected_score_per_cup": -6.319313254781207,
+            "expected_score_order": -6.319313254781207,
+            "max_fulfillable_cups": 2,
+            "loss_decision_rule": "accept/open only if p >= gate 0.80; cost rule p >= penalty/(reward+penalty)=0.80",
+            "decision": "rejected_quality"
+          }
+        },
+        {
+          "cmd": "scan",
+          "label": null,
+          "ok": true,
+          "result": {
+            "scanned_order_id": "B1",
+            "status": "rejected",
+            "roast_id": "R-BAD-NEW-B",
+            "formula_id": "F-J2-Y2-NEW",
+            "requested_composition": {
+              "JIA-2409": 2,
+              "YI-2418": 2
+            },
+            "order_dose_lines": [
+              {
+                "batch_id": "JIA-2409",
+                "bean_name": "甲豆·柑橘",
+                "parts_per_cup": 2,
+                "cups": 1,
+                "weighed_parts": 2,
+                "grams_per_part": 15.0,
+                "weighed_grams": 30.0
+              },
+              {
+                "batch_id": "YI-2418",
+                "bean_name": "新乙批·未校准",
+                "parts_per_cup": 2,
+                "cups": 1,
+                "weighed_parts": 2,
+                "grams_per_part": 15.0,
+                "weighed_grams": 30.0
+              }
+            ],
+            "display_recipe": "JIA-2409:2|YI-2418:2",
+            "probability_at_decision": 0.16806867452187935,
+            "decision": "reject",
+            "source": {},
+            "actual_weighings": [],
+            "bucket": null,
+            "remaining_buckets_and_refills": [],
+            "immutable_ledger": "/workspace/deliverables/bad_b/shops/bad_b_first_order_must_change_or_refuse/ledger.jsonl"
+          }
+        },
+        {
+          "cmd": "stock",
+          "label": null,
+          "ok": true,
+          "result": {
+            "loose_stock_parts": {
+              "JIA-2409": 4,
+              "YI-2418": 4,
+              "BING-2409": 4
+            },
+            "direct_committed_parts": {},
+            "available_loose_parts": {
+              "JIA-2409": 4,
+              "YI-2418": 4,
+              "BING-2409": 4
+            },
+            "total_loose_parts": 12,
+            "buckets": [
+              {
+                "bucket_id": "KEG-1",
+                "status": "empty",
+                "capacity_cups": 2
+              },
+              {
+                "bucket_id": "KEG-2",
+                "status": "empty",
+                "capacity_cups": 2
+              }
+            ],
+            "orders": {
+              "B1": {
+                "status": "rejected",
+                "cups": 1
+              }
+            }
+          }
+        }
+      ],
+      "stock_final": {
+        "loose_stock_parts": {
+          "JIA-2409": 4,
+          "YI-2418": 4,
+          "BING-2409": 4
+        },
+        "direct_committed_parts": {},
+        "available_loose_parts": {
+          "JIA-2409": 4,
+          "YI-2418": 4,
+          "BING-2409": 4
+        },
+        "total_loose_parts": 12,
+        "buckets": [
+          {
+            "bucket_id": "KEG-1",
+            "status": "empty",
+            "capacity_cups": 2
+          },
+          {
+            "bucket_id": "KEG-2",
+            "status": "empty",
+            "capacity_cups": 2
+          }
+        ],
+        "orders": {
+          "B1": {
+            "status": "rejected",
+            "cups": 1
+          }
+        }
+      }
+    }
+  },
+  "successful_weighing_example": null
+}

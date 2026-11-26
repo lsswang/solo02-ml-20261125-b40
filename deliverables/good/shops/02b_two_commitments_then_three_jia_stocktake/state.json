@@ -1,0 +1,276 @@
+{
+  "initialized": true,
+  "event_count": 7,
+  "config": {
+    "parts_per_cup": 4,
+    "gate_threshold": 0.8,
+    "trial_accuracy": 0.9,
+    "good_cup_reward": 2.0,
+    "bad_cup_penalty": 8.0,
+    "grams_per_part": 15.0,
+    "default_bucket_capacity_cups": 2,
+    "currency_unit": "synthetic score",
+    "default_shift_id": "SHIFT-2411-AM"
+  },
+  "batch_meta": {
+    "JIA-2409": {
+      "batch_id": "JIA-2409",
+      "bean_name": "甲豆·柑橘",
+      "arrival": "good restored batch"
+    },
+    "YI-2409": {
+      "batch_id": "YI-2409",
+      "bean_name": "乙豆·黑糖",
+      "arrival": "good original batch"
+    },
+    "BING-2409": {
+      "batch_id": "BING-2409",
+      "bean_name": "丙豆·花茶",
+      "arrival": "third decoy/alternative bean"
+    }
+  },
+  "loose_stock_parts": {
+    "JIA-2409": 1,
+    "YI-2409": 4,
+    "BING-2409": 4
+  },
+  "buckets": {
+    "KEG-1": {
+      "bucket_id": "KEG-1",
+      "status": "empty",
+      "capacity_cups": 2,
+      "cups_total": 0,
+      "remaining_cups": 0,
+      "reserved_cups": 0,
+      "roast_id": null,
+      "formula_id": null,
+      "composition": null,
+      "dose_parts_per_cup": null,
+      "weighing_id": null
+    },
+    "KEG-2": {
+      "bucket_id": "KEG-2",
+      "status": "empty",
+      "capacity_cups": 2,
+      "cups_total": 0,
+      "remaining_cups": 0,
+      "reserved_cups": 0,
+      "roast_id": null,
+      "formula_id": null,
+      "composition": null,
+      "dose_parts_per_cup": null,
+      "weighing_id": null
+    }
+  },
+  "orders": {
+    "P1": {
+      "order_id": "P1",
+      "cups": 1,
+      "roast_id": "R-CAL-092",
+      "formula_id": "F-J2-Y2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "mode": "trial",
+      "shift_id": "SHIFT-2411-AM",
+      "status": "unfulfillable_after_stocktake",
+      "probability_before": 0.92,
+      "decision": "accept",
+      "source": {
+        "kind": "direct_scale"
+      },
+      "events": [
+        "E0003"
+      ],
+      "probability_at_decision": 0.92,
+      "expected_score": 1.2000000000000004,
+      "reason": "already calibrated above gate",
+      "stocktake_reason": "withdrawal 3 JIA-2409: late physical stocktake: three JIA portions are gone"
+    },
+    "P2": {
+      "order_id": "P2",
+      "cups": 1,
+      "roast_id": "R-CAL-092",
+      "formula_id": "F-J2-Y2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "mode": "trial",
+      "shift_id": "SHIFT-2411-AM",
+      "status": "unfulfillable_after_stocktake",
+      "probability_before": 0.92,
+      "decision": "accept",
+      "source": {
+        "kind": "direct_scale"
+      },
+      "events": [
+        "E0005"
+      ],
+      "probability_at_decision": 0.92,
+      "expected_score": 1.2000000000000004,
+      "reason": "already calibrated above gate",
+      "stocktake_reason": "withdrawal 3 JIA-2409: late physical stocktake: three JIA portions are gone"
+    }
+  },
+  "trial_states": {},
+  "shifts": {},
+  "roast_state_overrides": {
+    "R-HALF-PRIOR||F-J2-Y2": {
+      "roast_id": "R-HALF-PRIOR",
+      "formula_id": "F-J2-Y2",
+      "composition": "JIA-2409:2|YI-2409:2",
+      "probability": 0.5,
+      "calibrated": false,
+      "source": "stipulated pre-trial qualification prior; not fitted"
+    },
+    "R-CAL-092||F-J2-Y2": {
+      "roast_id": "R-CAL-092",
+      "formula_id": "F-J2-Y2",
+      "composition": "JIA-2409:2|YI-2409:2",
+      "probability": 0.92,
+      "calibrated": true,
+      "source": "reliably calibrated roast state from prior rounds"
+    }
+  },
+  "weighings": [],
+  "events": [
+    {
+      "event_id": "E0001",
+      "type": "shop_initialized",
+      "config": {
+        "parts_per_cup": 4,
+        "gate_threshold": 0.8,
+        "trial_accuracy": 0.9,
+        "good_cup_reward": 2.0,
+        "bad_cup_penalty": 8.0,
+        "grams_per_part": 15.0,
+        "default_bucket_capacity_cups": 2,
+        "currency_unit": "synthetic score",
+        "default_shift_id": "SHIFT-2411-AM"
+      },
+      "batch_meta": {
+        "JIA-2409": {
+          "batch_id": "JIA-2409",
+          "bean_name": "甲豆·柑橘",
+          "arrival": "good restored batch"
+        },
+        "YI-2409": {
+          "batch_id": "YI-2409",
+          "bean_name": "乙豆·黑糖",
+          "arrival": "good original batch"
+        },
+        "BING-2409": {
+          "batch_id": "BING-2409",
+          "bean_name": "丙豆·花茶",
+          "arrival": "third decoy/alternative bean"
+        }
+      },
+      "loose_stock_parts": {
+        "JIA-2409": 4,
+        "YI-2409": 4,
+        "BING-2409": 4
+      },
+      "empty_buckets": [
+        {
+          "bucket_id": "KEG-1",
+          "capacity_cups": 2
+        },
+        {
+          "bucket_id": "KEG-2",
+          "capacity_cups": 2
+        }
+      ],
+      "weighed_buckets": [],
+      "roast_state_overrides": {
+        "R-HALF-PRIOR||F-J2-Y2": {
+          "roast_id": "R-HALF-PRIOR",
+          "formula_id": "F-J2-Y2",
+          "composition": "JIA-2409:2|YI-2409:2",
+          "probability": 0.5,
+          "calibrated": false,
+          "source": "stipulated pre-trial qualification prior; not fitted"
+        },
+        "R-CAL-092||F-J2-Y2": {
+          "roast_id": "R-CAL-092",
+          "formula_id": "F-J2-Y2",
+          "composition": "JIA-2409:2|YI-2409:2",
+          "probability": 0.92,
+          "calibrated": true,
+          "source": "reliably calibrated roast state from prior rounds"
+        }
+      }
+    },
+    {
+      "event_id": "E0002",
+      "type": "order_received",
+      "order_id": "P1",
+      "cups": 1,
+      "roast_id": "R-CAL-092",
+      "formula_id": "F-J2-Y2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "mode": "trial",
+      "shift_id": "SHIFT-2411-AM",
+      "probability_before": 0.92,
+      "probability_source": "reliably calibrated roast state from prior rounds"
+    },
+    {
+      "event_id": "E0003",
+      "type": "order_accepted",
+      "order_id": "P1",
+      "probability": 0.92,
+      "expected_score": 1.2000000000000004,
+      "reason": "already calibrated above gate",
+      "source": {
+        "kind": "direct_scale"
+      }
+    },
+    {
+      "event_id": "E0004",
+      "type": "order_received",
+      "order_id": "P2",
+      "cups": 1,
+      "roast_id": "R-CAL-092",
+      "formula_id": "F-J2-Y2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "mode": "trial",
+      "shift_id": "SHIFT-2411-AM",
+      "probability_before": 0.92,
+      "probability_source": "reliably calibrated roast state from prior rounds"
+    },
+    {
+      "event_id": "E0005",
+      "type": "order_accepted",
+      "order_id": "P2",
+      "probability": 0.92,
+      "expected_score": 1.2000000000000004,
+      "reason": "already calibrated above gate",
+      "source": {
+        "kind": "direct_scale"
+      }
+    },
+    {
+      "event_id": "E0006",
+      "type": "stock_withdrawn",
+      "batch_id": "JIA-2409",
+      "parts": 3,
+      "reason": "late physical stocktake: three JIA portions are gone"
+    },
+    {
+      "event_id": "E0007",
+      "type": "stocktake_unfulfillable",
+      "order_ids": [
+        "P1",
+        "P2"
+      ],
+      "reason": "withdrawal 3 JIA-2409: late physical stocktake: three JIA portions are gone"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "records_path": "/workspace/input/sensory_votes.csv",
+  "threshold": 0.8,
+  "split": {
+    "train_rows": 456,
+    "blind_rows": 45,
+    "train_roasts": [
+      "R-REROAST-06",
+      "R-REROAST-11",
+      "R-REROAST-13",
+      "R-REROAST-17",
+      "R-REROAST-19",
+      "R-TRAIN-01",
+      "R-TRAIN-02",
+      "R-TRAIN-03",
+      "R-TRAIN-04",
+      "R-TRAIN-05",
+      "R-TRAIN-07",
+      "R-TRAIN-08",
+      "R-TRAIN-09",
+      "R-TRAIN-10",
+      "R-TRAIN-12",
+      "R-TRAIN-14",
+      "R-TRAIN-15",
+      "R-TRAIN-16",
+      "R-TRAIN-18"
+    ],
+    "blind_roasts": [
+      "R-BLIND-11",
+      "R-BLIND-12"
+    ],
+    "train_formulas": [
+      "F-C4",
+      "F-J1-C3",
+      "F-J1-Y1-C2",
+      "F-J1-Y2-C1",
+      "F-J1-Y3",
+      "F-J2-C2",
+      "F-J2-Y1-C1",
+      "F-J3-C1",
+      "F-J3-Y1",
+      "F-J4",
+      "F-Y1-C3",
+      "F-Y2-C2",
+      "F-Y3-C1",
+      "F-Y4"
+    ],
+    "blind_formulas": [
+      "F-J2-Y2"
+    ],
+    "whole_roast_violations": [],
+    "same_formula_split_violations": [],
+    "same_tasting_event_group_violations": [],
+    "whole_roast_ok": true,
+    "same_tasting_event_group_ok": true,
+    "same_formula_globally_ok": true,
+    "has_both_partitions": true,
+    "strategy": "connected_roast_formula_components",
+    "holdout_roast_requested": "R-BLIND-11",
+    "requested_roast_found": true,
+    "n_components": 15,
+    "selected_component_root": "roast::R-BLIND-12",
+    "fallback_reason": null,
+    "strict_formula_and_roast_ok": true,
+    "invariants_ok": true
+  },
+  "metrics": {
+    "blind_vote_log_loss": 0.3666701984479815,
+    "blind_group_log_loss": 0.3666701984479815,
+    "intercept_baseline_log_loss": 1.269837856779308,
+    "log_loss_improvement_vs_baseline": 0.9031676583313266,
+    "blind_weighted_votes": 45.0
+  },
+  "per_roast": [
+    {
+      "roast_id": "R-BLIND-11",
+      "vote_weight": 27.0,
+      "empirical_similarity": 0.9629629629629629,
+      "log_loss": 0.2540633397525556
+    },
+    {
+      "roast_id": "R-BLIND-12",
+      "vote_weight": 18.0,
+      "empirical_similarity": 0.7777777777777778,
+      "log_loss": 0.5355804864911203
+    }
+  ],
+  "groups": [
+    {
+      "roast_id": "R-BLIND-11",
+      "formula_id": "F-J2-Y2",
+      "round_no": "1",
+      "distinct_judges": 9,
+      "vote_weight": 9.0,
+      "similar_weight": 8.0,
+      "empirical_similarity": 0.8888888888888888,
+      "predicted_similarity": 0.820566839049938,
+      "prediction_error_abs": 0.06832204983895085,
+      "passes_gate_at_threshold": true,
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      }
+    },
+    {
+      "roast_id": "R-BLIND-11",
+      "formula_id": "F-J2-Y2",
+      "round_no": "2",
+      "distinct_judges": 9,
+      "vote_weight": 9.0,
+      "similar_weight": 9.0,
+      "empirical_similarity": 1.0,
+      "predicted_similarity": 0.820566839049938,
+      "prediction_error_abs": 0.179433160950062,
+      "passes_gate_at_threshold": true,
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      }
+    },
+    {
+      "roast_id": "R-BLIND-11",
+      "formula_id": "F-J2-Y2",
+      "round_no": "3",
+      "distinct_judges": 9,
+      "vote_weight": 9.0,
+      "similar_weight": 9.0,
+      "empirical_similarity": 1.0,
+      "predicted_similarity": 0.820566839049938,
+      "prediction_error_abs": 0.179433160950062,
+      "passes_gate_at_threshold": true,
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      }
+    },
+    {
+      "roast_id": "R-BLIND-12",
+      "formula_id": "F-J2-Y2",
+      "round_no": "1",
+      "distinct_judges": 9,
+      "vote_weight": 9.0,
+      "similar_weight": 8.0,
+      "empirical_similarity": 0.8888888888888888,
+      "predicted_similarity": 0.820566839049938,
+      "prediction_error_abs": 0.06832204983895085,
+      "passes_gate_at_threshold": true,
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      }
+    },
+    {
+      "roast_id": "R-BLIND-12",
+      "formula_id": "F-J2-Y2",
+      "round_no": "2",
+      "distinct_judges": 9,
+      "vote_weight": 9.0,
+      "similar_weight": 6.0,
+      "empirical_similarity": 0.6666666666666666,
+      "predicted_similarity": 0.820566839049938,
+      "prediction_error_abs": 0.15390017238327136,
+      "passes_gate_at_threshold": true,
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      }
+    }
+  ],
+  "blind_model_coefficients": {
+    "intercept": -2.5397522426054975,
+    "batch::BING-2409": -0.272439507477048,
+    "batch::JIA-2409": 0.46719703931810413,
+    "batch::YI-2409": -0.19475753184061642,
+    "pair::BING-2409*JIA-2409": -0.5188652434454446,
+    "pair::BING-2409*YI-2409": 3.9228667590846644,
+    "pair::JIA-2409*YI-2409": 15.694900325020011
+  }
+}

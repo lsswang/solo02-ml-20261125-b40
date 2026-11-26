@@ -1,0 +1,201 @@
+{
+  "threshold": 0.8,
+  "holdout_roast_requested": "R-BLIND-11",
+  "holdout_roast_used_after_fallback": "R-BLIND-11",
+  "feasible_passing_recipes": [
+    {
+      "formula_id": "JIA-2409:2|YI-2409:2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "predicted_probability": 0.8427467801450697,
+      "probability_source": "mixture_model",
+      "passes_gate": true,
+      "max_cups_from_loose_stock": 2,
+      "can_make_at_least_one": true
+    }
+  ],
+  "all_recipes": [
+    {
+      "formula_id": "JIA-2409:2|YI-2409:2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "predicted_probability": 0.8427467801450697,
+      "probability_source": "mixture_model",
+      "passes_gate": true,
+      "max_cups_from_loose_stock": 2,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "JIA-2409:3|YI-2409:1",
+      "composition": {
+        "JIA-2409": 3,
+        "YI-2409": 1
+      },
+      "predicted_probability": 0.6934030396892222,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 1,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "JIA-2409:1|YI-2409:3",
+      "composition": {
+        "JIA-2409": 1,
+        "YI-2409": 3
+      },
+      "predicted_probability": 0.6163851269899991,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 1,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "BING-2409:1|JIA-2409:1|YI-2409:2",
+      "composition": {
+        "BING-2409": 1,
+        "JIA-2409": 1,
+        "YI-2409": 2
+      },
+      "predicted_probability": 0.46975599721808775,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 2,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "BING-2409:1|JIA-2409:2|YI-2409:1",
+      "composition": {
+        "BING-2409": 1,
+        "JIA-2409": 2,
+        "YI-2409": 1
+      },
+      "predicted_probability": 0.4423308145474202,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 2,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "BING-2409:2|JIA-2409:1|YI-2409:1",
+      "composition": {
+        "BING-2409": 2,
+        "JIA-2409": 1,
+        "YI-2409": 1
+      },
+      "predicted_probability": 0.23292471955501848,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 2,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "BING-2409:2|YI-2409:2",
+      "composition": {
+        "BING-2409": 2,
+        "YI-2409": 2
+      },
+      "predicted_probability": 0.1378297612048214,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 2,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "BING-2409:3|YI-2409:1",
+      "composition": {
+        "BING-2409": 3,
+        "YI-2409": 1
+      },
+      "predicted_probability": 0.11260461760168995,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 1,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "BING-2409:1|YI-2409:3",
+      "composition": {
+        "BING-2409": 1,
+        "YI-2409": 3
+      },
+      "predicted_probability": 0.11126859766502788,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 1,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "JIA-2409:4",
+      "composition": {
+        "JIA-2409": 4
+      },
+      "predicted_probability": 0.10774712558862029,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 1,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "BING-2409:1|JIA-2409:3",
+      "composition": {
+        "BING-2409": 1,
+        "JIA-2409": 3
+      },
+      "predicted_probability": 0.08244357350103802,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 1,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "BING-2409:2|JIA-2409:2",
+      "composition": {
+        "BING-2409": 2,
+        "JIA-2409": 2
+      },
+      "predicted_probability": 0.06801338445605667,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 2,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "BING-2409:3|JIA-2409:1",
+      "composition": {
+        "BING-2409": 3,
+        "JIA-2409": 1
+      },
+      "predicted_probability": 0.060767701524641,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 1,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "BING-2409:4",
+      "composition": {
+        "BING-2409": 4
+      },
+      "predicted_probability": 0.05892422262813651,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 1,
+      "can_make_at_least_one": true
+    },
+    {
+      "formula_id": "YI-2409:4",
+      "composition": {
+        "YI-2409": 4
+      },
+      "predicted_probability": 0.057451214167158524,
+      "probability_source": "mixture_model",
+      "passes_gate": false,
+      "max_cups_from_loose_stock": 1,
+      "can_make_at_least_one": true
+    }
+  ]
+}

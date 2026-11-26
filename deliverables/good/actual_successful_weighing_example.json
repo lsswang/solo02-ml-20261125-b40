@@ -1,0 +1,30 @@
+{
+  "bucket_id": "KEG-1",
+  "cups": 2,
+  "kind": "whole_bucket",
+  "scale_lines": [
+    {
+      "batch_id": "JIA-2409",
+      "bean_name": "甲豆·柑橘",
+      "cups": 2,
+      "grams_per_part": 15.0,
+      "parts_per_cup": 2,
+      "weighed_grams": 60.0,
+      "weighed_parts": 4
+    },
+    {
+      "batch_id": "YI-2409",
+      "bean_name": "乙豆·黑糖",
+      "cups": 2,
+      "grams_per_part": 15.0,
+      "parts_per_cup": 2,
+      "weighed_grams": 60.0,
+      "weighed_parts": 4
+    }
+  ],
+  "status": "success",
+  "total_grams": 120.0,
+  "total_parts": 8,
+  "verification": "simulated scale returned stable positive dose for every line",
+  "weighing_id": "W-001"
+}

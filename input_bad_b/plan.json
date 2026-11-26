@@ -1,0 +1,15 @@
+{
+  "holdout_roast": "R-BLIND-N1",
+  "threshold": 0.8,
+  "shop_runs": [
+    {
+      "name": "bad_b_first_order_must_change_or_refuse",
+      "actions": [
+        {"cmd": "recommend", "label": "refit recommendations after swapping sensory CSV"},
+        {"cmd": "order", "order_id": "B1", "cups": 1, "mode": "bucket", "roast_id": "R-BAD-NEW-B", "formula_id": "F-J2-Y2-NEW", "composition": "JIA-2409:2|YI-2418:2"},
+        {"cmd": "scan", "order_id": "B1", "save": "scan_B1_refused_leave_stock.json"},
+        {"cmd": "stock", "save": "stock_unchanged_after_refusal.json"}
+      ]
+    }
+  ]
+}

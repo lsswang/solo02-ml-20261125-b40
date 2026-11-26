@@ -1,0 +1,62 @@
+{
+  "scanned_order_id": "REFILL-1",
+  "status": "accepted",
+  "roast_id": "R-PREWEIGHED",
+  "formula_id": "F-J2-Y2",
+  "requested_composition": {
+    "JIA-2409": 2,
+    "YI-2409": 2
+  },
+  "order_dose_lines": [
+    {
+      "batch_id": "JIA-2409",
+      "bean_name": "甲豆",
+      "parts_per_cup": 2,
+      "cups": 1,
+      "weighed_parts": 2,
+      "grams_per_part": 15.0,
+      "weighed_grams": 30.0
+    },
+    {
+      "batch_id": "YI-2409",
+      "bean_name": "乙豆",
+      "parts_per_cup": 2,
+      "cups": 1,
+      "weighed_parts": 2,
+      "grams_per_part": 15.0,
+      "weighed_grams": 30.0
+    }
+  ],
+  "display_recipe": "JIA-2409:2|YI-2409:2",
+  "probability_at_decision": 0.88,
+  "decision": "accept",
+  "source": {
+    "kind": "bucket",
+    "bucket_id": "KEG-HALF-INPUT"
+  },
+  "actual_weighings": [],
+  "bucket": {
+    "bucket_id": "KEG-HALF-INPUT",
+    "capacity_cups": 4,
+    "remaining_cups": 2,
+    "reserved_cups": 2,
+    "status": "active"
+  },
+  "remaining_buckets_and_refills": [
+    {
+      "bucket_id": "KEG-HALF-INPUT",
+      "remaining_cups": 2,
+      "capacity_cups": 4,
+      "remaining_fraction_of_bucket": 0.5,
+      "is_half_bucket": true,
+      "can_refill_orders": [
+        {
+          "order_id": "REFILL-2",
+          "status": "accepted",
+          "cups": 1
+        }
+      ]
+    }
+  ],
+  "immutable_ledger": "/workspace/deliverables/good/shops/06_preweighed_half_bucket_input/ledger.jsonl"
+}

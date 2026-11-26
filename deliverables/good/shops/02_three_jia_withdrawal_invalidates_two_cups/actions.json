@@ -1,0 +1,80 @@
+[
+  {
+    "cmd": "withdraw",
+    "label": null,
+    "ok": true,
+    "result": {
+      "event_id": "E0002",
+      "type": "stock_withdrawn",
+      "batch_id": "JIA-2409",
+      "parts": 3,
+      "reason": "barista took three JIA portions before bucket opening"
+    }
+  },
+  {
+    "cmd": "order",
+    "label": null,
+    "ok": true,
+    "result": {
+      "order_id": "COMMIT2",
+      "probability": 0.8427467801450697,
+      "probability_source": "mixture_model",
+      "material": {
+        "matching_bucket_ids": [],
+        "matching_bucket_remaining_cups": 0,
+        "matching_bucket_unreserved_cups": 0,
+        "max_cups_from_loose_parts": 0,
+        "max_cups_from_raw_loose_parts": 0,
+        "direct_committed_parts": {},
+        "available_loose_parts": {
+          "JIA-2409": 1,
+          "YI-2409": 4,
+          "BING-2409": 4
+        },
+        "max_additional_cups_from_loose_parts": 0
+      },
+      "expected_score_per_cup": 0.4274678014506965,
+      "expected_score_order": 0.854935602901393,
+      "max_fulfillable_cups": 0,
+      "loss_decision_rule": "accept/open only if p >= gate 0.80; cost rule p >= penalty/(reward+penalty)=0.80",
+      "decision": "rejected_material"
+    }
+  },
+  {
+    "cmd": "stock",
+    "label": null,
+    "ok": true,
+    "result": {
+      "loose_stock_parts": {
+        "JIA-2409": 1,
+        "YI-2409": 4,
+        "BING-2409": 4
+      },
+      "direct_committed_parts": {},
+      "available_loose_parts": {
+        "JIA-2409": 1,
+        "YI-2409": 4,
+        "BING-2409": 4
+      },
+      "total_loose_parts": 9,
+      "buckets": [
+        {
+          "bucket_id": "KEG-1",
+          "status": "empty",
+          "capacity_cups": 2
+        },
+        {
+          "bucket_id": "KEG-2",
+          "status": "empty",
+          "capacity_cups": 2
+        }
+      ],
+      "orders": {
+        "COMMIT2": {
+          "status": "rejected",
+          "cups": 2
+        }
+      }
+    }
+  }
+]

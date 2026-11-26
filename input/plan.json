@@ -1,0 +1,66 @@
+{
+  "holdout_roast": "R-BLIND-11",
+  "threshold": 0.8,
+  "successful_weighing_run": "01_bucket_three_orders",
+  "shop_runs": [
+    {
+      "name": "01_bucket_three_orders",
+      "actions": [
+        {"cmd": "order", "order_id": "O1", "cups": 1, "mode": "bucket", "roast_id": "R-SHOP-GOOD", "formula_id": "F-J2-Y2", "composition": "JIA-2409:2|YI-2409:2"},
+        {"cmd": "order", "order_id": "O2", "cups": 1, "mode": "bucket", "roast_id": "R-SHOP-GOOD", "formula_id": "F-J2-Y2", "composition": "JIA-2409:2|YI-2409:2"},
+        {"cmd": "serve", "order_id": "O1"},
+        {"cmd": "scan", "order_id": "O1", "save": "scan_O1_half_bucket_refills_O2.json"},
+        {"cmd": "scan", "order_id": "O2", "save": "scan_O2_actual_beans_from_bucket.json"},
+        {"cmd": "serve", "order_id": "O2"},
+        {"cmd": "order", "order_id": "O3", "cups": 1, "mode": "bucket", "roast_id": "R-SHOP-GOOD", "formula_id": "F-J2-Y2", "composition": "JIA-2409:2|YI-2409:2"},
+        {"cmd": "stock", "save": "stock_final.json"}
+      ]
+    },
+    {
+      "name": "02_three_jia_withdrawal_invalidates_two_cups",
+      "actions": [
+        {"cmd": "withdraw", "batch_id": "JIA-2409", "parts": 3, "reason": "barista took three JIA portions before bucket opening"},
+        {"cmd": "order", "order_id": "COMMIT2", "cups": 2, "mode": "bucket", "roast_id": "R-SHOP-GOOD", "formula_id": "F-J2-Y2", "composition": "JIA-2409:2|YI-2409:2"},
+        {"cmd": "stock", "save": "stock_after_withdrawal.json"}
+      ]
+    },
+    {
+      "name": "02b_two_commitments_then_three_jia_stocktake",
+      "actions": [
+        {"cmd": "order", "order_id": "P1", "cups": 1, "mode": "trial", "require_trial": false, "roast_id": "R-CAL-092", "formula_id": "F-J2-Y2", "composition": "JIA-2409:2|YI-2409:2"},
+        {"cmd": "order", "order_id": "P2", "cups": 1, "mode": "trial", "require_trial": false, "roast_id": "R-CAL-092", "formula_id": "F-J2-Y2", "composition": "JIA-2409:2|YI-2409:2"},
+        {"cmd": "withdraw", "batch_id": "JIA-2409", "parts": 3, "reason": "late physical stocktake: three JIA portions are gone"},
+        {"cmd": "serve", "order_id": "P1", "allow_error": true},
+        {"cmd": "stock", "save": "stock_commitments_broken.json"}
+      ]
+    },
+    {
+      "name": "03_trial_same_order_like",
+      "actions": [
+        {"cmd": "order", "order_id": "T1", "cups": 1, "mode": "trial", "require_trial": true, "shift_id": "SHIFT-LIKE", "roast_id": "R-HALF-PRIOR", "formula_id": "F-J2-Y2", "composition": "JIA-2409:2|YI-2409:2"},
+        {"cmd": "trial", "order_id": "T1", "result": "like"},
+        {"cmd": "serve", "order_id": "T1"},
+        {"cmd": "scan", "order_id": "T1", "save": "scan_T1_like.json"},
+        {"cmd": "stock", "save": "stock_like.json"}
+      ]
+    },
+    {
+      "name": "04_trial_same_order_unlike",
+      "actions": [
+        {"cmd": "order", "order_id": "T1", "cups": 1, "mode": "trial", "require_trial": true, "shift_id": "SHIFT-UNLIKE", "roast_id": "R-HALF-PRIOR", "formula_id": "F-J2-Y2", "composition": "JIA-2409:2|YI-2409:2"},
+        {"cmd": "trial", "order_id": "T1", "result": "unlike"},
+        {"cmd": "serve", "order_id": "T1", "allow_error": true},
+        {"cmd": "scan", "order_id": "T1", "save": "scan_T1_unlike.json"},
+        {"cmd": "stock", "save": "stock_unlike.json"}
+      ]
+    },
+    {
+      "name": "05_reliably_calibrated_whole_bucket_signoff",
+      "actions": [
+        {"cmd": "order", "order_id": "CAL1", "cups": 1, "mode": "bucket", "roast_id": "R-CAL-092", "formula_id": "F-J2-Y2", "composition": "JIA-2409:2|YI-2409:2"},
+        {"cmd": "scan", "order_id": "CAL1", "save": "scan_CAL1_signed_bucket.json"},
+        {"cmd": "stock", "save": "stock_cal.json"}
+      ]
+    }
+  ]
+}

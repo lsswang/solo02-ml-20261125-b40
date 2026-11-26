@@ -1,0 +1,29 @@
+{
+  "inventory_note": "Same portion counts as the good shop, but YI-2409 is swapped for newly arrived YI-2418.",
+  "grams_per_part_note": "One quarter-recipe part is simulated as 15 g.",
+  "batches": [
+    {"batch_id": "JIA-2409", "bean_name": "甲豆·柑橘", "arrival": "same good batch"},
+    {"batch_id": "YI-2418", "bean_name": "新乙批·未校准", "arrival": "replacement batch whose half blend is below gate"},
+    {"batch_id": "BING-2409", "bean_name": "丙豆·花茶", "arrival": "same third bean"}
+  ],
+  "loose_stock_parts": {
+    "JIA-2409": 4,
+    "YI-2418": 4,
+    "BING-2409": 4
+  },
+  "empty_buckets": [
+    {"bucket_id": "KEG-1", "capacity_cups": 2},
+    {"bucket_id": "KEG-2", "capacity_cups": 2}
+  ],
+  "weighed_buckets": [],
+  "roast_states": [],
+  "config": {
+    "parts_per_cup": 4,
+    "gate_threshold": 0.8,
+    "trial_accuracy": 0.9,
+    "good_cup_reward": 2.0,
+    "bad_cup_penalty": 8.0,
+    "grams_per_part": 15.0,
+    "default_bucket_capacity_cups": 2
+  }
+}

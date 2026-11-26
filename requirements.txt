@@ -1,0 +1,2 @@
+# The implementation uses only the Python 3.10+ standard library.
+# No pip packages are required to generate samples, train, or run the shop.

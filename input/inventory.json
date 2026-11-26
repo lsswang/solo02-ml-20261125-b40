@@ -1,0 +1,47 @@
+{
+  "inventory_note": "Loose portions currently available for weighing. The two physical buckets start empty.",
+  "grams_per_part_note": "One quarter-recipe part is simulated as 15 g, so a four-part cup uses 60 g beans.",
+  "batches": [
+    {"batch_id": "JIA-2409", "bean_name": "甲豆·柑橘", "arrival": "good restored batch"},
+    {"batch_id": "YI-2409", "bean_name": "乙豆·黑糖", "arrival": "good original batch"},
+    {"batch_id": "BING-2409", "bean_name": "丙豆·花茶", "arrival": "third decoy/alternative bean"}
+  ],
+  "loose_stock_parts": {
+    "JIA-2409": 4,
+    "YI-2409": 4,
+    "BING-2409": 4
+  },
+  "empty_buckets": [
+    {"bucket_id": "KEG-1", "capacity_cups": 2},
+    {"bucket_id": "KEG-2", "capacity_cups": 2}
+  ],
+  "weighed_buckets": [],
+  "roast_states": [
+    {
+      "roast_id": "R-HALF-PRIOR",
+      "formula_id": "F-J2-Y2",
+      "composition": "JIA-2409:2|YI-2409:2",
+      "probability": 0.5,
+      "calibrated": false,
+      "source": "stipulated pre-trial qualification prior; not fitted"
+    },
+    {
+      "roast_id": "R-CAL-092",
+      "formula_id": "F-J2-Y2",
+      "composition": "JIA-2409:2|YI-2409:2",
+      "probability": 0.92,
+      "calibrated": true,
+      "source": "reliably calibrated roast state from prior rounds"
+    }
+  ],
+  "config": {
+    "parts_per_cup": 4,
+    "gate_threshold": 0.8,
+    "trial_accuracy": 0.9,
+    "good_cup_reward": 2.0,
+    "bad_cup_penalty": 8.0,
+    "grams_per_part": 15.0,
+    "default_bucket_capacity_cups": 2,
+    "default_shift_id": "SHIFT-2411-AM"
+  }
+}

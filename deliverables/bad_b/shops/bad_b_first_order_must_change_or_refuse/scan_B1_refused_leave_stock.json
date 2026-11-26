@@ -1,0 +1,38 @@
+{
+  "scanned_order_id": "B1",
+  "status": "rejected",
+  "roast_id": "R-BAD-NEW-B",
+  "formula_id": "F-J2-Y2-NEW",
+  "requested_composition": {
+    "JIA-2409": 2,
+    "YI-2418": 2
+  },
+  "order_dose_lines": [
+    {
+      "batch_id": "JIA-2409",
+      "bean_name": "甲豆·柑橘",
+      "parts_per_cup": 2,
+      "cups": 1,
+      "weighed_parts": 2,
+      "grams_per_part": 15.0,
+      "weighed_grams": 30.0
+    },
+    {
+      "batch_id": "YI-2418",
+      "bean_name": "新乙批·未校准",
+      "parts_per_cup": 2,
+      "cups": 1,
+      "weighed_parts": 2,
+      "grams_per_part": 15.0,
+      "weighed_grams": 30.0
+    }
+  ],
+  "display_recipe": "JIA-2409:2|YI-2418:2",
+  "probability_at_decision": 0.16806867452187935,
+  "decision": "reject",
+  "source": {},
+  "actual_weighings": [],
+  "bucket": null,
+  "remaining_buckets_and_refills": [],
+  "immutable_ledger": "/workspace/deliverables/bad_b/shops/bad_b_first_order_must_change_or_refuse/ledger.jsonl"
+}

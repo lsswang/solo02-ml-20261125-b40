@@ -1,0 +1,260 @@
+[
+  {
+    "cmd": "order",
+    "label": null,
+    "ok": true,
+    "result": {
+      "order_id": "T1",
+      "probability": 0.5,
+      "probability_source": "stipulated pre-trial qualification prior; not fitted",
+      "material": {
+        "matching_bucket_ids": [],
+        "matching_bucket_remaining_cups": 0,
+        "matching_bucket_unreserved_cups": 0,
+        "max_cups_from_loose_parts": 2,
+        "max_cups_from_raw_loose_parts": 2,
+        "direct_committed_parts": {},
+        "available_loose_parts": {
+          "JIA-2409": 4,
+          "YI-2409": 4,
+          "BING-2409": 4
+        },
+        "max_additional_cups_from_loose_parts": 2
+      },
+      "decision": "awaiting_trial_reading",
+      "trial_weighing": {
+        "weighing_id": "W-001",
+        "status": "success",
+        "kind": "single_trial_cup",
+        "bucket_id": null,
+        "cups": 1,
+        "scale_lines": [
+          {
+            "batch_id": "JIA-2409",
+            "bean_name": "甲豆·柑橘",
+            "parts_per_cup": 2,
+            "cups": 1,
+            "weighed_parts": 2,
+            "grams_per_part": 15.0,
+            "weighed_grams": 30.0
+          },
+          {
+            "batch_id": "YI-2409",
+            "bean_name": "乙豆·黑糖",
+            "parts_per_cup": 2,
+            "cups": 1,
+            "weighed_parts": 2,
+            "grams_per_part": 15.0,
+            "weighed_grams": 30.0
+          }
+        ],
+        "total_parts": 4,
+        "total_grams": 60.0,
+        "verification": "simulated scale returned stable positive dose for every line"
+      },
+      "instruction": "Run record-trial with --result like or unlike."
+    }
+  },
+  {
+    "cmd": "trial",
+    "label": null,
+    "ok": true,
+    "result": {
+      "order_id": "T1",
+      "reading": "like",
+      "prior": 0.5,
+      "likelihood_if_qualified": 0.9,
+      "likelihood_if_unqualified": 0.09999999999999998,
+      "posterior": 0.9,
+      "threshold": 0.8,
+      "decision": "accepted"
+    }
+  },
+  {
+    "cmd": "serve",
+    "label": null,
+    "ok": true,
+    "result": {
+      "order_id": "T1",
+      "served_cups": 1,
+      "weighing": {
+        "weighing_id": "W-002",
+        "status": "success",
+        "kind": "direct_order",
+        "bucket_id": null,
+        "cups": 1,
+        "scale_lines": [
+          {
+            "batch_id": "JIA-2409",
+            "bean_name": "甲豆·柑橘",
+            "parts_per_cup": 2,
+            "cups": 1,
+            "weighed_parts": 2,
+            "grams_per_part": 15.0,
+            "weighed_grams": 30.0
+          },
+          {
+            "batch_id": "YI-2409",
+            "bean_name": "乙豆·黑糖",
+            "parts_per_cup": 2,
+            "cups": 1,
+            "weighed_parts": 2,
+            "grams_per_part": 15.0,
+            "weighed_grams": 30.0
+          }
+        ],
+        "total_parts": 4,
+        "total_grams": 60.0,
+        "verification": "simulated scale returned stable positive dose for every line"
+      },
+      "stock_after": {
+        "JIA-2409": 0,
+        "YI-2409": 0,
+        "BING-2409": 4
+      }
+    }
+  },
+  {
+    "cmd": "scan",
+    "label": null,
+    "ok": true,
+    "result": {
+      "scanned_order_id": "T1",
+      "status": "served",
+      "roast_id": "R-HALF-PRIOR",
+      "formula_id": "F-J2-Y2",
+      "requested_composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "order_dose_lines": [
+        {
+          "batch_id": "JIA-2409",
+          "bean_name": "甲豆·柑橘",
+          "parts_per_cup": 2,
+          "cups": 1,
+          "weighed_parts": 2,
+          "grams_per_part": 15.0,
+          "weighed_grams": 30.0
+        },
+        {
+          "batch_id": "YI-2409",
+          "bean_name": "乙豆·黑糖",
+          "parts_per_cup": 2,
+          "cups": 1,
+          "weighed_parts": 2,
+          "grams_per_part": 15.0,
+          "weighed_grams": 30.0
+        }
+      ],
+      "display_recipe": "JIA-2409:2|YI-2409:2",
+      "probability_at_decision": 0.9,
+      "decision": "accept",
+      "source": {
+        "kind": "direct_scale"
+      },
+      "actual_weighings": [
+        {
+          "weighing_id": "W-002",
+          "status": "success",
+          "kind": "direct_order",
+          "bucket_id": null,
+          "cups": 1,
+          "scale_lines": [
+            {
+              "batch_id": "JIA-2409",
+              "bean_name": "甲豆·柑橘",
+              "parts_per_cup": 2,
+              "cups": 1,
+              "weighed_parts": 2,
+              "grams_per_part": 15.0,
+              "weighed_grams": 30.0
+            },
+            {
+              "batch_id": "YI-2409",
+              "bean_name": "乙豆·黑糖",
+              "parts_per_cup": 2,
+              "cups": 1,
+              "weighed_parts": 2,
+              "grams_per_part": 15.0,
+              "weighed_grams": 30.0
+            }
+          ],
+          "total_parts": 4,
+          "total_grams": 60.0,
+          "verification": "simulated scale returned stable positive dose for every line"
+        },
+        {
+          "weighing_id": "W-001",
+          "status": "success",
+          "kind": "single_trial_cup",
+          "bucket_id": null,
+          "cups": 1,
+          "scale_lines": [
+            {
+              "batch_id": "JIA-2409",
+              "bean_name": "甲豆·柑橘",
+              "parts_per_cup": 2,
+              "cups": 1,
+              "weighed_parts": 2,
+              "grams_per_part": 15.0,
+              "weighed_grams": 30.0
+            },
+            {
+              "batch_id": "YI-2409",
+              "bean_name": "乙豆·黑糖",
+              "parts_per_cup": 2,
+              "cups": 1,
+              "weighed_parts": 2,
+              "grams_per_part": 15.0,
+              "weighed_grams": 30.0
+            }
+          ],
+          "total_parts": 4,
+          "total_grams": 60.0,
+          "verification": "simulated scale returned stable positive dose for every line"
+        }
+      ],
+      "bucket": null,
+      "remaining_buckets_and_refills": [],
+      "immutable_ledger": "/workspace/deliverables/good/shops/03_trial_same_order_like/ledger.jsonl"
+    }
+  },
+  {
+    "cmd": "stock",
+    "label": null,
+    "ok": true,
+    "result": {
+      "loose_stock_parts": {
+        "JIA-2409": 0,
+        "YI-2409": 0,
+        "BING-2409": 4
+      },
+      "direct_committed_parts": {},
+      "available_loose_parts": {
+        "JIA-2409": 0,
+        "YI-2409": 0,
+        "BING-2409": 4
+      },
+      "total_loose_parts": 4,
+      "buckets": [
+        {
+          "bucket_id": "KEG-1",
+          "status": "empty",
+          "capacity_cups": 2
+        },
+        {
+          "bucket_id": "KEG-2",
+          "status": "empty",
+          "capacity_cups": 2
+        }
+      ],
+      "orders": {
+        "T1": {
+          "status": "served",
+          "cups": 1
+        }
+      }
+    }
+  }
+]

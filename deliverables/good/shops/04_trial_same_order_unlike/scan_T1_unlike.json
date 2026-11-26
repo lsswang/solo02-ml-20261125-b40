@@ -1,0 +1,69 @@
+{
+  "scanned_order_id": "T1",
+  "status": "rejected",
+  "roast_id": "R-HALF-PRIOR",
+  "formula_id": "F-J2-Y2",
+  "requested_composition": {
+    "JIA-2409": 2,
+    "YI-2409": 2
+  },
+  "order_dose_lines": [
+    {
+      "batch_id": "JIA-2409",
+      "bean_name": "甲豆·柑橘",
+      "parts_per_cup": 2,
+      "cups": 1,
+      "weighed_parts": 2,
+      "grams_per_part": 15.0,
+      "weighed_grams": 30.0
+    },
+    {
+      "batch_id": "YI-2409",
+      "bean_name": "乙豆·黑糖",
+      "parts_per_cup": 2,
+      "cups": 1,
+      "weighed_parts": 2,
+      "grams_per_part": 15.0,
+      "weighed_grams": 30.0
+    }
+  ],
+  "display_recipe": "JIA-2409:2|YI-2409:2",
+  "probability_at_decision": 0.1,
+  "decision": "reject",
+  "source": {},
+  "actual_weighings": [
+    {
+      "weighing_id": "W-001",
+      "status": "success",
+      "kind": "single_trial_cup",
+      "bucket_id": null,
+      "cups": 1,
+      "scale_lines": [
+        {
+          "batch_id": "JIA-2409",
+          "bean_name": "甲豆·柑橘",
+          "parts_per_cup": 2,
+          "cups": 1,
+          "weighed_parts": 2,
+          "grams_per_part": 15.0,
+          "weighed_grams": 30.0
+        },
+        {
+          "batch_id": "YI-2409",
+          "bean_name": "乙豆·黑糖",
+          "parts_per_cup": 2,
+          "cups": 1,
+          "weighed_parts": 2,
+          "grams_per_part": 15.0,
+          "weighed_grams": 30.0
+        }
+      ],
+      "total_parts": 4,
+      "total_grams": 60.0,
+      "verification": "simulated scale returned stable positive dose for every line"
+    }
+  ],
+  "bucket": null,
+  "remaining_buckets_and_refills": [],
+  "immutable_ledger": "/workspace/deliverables/good/shops/04_trial_same_order_unlike/ledger.jsonl"
+}

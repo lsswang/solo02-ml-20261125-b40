@@ -1,0 +1,13 @@
+{
+  "scenario": "good",
+  "seed": 231125,
+  "records": 501,
+  "batches": [
+    "JIA-2409",
+    "YI-2409",
+    "BING-2409"
+  ],
+  "holdout_roast": "R-BLIND-11",
+  "connected_extra_holdout_roast": "R-BLIND-12",
+  "note": "The blind component is F-J2-Y2 across its requested roast and connected re-roast."
+}

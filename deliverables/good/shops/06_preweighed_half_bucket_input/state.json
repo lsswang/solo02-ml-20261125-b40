@@ -1,0 +1,229 @@
+{
+  "initialized": true,
+  "event_count": 5,
+  "config": {
+    "parts_per_cup": 4,
+    "gate_threshold": 0.8,
+    "trial_accuracy": 0.9,
+    "good_cup_reward": 2.0,
+    "bad_cup_penalty": 8.0,
+    "grams_per_part": 15.0,
+    "default_bucket_capacity_cups": 2,
+    "currency_unit": "synthetic score"
+  },
+  "batch_meta": {
+    "JIA-2409": {
+      "batch_id": "JIA-2409",
+      "bean_name": "甲豆"
+    },
+    "YI-2409": {
+      "batch_id": "YI-2409",
+      "bean_name": "乙豆"
+    },
+    "BING-2409": {
+      "batch_id": "BING-2409",
+      "bean_name": "丙豆"
+    }
+  },
+  "loose_stock_parts": {
+    "JIA-2409": 2,
+    "YI-2409": 2,
+    "BING-2409": 4
+  },
+  "buckets": {
+    "KEG-HALF-INPUT": {
+      "bucket_id": "KEG-HALF-INPUT",
+      "status": "active",
+      "capacity_cups": 4,
+      "cups_total": 4,
+      "remaining_cups": 2,
+      "reserved_cups": 2,
+      "roast_id": "R-PREWEIGHED",
+      "formula_id": "F-J2-Y2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "dose_parts_per_cup": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "weighing_id": "INPUT-WEIGHING-HALF-BUCKET"
+    }
+  },
+  "orders": {
+    "REFILL-1": {
+      "order_id": "REFILL-1",
+      "cups": 1,
+      "roast_id": "R-PREWEIGHED",
+      "formula_id": "F-J2-Y2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "mode": "bucket",
+      "shift_id": "SHIFT-1",
+      "status": "accepted",
+      "probability_before": 0.88,
+      "decision": "accept",
+      "source": {
+        "kind": "bucket",
+        "bucket_id": "KEG-HALF-INPUT"
+      },
+      "events": [
+        "E0003"
+      ],
+      "probability_at_decision": 0.88,
+      "expected_score": 0.8,
+      "reason": "matching bucket KEG-HALF-INPUT has 2 unreserved cups"
+    },
+    "REFILL-2": {
+      "order_id": "REFILL-2",
+      "cups": 1,
+      "roast_id": "R-PREWEIGHED",
+      "formula_id": "F-J2-Y2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "mode": "bucket",
+      "shift_id": "SHIFT-1",
+      "status": "accepted",
+      "probability_before": 0.88,
+      "decision": "accept",
+      "source": {
+        "kind": "bucket",
+        "bucket_id": "KEG-HALF-INPUT"
+      },
+      "events": [
+        "E0005"
+      ],
+      "probability_at_decision": 0.88,
+      "expected_score": 0.8,
+      "reason": "matching bucket KEG-HALF-INPUT has 1 unreserved cups"
+    }
+  },
+  "trial_states": {},
+  "shifts": {},
+  "roast_state_overrides": {
+    "R-PREWEIGHED||F-J2-Y2": {
+      "roast_id": "R-PREWEIGHED",
+      "formula_id": "F-J2-Y2",
+      "probability": 0.88,
+      "source": "pre-calibrated input roast state"
+    }
+  },
+  "weighings": [],
+  "events": [
+    {
+      "event_id": "E0001",
+      "type": "shop_initialized",
+      "config": {
+        "parts_per_cup": 4,
+        "gate_threshold": 0.8,
+        "trial_accuracy": 0.9,
+        "good_cup_reward": 2.0,
+        "bad_cup_penalty": 8.0,
+        "grams_per_part": 15.0,
+        "default_bucket_capacity_cups": 2,
+        "currency_unit": "synthetic score"
+      },
+      "batch_meta": {
+        "JIA-2409": {
+          "batch_id": "JIA-2409",
+          "bean_name": "甲豆"
+        },
+        "YI-2409": {
+          "batch_id": "YI-2409",
+          "bean_name": "乙豆"
+        },
+        "BING-2409": {
+          "batch_id": "BING-2409",
+          "bean_name": "丙豆"
+        }
+      },
+      "loose_stock_parts": {
+        "JIA-2409": 2,
+        "YI-2409": 2,
+        "BING-2409": 4
+      },
+      "empty_buckets": [],
+      "weighed_buckets": [
+        {
+          "bucket_id": "KEG-HALF-INPUT",
+          "capacity_cups": 4,
+          "cups_total": 4,
+          "remaining_cups": 2,
+          "roast_id": "R-PREWEIGHED",
+          "formula_id": "F-J2-Y2",
+          "composition": "JIA-2409:2|YI-2409:2",
+          "weighing_id": "INPUT-WEIGHING-HALF-BUCKET"
+        }
+      ],
+      "roast_state_overrides": {
+        "R-PREWEIGHED||F-J2-Y2": {
+          "roast_id": "R-PREWEIGHED",
+          "formula_id": "F-J2-Y2",
+          "probability": 0.88,
+          "source": "pre-calibrated input roast state"
+        }
+      }
+    },
+    {
+      "event_id": "E0002",
+      "type": "order_received",
+      "order_id": "REFILL-1",
+      "cups": 1,
+      "roast_id": "R-PREWEIGHED",
+      "formula_id": "F-J2-Y2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "mode": "bucket",
+      "shift_id": "SHIFT-1",
+      "probability_before": 0.88,
+      "probability_source": "pre-calibrated input roast state"
+    },
+    {
+      "event_id": "E0003",
+      "type": "order_accepted",
+      "order_id": "REFILL-1",
+      "probability": 0.88,
+      "expected_score": 0.8,
+      "reason": "matching bucket KEG-HALF-INPUT has 2 unreserved cups",
+      "source": {
+        "kind": "bucket",
+        "bucket_id": "KEG-HALF-INPUT"
+      }
+    },
+    {
+      "event_id": "E0004",
+      "type": "order_received",
+      "order_id": "REFILL-2",
+      "cups": 1,
+      "roast_id": "R-PREWEIGHED",
+      "formula_id": "F-J2-Y2",
+      "composition": {
+        "JIA-2409": 2,
+        "YI-2409": 2
+      },
+      "mode": "bucket",
+      "shift_id": "SHIFT-1",
+      "probability_before": 0.88,
+      "probability_source": "pre-calibrated input roast state"
+    },
+    {
+      "event_id": "E0005",
+      "type": "order_accepted",
+      "order_id": "REFILL-2",
+      "probability": 0.88,
+      "expected_score": 0.8,
+      "reason": "matching bucket KEG-HALF-INPUT has 1 unreserved cups",
+      "source": {
+        "kind": "bucket",
+        "bucket_id": "KEG-HALF-INPUT"
+      }
+    }
+  ]
+}

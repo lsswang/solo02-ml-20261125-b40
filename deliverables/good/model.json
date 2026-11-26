@@ -1,0 +1,54 @@
+{
+  "model_type": "quadratic_mixture_logistic_ridge",
+  "parts_per_cup": 4,
+  "batches": [
+    "BING-2409",
+    "JIA-2409",
+    "YI-2409"
+  ],
+  "pairs": [
+    [
+      "BING-2409",
+      "JIA-2409"
+    ],
+    [
+      "BING-2409",
+      "YI-2409"
+    ],
+    [
+      "JIA-2409",
+      "YI-2409"
+    ]
+  ],
+  "feature_names": [
+    "intercept",
+    "batch::BING-2409",
+    "batch::JIA-2409",
+    "batch::YI-2409",
+    "pair::BING-2409*JIA-2409",
+    "pair::BING-2409*YI-2409",
+    "pair::JIA-2409*YI-2409"
+  ],
+  "coefficients": [
+    -2.5607951608024266,
+    -0.20997624792674566,
+    0.4468326288622502,
+    -0.23685638093728845,
+    -0.7009878687989556,
+    3.8031121617551036,
+    16.538464795593445
+  ],
+  "coefficient_map": {
+    "intercept": -2.5607951608024266,
+    "batch::BING-2409": -0.20997624792674566,
+    "batch::JIA-2409": 0.4468326288622502,
+    "batch::YI-2409": -0.23685638093728845,
+    "pair::BING-2409*JIA-2409": -0.7009878687989556,
+    "pair::BING-2409*YI-2409": 3.8031121617551036,
+    "pair::JIA-2409*YI-2409": 16.538464795593445
+  },
+  "l2": 1e-05,
+  "train_votes": 501,
+  "train_weight": 501.0,
+  "prediction_formula": "sigmoid(intercept + sum fraction_b*beta_b + sum_{b<c} fraction_b*fraction_c*gamma_bc)"
+}

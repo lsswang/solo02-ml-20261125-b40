@@ -1,0 +1,93 @@
+{
+  "scanned_order_id": "O1",
+  "status": "served",
+  "roast_id": "R-SHOP-GOOD",
+  "formula_id": "F-J2-Y2",
+  "requested_composition": {
+    "JIA-2409": 2,
+    "YI-2409": 2
+  },
+  "order_dose_lines": [
+    {
+      "batch_id": "JIA-2409",
+      "bean_name": "甲豆·柑橘",
+      "parts_per_cup": 2,
+      "cups": 1,
+      "weighed_parts": 2,
+      "grams_per_part": 15.0,
+      "weighed_grams": 30.0
+    },
+    {
+      "batch_id": "YI-2409",
+      "bean_name": "乙豆·黑糖",
+      "parts_per_cup": 2,
+      "cups": 1,
+      "weighed_parts": 2,
+      "grams_per_part": 15.0,
+      "weighed_grams": 30.0
+    }
+  ],
+  "display_recipe": "JIA-2409:2|YI-2409:2",
+  "probability_at_decision": 0.8427467801450697,
+  "decision": "accept",
+  "source": {
+    "kind": "bucket",
+    "bucket_id": "KEG-1"
+  },
+  "actual_weighings": [
+    {
+      "weighing_id": "W-001",
+      "status": "success",
+      "kind": "whole_bucket",
+      "bucket_id": "KEG-1",
+      "cups": 2,
+      "scale_lines": [
+        {
+          "batch_id": "JIA-2409",
+          "bean_name": "甲豆·柑橘",
+          "parts_per_cup": 2,
+          "cups": 2,
+          "weighed_parts": 4,
+          "grams_per_part": 15.0,
+          "weighed_grams": 60.0
+        },
+        {
+          "batch_id": "YI-2409",
+          "bean_name": "乙豆·黑糖",
+          "parts_per_cup": 2,
+          "cups": 2,
+          "weighed_parts": 4,
+          "grams_per_part": 15.0,
+          "weighed_grams": 60.0
+        }
+      ],
+      "total_parts": 8,
+      "total_grams": 120.0,
+      "verification": "simulated scale returned stable positive dose for every line"
+    }
+  ],
+  "bucket": {
+    "bucket_id": "KEG-1",
+    "capacity_cups": 2,
+    "remaining_cups": 1,
+    "reserved_cups": 1,
+    "status": "active"
+  },
+  "remaining_buckets_and_refills": [
+    {
+      "bucket_id": "KEG-1",
+      "remaining_cups": 1,
+      "capacity_cups": 2,
+      "remaining_fraction_of_bucket": 0.5,
+      "is_half_bucket": true,
+      "can_refill_orders": [
+        {
+          "order_id": "O2",
+          "status": "accepted",
+          "cups": 1
+        }
+      ]
+    }
+  ],
+  "immutable_ledger": "/workspace/deliverables/good/shops/01_bucket_three_orders/ledger.jsonl"
+}

@@ -1,0 +1,40 @@
+{
+  "loose_stock_parts": {
+    "JIA-2409": 0,
+    "YI-2409": 0,
+    "BING-2409": 4
+  },
+  "direct_committed_parts": {},
+  "available_loose_parts": {
+    "JIA-2409": 0,
+    "YI-2409": 0,
+    "BING-2409": 4
+  },
+  "total_loose_parts": 4,
+  "buckets": [
+    {
+      "bucket_id": "KEG-1",
+      "status": "empty",
+      "capacity_cups": 2
+    },
+    {
+      "bucket_id": "KEG-2",
+      "status": "empty",
+      "capacity_cups": 2
+    }
+  ],
+  "orders": {
+    "O1": {
+      "status": "served",
+      "cups": 1
+    },
+    "O2": {
+      "status": "served",
+      "cups": 1
+    },
+    "O3": {
+      "status": "rejected",
+      "cups": 1
+    }
+  }
+}
